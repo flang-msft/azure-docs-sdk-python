@@ -668,7 +668,8 @@
         "folder": "azure-mgmt-keyvault",
         "install_type": "pypi",
         "name": "azure-mgmt-keyvault",
-        "version": "==9.1.0"
+        "version": "==9.1.0a20211003015",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
         "test*",
