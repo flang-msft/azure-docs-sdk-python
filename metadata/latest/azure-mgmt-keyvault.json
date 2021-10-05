@@ -1,7 +1,7 @@
 {
   "Name": "azure-mgmt-keyvault",
-  "Version": "9.1.0a20211005007",
-  "DevVersion": "9.1.0a20211005007",
+  "Version": "9.1.0a20211005011",
+  "DevVersion": "9.1.0a20211005011",
   "DirectoryPath": "sdk/keyvault/azure-mgmt-keyvault",
   "ServiceDirectory": "keyvault",
   "ReadMePath": "sdk/keyvault/azure-mgmt-keyvault/README.md",
