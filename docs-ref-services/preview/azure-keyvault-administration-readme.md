@@ -11,7 +11,7 @@ ms.devlang: python
 ms.service: keyvault
 ---
 
-# Azure Key Vault Administration client library for Python - Version 4.1.0a20211005001 
+# Azure Key Vault Administration client library for Python - Version 4.1.0a20211005004 
 
 
 >**Note:** The Administration library only works with [Managed HSM][managed_hsm] – functions targeting a Key Vault will fail.
