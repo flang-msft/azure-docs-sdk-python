@@ -272,7 +272,8 @@
         "name": "azure-keyvault-keys",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
-        "version": "==4.4.0"
+        "version": "==4.5.0a20211005011",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
         "test*",
@@ -668,7 +669,7 @@
         "folder": "azure-mgmt-keyvault",
         "install_type": "pypi",
         "name": "azure-mgmt-keyvault",
-        "version": "==9.1.0a20211005001",
+        "version": "==9.1.0a20211005011",
         "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
@@ -1501,7 +1502,8 @@
         "name": "azure-keyvault-secrets",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
-        "version": "==4.3.0"
+        "version": "==4.4.0a20211005011",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
         "test*",
@@ -1569,7 +1571,8 @@
         "name": "azure-keyvault-certificates",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
-        "version": "==4.3.0"
+        "version": "==4.4.0a20211005011",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
         "test*",
@@ -2452,7 +2455,8 @@
         "name": "azure-keyvault-administration",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
-        "version": "==4.0.0"
+        "version": "==4.1.0a20211005011",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       }
     },
     {
