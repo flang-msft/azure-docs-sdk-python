@@ -11,14 +11,14 @@ constructor:
 attributes:
 - uid: azure.mgmt.core.policies.ARMHttpLoggingPolicy.DEFAULT_HEADERS_WHITELIST
   name: DEFAULT_HEADERS_WHITELIST
-  signature: 'DEFAULT_HEADERS_WHITELIST = {''Pragma'', ''If-Match'', ''If-Modified-Since'',
-    ''traceparent'', ''Content-Type'', ''x-ms-ratelimit-remaining-subscription-resource-requests'',
-    ''x-ms-ratelimit-remaining-tenant-reads'', ''ETag'', ''Expires'', ''If-Unmodified-Since'',
-    ''Last-Modified'', ''Request-Id'', ''x-ms-ratelimit-remaining-subscription-writes'',
-    ''Cache-Control'', ''x-ms-ratelimit-remaining-subscription-resource-entities-read'',
-    ''x-ms-request-id'', ''x-ms-ratelimit-remaining-tenant-writes'', ''Accept'', ''User-Agent'',
-    ''Retry-After'', ''x-ms-ratelimit-remaining-resource'', ''Content-Length'', ''Connection'',
-    ''Transfer-Encoding'', ''x-ms-ratelimit-remaining-tenant-resource-requests'',
-    ''x-ms-ratelimit-remaining-subscription-reads'', ''x-ms-return-client-request-id'',
-    ''x-ms-request-charge'', ''Date'', ''If-None-Match'', ''x-ms-client-request-id'',
-    ''Server'', ''x-ms-ratelimit-remaining-tenant-resource-entities-read''}'
+  signature: 'DEFAULT_HEADERS_WHITELIST = {''x-ms-ratelimit-remaining-subscription-writes'',
+    ''User-Agent'', ''x-ms-request-id'', ''x-ms-client-request-id'', ''Content-Type'',
+    ''x-ms-ratelimit-remaining-resource'', ''If-None-Match'', ''Last-Modified'', ''Accept'',
+    ''Retry-After'', ''x-ms-ratelimit-remaining-subscription-resource-entities-read'',
+    ''Content-Length'', ''Expires'', ''x-ms-ratelimit-remaining-tenant-resource-entities-read'',
+    ''Date'', ''Transfer-Encoding'', ''Pragma'', ''x-ms-ratelimit-remaining-tenant-writes'',
+    ''x-ms-ratelimit-remaining-subscription-resource-requests'', ''Cache-Control'',
+    ''x-ms-ratelimit-remaining-subscription-reads'', ''If-Match'', ''Request-Id'',
+    ''Connection'', ''x-ms-return-client-request-id'', ''traceparent'', ''x-ms-ratelimit-remaining-tenant-reads'',
+    ''If-Unmodified-Since'', ''ETag'', ''x-ms-request-charge'', ''x-ms-ratelimit-remaining-tenant-resource-requests'',
+    ''If-Modified-Since'', ''Server''}'
