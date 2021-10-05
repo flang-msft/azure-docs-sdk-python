@@ -11,14 +11,14 @@ constructor:
 attributes:
 - uid: azure.mgmt.core.policies.ARMHttpLoggingPolicy.DEFAULT_HEADERS_WHITELIST
   name: DEFAULT_HEADERS_WHITELIST
-  signature: 'DEFAULT_HEADERS_WHITELIST = {''x-ms-ratelimit-remaining-subscription-writes'',
-    ''User-Agent'', ''x-ms-request-id'', ''x-ms-client-request-id'', ''Content-Type'',
-    ''x-ms-ratelimit-remaining-resource'', ''If-None-Match'', ''Last-Modified'', ''Accept'',
-    ''Retry-After'', ''x-ms-ratelimit-remaining-subscription-resource-entities-read'',
-    ''Content-Length'', ''Expires'', ''x-ms-ratelimit-remaining-tenant-resource-entities-read'',
-    ''Date'', ''Transfer-Encoding'', ''Pragma'', ''x-ms-ratelimit-remaining-tenant-writes'',
-    ''x-ms-ratelimit-remaining-subscription-resource-requests'', ''Cache-Control'',
-    ''x-ms-ratelimit-remaining-subscription-reads'', ''If-Match'', ''Request-Id'',
-    ''Connection'', ''x-ms-return-client-request-id'', ''traceparent'', ''x-ms-ratelimit-remaining-tenant-reads'',
-    ''If-Unmodified-Since'', ''ETag'', ''x-ms-request-charge'', ''x-ms-ratelimit-remaining-tenant-resource-requests'',
-    ''If-Modified-Since'', ''Server''}'
+  signature: 'DEFAULT_HEADERS_WHITELIST = {''x-ms-return-client-request-id'', ''Date'',
+    ''Connection'', ''If-Unmodified-Since'', ''traceparent'', ''x-ms-ratelimit-remaining-subscription-resource-entities-read'',
+    ''Expires'', ''Content-Type'', ''If-None-Match'', ''Request-Id'', ''If-Match'',
+    ''Transfer-Encoding'', ''Cache-Control'', ''ETag'', ''x-ms-ratelimit-remaining-subscription-resource-requests'',
+    ''x-ms-ratelimit-remaining-resource'', ''x-ms-request-id'', ''x-ms-ratelimit-remaining-tenant-reads'',
+    ''x-ms-ratelimit-remaining-subscription-reads'', ''User-Agent'', ''x-ms-request-charge'',
+    ''x-ms-client-request-id'', ''x-ms-ratelimit-remaining-subscription-writes'',
+    ''Pragma'', ''Server'', ''x-ms-ratelimit-remaining-tenant-resource-entities-read'',
+    ''Accept'', ''x-ms-ratelimit-remaining-tenant-resource-requests'', ''Last-Modified'',
+    ''x-ms-ratelimit-remaining-tenant-writes'', ''Retry-After'', ''Content-Length'',
+    ''If-Modified-Since''}'
