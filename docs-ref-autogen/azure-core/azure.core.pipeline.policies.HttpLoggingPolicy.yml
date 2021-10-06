@@ -31,12 +31,12 @@ methods:
 attributes:
 - uid: azure.core.pipeline.policies.HttpLoggingPolicy.DEFAULT_HEADERS_WHITELIST
   name: DEFAULT_HEADERS_WHITELIST
-  signature: 'DEFAULT_HEADERS_WHITELIST = {''Content-Length'', ''Retry-After'', ''Transfer-Encoding'',
-    ''If-Modified-Since'', ''Request-Id'', ''If-Match'', ''User-Agent'', ''Date'',
-    ''Cache-Control'', ''If-Unmodified-Since'', ''Connection'', ''If-None-Match'',
-    ''Server'', ''Expires'', ''Content-Type'', ''Pragma'', ''ETag'', ''x-ms-client-request-id'',
-    ''x-ms-request-id'', ''x-ms-return-client-request-id'', ''traceparent'', ''Last-Modified'',
-    ''Accept''}'
+  signature: 'DEFAULT_HEADERS_WHITELIST = {''x-ms-client-request-id'', ''x-ms-return-client-request-id'',
+    ''Retry-After'', ''Expires'', ''Content-Length'', ''User-Agent'', ''If-Unmodified-Since'',
+    ''If-Modified-Since'', ''Accept'', ''Transfer-Encoding'', ''x-ms-request-id'',
+    ''Date'', ''Request-Id'', ''Content-Type'', ''ETag'', ''If-Match'', ''traceparent'',
+    ''Cache-Control'', ''Connection'', ''Pragma'', ''If-None-Match'', ''Server'',
+    ''Last-Modified''}'
 - uid: azure.core.pipeline.policies.HttpLoggingPolicy.MULTI_RECORD_LOG
   name: MULTI_RECORD_LOG
   signature: MULTI_RECORD_LOG = 'AZURE_SDK_LOGGING_MULTIRECORD'

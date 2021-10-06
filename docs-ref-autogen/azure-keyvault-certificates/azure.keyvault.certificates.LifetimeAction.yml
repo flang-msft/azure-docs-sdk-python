@@ -44,15 +44,18 @@ attributes:
   return:
     types:
     - <xref:azure.keyvault.certificates.CertificatePolicyAction>
+    - <xref:None>
 - uid: azure.keyvault.certificates.LifetimeAction.days_before_expiry
   name: days_before_expiry
   summary: Days before expiry to attempt renewal.
   return:
     types:
     - <xref:int>
+    - <xref:None>
 - uid: azure.keyvault.certificates.LifetimeAction.lifetime_percentage
   name: lifetime_percentage
   summary: Percentage of lifetime at which to trigger.
   return:
     types:
     - <xref:int>
+    - <xref:None>

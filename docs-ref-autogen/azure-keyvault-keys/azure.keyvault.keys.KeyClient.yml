@@ -32,7 +32,7 @@ constructor:
 examples:
 - "Create a new `KeyClient`<!--[!code-python[Main](s\\test_samples_keys.py )]-->\n\
   \n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
-  : [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\17\\\\azure-keyvault-keys-4.4.0\\\
+  : [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\17\\\\azure-keyvault-keys-4.5.0a20211005011\\\
   \\tests\\\\test_samples_keys.py\", \"xml:space\": \"preserve\", \"language\": \"\
   python\", \"linenos\": false, \"highlight_args\": {\"linenostart\": 1}} -->\n\n\
   ````python\n\n   from azure.identity import DefaultAzureCredential\n   from azure.keyvault.keys\
@@ -70,7 +70,7 @@ methods:
   examples:
   - "Get a key backup<!--[!code-python[Main](s\\test_samples_keys.py )]-->\n\n<!--\
     \ literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\": [],\
-    \ \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\17\\\\azure-keyvault-keys-4.4.0\\\
+    \ \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\17\\\\azure-keyvault-keys-4.5.0a20211005011\\\
     \\tests\\\\test_samples_keys.py\", \"xml:space\": \"preserve\", \"language\":\
     \ \"python\", \"linenos\": false, \"highlight_args\": {\"linenostart\": 1}} -->\n\
     \n````python\n\n   # backup key\n   key_backup = key_client.backup_key(key_name)\n\
@@ -116,7 +116,7 @@ methods:
   examples:
   - "Delete a key<!--[!code-python[Main](s\\test_samples_keys.py )]-->\n\n<!-- literal_block\
     \ {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\"\
-    : [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\17\\\\azure-keyvault-keys-4.4.0\\\
+    : [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\17\\\\azure-keyvault-keys-4.5.0a20211005011\\\
     \\tests\\\\test_samples_keys.py\", \"xml:space\": \"preserve\", \"language\":\
     \ \"python\", \"linenos\": false, \"highlight_args\": {\"linenostart\": 1}} -->\n\
     \n````python\n\n   # delete a key\n   deleted_key_poller = key_client.begin_delete_key(key_name)\n\
@@ -167,9 +167,9 @@ methods:
   - "Recover a deleted key<!--[!code-python[Main](s\\test_samples_keys.py )]-->\n\n\
     <!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
     : [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\17\\\\\
-    azure-keyvault-keys-4.4.0\\\\tests\\\\test_samples_keys.py\", \"xml:space\": \"\
-    preserve\", \"language\": \"python\", \"linenos\": false, \"highlight_args\":\
-    \ {\"linenostart\": 1}} -->\n\n````python\n\n   # recover a deleted key to its\
+    azure-keyvault-keys-4.5.0a20211005011\\\\tests\\\\test_samples_keys.py\", \"xml:space\"\
+    : \"preserve\", \"language\": \"python\", \"linenos\": false, \"highlight_args\"\
+    : {\"linenostart\": 1}} -->\n\n````python\n\n   # recover a deleted key to its\
     \ latest version (requires soft-delete enabled for the vault)\n   recover_key_poller\
     \ = key_client.begin_recover_deleted_key(key_name)\n   recovered_key = recover_key_poller.result()\n\
     \   print(recovered_key.id)\n   print(recovered_key.name)\n\n   # if you want\
@@ -221,6 +221,14 @@ methods:
     description: Expiry date of the key in UTC
     types:
     - <xref:datetime.datetime>
+  - name: exportable
+    description: Whether the private key can be exported.
+    types:
+    - <xref:bool>
+  - name: release_policy
+    description: The policy rules under which the key can be exported.
+    types:
+    - <xref:azure.keyvault.keys.KeyReleasePolicy>
   return:
     description: The created key
     types:
@@ -232,9 +240,9 @@ methods:
   - "Create an elliptic curve key<!--[!code-python[Main](s\\test_samples_keys.py )]-->\n\
     \n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
     : [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\17\\\\\
-    azure-keyvault-keys-4.4.0\\\\tests\\\\test_samples_keys.py\", \"xml:space\": \"\
-    preserve\", \"language\": \"python\", \"linenos\": false, \"highlight_args\":\
-    \ {\"linenostart\": 1}} -->\n\n````python\n\n   key_curve = \"P-256\"\n\n   #\
+    azure-keyvault-keys-4.5.0a20211005011\\\\tests\\\\test_samples_keys.py\", \"xml:space\"\
+    : \"preserve\", \"language\": \"python\", \"linenos\": false, \"highlight_args\"\
+    : {\"linenostart\": 1}} -->\n\n````python\n\n   key_curve = \"P-256\"\n\n   #\
     \ create an EC (Elliptic curve) key with curve specification\n   # EC key can\
     \ be created with default curve of 'P-256'\n   ec_key = key_client.create_ec_key(key_name,\
     \ curve=key_curve)\n\n   print(ec_key.id)\n   print(ec_key.properties.version)\n\
@@ -302,6 +310,14 @@ methods:
     description: Expiry date of the key in UTC
     types:
     - <xref:datetime.datetime>
+  - name: exportable
+    description: Whether the private key can be exported.
+    types:
+    - <xref:bool>
+  - name: release_policy
+    description: The policy rules under which the key can be exported.
+    types:
+    - <xref:azure.keyvault.keys.KeyReleasePolicy>
   return:
     description: The created key
     types:
@@ -312,7 +328,7 @@ methods:
   examples:
   - "Create a key<!--[!code-python[Main](s\\test_samples_keys.py )]-->\n\n<!-- literal_block\
     \ {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\"\
-    : [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\17\\\\azure-keyvault-keys-4.4.0\\\
+    : [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\17\\\\azure-keyvault-keys-4.5.0a20211005011\\\
     \\tests\\\\test_samples_keys.py\", \"xml:space\": \"preserve\", \"language\":\
     \ \"python\", \"linenos\": false, \"highlight_args\": {\"linenostart\": 1}} -->\n\
     \n````python\n\n   from dateutil import parser as date_parse\n\n   expires_on\
@@ -365,6 +381,14 @@ methods:
     description: Expiry date of the key in UTC
     types:
     - <xref:datetime.datetime>
+  - name: exportable
+    description: Whether the key can be exported.
+    types:
+    - <xref:bool>
+  - name: release_policy
+    description: The policy rules under which the key can be exported.
+    types:
+    - <xref:azure.keyvault.keys.KeyReleasePolicy>
   return:
     description: The created key
     types:
@@ -376,9 +400,9 @@ methods:
   - "Create an octet sequence (symmetric) key<!--[!code-python[Main](s\\test_samples_keys.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\
-    \\17\\\\azure-keyvault-keys-4.4.0\\\\tests\\\\test_samples_keys.py\", \"xml:space\"\
-    : \"preserve\", \"language\": \"python\", \"linenos\": false, \"highlight_args\"\
-    : {\"linenostart\": 1}} -->\n\n````python\n\n   key = key_client.create_oct_key(key_name,\
+    \\17\\\\azure-keyvault-keys-4.5.0a20211005011\\\\tests\\\\test_samples_keys.py\"\
+    , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
+    highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   key = key_client.create_oct_key(key_name,\
     \ size=256, hardware_protected=True)\n\n   print(key.id)\n   print(key.name)\n\
     \   print(key.key_type)\n\n   ````\n"
 - uid: azure.keyvault.keys.KeyClient.create_rsa_key
@@ -431,6 +455,14 @@ methods:
     description: Expiry date of the key in UTC
     types:
     - <xref:datetime.datetime>
+  - name: exportable
+    description: Whether the private key can be exported.
+    types:
+    - <xref:bool>
+  - name: release_policy
+    description: The policy rules under which the key can be exported.
+    types:
+    - <xref:azure.keyvault.keys.KeyReleasePolicy>
   return:
     description: The created key
     types:
@@ -441,7 +473,7 @@ methods:
   examples:
   - "Create RSA key<!--[!code-python[Main](s\\test_samples_keys.py )]-->\n\n<!-- literal_block\
     \ {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\"\
-    : [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\17\\\\azure-keyvault-keys-4.4.0\\\
+    : [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\17\\\\azure-keyvault-keys-4.5.0a20211005011\\\
     \\tests\\\\test_samples_keys.py\", \"xml:space\": \"preserve\", \"language\":\
     \ \"python\", \"linenos\": false, \"highlight_args\": {\"linenostart\": 1}} -->\n\
     \n````python\n\n   key_size = 2048\n   key_ops = [\"encrypt\", \"decrypt\", \"\
@@ -472,7 +504,7 @@ methods:
   examples:
   - "Get a deleted key<!--[!code-python[Main](s\\test_samples_keys.py )]-->\n\n<!--\
     \ literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\": [],\
-    \ \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\17\\\\azure-keyvault-keys-4.4.0\\\
+    \ \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\17\\\\azure-keyvault-keys-4.5.0a20211005011\\\
     \\tests\\\\test_samples_keys.py\", \"xml:space\": \"preserve\", \"language\":\
     \ \"python\", \"linenos\": false, \"highlight_args\": {\"linenostart\": 1}} -->\n\
     \n````python\n\n   # get a deleted key (requires soft-delete enabled for the vault)\n\
@@ -509,7 +541,7 @@ methods:
   examples:
   - "Get a key<!--[!code-python[Main](s\\test_samples_keys.py )]-->\n\n<!-- literal_block\
     \ {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\"\
-    : [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\17\\\\azure-keyvault-keys-4.4.0\\\
+    : [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\17\\\\azure-keyvault-keys-4.5.0a20211005011\\\
     \\tests\\\\test_samples_keys.py\", \"xml:space\": \"preserve\", \"language\":\
     \ \"python\", \"linenos\": false, \"highlight_args\": {\"linenostart\": 1}} -->\n\
     \n````python\n\n   # get the latest version of a key\n   key = key_client.get_key(key_name)\n\
@@ -517,6 +549,30 @@ methods:
     \   key = key_client.get_key(key_name, key_version)\n\n   print(key.id)\n   print(key.name)\n\
     \   print(key.properties.version)\n   print(key.key_type)\n   print(key.properties.vault_url)\n\
     \n   ````\n"
+- uid: azure.keyvault.keys.KeyClient.get_random_bytes
+  name: get_random_bytes
+  summary: Get the requested number of random bytes from a managed HSM.
+  signature: get_random_bytes(count, **kwargs)
+  parameters:
+  - name: count
+    description: The requested number of random bytes.
+    isRequired: true
+    types:
+    - <xref:int>
+  return:
+    description: The random bytes.
+    types:
+    - <xref:azure.keyvault.keys.RandomBytes>
+  exceptions:
+  - type: ValueError
+  examples:
+  - "Get random bytes<!--[!code-python[Main](s\\test_key_client.py )]-->\n\n<!-- literal_block\
+    \ {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\"\
+    : [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\17\\\\azure-keyvault-keys-4.5.0a20211005011\\\
+    \\tests\\\\test_key_client.py\", \"xml:space\": \"preserve\", \"language\": \"\
+    python\", \"linenos\": false, \"highlight_args\": {\"linenostart\": 1}} -->\n\n\
+    ````python\n\n   # get eight random bytes from a managed HSM\n   result = client.get_random_bytes(count=8)\n\
+    \   random_bytes = result.value\n\n   ````\n"
 - uid: azure.keyvault.keys.KeyClient.import_key
   name: import_key
   summary: 'Import a key created externally.
@@ -556,6 +612,14 @@ methods:
     description: Expiry date of the key in UTC
     types:
     - <xref:datetime.datetime>
+  - name: exportable
+    description: Whether the private key can be exported.
+    types:
+    - <xref:bool>
+  - name: release_policy
+    description: The policy rules under which the key can be exported.
+    types:
+    - <xref:azure.keyvault.keys.KeyReleasePolicy>
   return:
     description: The imported key
     types:
@@ -579,9 +643,9 @@ methods:
   - "List all the deleted keys<!--[!code-python[Main](s\\test_samples_keys.py )]-->\n\
     \n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
     : [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\17\\\\\
-    azure-keyvault-keys-4.4.0\\\\tests\\\\test_samples_keys.py\", \"xml:space\": \"\
-    preserve\", \"language\": \"python\", \"linenos\": false, \"highlight_args\":\
-    \ {\"linenostart\": 1}} -->\n\n````python\n\n   # get an iterator of deleted keys\
+    azure-keyvault-keys-4.5.0a20211005011\\\\tests\\\\test_samples_keys.py\", \"xml:space\"\
+    : \"preserve\", \"language\": \"python\", \"linenos\": false, \"highlight_args\"\
+    : {\"linenostart\": 1}} -->\n\n````python\n\n   # get an iterator of deleted keys\
     \ (requires soft-delete enabled for the vault)\n   deleted_keys = key_client.list_deleted_keys()\n\
     \n   for key in deleted_keys:\n       print(key.id)\n       print(key.name)\n\
     \       print(key.scheduled_purge_date)\n       print(key.recovery_id)\n     \
@@ -607,9 +671,9 @@ methods:
   - "List all versions of a key<!--[!code-python[Main](s\\test_samples_keys.py )]-->\n\
     \n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
     : [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\17\\\\\
-    azure-keyvault-keys-4.4.0\\\\tests\\\\test_samples_keys.py\", \"xml:space\": \"\
-    preserve\", \"language\": \"python\", \"linenos\": false, \"highlight_args\":\
-    \ {\"linenostart\": 1}} -->\n\n````python\n\n   # get an iterator of a key's versions\n\
+    azure-keyvault-keys-4.5.0a20211005011\\\\tests\\\\test_samples_keys.py\", \"xml:space\"\
+    : \"preserve\", \"language\": \"python\", \"linenos\": false, \"highlight_args\"\
+    : {\"linenostart\": 1}} -->\n\n````python\n\n   # get an iterator of a key's versions\n\
     \   key_versions = key_client.list_properties_of_key_versions(\"key-name\")\n\n\
     \   for key in key_versions:\n       print(key.id)\n       print(key.name)\n\n\
     \   ````\n"
@@ -628,7 +692,7 @@ methods:
   examples:
   - "List all keys<!--[!code-python[Main](s\\test_samples_keys.py )]-->\n\n<!-- literal_block\
     \ {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\"\
-    : [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\17\\\\azure-keyvault-keys-4.4.0\\\
+    : [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\17\\\\azure-keyvault-keys-4.5.0a20211005011\\\
     \\tests\\\\test_samples_keys.py\", \"xml:space\": \"preserve\", \"language\":\
     \ \"python\", \"linenos\": false, \"highlight_args\": {\"linenostart\": 1}} -->\n\
     \n````python\n\n   # get an iterator of keys\n   keys = key_client.list_properties_of_keys()\n\
@@ -669,6 +733,50 @@ methods:
     \ vault has soft-delete enabled, purge permanently deletes a deleted key\n   #\
     \ (with soft-delete disabled, begin_delete_key is permanent)\n   key_client.purge_deleted_key(\"\
     key-name\")\n   ````\n"
+- uid: azure.keyvault.keys.KeyClient.release_key
+  name: release_key
+  summary: 'Releases a key.
+
+
+    The release key operation is applicable to all key types. The target key must
+    be marked
+
+    exportable. This operation requires the keys/release permission.'
+  signature: release_key(name, target, version=None, **kwargs)
+  parameters:
+  - name: name
+    description: The name of the key to get.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: target
+    description: The attestation assertion for the target of the key release.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: version
+    description: '(optional) A specific version of the key to release. If unspecified,
+      the latest version is
+
+      released.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: algorithm
+    description: The encryption algorithm to use to protect the released key material.
+    types:
+    - <xref:azure.keyvault.keys.KeyExportEncryptionAlgorithm>
+  - name: nonce
+    description: A client-provided nonce for freshness.
+    types:
+    - <xref:str>
+  return:
+    description: The result of the key release.
+    types:
+    - <xref:azure.keyvault.keys.ReleaseKeyResult>
+  exceptions:
+  - type: azure.core.exceptions.HttpResponseError
+  - type: azure.core.exceptions.HttpResponseError
 - uid: azure.keyvault.keys.KeyClient.restore_key_backup
   name: restore_key_backup
   summary: 'Restore a key backup to the vault.
@@ -701,9 +809,9 @@ methods:
   - "Restore a key backup<!--[!code-python[Main](s\\test_samples_keys.py )]-->\n\n\
     <!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
     : [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\17\\\\\
-    azure-keyvault-keys-4.4.0\\\\tests\\\\test_samples_keys.py\", \"xml:space\": \"\
-    preserve\", \"language\": \"python\", \"linenos\": false, \"highlight_args\":\
-    \ {\"linenostart\": 1}} -->\n\n````python\n\n   # restore a key backup\n   restored_key\
+    azure-keyvault-keys-4.5.0a20211005011\\\\tests\\\\test_samples_keys.py\", \"xml:space\"\
+    : \"preserve\", \"language\": \"python\", \"linenos\": false, \"highlight_args\"\
+    : {\"linenostart\": 1}} -->\n\n````python\n\n   # restore a key backup\n   restored_key\
     \ = key_client.restore_key_backup(key_backup)\n   print(restored_key.id)\n   print(restored_key.properties.version)\n\
     \n   ````\n"
 - uid: azure.keyvault.keys.KeyClient.update_key_properties
@@ -746,6 +854,10 @@ methods:
     description: Expiry date of the key in UTC
     types:
     - <xref:datetime.datetime>
+  - name: release_policy
+    description: The policy rules under which the key can be exported.
+    types:
+    - <xref:azure.keyvault.keys.KeyReleasePolicy>
   return:
     description: The updated key
     types:
@@ -757,9 +869,9 @@ methods:
   - "Update a key's attributes<!--[!code-python[Main](s\\test_samples_keys.py )]-->\n\
     \n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
     : [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\17\\\\\
-    azure-keyvault-keys-4.4.0\\\\tests\\\\test_samples_keys.py\", \"xml:space\": \"\
-    preserve\", \"language\": \"python\", \"linenos\": false, \"highlight_args\":\
-    \ {\"linenostart\": 1}} -->\n\n````python\n\n   # update attributes of an existing\
+    azure-keyvault-keys-4.5.0a20211005011\\\\tests\\\\test_samples_keys.py\", \"xml:space\"\
+    : \"preserve\", \"language\": \"python\", \"linenos\": false, \"highlight_args\"\
+    : {\"linenostart\": 1}} -->\n\n````python\n\n   # update attributes of an existing\
     \ key\n   expires_on = date_parse.parse(\"2050-01-02T08:00:00.000Z\")\n   tags\
     \ = {\"foo\": \"updated tag\"}\n   updated_key = key_client.update_key_properties(key.name,\
     \ expires_on=expires_on, tags=tags)\n\n   print(updated_key.properties.version)\n\

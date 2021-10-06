@@ -10,3 +10,5 @@ inheritances:
 fields:
 - name: V7_2
   uid: azure.keyvault.administration.ApiVersion.V7_2
+- name: V7_3_PREVIEW
+  uid: azure.keyvault.administration.ApiVersion.V7_3_PREVIEW

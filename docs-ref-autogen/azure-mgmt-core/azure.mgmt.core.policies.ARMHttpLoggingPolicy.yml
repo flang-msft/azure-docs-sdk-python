@@ -11,14 +11,14 @@ constructor:
 attributes:
 - uid: azure.mgmt.core.policies.ARMHttpLoggingPolicy.DEFAULT_HEADERS_WHITELIST
   name: DEFAULT_HEADERS_WHITELIST
-  signature: 'DEFAULT_HEADERS_WHITELIST = {''x-ms-return-client-request-id'', ''Date'',
-    ''Connection'', ''If-Unmodified-Since'', ''traceparent'', ''x-ms-ratelimit-remaining-subscription-resource-entities-read'',
-    ''Expires'', ''Content-Type'', ''If-None-Match'', ''Request-Id'', ''If-Match'',
-    ''Transfer-Encoding'', ''Cache-Control'', ''ETag'', ''x-ms-ratelimit-remaining-subscription-resource-requests'',
-    ''x-ms-ratelimit-remaining-resource'', ''x-ms-request-id'', ''x-ms-ratelimit-remaining-tenant-reads'',
-    ''x-ms-ratelimit-remaining-subscription-reads'', ''User-Agent'', ''x-ms-request-charge'',
-    ''x-ms-client-request-id'', ''x-ms-ratelimit-remaining-subscription-writes'',
-    ''Pragma'', ''Server'', ''x-ms-ratelimit-remaining-tenant-resource-entities-read'',
-    ''Accept'', ''x-ms-ratelimit-remaining-tenant-resource-requests'', ''Last-Modified'',
-    ''x-ms-ratelimit-remaining-tenant-writes'', ''Retry-After'', ''Content-Length'',
-    ''If-Modified-Since''}'
+  signature: 'DEFAULT_HEADERS_WHITELIST = {''x-ms-ratelimit-remaining-subscription-reads'',
+    ''Pragma'', ''x-ms-client-request-id'', ''x-ms-request-charge'', ''If-Match'',
+    ''x-ms-request-id'', ''Connection'', ''x-ms-ratelimit-remaining-tenant-resource-requests'',
+    ''x-ms-ratelimit-remaining-resource'', ''Transfer-Encoding'', ''If-Unmodified-Since'',
+    ''x-ms-ratelimit-remaining-subscription-resource-entities-read'', ''x-ms-ratelimit-remaining-subscription-resource-requests'',
+    ''ETag'', ''Server'', ''Content-Type'', ''Expires'', ''x-ms-ratelimit-remaining-tenant-resource-entities-read'',
+    ''Last-Modified'', ''x-ms-ratelimit-remaining-tenant-reads'', ''Request-Id'',
+    ''Cache-Control'', ''Content-Length'', ''x-ms-ratelimit-remaining-tenant-writes'',
+    ''If-Modified-Since'', ''Date'', ''If-None-Match'', ''Retry-After'', ''User-Agent'',
+    ''traceparent'', ''x-ms-return-client-request-id'', ''x-ms-ratelimit-remaining-subscription-writes'',
+    ''Accept''}'

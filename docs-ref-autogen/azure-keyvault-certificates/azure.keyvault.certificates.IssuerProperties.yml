@@ -20,7 +20,7 @@ attributes:
   summary: '*rtype* -- str'
 - uid: azure.keyvault.certificates.IssuerProperties.name
   name: name
-  summary: '*rtype* -- str'
+  summary: '*rtype* -- str or None'
 - uid: azure.keyvault.certificates.IssuerProperties.provider
   name: provider
-  summary: '*rtype* -- str'
+  summary: '*rtype* -- str or None'
