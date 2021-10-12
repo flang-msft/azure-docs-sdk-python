@@ -668,7 +668,8 @@
         "folder": "azure-mgmt-keyvault",
         "install_type": "pypi",
         "name": "azure-mgmt-keyvault",
-        "version": "==9.1.0"
+        "version": "==9.1.0a20211012003",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
         "test*",
@@ -794,7 +795,8 @@
         "folder": "azure-mgmt-rdbms",
         "install_type": "pypi",
         "name": "azure-mgmt-rdbms",
-        "version": "==9.1.0"
+        "version": "==10.0.0",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
         "test*",
@@ -1172,7 +1174,8 @@
       "package_info": {
         "install_type": "pypi",
         "name": "azure-mgmt-hdinsight",
-        "version": "==8.0.0"
+        "version": "==9.0.0",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
         "test*",
