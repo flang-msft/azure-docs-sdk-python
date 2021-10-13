@@ -1,14 +1,14 @@
 ---
 title: 
-keywords: Azure, python, SDK, API, azure-mgmt-agfood, 
+keywords: Azure, python, SDK, API, azure-mgmt-agfood, agfood
 author: maggiepint
 ms.author: magpint
-ms.date: 05/18/2021
+ms.date: 10/13/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.service: 
+ms.service: agfood
 ---
 
 # Microsoft Azure SDK for Python
