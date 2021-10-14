@@ -1,14 +1,14 @@
 ---
 title: 
-keywords: Azure, python, SDK, API, azure-mgmt-iotcentral, iotcentral
+keywords: Azure, python, SDK, API, azure-mgmt-iotcentral, iothub
 author: maggiepint
 ms.author: magpint
-ms.date: 05/19/2021
+ms.date: 10/14/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.service: iotcentral
+ms.service: iothub
 ---
 
 # Microsoft Azure SDK for Python
