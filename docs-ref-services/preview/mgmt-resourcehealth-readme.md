@@ -1,14 +1,14 @@
 ---
 title: 
-keywords: Azure, python, SDK, API, azure-mgmt-resourcehealth, 
+keywords: Azure, python, SDK, API, azure-mgmt-resourcehealth, resourcehealth
 author: maggiepint
 ms.author: magpint
-ms.date: 06/25/2021
+ms.date: 10/14/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.service: 
+ms.service: resourcehealth
 ---
 
 # Microsoft Azure SDK for Python
