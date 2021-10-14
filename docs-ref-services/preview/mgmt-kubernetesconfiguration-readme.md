@@ -3,7 +3,7 @@ title:
 keywords: Azure, python, SDK, API, azure-mgmt-kubernetesconfiguration, kubernetesconfiguration
 author: maggiepint
 ms.author: magpint
-ms.date: 12/14/2020
+ms.date: 10/14/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
@@ -37,5 +37,4 @@ section of the project.
 
 
 ![Impressions](https://azure-sdk-impressions.azurewebsites.net/api/impressions/azure-sdk-for-python%2Fazure-mgmt-kubernetesconfiguration%2FREADME.png)
-
 
