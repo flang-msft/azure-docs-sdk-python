@@ -3,7 +3,7 @@ title:
 keywords: Azure, python, SDK, API, azure-mgmt-relay, relay
 author: maggiepint
 ms.author: magpint
-ms.date: 09/06/2021
+ms.date: 10/14/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
