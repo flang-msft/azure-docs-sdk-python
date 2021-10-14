@@ -3,7 +3,7 @@ title:
 keywords: Azure, python, SDK, API, azure-mgmt-powerbidedicated, powerbidedicated
 author: maggiepint
 ms.author: magpint
-ms.date: 03/29/2021
+ms.date: 10/14/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
@@ -38,5 +38,4 @@ section of the project.
 
 
 ![Impressions](https://azure-sdk-impressions.azurewebsites.net/api/impressions/azure-sdk-for-python%2Fazure-mgmt-powerbidedicated%2FREADME.png)
-
 
