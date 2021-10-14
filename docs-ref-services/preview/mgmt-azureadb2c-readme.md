@@ -1,14 +1,14 @@
 ---
 title: 
-keywords: Azure, python, SDK, API, azure-mgmt-azureadb2c, 
+keywords: Azure, python, SDK, API, azure-mgmt-azureadb2c, azureadb2c
 author: maggiepint
 ms.author: magpint
-ms.date: 12/17/2020
+ms.date: 10/14/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.service: 
+ms.service: azureadb2c
 ---
 
 # Microsoft Azure SDK for Python
@@ -38,5 +38,4 @@ section of the project.
 
 
 ![Impressions](https://azure-sdk-impressions.azurewebsites.net/api/impressions/azure-sdk-for-python%2Fazure-mgmt-workloadmonitor%2FREADME.png)
-
 
