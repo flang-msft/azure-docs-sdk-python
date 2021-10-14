@@ -7539,97 +7539,6 @@
 
 - items:
   - name: Overview
-    uid: project-azure-mgmt-portal
-  - items:
-    - name: Overview
-      uid: azure.mgmt.portal
-    - items:
-      - name: Overview
-        uid: azure.mgmt.portal.aio
-      - items:
-        - name: Overview
-          uid: azure.mgmt.portal.aio.operations
-        - name: azure.mgmt.portal.aio.operations.DashboardsOperations
-          uid: azure.mgmt.portal.aio.operations.DashboardsOperations
-        - name: azure.mgmt.portal.aio.operations.ListTenantConfigurationViolationsOperations
-          uid: azure.mgmt.portal.aio.operations.ListTenantConfigurationViolationsOperations
-        - name: azure.mgmt.portal.aio.operations.Operations
-          uid: azure.mgmt.portal.aio.operations.Operations
-        - name: azure.mgmt.portal.aio.operations.TenantConfigurationsOperations
-          uid: azure.mgmt.portal.aio.operations.TenantConfigurationsOperations
-        name: azure.mgmt.portal.aio.operations
-      - name: azure.mgmt.portal.aio.Portal
-        uid: azure.mgmt.portal.aio.Portal
-      name: azure.mgmt.portal.aio
-    - items:
-      - name: Overview
-        uid: azure.mgmt.portal.models
-      - name: azure.mgmt.portal.models.Configuration
-        uid: azure.mgmt.portal.models.Configuration
-      - name: azure.mgmt.portal.models.ConfigurationList
-        uid: azure.mgmt.portal.models.ConfigurationList
-      - name: azure.mgmt.portal.models.ConfigurationName
-        uid: azure.mgmt.portal.models.ConfigurationName
-      - name: azure.mgmt.portal.models.Dashboard
-        uid: azure.mgmt.portal.models.Dashboard
-      - name: azure.mgmt.portal.models.DashboardLens
-        uid: azure.mgmt.portal.models.DashboardLens
-      - name: azure.mgmt.portal.models.DashboardListResult
-        uid: azure.mgmt.portal.models.DashboardListResult
-      - name: azure.mgmt.portal.models.DashboardPartMetadata
-        uid: azure.mgmt.portal.models.DashboardPartMetadata
-      - name: azure.mgmt.portal.models.DashboardParts
-        uid: azure.mgmt.portal.models.DashboardParts
-      - name: azure.mgmt.portal.models.DashboardPartsPosition
-        uid: azure.mgmt.portal.models.DashboardPartsPosition
-      - name: azure.mgmt.portal.models.ErrorDefinition
-        uid: azure.mgmt.portal.models.ErrorDefinition
-      - name: azure.mgmt.portal.models.ErrorResponse
-        uid: azure.mgmt.portal.models.ErrorResponse
-      - name: azure.mgmt.portal.models.MarkdownPartMetadata
-        uid: azure.mgmt.portal.models.MarkdownPartMetadata
-      - name: azure.mgmt.portal.models.MarkdownPartMetadataSettings
-        uid: azure.mgmt.portal.models.MarkdownPartMetadataSettings
-      - name: azure.mgmt.portal.models.MarkdownPartMetadataSettingsContent
-        uid: azure.mgmt.portal.models.MarkdownPartMetadataSettingsContent
-      - name: azure.mgmt.portal.models.MarkdownPartMetadataSettingsContentSettings
-        uid: azure.mgmt.portal.models.MarkdownPartMetadataSettingsContentSettings
-      - name: azure.mgmt.portal.models.PatchableDashboard
-        uid: azure.mgmt.portal.models.PatchableDashboard
-      - name: azure.mgmt.portal.models.ProxyResource
-        uid: azure.mgmt.portal.models.ProxyResource
-      - name: azure.mgmt.portal.models.Resource
-        uid: azure.mgmt.portal.models.Resource
-      - name: azure.mgmt.portal.models.ResourceProviderOperation
-        uid: azure.mgmt.portal.models.ResourceProviderOperation
-      - name: azure.mgmt.portal.models.ResourceProviderOperationDisplay
-        uid: azure.mgmt.portal.models.ResourceProviderOperationDisplay
-      - name: azure.mgmt.portal.models.ResourceProviderOperationList
-        uid: azure.mgmt.portal.models.ResourceProviderOperationList
-      - name: azure.mgmt.portal.models.Violation
-        uid: azure.mgmt.portal.models.Violation
-      - name: azure.mgmt.portal.models.ViolationsList
-        uid: azure.mgmt.portal.models.ViolationsList
-      name: azure.mgmt.portal.models
-    - items:
-      - name: Overview
-        uid: azure.mgmt.portal.operations
-      - name: azure.mgmt.portal.operations.DashboardsOperations
-        uid: azure.mgmt.portal.operations.DashboardsOperations
-      - name: azure.mgmt.portal.operations.ListTenantConfigurationViolationsOperations
-        uid: azure.mgmt.portal.operations.ListTenantConfigurationViolationsOperations
-      - name: azure.mgmt.portal.operations.Operations
-        uid: azure.mgmt.portal.operations.Operations
-      - name: azure.mgmt.portal.operations.TenantConfigurationsOperations
-        uid: azure.mgmt.portal.operations.TenantConfigurationsOperations
-      name: azure.mgmt.portal.operations
-    - name: azure.mgmt.portal.Portal
-      uid: azure.mgmt.portal.Portal
-    name: azure.mgmt.portal
-  name: azure-mgmt-portal
-
-- items:
-  - name: Overview
     uid: project-azure-mgmt-healthbot
   - items:
     - name: Overview
@@ -8148,147 +8057,6 @@
       uid: azure.mgmt.digitaltwins.AzureDigitalTwinsManagementClient
     name: azure.mgmt.digitaltwins
   name: azure-mgmt-digitaltwins
-
-- items:
-  - name: Overview
-    uid: project-azure-mgmt-purview
-  - items:
-    - name: Overview
-      uid: azure.mgmt.purview
-    - items:
-      - name: Overview
-        uid: azure.mgmt.purview.aio
-      - items:
-        - name: Overview
-          uid: azure.mgmt.purview.aio.operations
-        - name: azure.mgmt.purview.aio.operations.AccountsOperations
-          uid: azure.mgmt.purview.aio.operations.AccountsOperations
-        - name: azure.mgmt.purview.aio.operations.DefaultAccountsOperations
-          uid: azure.mgmt.purview.aio.operations.DefaultAccountsOperations
-        - name: azure.mgmt.purview.aio.operations.Operations
-          uid: azure.mgmt.purview.aio.operations.Operations
-        - name: azure.mgmt.purview.aio.operations.PrivateEndpointConnectionsOperations
-          uid: azure.mgmt.purview.aio.operations.PrivateEndpointConnectionsOperations
-        - name: azure.mgmt.purview.aio.operations.PrivateLinkResourcesOperations
-          uid: azure.mgmt.purview.aio.operations.PrivateLinkResourcesOperations
-        name: azure.mgmt.purview.aio.operations
-      - name: azure.mgmt.purview.aio.PurviewManagementClient
-        uid: azure.mgmt.purview.aio.PurviewManagementClient
-      name: azure.mgmt.purview.aio
-    - items:
-      - name: Overview
-        uid: azure.mgmt.purview.models
-      - name: azure.mgmt.purview.models.AccessKeys
-        uid: azure.mgmt.purview.models.AccessKeys
-      - name: azure.mgmt.purview.models.Account
-        uid: azure.mgmt.purview.models.Account
-      - name: azure.mgmt.purview.models.AccountEndpoints
-        uid: azure.mgmt.purview.models.AccountEndpoints
-      - name: azure.mgmt.purview.models.AccountList
-        uid: azure.mgmt.purview.models.AccountList
-      - name: azure.mgmt.purview.models.AccountProperties
-        uid: azure.mgmt.purview.models.AccountProperties
-      - name: azure.mgmt.purview.models.AccountPropertiesEndpoints
-        uid: azure.mgmt.purview.models.AccountPropertiesEndpoints
-      - name: azure.mgmt.purview.models.AccountPropertiesManagedResources
-        uid: azure.mgmt.purview.models.AccountPropertiesManagedResources
-      - name: azure.mgmt.purview.models.AccountSku
-        uid: azure.mgmt.purview.models.AccountSku
-      - name: azure.mgmt.purview.models.AccountUpdateParameters
-        uid: azure.mgmt.purview.models.AccountUpdateParameters
-      - name: azure.mgmt.purview.models.CheckNameAvailabilityRequest
-        uid: azure.mgmt.purview.models.CheckNameAvailabilityRequest
-      - name: azure.mgmt.purview.models.CheckNameAvailabilityResult
-        uid: azure.mgmt.purview.models.CheckNameAvailabilityResult
-      - name: azure.mgmt.purview.models.CloudConnectors
-        uid: azure.mgmt.purview.models.CloudConnectors
-      - name: azure.mgmt.purview.models.CollectionAdminUpdate
-        uid: azure.mgmt.purview.models.CollectionAdminUpdate
-      - name: azure.mgmt.purview.models.CreatedByType
-        uid: azure.mgmt.purview.models.CreatedByType
-      - name: azure.mgmt.purview.models.DefaultAccountPayload
-        uid: azure.mgmt.purview.models.DefaultAccountPayload
-      - name: azure.mgmt.purview.models.DimensionProperties
-        uid: azure.mgmt.purview.models.DimensionProperties
-      - name: azure.mgmt.purview.models.ErrorModel
-        uid: azure.mgmt.purview.models.ErrorModel
-      - name: azure.mgmt.purview.models.ErrorResponseModel
-        uid: azure.mgmt.purview.models.ErrorResponseModel
-      - name: azure.mgmt.purview.models.ErrorResponseModelError
-        uid: azure.mgmt.purview.models.ErrorResponseModelError
-      - name: azure.mgmt.purview.models.Identity
-        uid: azure.mgmt.purview.models.Identity
-      - name: azure.mgmt.purview.models.LastModifiedByType
-        uid: azure.mgmt.purview.models.LastModifiedByType
-      - name: azure.mgmt.purview.models.ManagedResources
-        uid: azure.mgmt.purview.models.ManagedResources
-      - name: azure.mgmt.purview.models.Name
-        uid: azure.mgmt.purview.models.Name
-      - name: azure.mgmt.purview.models.Operation
-        uid: azure.mgmt.purview.models.Operation
-      - name: azure.mgmt.purview.models.OperationDisplay
-        uid: azure.mgmt.purview.models.OperationDisplay
-      - name: azure.mgmt.purview.models.OperationList
-        uid: azure.mgmt.purview.models.OperationList
-      - name: azure.mgmt.purview.models.OperationMetaLogSpecification
-        uid: azure.mgmt.purview.models.OperationMetaLogSpecification
-      - name: azure.mgmt.purview.models.OperationMetaMetricSpecification
-        uid: azure.mgmt.purview.models.OperationMetaMetricSpecification
-      - name: azure.mgmt.purview.models.OperationMetaServiceSpecification
-        uid: azure.mgmt.purview.models.OperationMetaServiceSpecification
-      - name: azure.mgmt.purview.models.PrivateEndpoint
-        uid: azure.mgmt.purview.models.PrivateEndpoint
-      - name: azure.mgmt.purview.models.PrivateEndpointConnection
-        uid: azure.mgmt.purview.models.PrivateEndpointConnection
-      - name: azure.mgmt.purview.models.PrivateEndpointConnectionList
-        uid: azure.mgmt.purview.models.PrivateEndpointConnectionList
-      - name: azure.mgmt.purview.models.PrivateLinkResource
-        uid: azure.mgmt.purview.models.PrivateLinkResource
-      - name: azure.mgmt.purview.models.PrivateLinkResourceList
-        uid: azure.mgmt.purview.models.PrivateLinkResourceList
-      - name: azure.mgmt.purview.models.PrivateLinkResourceProperties
-        uid: azure.mgmt.purview.models.PrivateLinkResourceProperties
-      - name: azure.mgmt.purview.models.PrivateLinkServiceConnectionState
-        uid: azure.mgmt.purview.models.PrivateLinkServiceConnectionState
-      - name: azure.mgmt.purview.models.ProvisioningState
-        uid: azure.mgmt.purview.models.ProvisioningState
-      - name: azure.mgmt.purview.models.ProxyResource
-        uid: azure.mgmt.purview.models.ProxyResource
-      - name: azure.mgmt.purview.models.PublicNetworkAccess
-        uid: azure.mgmt.purview.models.PublicNetworkAccess
-      - name: azure.mgmt.purview.models.Reason
-        uid: azure.mgmt.purview.models.Reason
-      - name: azure.mgmt.purview.models.ScopeType
-        uid: azure.mgmt.purview.models.ScopeType
-      - name: azure.mgmt.purview.models.Status
-        uid: azure.mgmt.purview.models.Status
-      - name: azure.mgmt.purview.models.SystemData
-        uid: azure.mgmt.purview.models.SystemData
-      - name: azure.mgmt.purview.models.TrackedResource
-        uid: azure.mgmt.purview.models.TrackedResource
-      - name: azure.mgmt.purview.models.TrackedResourceSystemData
-        uid: azure.mgmt.purview.models.TrackedResourceSystemData
-      - name: azure.mgmt.purview.models.Type
-        uid: azure.mgmt.purview.models.Type
-      name: azure.mgmt.purview.models
-    - items:
-      - name: Overview
-        uid: azure.mgmt.purview.operations
-      - name: azure.mgmt.purview.operations.AccountsOperations
-        uid: azure.mgmt.purview.operations.AccountsOperations
-      - name: azure.mgmt.purview.operations.DefaultAccountsOperations
-        uid: azure.mgmt.purview.operations.DefaultAccountsOperations
-      - name: azure.mgmt.purview.operations.Operations
-        uid: azure.mgmt.purview.operations.Operations
-      - name: azure.mgmt.purview.operations.PrivateEndpointConnectionsOperations
-        uid: azure.mgmt.purview.operations.PrivateEndpointConnectionsOperations
-      - name: azure.mgmt.purview.operations.PrivateLinkResourcesOperations
-        uid: azure.mgmt.purview.operations.PrivateLinkResourcesOperations
-      name: azure.mgmt.purview.operations
-    - name: azure.mgmt.purview.PurviewManagementClient
-      uid: azure.mgmt.purview.PurviewManagementClient
-    name: azure.mgmt.purview
-  name: azure-mgmt-purview
 
 - items:
   - name: Overview
@@ -11811,43 +11579,45 @@
     - items:
       - name: Overview
         uid: azure.purview.catalog.aio
+      - items:
+        - name: Overview
+          uid: azure.purview.catalog.aio.operations
+        - name: azure.purview.catalog.aio.operations.CollectionOperations
+          uid: azure.purview.catalog.aio.operations.CollectionOperations
+        - name: azure.purview.catalog.aio.operations.DiscoveryOperations
+          uid: azure.purview.catalog.aio.operations.DiscoveryOperations
+        - name: azure.purview.catalog.aio.operations.EntityOperations
+          uid: azure.purview.catalog.aio.operations.EntityOperations
+        - name: azure.purview.catalog.aio.operations.GlossaryOperations
+          uid: azure.purview.catalog.aio.operations.GlossaryOperations
+        - name: azure.purview.catalog.aio.operations.LineageOperations
+          uid: azure.purview.catalog.aio.operations.LineageOperations
+        - name: azure.purview.catalog.aio.operations.RelationshipOperations
+          uid: azure.purview.catalog.aio.operations.RelationshipOperations
+        - name: azure.purview.catalog.aio.operations.TypesOperations
+          uid: azure.purview.catalog.aio.operations.TypesOperations
+        name: azure.purview.catalog.aio.operations
       - name: azure.purview.catalog.aio.PurviewCatalogClient
         uid: azure.purview.catalog.aio.PurviewCatalogClient
       name: azure.purview.catalog.aio
     - items:
       - name: Overview
-        uid: azure.purview.catalog.core
-      - items:
-        - name: Overview
-          uid: azure.purview.catalog.core.rest
-        - name: azure.purview.catalog.core.rest.AsyncHttpResponse
-          uid: azure.purview.catalog.core.rest.AsyncHttpResponse
-        - name: azure.purview.catalog.core.rest.HttpRequest
-          uid: azure.purview.catalog.core.rest.HttpRequest
-        - name: azure.purview.catalog.core.rest.HttpResponse
-          uid: azure.purview.catalog.core.rest.HttpResponse
-        - name: azure.purview.catalog.core.rest.ResponseClosedError
-          uid: azure.purview.catalog.core.rest.ResponseClosedError
-        - name: azure.purview.catalog.core.rest.ResponseNotReadError
-          uid: azure.purview.catalog.core.rest.ResponseNotReadError
-        - name: azure.purview.catalog.core.rest.StreamConsumedError
-          uid: azure.purview.catalog.core.rest.StreamConsumedError
-        name: azure.purview.catalog.core.rest
-      name: azure.purview.catalog.core
-    - items:
-      - name: Overview
-        uid: azure.purview.catalog.rest
-      - name: azure.purview.catalog.rest.discovery
-        uid: azure.purview.catalog.rest.discovery
-      - name: azure.purview.catalog.rest.entity
-        uid: azure.purview.catalog.rest.entity
-      - name: azure.purview.catalog.rest.glossary
-        uid: azure.purview.catalog.rest.glossary
-      - name: azure.purview.catalog.rest.relationship
-        uid: azure.purview.catalog.rest.relationship
-      - name: azure.purview.catalog.rest.types
-        uid: azure.purview.catalog.rest.types
-      name: azure.purview.catalog.rest
+        uid: azure.purview.catalog.operations
+      - name: azure.purview.catalog.operations.CollectionOperations
+        uid: azure.purview.catalog.operations.CollectionOperations
+      - name: azure.purview.catalog.operations.DiscoveryOperations
+        uid: azure.purview.catalog.operations.DiscoveryOperations
+      - name: azure.purview.catalog.operations.EntityOperations
+        uid: azure.purview.catalog.operations.EntityOperations
+      - name: azure.purview.catalog.operations.GlossaryOperations
+        uid: azure.purview.catalog.operations.GlossaryOperations
+      - name: azure.purview.catalog.operations.LineageOperations
+        uid: azure.purview.catalog.operations.LineageOperations
+      - name: azure.purview.catalog.operations.RelationshipOperations
+        uid: azure.purview.catalog.operations.RelationshipOperations
+      - name: azure.purview.catalog.operations.TypesOperations
+        uid: azure.purview.catalog.operations.TypesOperations
+      name: azure.purview.catalog.operations
     - name: azure.purview.catalog.PurviewCatalogClient
       uid: azure.purview.catalog.PurviewCatalogClient
     name: azure.purview.catalog
@@ -11862,51 +11632,53 @@
     - items:
       - name: Overview
         uid: azure.purview.scanning.aio
+      - items:
+        - name: Overview
+          uid: azure.purview.scanning.aio.operations
+        - name: azure.purview.scanning.aio.operations.ClassificationRulesOperations
+          uid: azure.purview.scanning.aio.operations.ClassificationRulesOperations
+        - name: azure.purview.scanning.aio.operations.DataSourcesOperations
+          uid: azure.purview.scanning.aio.operations.DataSourcesOperations
+        - name: azure.purview.scanning.aio.operations.FiltersOperations
+          uid: azure.purview.scanning.aio.operations.FiltersOperations
+        - name: azure.purview.scanning.aio.operations.KeyVaultConnectionsOperations
+          uid: azure.purview.scanning.aio.operations.KeyVaultConnectionsOperations
+        - name: azure.purview.scanning.aio.operations.ScanResultOperations
+          uid: azure.purview.scanning.aio.operations.ScanResultOperations
+        - name: azure.purview.scanning.aio.operations.ScanRulesetsOperations
+          uid: azure.purview.scanning.aio.operations.ScanRulesetsOperations
+        - name: azure.purview.scanning.aio.operations.ScansOperations
+          uid: azure.purview.scanning.aio.operations.ScansOperations
+        - name: azure.purview.scanning.aio.operations.SystemScanRulesetsOperations
+          uid: azure.purview.scanning.aio.operations.SystemScanRulesetsOperations
+        - name: azure.purview.scanning.aio.operations.TriggersOperations
+          uid: azure.purview.scanning.aio.operations.TriggersOperations
+        name: azure.purview.scanning.aio.operations
       - name: azure.purview.scanning.aio.PurviewScanningClient
         uid: azure.purview.scanning.aio.PurviewScanningClient
       name: azure.purview.scanning.aio
     - items:
       - name: Overview
-        uid: azure.purview.scanning.core
-      - items:
-        - name: Overview
-          uid: azure.purview.scanning.core.rest
-        - name: azure.purview.scanning.core.rest.AsyncHttpResponse
-          uid: azure.purview.scanning.core.rest.AsyncHttpResponse
-        - name: azure.purview.scanning.core.rest.HttpRequest
-          uid: azure.purview.scanning.core.rest.HttpRequest
-        - name: azure.purview.scanning.core.rest.HttpResponse
-          uid: azure.purview.scanning.core.rest.HttpResponse
-        - name: azure.purview.scanning.core.rest.ResponseClosedError
-          uid: azure.purview.scanning.core.rest.ResponseClosedError
-        - name: azure.purview.scanning.core.rest.ResponseNotReadError
-          uid: azure.purview.scanning.core.rest.ResponseNotReadError
-        - name: azure.purview.scanning.core.rest.StreamConsumedError
-          uid: azure.purview.scanning.core.rest.StreamConsumedError
-        name: azure.purview.scanning.core.rest
-      name: azure.purview.scanning.core
-    - items:
-      - name: Overview
-        uid: azure.purview.scanning.rest
-      - name: azure.purview.scanning.rest.classification_rules
-        uid: azure.purview.scanning.rest.classification_rules
-      - name: azure.purview.scanning.rest.data_sources
-        uid: azure.purview.scanning.rest.data_sources
-      - name: azure.purview.scanning.rest.filters
-        uid: azure.purview.scanning.rest.filters
-      - name: azure.purview.scanning.rest.key_vault_connections
-        uid: azure.purview.scanning.rest.key_vault_connections
-      - name: azure.purview.scanning.rest.scan_result
-        uid: azure.purview.scanning.rest.scan_result
-      - name: azure.purview.scanning.rest.scan_rulesets
-        uid: azure.purview.scanning.rest.scan_rulesets
-      - name: azure.purview.scanning.rest.scans
-        uid: azure.purview.scanning.rest.scans
-      - name: azure.purview.scanning.rest.system_scan_rulesets
-        uid: azure.purview.scanning.rest.system_scan_rulesets
-      - name: azure.purview.scanning.rest.triggers
-        uid: azure.purview.scanning.rest.triggers
-      name: azure.purview.scanning.rest
+        uid: azure.purview.scanning.operations
+      - name: azure.purview.scanning.operations.ClassificationRulesOperations
+        uid: azure.purview.scanning.operations.ClassificationRulesOperations
+      - name: azure.purview.scanning.operations.DataSourcesOperations
+        uid: azure.purview.scanning.operations.DataSourcesOperations
+      - name: azure.purview.scanning.operations.FiltersOperations
+        uid: azure.purview.scanning.operations.FiltersOperations
+      - name: azure.purview.scanning.operations.KeyVaultConnectionsOperations
+        uid: azure.purview.scanning.operations.KeyVaultConnectionsOperations
+      - name: azure.purview.scanning.operations.ScanResultOperations
+        uid: azure.purview.scanning.operations.ScanResultOperations
+      - name: azure.purview.scanning.operations.ScanRulesetsOperations
+        uid: azure.purview.scanning.operations.ScanRulesetsOperations
+      - name: azure.purview.scanning.operations.ScansOperations
+        uid: azure.purview.scanning.operations.ScansOperations
+      - name: azure.purview.scanning.operations.SystemScanRulesetsOperations
+        uid: azure.purview.scanning.operations.SystemScanRulesetsOperations
+      - name: azure.purview.scanning.operations.TriggersOperations
+        uid: azure.purview.scanning.operations.TriggersOperations
+      name: azure.purview.scanning.operations
     - name: azure.purview.scanning.PurviewScanningClient
       uid: azure.purview.scanning.PurviewScanningClient
     name: azure.purview.scanning
@@ -15283,6 +15055,24 @@
           uid: azure.mgmt.synapse.aio.operations.IpFirewallRulesOperations
         - name: azure.mgmt.synapse.aio.operations.KeysOperations
           uid: azure.mgmt.synapse.aio.operations.KeysOperations
+        - name: azure.mgmt.synapse.aio.operations.KustoOperationsOperations
+          uid: azure.mgmt.synapse.aio.operations.KustoOperationsOperations
+        - name: azure.mgmt.synapse.aio.operations.KustoPoolAttachedDatabaseConfigurationsOperations
+          uid: azure.mgmt.synapse.aio.operations.KustoPoolAttachedDatabaseConfigurationsOperations
+        - name: azure.mgmt.synapse.aio.operations.KustoPoolChildResourceOperations
+          uid: azure.mgmt.synapse.aio.operations.KustoPoolChildResourceOperations
+        - name: azure.mgmt.synapse.aio.operations.KustoPoolDataConnectionsOperations
+          uid: azure.mgmt.synapse.aio.operations.KustoPoolDataConnectionsOperations
+        - name: azure.mgmt.synapse.aio.operations.KustoPoolDatabasePrincipalAssignmentsOperations
+          uid: azure.mgmt.synapse.aio.operations.KustoPoolDatabasePrincipalAssignmentsOperations
+        - name: azure.mgmt.synapse.aio.operations.KustoPoolDatabasesOperations
+          uid: azure.mgmt.synapse.aio.operations.KustoPoolDatabasesOperations
+        - name: azure.mgmt.synapse.aio.operations.KustoPoolOperations
+          uid: azure.mgmt.synapse.aio.operations.KustoPoolOperations
+        - name: azure.mgmt.synapse.aio.operations.KustoPoolPrincipalAssignmentsOperations
+          uid: azure.mgmt.synapse.aio.operations.KustoPoolPrincipalAssignmentsOperations
+        - name: azure.mgmt.synapse.aio.operations.KustoPoolsOperations
+          uid: azure.mgmt.synapse.aio.operations.KustoPoolsOperations
         - name: azure.mgmt.synapse.aio.operations.LibrariesOperations
           uid: azure.mgmt.synapse.aio.operations.LibrariesOperations
         - name: azure.mgmt.synapse.aio.operations.LibraryOperations
@@ -15386,6 +15176,10 @@
     - items:
       - name: Overview
         uid: azure.mgmt.synapse.models
+      - name: azure.mgmt.synapse.models.AttachedDatabaseConfiguration
+        uid: azure.mgmt.synapse.models.AttachedDatabaseConfiguration
+      - name: azure.mgmt.synapse.models.AttachedDatabaseConfigurationListResult
+        uid: azure.mgmt.synapse.models.AttachedDatabaseConfigurationListResult
       - name: azure.mgmt.synapse.models.AutoPauseProperties
         uid: azure.mgmt.synapse.models.AutoPauseProperties
       - name: azure.mgmt.synapse.models.AutoScaleProperties
@@ -15400,8 +15194,16 @@
         uid: azure.mgmt.synapse.models.AzureADOnlyAuthenticationListResult
       - name: azure.mgmt.synapse.models.AzureADOnlyAuthenticationName
         uid: azure.mgmt.synapse.models.AzureADOnlyAuthenticationName
+      - name: azure.mgmt.synapse.models.AzureCapacity
+        uid: azure.mgmt.synapse.models.AzureCapacity
       - name: azure.mgmt.synapse.models.AzureEntityResource
         uid: azure.mgmt.synapse.models.AzureEntityResource
+      - name: azure.mgmt.synapse.models.AzureResourceSku
+        uid: azure.mgmt.synapse.models.AzureResourceSku
+      - name: azure.mgmt.synapse.models.AzureScaleType
+        uid: azure.mgmt.synapse.models.AzureScaleType
+      - name: azure.mgmt.synapse.models.AzureSku
+        uid: azure.mgmt.synapse.models.AzureSku
       - name: azure.mgmt.synapse.models.BigDataPoolPatchInfo
         uid: azure.mgmt.synapse.models.BigDataPoolPatchInfo
       - name: azure.mgmt.synapse.models.BigDataPoolResourceInfo
@@ -15412,28 +15214,60 @@
         uid: azure.mgmt.synapse.models.BlobAuditingPolicyName
       - name: azure.mgmt.synapse.models.BlobAuditingPolicyState
         uid: azure.mgmt.synapse.models.BlobAuditingPolicyState
+      - name: azure.mgmt.synapse.models.BlobStorageEventType
+        uid: azure.mgmt.synapse.models.BlobStorageEventType
       - name: azure.mgmt.synapse.models.CheckNameAvailabilityRequest
         uid: azure.mgmt.synapse.models.CheckNameAvailabilityRequest
       - name: azure.mgmt.synapse.models.CheckNameAvailabilityResponse
         uid: azure.mgmt.synapse.models.CheckNameAvailabilityResponse
+      - name: azure.mgmt.synapse.models.CheckNameResult
+        uid: azure.mgmt.synapse.models.CheckNameResult
+      - name: azure.mgmt.synapse.models.ClusterPrincipalAssignment
+        uid: azure.mgmt.synapse.models.ClusterPrincipalAssignment
+      - name: azure.mgmt.synapse.models.ClusterPrincipalAssignmentCheckNameRequest
+        uid: azure.mgmt.synapse.models.ClusterPrincipalAssignmentCheckNameRequest
+      - name: azure.mgmt.synapse.models.ClusterPrincipalAssignmentListResult
+        uid: azure.mgmt.synapse.models.ClusterPrincipalAssignmentListResult
+      - name: azure.mgmt.synapse.models.ClusterPrincipalRole
+        uid: azure.mgmt.synapse.models.ClusterPrincipalRole
       - name: azure.mgmt.synapse.models.CmdkeySetup
         uid: azure.mgmt.synapse.models.CmdkeySetup
       - name: azure.mgmt.synapse.models.ColumnDataType
         uid: azure.mgmt.synapse.models.ColumnDataType
       - name: azure.mgmt.synapse.models.ComponentSetup
         uid: azure.mgmt.synapse.models.ComponentSetup
+      - name: azure.mgmt.synapse.models.Compression
+        uid: azure.mgmt.synapse.models.Compression
       - name: azure.mgmt.synapse.models.ConfigurationType
         uid: azure.mgmt.synapse.models.ConfigurationType
       - name: azure.mgmt.synapse.models.ConnectionPolicyName
         uid: azure.mgmt.synapse.models.ConnectionPolicyName
+      - name: azure.mgmt.synapse.models.CreateMode
+        uid: azure.mgmt.synapse.models.CreateMode
       - name: azure.mgmt.synapse.models.CreateSqlPoolRestorePointDefinition
         uid: azure.mgmt.synapse.models.CreateSqlPoolRestorePointDefinition
+      - name: azure.mgmt.synapse.models.CreatedByType
+        uid: azure.mgmt.synapse.models.CreatedByType
       - name: azure.mgmt.synapse.models.CspWorkspaceAdminProperties
         uid: azure.mgmt.synapse.models.CspWorkspaceAdminProperties
       - name: azure.mgmt.synapse.models.CustomSetupBase
         uid: azure.mgmt.synapse.models.CustomSetupBase
       - name: azure.mgmt.synapse.models.CustomerManagedKeyDetails
         uid: azure.mgmt.synapse.models.CustomerManagedKeyDetails
+      - name: azure.mgmt.synapse.models.DataConnection
+        uid: azure.mgmt.synapse.models.DataConnection
+      - name: azure.mgmt.synapse.models.DataConnectionCheckNameRequest
+        uid: azure.mgmt.synapse.models.DataConnectionCheckNameRequest
+      - name: azure.mgmt.synapse.models.DataConnectionKind
+        uid: azure.mgmt.synapse.models.DataConnectionKind
+      - name: azure.mgmt.synapse.models.DataConnectionListResult
+        uid: azure.mgmt.synapse.models.DataConnectionListResult
+      - name: azure.mgmt.synapse.models.DataConnectionValidation
+        uid: azure.mgmt.synapse.models.DataConnectionValidation
+      - name: azure.mgmt.synapse.models.DataConnectionValidationListResult
+        uid: azure.mgmt.synapse.models.DataConnectionValidationListResult
+      - name: azure.mgmt.synapse.models.DataConnectionValidationResult
+        uid: azure.mgmt.synapse.models.DataConnectionValidationResult
       - name: azure.mgmt.synapse.models.DataFlowComputeType
         uid: azure.mgmt.synapse.models.DataFlowComputeType
       - name: azure.mgmt.synapse.models.DataLakeStorageAccountDetails
@@ -15454,8 +15288,26 @@
         uid: azure.mgmt.synapse.models.DataWarehouseUserActivities
       - name: azure.mgmt.synapse.models.DataWarehouseUserActivityName
         uid: azure.mgmt.synapse.models.DataWarehouseUserActivityName
+      - name: azure.mgmt.synapse.models.Database
+        uid: azure.mgmt.synapse.models.Database
+      - name: azure.mgmt.synapse.models.DatabaseCheckNameRequest
+        uid: azure.mgmt.synapse.models.DatabaseCheckNameRequest
+      - name: azure.mgmt.synapse.models.DatabaseListResult
+        uid: azure.mgmt.synapse.models.DatabaseListResult
+      - name: azure.mgmt.synapse.models.DatabasePrincipalAssignment
+        uid: azure.mgmt.synapse.models.DatabasePrincipalAssignment
+      - name: azure.mgmt.synapse.models.DatabasePrincipalAssignmentCheckNameRequest
+        uid: azure.mgmt.synapse.models.DatabasePrincipalAssignmentCheckNameRequest
+      - name: azure.mgmt.synapse.models.DatabasePrincipalAssignmentListResult
+        uid: azure.mgmt.synapse.models.DatabasePrincipalAssignmentListResult
+      - name: azure.mgmt.synapse.models.DatabasePrincipalRole
+        uid: azure.mgmt.synapse.models.DatabasePrincipalRole
+      - name: azure.mgmt.synapse.models.DatabaseStatistics
+        uid: azure.mgmt.synapse.models.DatabaseStatistics
       - name: azure.mgmt.synapse.models.DayOfWeek
         uid: azure.mgmt.synapse.models.DayOfWeek
+      - name: azure.mgmt.synapse.models.DefaultPrincipalsModificationKind
+        uid: azure.mgmt.synapse.models.DefaultPrincipalsModificationKind
       - name: azure.mgmt.synapse.models.DynamicExecutorAllocation
         uid: azure.mgmt.synapse.models.DynamicExecutorAllocation
       - name: azure.mgmt.synapse.models.EncryptionDetails
@@ -15476,6 +15328,14 @@
         uid: azure.mgmt.synapse.models.ErrorDetail
       - name: azure.mgmt.synapse.models.ErrorResponse
         uid: azure.mgmt.synapse.models.ErrorResponse
+      - name: azure.mgmt.synapse.models.EventGridDataConnection
+        uid: azure.mgmt.synapse.models.EventGridDataConnection
+      - name: azure.mgmt.synapse.models.EventGridDataFormat
+        uid: azure.mgmt.synapse.models.EventGridDataFormat
+      - name: azure.mgmt.synapse.models.EventHubDataConnection
+        uid: azure.mgmt.synapse.models.EventHubDataConnection
+      - name: azure.mgmt.synapse.models.EventHubDataFormat
+        uid: azure.mgmt.synapse.models.EventHubDataFormat
       - name: azure.mgmt.synapse.models.ExtendedServerBlobAuditingPolicy
         uid: azure.mgmt.synapse.models.ExtendedServerBlobAuditingPolicy
       - name: azure.mgmt.synapse.models.ExtendedServerBlobAuditingPolicyListResult
@@ -15484,6 +15344,10 @@
         uid: azure.mgmt.synapse.models.ExtendedSqlPoolBlobAuditingPolicy
       - name: azure.mgmt.synapse.models.ExtendedSqlPoolBlobAuditingPolicyListResult
         uid: azure.mgmt.synapse.models.ExtendedSqlPoolBlobAuditingPolicyListResult
+      - name: azure.mgmt.synapse.models.FollowerDatabaseDefinition
+        uid: azure.mgmt.synapse.models.FollowerDatabaseDefinition
+      - name: azure.mgmt.synapse.models.FollowerDatabaseListResult
+        uid: azure.mgmt.synapse.models.FollowerDatabaseListResult
       - name: azure.mgmt.synapse.models.GeoBackupPolicy
         uid: azure.mgmt.synapse.models.GeoBackupPolicy
       - name: azure.mgmt.synapse.models.GeoBackupPolicyListResult
@@ -15558,6 +15422,10 @@
         uid: azure.mgmt.synapse.models.IntegrationRuntimeUpdateResult
       - name: azure.mgmt.synapse.models.IntegrationRuntimeVNetProperties
         uid: azure.mgmt.synapse.models.IntegrationRuntimeVNetProperties
+      - name: azure.mgmt.synapse.models.IotHubDataConnection
+        uid: azure.mgmt.synapse.models.IotHubDataConnection
+      - name: azure.mgmt.synapse.models.IotHubDataFormat
+        uid: azure.mgmt.synapse.models.IotHubDataFormat
       - name: azure.mgmt.synapse.models.IpFirewallRuleInfo
         uid: azure.mgmt.synapse.models.IpFirewallRuleInfo
       - name: azure.mgmt.synapse.models.IpFirewallRuleInfoListResult
@@ -15570,6 +15438,22 @@
         uid: azure.mgmt.synapse.models.Key
       - name: azure.mgmt.synapse.models.KeyInfoListResult
         uid: azure.mgmt.synapse.models.KeyInfoListResult
+      - name: azure.mgmt.synapse.models.Kind
+        uid: azure.mgmt.synapse.models.Kind
+      - name: azure.mgmt.synapse.models.KustoPool
+        uid: azure.mgmt.synapse.models.KustoPool
+      - name: azure.mgmt.synapse.models.KustoPoolCheckNameRequest
+        uid: azure.mgmt.synapse.models.KustoPoolCheckNameRequest
+      - name: azure.mgmt.synapse.models.KustoPoolListResult
+        uid: azure.mgmt.synapse.models.KustoPoolListResult
+      - name: azure.mgmt.synapse.models.KustoPoolUpdate
+        uid: azure.mgmt.synapse.models.KustoPoolUpdate
+      - name: azure.mgmt.synapse.models.LanguageExtension
+        uid: azure.mgmt.synapse.models.LanguageExtension
+      - name: azure.mgmt.synapse.models.LanguageExtensionName
+        uid: azure.mgmt.synapse.models.LanguageExtensionName
+      - name: azure.mgmt.synapse.models.LanguageExtensionsList
+        uid: azure.mgmt.synapse.models.LanguageExtensionsList
       - name: azure.mgmt.synapse.models.LibraryInfo
         uid: azure.mgmt.synapse.models.LibraryInfo
       - name: azure.mgmt.synapse.models.LibraryListResponse
@@ -15586,6 +15470,8 @@
         uid: azure.mgmt.synapse.models.LinkedIntegrationRuntimeRbacAuthorization
       - name: azure.mgmt.synapse.models.LinkedIntegrationRuntimeType
         uid: azure.mgmt.synapse.models.LinkedIntegrationRuntimeType
+      - name: azure.mgmt.synapse.models.ListResourceSkusResult
+        uid: azure.mgmt.synapse.models.ListResourceSkusResult
       - name: azure.mgmt.synapse.models.ListSqlPoolSecurityAlertPolicies
         uid: azure.mgmt.synapse.models.ListSqlPoolSecurityAlertPolicies
       - name: azure.mgmt.synapse.models.MaintenanceWindowOptions
@@ -15626,6 +15512,12 @@
         uid: azure.mgmt.synapse.models.NodeSize
       - name: azure.mgmt.synapse.models.NodeSizeFamily
         uid: azure.mgmt.synapse.models.NodeSizeFamily
+      - name: azure.mgmt.synapse.models.Operation
+        uid: azure.mgmt.synapse.models.Operation
+      - name: azure.mgmt.synapse.models.OperationDisplay
+        uid: azure.mgmt.synapse.models.OperationDisplay
+      - name: azure.mgmt.synapse.models.OperationListResult
+        uid: azure.mgmt.synapse.models.OperationListResult
       - name: azure.mgmt.synapse.models.OperationMetaLogSpecification
         uid: azure.mgmt.synapse.models.OperationMetaLogSpecification
       - name: azure.mgmt.synapse.models.OperationMetaMetricDimensionSpecification
@@ -15638,6 +15530,10 @@
         uid: azure.mgmt.synapse.models.OperationResource
       - name: azure.mgmt.synapse.models.OperationStatus
         uid: azure.mgmt.synapse.models.OperationStatus
+      - name: azure.mgmt.synapse.models.OptimizedAutoscale
+        uid: azure.mgmt.synapse.models.OptimizedAutoscale
+      - name: azure.mgmt.synapse.models.PrincipalType
+        uid: azure.mgmt.synapse.models.PrincipalType
       - name: azure.mgmt.synapse.models.PrivateEndpoint
         uid: azure.mgmt.synapse.models.PrivateEndpoint
       - name: azure.mgmt.synapse.models.PrivateEndpointConnection
@@ -15688,6 +15584,10 @@
         uid: azure.mgmt.synapse.models.QueryObservedMetricType
       - name: azure.mgmt.synapse.models.QueryStatistic
         uid: azure.mgmt.synapse.models.QueryStatistic
+      - name: azure.mgmt.synapse.models.ReadWriteDatabase
+        uid: azure.mgmt.synapse.models.ReadWriteDatabase
+      - name: azure.mgmt.synapse.models.Reason
+        uid: azure.mgmt.synapse.models.Reason
       - name: azure.mgmt.synapse.models.RecommendedSensitivityLabelUpdate
         uid: azure.mgmt.synapse.models.RecommendedSensitivityLabelUpdate
       - name: azure.mgmt.synapse.models.RecommendedSensitivityLabelUpdateKind
@@ -15716,6 +15616,8 @@
         uid: azure.mgmt.synapse.models.ResourceIdentityType
       - name: azure.mgmt.synapse.models.ResourceMoveDefinition
         uid: azure.mgmt.synapse.models.ResourceMoveDefinition
+      - name: azure.mgmt.synapse.models.ResourceProvisioningState
+        uid: azure.mgmt.synapse.models.ResourceProvisioningState
       - name: azure.mgmt.synapse.models.RestorableDroppedSqlPool
         uid: azure.mgmt.synapse.models.RestorableDroppedSqlPool
       - name: azure.mgmt.synapse.models.RestorableDroppedSqlPoolListResult
@@ -15778,6 +15680,16 @@
         uid: azure.mgmt.synapse.models.ServerVulnerabilityAssessmentListResult
       - name: azure.mgmt.synapse.models.Sku
         uid: azure.mgmt.synapse.models.Sku
+      - name: azure.mgmt.synapse.models.SkuDescription
+        uid: azure.mgmt.synapse.models.SkuDescription
+      - name: azure.mgmt.synapse.models.SkuDescriptionList
+        uid: azure.mgmt.synapse.models.SkuDescriptionList
+      - name: azure.mgmt.synapse.models.SkuLocationInfoItem
+        uid: azure.mgmt.synapse.models.SkuLocationInfoItem
+      - name: azure.mgmt.synapse.models.SkuName
+        uid: azure.mgmt.synapse.models.SkuName
+      - name: azure.mgmt.synapse.models.SkuSize
+        uid: azure.mgmt.synapse.models.SkuSize
       - name: azure.mgmt.synapse.models.SparkConfigProperties
         uid: azure.mgmt.synapse.models.SparkConfigProperties
       - name: azure.mgmt.synapse.models.SparkConfigurationListResponse
@@ -15850,12 +15762,18 @@
         uid: azure.mgmt.synapse.models.SsisProject
       - name: azure.mgmt.synapse.models.SsisVariable
         uid: azure.mgmt.synapse.models.SsisVariable
+      - name: azure.mgmt.synapse.models.State
+        uid: azure.mgmt.synapse.models.State
       - name: azure.mgmt.synapse.models.StateValue
         uid: azure.mgmt.synapse.models.StateValue
       - name: azure.mgmt.synapse.models.StorageAccountType
         uid: azure.mgmt.synapse.models.StorageAccountType
       - name: azure.mgmt.synapse.models.SubResource
         uid: azure.mgmt.synapse.models.SubResource
+      - name: azure.mgmt.synapse.models.SystemData
+        uid: azure.mgmt.synapse.models.SystemData
+      - name: azure.mgmt.synapse.models.TableLevelSharingProperties
+        uid: azure.mgmt.synapse.models.TableLevelSharingProperties
       - name: azure.mgmt.synapse.models.TopQueries
         uid: azure.mgmt.synapse.models.TopQueries
       - name: azure.mgmt.synapse.models.TopQueriesListResult
@@ -15870,6 +15788,8 @@
         uid: azure.mgmt.synapse.models.TransparentDataEncryptionName
       - name: azure.mgmt.synapse.models.TransparentDataEncryptionStatus
         uid: azure.mgmt.synapse.models.TransparentDataEncryptionStatus
+      - name: azure.mgmt.synapse.models.Type
+        uid: azure.mgmt.synapse.models.Type
       - name: azure.mgmt.synapse.models.UpdateIntegrationRuntimeNodeRequest
         uid: azure.mgmt.synapse.models.UpdateIntegrationRuntimeNodeRequest
       - name: azure.mgmt.synapse.models.UpdateIntegrationRuntimeRequest
@@ -15952,6 +15872,24 @@
         uid: azure.mgmt.synapse.operations.IpFirewallRulesOperations
       - name: azure.mgmt.synapse.operations.KeysOperations
         uid: azure.mgmt.synapse.operations.KeysOperations
+      - name: azure.mgmt.synapse.operations.KustoOperationsOperations
+        uid: azure.mgmt.synapse.operations.KustoOperationsOperations
+      - name: azure.mgmt.synapse.operations.KustoPoolAttachedDatabaseConfigurationsOperations
+        uid: azure.mgmt.synapse.operations.KustoPoolAttachedDatabaseConfigurationsOperations
+      - name: azure.mgmt.synapse.operations.KustoPoolChildResourceOperations
+        uid: azure.mgmt.synapse.operations.KustoPoolChildResourceOperations
+      - name: azure.mgmt.synapse.operations.KustoPoolDataConnectionsOperations
+        uid: azure.mgmt.synapse.operations.KustoPoolDataConnectionsOperations
+      - name: azure.mgmt.synapse.operations.KustoPoolDatabasePrincipalAssignmentsOperations
+        uid: azure.mgmt.synapse.operations.KustoPoolDatabasePrincipalAssignmentsOperations
+      - name: azure.mgmt.synapse.operations.KustoPoolDatabasesOperations
+        uid: azure.mgmt.synapse.operations.KustoPoolDatabasesOperations
+      - name: azure.mgmt.synapse.operations.KustoPoolOperations
+        uid: azure.mgmt.synapse.operations.KustoPoolOperations
+      - name: azure.mgmt.synapse.operations.KustoPoolPrincipalAssignmentsOperations
+        uid: azure.mgmt.synapse.operations.KustoPoolPrincipalAssignmentsOperations
+      - name: azure.mgmt.synapse.operations.KustoPoolsOperations
+        uid: azure.mgmt.synapse.operations.KustoPoolsOperations
       - name: azure.mgmt.synapse.operations.LibrariesOperations
         uid: azure.mgmt.synapse.operations.LibrariesOperations
       - name: azure.mgmt.synapse.operations.LibraryOperations
@@ -17208,4 +17146,322 @@
       uid: azure.servicebus.TransportType
     name: azure.servicebus
   name: azure-servicebus
+
+- items:
+  - name: Overview
+    uid: project-azure-mgmt-agfood
+  - items:
+    - name: Overview
+      uid: azure.mgmt.agfood
+    - items:
+      - name: Overview
+        uid: azure.mgmt.agfood.aio
+      - items:
+        - name: Overview
+          uid: azure.mgmt.agfood.aio.operations
+        - name: azure.mgmt.agfood.aio.operations.ExtensionsOperations
+          uid: azure.mgmt.agfood.aio.operations.ExtensionsOperations
+        - name: azure.mgmt.agfood.aio.operations.FarmBeatsExtensionsOperations
+          uid: azure.mgmt.agfood.aio.operations.FarmBeatsExtensionsOperations
+        - name: azure.mgmt.agfood.aio.operations.FarmBeatsModelsOperations
+          uid: azure.mgmt.agfood.aio.operations.FarmBeatsModelsOperations
+        - name: azure.mgmt.agfood.aio.operations.LocationsOperations
+          uid: azure.mgmt.agfood.aio.operations.LocationsOperations
+        - name: azure.mgmt.agfood.aio.operations.Operations
+          uid: azure.mgmt.agfood.aio.operations.Operations
+        name: azure.mgmt.agfood.aio.operations
+      - name: azure.mgmt.agfood.aio.AzureAgFoodPlatformRPService
+        uid: azure.mgmt.agfood.aio.AzureAgFoodPlatformRPService
+      name: azure.mgmt.agfood.aio
+    - items:
+      - name: Overview
+        uid: azure.mgmt.agfood.models
+      - name: azure.mgmt.agfood.models.ActionType
+        uid: azure.mgmt.agfood.models.ActionType
+      - name: azure.mgmt.agfood.models.CheckNameAvailabilityReason
+        uid: azure.mgmt.agfood.models.CheckNameAvailabilityReason
+      - name: azure.mgmt.agfood.models.CheckNameAvailabilityRequest
+        uid: azure.mgmt.agfood.models.CheckNameAvailabilityRequest
+      - name: azure.mgmt.agfood.models.CheckNameAvailabilityResponse
+        uid: azure.mgmt.agfood.models.CheckNameAvailabilityResponse
+      - name: azure.mgmt.agfood.models.CreatedByType
+        uid: azure.mgmt.agfood.models.CreatedByType
+      - name: azure.mgmt.agfood.models.DetailedInformation
+        uid: azure.mgmt.agfood.models.DetailedInformation
+      - name: azure.mgmt.agfood.models.ErrorAdditionalInfo
+        uid: azure.mgmt.agfood.models.ErrorAdditionalInfo
+      - name: azure.mgmt.agfood.models.ErrorDetail
+        uid: azure.mgmt.agfood.models.ErrorDetail
+      - name: azure.mgmt.agfood.models.ErrorResponse
+        uid: azure.mgmt.agfood.models.ErrorResponse
+      - name: azure.mgmt.agfood.models.Extension
+        uid: azure.mgmt.agfood.models.Extension
+      - name: azure.mgmt.agfood.models.ExtensionListResponse
+        uid: azure.mgmt.agfood.models.ExtensionListResponse
+      - name: azure.mgmt.agfood.models.FarmBeats
+        uid: azure.mgmt.agfood.models.FarmBeats
+      - name: azure.mgmt.agfood.models.FarmBeatsExtension
+        uid: azure.mgmt.agfood.models.FarmBeatsExtension
+      - name: azure.mgmt.agfood.models.FarmBeatsExtensionListResponse
+        uid: azure.mgmt.agfood.models.FarmBeatsExtensionListResponse
+      - name: azure.mgmt.agfood.models.FarmBeatsListResponse
+        uid: azure.mgmt.agfood.models.FarmBeatsListResponse
+      - name: azure.mgmt.agfood.models.FarmBeatsUpdateRequestModel
+        uid: azure.mgmt.agfood.models.FarmBeatsUpdateRequestModel
+      - name: azure.mgmt.agfood.models.Operation
+        uid: azure.mgmt.agfood.models.Operation
+      - name: azure.mgmt.agfood.models.OperationDisplay
+        uid: azure.mgmt.agfood.models.OperationDisplay
+      - name: azure.mgmt.agfood.models.OperationListResult
+        uid: azure.mgmt.agfood.models.OperationListResult
+      - name: azure.mgmt.agfood.models.Origin
+        uid: azure.mgmt.agfood.models.Origin
+      - name: azure.mgmt.agfood.models.ProvisioningState
+        uid: azure.mgmt.agfood.models.ProvisioningState
+      - name: azure.mgmt.agfood.models.ProxyResource
+        uid: azure.mgmt.agfood.models.ProxyResource
+      - name: azure.mgmt.agfood.models.Resource
+        uid: azure.mgmt.agfood.models.Resource
+      - name: azure.mgmt.agfood.models.SystemData
+        uid: azure.mgmt.agfood.models.SystemData
+      - name: azure.mgmt.agfood.models.TrackedResource
+        uid: azure.mgmt.agfood.models.TrackedResource
+      - name: azure.mgmt.agfood.models.UnitSystemsInfo
+        uid: azure.mgmt.agfood.models.UnitSystemsInfo
+      name: azure.mgmt.agfood.models
+    - items:
+      - name: Overview
+        uid: azure.mgmt.agfood.operations
+      - name: azure.mgmt.agfood.operations.ExtensionsOperations
+        uid: azure.mgmt.agfood.operations.ExtensionsOperations
+      - name: azure.mgmt.agfood.operations.FarmBeatsExtensionsOperations
+        uid: azure.mgmt.agfood.operations.FarmBeatsExtensionsOperations
+      - name: azure.mgmt.agfood.operations.FarmBeatsModelsOperations
+        uid: azure.mgmt.agfood.operations.FarmBeatsModelsOperations
+      - name: azure.mgmt.agfood.operations.LocationsOperations
+        uid: azure.mgmt.agfood.operations.LocationsOperations
+      - name: azure.mgmt.agfood.operations.Operations
+        uid: azure.mgmt.agfood.operations.Operations
+      name: azure.mgmt.agfood.operations
+    - name: azure.mgmt.agfood.AzureAgFoodPlatformRPService
+      uid: azure.mgmt.agfood.AzureAgFoodPlatformRPService
+    name: azure.mgmt.agfood
+  name: azure-mgmt-agfood
+
+- items:
+  - name: Overview
+    uid: project-azure-mgmt-edgeorder
+  - items:
+    - name: Overview
+      uid: azure.mgmt.edgeorder
+    - items:
+      - name: Overview
+        uid: azure.mgmt.edgeorder.aio
+      - items:
+        - name: Overview
+          uid: azure.mgmt.edgeorder.aio.operations
+        - name: azure.mgmt.edgeorder.aio.operations.EdgeOrderManagementClientOperationsMixin
+          uid: azure.mgmt.edgeorder.aio.operations.EdgeOrderManagementClientOperationsMixin
+        name: azure.mgmt.edgeorder.aio.operations
+      - name: azure.mgmt.edgeorder.aio.EdgeOrderManagementClient
+        uid: azure.mgmt.edgeorder.aio.EdgeOrderManagementClient
+      name: azure.mgmt.edgeorder.aio
+    - items:
+      - name: Overview
+        uid: azure.mgmt.edgeorder.models
+      - name: azure.mgmt.edgeorder.models.ActionStatusEnum
+        uid: azure.mgmt.edgeorder.models.ActionStatusEnum
+      - name: azure.mgmt.edgeorder.models.ActionType
+        uid: azure.mgmt.edgeorder.models.ActionType
+      - name: azure.mgmt.edgeorder.models.AddressDetails
+        uid: azure.mgmt.edgeorder.models.AddressDetails
+      - name: azure.mgmt.edgeorder.models.AddressProperties
+        uid: azure.mgmt.edgeorder.models.AddressProperties
+      - name: azure.mgmt.edgeorder.models.AddressResource
+        uid: azure.mgmt.edgeorder.models.AddressResource
+      - name: azure.mgmt.edgeorder.models.AddressResourceList
+        uid: azure.mgmt.edgeorder.models.AddressResourceList
+      - name: azure.mgmt.edgeorder.models.AddressType
+        uid: azure.mgmt.edgeorder.models.AddressType
+      - name: azure.mgmt.edgeorder.models.AddressUpdateParameter
+        uid: azure.mgmt.edgeorder.models.AddressUpdateParameter
+      - name: azure.mgmt.edgeorder.models.AvailabilityInformation
+        uid: azure.mgmt.edgeorder.models.AvailabilityInformation
+      - name: azure.mgmt.edgeorder.models.AvailabilityStage
+        uid: azure.mgmt.edgeorder.models.AvailabilityStage
+      - name: azure.mgmt.edgeorder.models.BasicInformation
+        uid: azure.mgmt.edgeorder.models.BasicInformation
+      - name: azure.mgmt.edgeorder.models.BillingMeterDetails
+        uid: azure.mgmt.edgeorder.models.BillingMeterDetails
+      - name: azure.mgmt.edgeorder.models.BillingType
+        uid: azure.mgmt.edgeorder.models.BillingType
+      - name: azure.mgmt.edgeorder.models.CancellationReason
+        uid: azure.mgmt.edgeorder.models.CancellationReason
+      - name: azure.mgmt.edgeorder.models.ChargingType
+        uid: azure.mgmt.edgeorder.models.ChargingType
+      - name: azure.mgmt.edgeorder.models.CommonProperties
+        uid: azure.mgmt.edgeorder.models.CommonProperties
+      - name: azure.mgmt.edgeorder.models.Configuration
+        uid: azure.mgmt.edgeorder.models.Configuration
+      - name: azure.mgmt.edgeorder.models.ConfigurationFilters
+        uid: azure.mgmt.edgeorder.models.ConfigurationFilters
+      - name: azure.mgmt.edgeorder.models.ConfigurationProperties
+        uid: azure.mgmt.edgeorder.models.ConfigurationProperties
+      - name: azure.mgmt.edgeorder.models.Configurations
+        uid: azure.mgmt.edgeorder.models.Configurations
+      - name: azure.mgmt.edgeorder.models.ConfigurationsRequest
+        uid: azure.mgmt.edgeorder.models.ConfigurationsRequest
+      - name: azure.mgmt.edgeorder.models.ContactDetails
+        uid: azure.mgmt.edgeorder.models.ContactDetails
+      - name: azure.mgmt.edgeorder.models.CostInformation
+        uid: azure.mgmt.edgeorder.models.CostInformation
+      - name: azure.mgmt.edgeorder.models.CreatedByType
+        uid: azure.mgmt.edgeorder.models.CreatedByType
+      - name: azure.mgmt.edgeorder.models.CustomerSubscriptionDetails
+        uid: azure.mgmt.edgeorder.models.CustomerSubscriptionDetails
+      - name: azure.mgmt.edgeorder.models.CustomerSubscriptionRegisteredFeatures
+        uid: azure.mgmt.edgeorder.models.CustomerSubscriptionRegisteredFeatures
+      - name: azure.mgmt.edgeorder.models.Description
+        uid: azure.mgmt.edgeorder.models.Description
+      - name: azure.mgmt.edgeorder.models.DescriptionType
+        uid: azure.mgmt.edgeorder.models.DescriptionType
+      - name: azure.mgmt.edgeorder.models.DeviceDetails
+        uid: azure.mgmt.edgeorder.models.DeviceDetails
+      - name: azure.mgmt.edgeorder.models.Dimensions
+        uid: azure.mgmt.edgeorder.models.Dimensions
+      - name: azure.mgmt.edgeorder.models.DisabledReason
+        uid: azure.mgmt.edgeorder.models.DisabledReason
+      - name: azure.mgmt.edgeorder.models.DisplayInfo
+        uid: azure.mgmt.edgeorder.models.DisplayInfo
+      - name: azure.mgmt.edgeorder.models.DoubleEncryptionStatus
+        uid: azure.mgmt.edgeorder.models.DoubleEncryptionStatus
+      - name: azure.mgmt.edgeorder.models.EncryptionPreferences
+        uid: azure.mgmt.edgeorder.models.EncryptionPreferences
+      - name: azure.mgmt.edgeorder.models.ErrorAdditionalInfo
+        uid: azure.mgmt.edgeorder.models.ErrorAdditionalInfo
+      - name: azure.mgmt.edgeorder.models.ErrorDetail
+        uid: azure.mgmt.edgeorder.models.ErrorDetail
+      - name: azure.mgmt.edgeorder.models.ErrorResponse
+        uid: azure.mgmt.edgeorder.models.ErrorResponse
+      - name: azure.mgmt.edgeorder.models.FilterableProperty
+        uid: azure.mgmt.edgeorder.models.FilterableProperty
+      - name: azure.mgmt.edgeorder.models.HierarchyInformation
+        uid: azure.mgmt.edgeorder.models.HierarchyInformation
+      - name: azure.mgmt.edgeorder.models.ImageInformation
+        uid: azure.mgmt.edgeorder.models.ImageInformation
+      - name: azure.mgmt.edgeorder.models.ImageType
+        uid: azure.mgmt.edgeorder.models.ImageType
+      - name: azure.mgmt.edgeorder.models.LengthHeightUnit
+        uid: azure.mgmt.edgeorder.models.LengthHeightUnit
+      - name: azure.mgmt.edgeorder.models.Link
+        uid: azure.mgmt.edgeorder.models.Link
+      - name: azure.mgmt.edgeorder.models.LinkType
+        uid: azure.mgmt.edgeorder.models.LinkType
+      - name: azure.mgmt.edgeorder.models.ManagementResourcePreferences
+        uid: azure.mgmt.edgeorder.models.ManagementResourcePreferences
+      - name: azure.mgmt.edgeorder.models.MeterDetails
+        uid: azure.mgmt.edgeorder.models.MeterDetails
+      - name: azure.mgmt.edgeorder.models.MeteringType
+        uid: azure.mgmt.edgeorder.models.MeteringType
+      - name: azure.mgmt.edgeorder.models.NotificationPreference
+        uid: azure.mgmt.edgeorder.models.NotificationPreference
+      - name: azure.mgmt.edgeorder.models.NotificationStageName
+        uid: azure.mgmt.edgeorder.models.NotificationStageName
+      - name: azure.mgmt.edgeorder.models.Operation
+        uid: azure.mgmt.edgeorder.models.Operation
+      - name: azure.mgmt.edgeorder.models.OperationDisplay
+        uid: azure.mgmt.edgeorder.models.OperationDisplay
+      - name: azure.mgmt.edgeorder.models.OperationListResult
+        uid: azure.mgmt.edgeorder.models.OperationListResult
+      - name: azure.mgmt.edgeorder.models.OrderItemCancellationEnum
+        uid: azure.mgmt.edgeorder.models.OrderItemCancellationEnum
+      - name: azure.mgmt.edgeorder.models.OrderItemDetails
+        uid: azure.mgmt.edgeorder.models.OrderItemDetails
+      - name: azure.mgmt.edgeorder.models.OrderItemResource
+        uid: azure.mgmt.edgeorder.models.OrderItemResource
+      - name: azure.mgmt.edgeorder.models.OrderItemResourceList
+        uid: azure.mgmt.edgeorder.models.OrderItemResourceList
+      - name: azure.mgmt.edgeorder.models.OrderItemReturnEnum
+        uid: azure.mgmt.edgeorder.models.OrderItemReturnEnum
+      - name: azure.mgmt.edgeorder.models.OrderItemType
+        uid: azure.mgmt.edgeorder.models.OrderItemType
+      - name: azure.mgmt.edgeorder.models.OrderItemUpdateParameter
+        uid: azure.mgmt.edgeorder.models.OrderItemUpdateParameter
+      - name: azure.mgmt.edgeorder.models.OrderResource
+        uid: azure.mgmt.edgeorder.models.OrderResource
+      - name: azure.mgmt.edgeorder.models.OrderResourceList
+        uid: azure.mgmt.edgeorder.models.OrderResourceList
+      - name: azure.mgmt.edgeorder.models.Origin
+        uid: azure.mgmt.edgeorder.models.Origin
+      - name: azure.mgmt.edgeorder.models.Pav2MeterDetails
+        uid: azure.mgmt.edgeorder.models.Pav2MeterDetails
+      - name: azure.mgmt.edgeorder.models.Preferences
+        uid: azure.mgmt.edgeorder.models.Preferences
+      - name: azure.mgmt.edgeorder.models.Product
+        uid: azure.mgmt.edgeorder.models.Product
+      - name: azure.mgmt.edgeorder.models.ProductDetails
+        uid: azure.mgmt.edgeorder.models.ProductDetails
+      - name: azure.mgmt.edgeorder.models.ProductFamilies
+        uid: azure.mgmt.edgeorder.models.ProductFamilies
+      - name: azure.mgmt.edgeorder.models.ProductFamiliesMetadata
+        uid: azure.mgmt.edgeorder.models.ProductFamiliesMetadata
+      - name: azure.mgmt.edgeorder.models.ProductFamiliesMetadataDetails
+        uid: azure.mgmt.edgeorder.models.ProductFamiliesMetadataDetails
+      - name: azure.mgmt.edgeorder.models.ProductFamiliesRequest
+        uid: azure.mgmt.edgeorder.models.ProductFamiliesRequest
+      - name: azure.mgmt.edgeorder.models.ProductFamily
+        uid: azure.mgmt.edgeorder.models.ProductFamily
+      - name: azure.mgmt.edgeorder.models.ProductFamilyProperties
+        uid: azure.mgmt.edgeorder.models.ProductFamilyProperties
+      - name: azure.mgmt.edgeorder.models.ProductLine
+        uid: azure.mgmt.edgeorder.models.ProductLine
+      - name: azure.mgmt.edgeorder.models.ProductLineProperties
+        uid: azure.mgmt.edgeorder.models.ProductLineProperties
+      - name: azure.mgmt.edgeorder.models.ProductProperties
+        uid: azure.mgmt.edgeorder.models.ProductProperties
+      - name: azure.mgmt.edgeorder.models.ProxyResource
+        uid: azure.mgmt.edgeorder.models.ProxyResource
+      - name: azure.mgmt.edgeorder.models.PurchaseMeterDetails
+        uid: azure.mgmt.edgeorder.models.PurchaseMeterDetails
+      - name: azure.mgmt.edgeorder.models.Resource
+        uid: azure.mgmt.edgeorder.models.Resource
+      - name: azure.mgmt.edgeorder.models.ResourceIdentity
+        uid: azure.mgmt.edgeorder.models.ResourceIdentity
+      - name: azure.mgmt.edgeorder.models.ReturnOrderItemDetails
+        uid: azure.mgmt.edgeorder.models.ReturnOrderItemDetails
+      - name: azure.mgmt.edgeorder.models.ShippingAddress
+        uid: azure.mgmt.edgeorder.models.ShippingAddress
+      - name: azure.mgmt.edgeorder.models.ShippingDetails
+        uid: azure.mgmt.edgeorder.models.ShippingDetails
+      - name: azure.mgmt.edgeorder.models.Specification
+        uid: azure.mgmt.edgeorder.models.Specification
+      - name: azure.mgmt.edgeorder.models.StageDetails
+        uid: azure.mgmt.edgeorder.models.StageDetails
+      - name: azure.mgmt.edgeorder.models.StageName
+        uid: azure.mgmt.edgeorder.models.StageName
+      - name: azure.mgmt.edgeorder.models.StageStatus
+        uid: azure.mgmt.edgeorder.models.StageStatus
+      - name: azure.mgmt.edgeorder.models.SupportedFilterTypes
+        uid: azure.mgmt.edgeorder.models.SupportedFilterTypes
+      - name: azure.mgmt.edgeorder.models.SystemData
+        uid: azure.mgmt.edgeorder.models.SystemData
+      - name: azure.mgmt.edgeorder.models.TrackedResource
+        uid: azure.mgmt.edgeorder.models.TrackedResource
+      - name: azure.mgmt.edgeorder.models.TransportPreferences
+        uid: azure.mgmt.edgeorder.models.TransportPreferences
+      - name: azure.mgmt.edgeorder.models.TransportShipmentTypes
+        uid: azure.mgmt.edgeorder.models.TransportShipmentTypes
+      - name: azure.mgmt.edgeorder.models.WeightMeasurementUnit
+        uid: azure.mgmt.edgeorder.models.WeightMeasurementUnit
+      name: azure.mgmt.edgeorder.models
+    - items:
+      - name: Overview
+        uid: azure.mgmt.edgeorder.operations
+      - name: azure.mgmt.edgeorder.operations.EdgeOrderManagementClientOperationsMixin
+        uid: azure.mgmt.edgeorder.operations.EdgeOrderManagementClientOperationsMixin
+      name: azure.mgmt.edgeorder.operations
+    - name: azure.mgmt.edgeorder.EdgeOrderManagementClient
+      uid: azure.mgmt.edgeorder.EdgeOrderManagementClient
+    name: azure.mgmt.edgeorder
+  name: azure-mgmt-edgeorder
 

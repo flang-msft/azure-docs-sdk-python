@@ -31,12 +31,12 @@ examples:
 - "Authenticate MetricsAdvisorAdministrationClient with a MetricsAdvisorKeyCredential<!--[!code-python[Main](les\\\
   sample_authentication.py )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\":\
   \ [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\
-  \\1\\\\s\\\\dist_temp\\\\170\\\\azure-ai-metricsadvisor-1.0.0\\\\samples\\\\sample_authentication.py\"\
-  , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
-  highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   from azure.ai.metricsadvisor\
-  \ import MetricsAdvisorKeyCredential, MetricsAdvisorAdministrationClient\n\n   service_endpoint\
-  \ = os.getenv(\"METRICS_ADVISOR_ENDPOINT\")\n   subscription_key = os.getenv(\"\
-  METRICS_ADVISOR_SUBSCRIPTION_KEY\")\n   api_key = os.getenv(\"METRICS_ADVISOR_API_KEY\"\
+  \\1\\\\s\\\\dist_temp\\\\170\\\\azure-ai-metricsadvisor-1.0.1a20211013001\\\\samples\\\
+  \\sample_authentication.py\", \"xml:space\": \"preserve\", \"language\": \"python\"\
+  , \"linenos\": false, \"highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\
+  \n   from azure.ai.metricsadvisor import MetricsAdvisorKeyCredential, MetricsAdvisorAdministrationClient\n\
+  \n   service_endpoint = os.getenv(\"METRICS_ADVISOR_ENDPOINT\")\n   subscription_key\
+  \ = os.getenv(\"METRICS_ADVISOR_SUBSCRIPTION_KEY\")\n   api_key = os.getenv(\"METRICS_ADVISOR_API_KEY\"\
   )\n\n   client = MetricsAdvisorAdministrationClient(service_endpoint,\n        \
   \                         MetricsAdvisorKeyCredential(subscription_key, api_key))\n\
   \n   ````\n"
@@ -90,7 +90,7 @@ methods:
   - "Create an anomaly alert configuration<!--[!code-python[Main](les\\sample_alert_configuration.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\
-    \\170\\\\azure-ai-metricsadvisor-1.0.0\\\\samples\\\\sample_alert_configuration.py\"\
+    \\170\\\\azure-ai-metricsadvisor-1.0.1a20211013001\\\\samples\\\\sample_alert_configuration.py\"\
     , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
     highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   from azure.ai.metricsadvisor\
     \ import MetricsAdvisorKeyCredential, MetricsAdvisorAdministrationClient\n   from\
@@ -206,12 +206,13 @@ methods:
   - "Create a data feed<!--[!code-python[Main](les\\sample_data_feeds.py )]-->\n\n\
     <!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
     : [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\170\\\\\
-    azure-ai-metricsadvisor-1.0.0\\\\samples\\\\sample_data_feeds.py\", \"xml:space\"\
-    : \"preserve\", \"language\": \"python\", \"linenos\": false, \"highlight_args\"\
-    : {\"linenostart\": 1}} -->\n\n````python\n\n   from azure.ai.metricsadvisor import\
-    \ MetricsAdvisorKeyCredential, MetricsAdvisorAdministrationClient\n   from azure.ai.metricsadvisor.models\
-    \ import (\n       SqlServerDataFeedSource,\n       DataFeedSchema,\n       DataFeedMetric,\n\
-    \       DataFeedDimension,\n       DataFeedRollupSettings,\n       DataFeedMissingDataPointFillSettings,\n\
+    azure-ai-metricsadvisor-1.0.1a20211013001\\\\samples\\\\sample_data_feeds.py\"\
+    , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
+    highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   from azure.ai.metricsadvisor\
+    \ import MetricsAdvisorKeyCredential, MetricsAdvisorAdministrationClient\n   from\
+    \ azure.ai.metricsadvisor.models import (\n       SqlServerDataFeedSource,\n \
+    \      DataFeedSchema,\n       DataFeedMetric,\n       DataFeedDimension,\n  \
+    \     DataFeedRollupSettings,\n       DataFeedMissingDataPointFillSettings,\n\
     \   )\n\n   service_endpoint = os.getenv(\"METRICS_ADVISOR_ENDPOINT\")\n   subscription_key\
     \ = os.getenv(\"METRICS_ADVISOR_SUBSCRIPTION_KEY\")\n   api_key = os.getenv(\"\
     METRICS_ADVISOR_API_KEY\")\n   sql_server_connection_string = os.getenv(\"METRICS_ADVISOR_SQL_SERVER_CONNECTION_STRING\"\
@@ -224,7 +225,7 @@ methods:
     Cost\"),\n               DataFeedMetric(name=\"revenue\", display_name=\"Revenue\"\
     )\n           ],\n           dimensions=[\n               DataFeedDimension(name=\"\
     category\", display_name=\"Category\"),\n               DataFeedDimension(name=\"\
-    city\", display_name=\"City\")\n           ],\n           timestamp_column=\"\
+    region\", display_name=\"region\")\n           ],\n           timestamp_column=\"\
     Timestamp\"\n       ),\n       ingestion_settings=datetime.datetime(2019, 10,\
     \ 1),\n       data_feed_description=\"cost/revenue data feed\",\n       rollup_settings=DataFeedRollupSettings(\n\
     \           rollup_type=\"AutoRollup\",\n           rollup_method=\"Sum\",\n \
@@ -252,7 +253,7 @@ methods:
   - "Create a datasource credential<!--[!code-python[Main](les\\sample_datasource_credentials.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\
-    \\170\\\\azure-ai-metricsadvisor-1.0.0\\\\samples\\\\sample_datasource_credentials.py\"\
+    \\170\\\\azure-ai-metricsadvisor-1.0.1a20211013001\\\\samples\\\\sample_datasource_credentials.py\"\
     , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
     highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   from azure.ai.metricsadvisor\
     \ import MetricsAdvisorKeyCredential, MetricsAdvisorAdministrationClient\n   from\
@@ -312,7 +313,7 @@ methods:
   - "Create an anomaly detection configuration<!--[!code-python[Main](les\\sample_detection_configuration.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\
-    \\170\\\\azure-ai-metricsadvisor-1.0.0\\\\samples\\\\sample_detection_configuration.py\"\
+    \\170\\\\azure-ai-metricsadvisor-1.0.1a20211013001\\\\samples\\\\sample_detection_configuration.py\"\
     , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
     highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   from azure.ai.metricsadvisor\
     \ import MetricsAdvisorKeyCredential, MetricsAdvisorAdministrationClient\n   from\
@@ -360,8 +361,8 @@ methods:
   - "Create a notification hook<!--[!code-python[Main](les\\sample_hooks.py )]-->\n\
     \n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
     : [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\170\\\\\
-    azure-ai-metricsadvisor-1.0.0\\\\samples\\\\sample_hooks.py\", \"xml:space\":\
-    \ \"preserve\", \"language\": \"python\", \"linenos\": false, \"highlight_args\"\
+    azure-ai-metricsadvisor-1.0.1a20211013001\\\\samples\\\\sample_hooks.py\", \"\
+    xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"highlight_args\"\
     : {\"linenostart\": 1}} -->\n\n````python\n\n   from azure.ai.metricsadvisor import\
     \ MetricsAdvisorKeyCredential, MetricsAdvisorAdministrationClient\n   from azure.ai.metricsadvisor.models\
     \ import EmailNotificationHook\n\n   service_endpoint = os.getenv(\"METRICS_ADVISOR_ENDPOINT\"\
@@ -394,11 +395,11 @@ methods:
   - "Delete an anomaly alert configuration by its ID<!--[!code-python[Main](les\\\
     sample_alert_configuration.py )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\"\
     : [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\\
-    a\\\\1\\\\s\\\\dist_temp\\\\170\\\\azure-ai-metricsadvisor-1.0.0\\\\samples\\\\\
-    sample_alert_configuration.py\", \"xml:space\": \"preserve\", \"language\": \"\
-    python\", \"linenos\": false, \"highlight_args\": {\"linenostart\": 1}} -->\n\n\
-    ````python\n\n   from azure.core.exceptions import ResourceNotFoundError\n   from\
-    \ azure.ai.metricsadvisor import MetricsAdvisorKeyCredential, MetricsAdvisorAdministrationClient\n\
+    a\\\\1\\\\s\\\\dist_temp\\\\170\\\\azure-ai-metricsadvisor-1.0.1a20211013001\\\
+    \\samples\\\\sample_alert_configuration.py\", \"xml:space\": \"preserve\", \"\
+    language\": \"python\", \"linenos\": false, \"highlight_args\": {\"linenostart\"\
+    : 1}} -->\n\n````python\n\n   from azure.core.exceptions import ResourceNotFoundError\n\
+    \   from azure.ai.metricsadvisor import MetricsAdvisorKeyCredential, MetricsAdvisorAdministrationClient\n\
     \n   service_endpoint = os.getenv(\"METRICS_ADVISOR_ENDPOINT\")\n   subscription_key\
     \ = os.getenv(\"METRICS_ADVISOR_SUBSCRIPTION_KEY\")\n   api_key = os.getenv(\"\
     METRICS_ADVISOR_API_KEY\")\n\n   client = MetricsAdvisorAdministrationClient(service_endpoint,\n\
@@ -427,10 +428,10 @@ methods:
   - "Delete a data feed by its ID<!--[!code-python[Main](les\\sample_data_feeds.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\
-    \\170\\\\azure-ai-metricsadvisor-1.0.0\\\\samples\\\\sample_data_feeds.py\", \"\
-    xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"highlight_args\"\
-    : {\"linenostart\": 1}} -->\n\n````python\n\n   from azure.core.exceptions import\
-    \ ResourceNotFoundError\n   from azure.ai.metricsadvisor import MetricsAdvisorKeyCredential,\
+    \\170\\\\azure-ai-metricsadvisor-1.0.1a20211013001\\\\samples\\\\sample_data_feeds.py\"\
+    , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
+    highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   from azure.core.exceptions\
+    \ import ResourceNotFoundError\n   from azure.ai.metricsadvisor import MetricsAdvisorKeyCredential,\
     \ MetricsAdvisorAdministrationClient\n\n   service_endpoint = os.getenv(\"METRICS_ADVISOR_ENDPOINT\"\
     )\n   subscription_key = os.getenv(\"METRICS_ADVISOR_SUBSCRIPTION_KEY\")\n   api_key\
     \ = os.getenv(\"METRICS_ADVISOR_API_KEY\")\n\n   client = MetricsAdvisorAdministrationClient(service_endpoint,\n\
@@ -459,7 +460,7 @@ methods:
   - "Delete a datasource credential by its ID<!--[!code-python[Main](les\\sample_datasource_credentials.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\
-    \\170\\\\azure-ai-metricsadvisor-1.0.0\\\\samples\\\\sample_datasource_credentials.py\"\
+    \\170\\\\azure-ai-metricsadvisor-1.0.1a20211013001\\\\samples\\\\sample_datasource_credentials.py\"\
     , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
     highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   from azure.core.exceptions\
     \ import ResourceNotFoundError\n   from azure.ai.metricsadvisor import MetricsAdvisorKeyCredential,\
@@ -489,9 +490,9 @@ methods:
   - "Delete an anomaly detection configuration by its ID<!--[!code-python[Main](les\\\
     sample_detection_configuration.py )]-->\n\n<!-- literal_block {\"ids\": [], \"\
     classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\":\
-    \ \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\170\\\\azure-ai-metricsadvisor-1.0.0\\\\\
-    samples\\\\sample_detection_configuration.py\", \"xml:space\": \"preserve\", \"\
-    language\": \"python\", \"linenos\": false, \"highlight_args\": {\"linenostart\"\
+    \ \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\170\\\\azure-ai-metricsadvisor-1.0.1a20211013001\\\
+    \\samples\\\\sample_detection_configuration.py\", \"xml:space\": \"preserve\"\
+    , \"language\": \"python\", \"linenos\": false, \"highlight_args\": {\"linenostart\"\
     : 1}} -->\n\n````python\n\n   from azure.core.exceptions import ResourceNotFoundError\n\
     \   from azure.ai.metricsadvisor import MetricsAdvisorKeyCredential, MetricsAdvisorAdministrationClient\n\
     \n   service_endpoint = os.getenv(\"METRICS_ADVISOR_ENDPOINT\")\n   subscription_key\
@@ -523,8 +524,8 @@ methods:
   - "Delete a hook by its ID<!--[!code-python[Main](les\\sample_hooks.py )]-->\n\n\
     <!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
     : [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\170\\\\\
-    azure-ai-metricsadvisor-1.0.0\\\\samples\\\\sample_hooks.py\", \"xml:space\":\
-    \ \"preserve\", \"language\": \"python\", \"linenos\": false, \"highlight_args\"\
+    azure-ai-metricsadvisor-1.0.1a20211013001\\\\samples\\\\sample_hooks.py\", \"\
+    xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"highlight_args\"\
     : {\"linenostart\": 1}} -->\n\n````python\n\n   from azure.core.exceptions import\
     \ ResourceNotFoundError\n   from azure.ai.metricsadvisor import MetricsAdvisorKeyCredential,\
     \ MetricsAdvisorAdministrationClient\n\n   service_endpoint = os.getenv(\"METRICS_ADVISOR_ENDPOINT\"\
@@ -555,10 +556,10 @@ methods:
   - "Get a single anomaly alert configuration by its ID<!--[!code-python[Main](les\\\
     sample_alert_configuration.py )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\"\
     : [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\\
-    a\\\\1\\\\s\\\\dist_temp\\\\170\\\\azure-ai-metricsadvisor-1.0.0\\\\samples\\\\\
-    sample_alert_configuration.py\", \"xml:space\": \"preserve\", \"language\": \"\
-    python\", \"linenos\": false, \"highlight_args\": {\"linenostart\": 1}} -->\n\n\
-    ````python\n\n   from azure.ai.metricsadvisor import MetricsAdvisorKeyCredential,\
+    a\\\\1\\\\s\\\\dist_temp\\\\170\\\\azure-ai-metricsadvisor-1.0.1a20211013001\\\
+    \\samples\\\\sample_alert_configuration.py\", \"xml:space\": \"preserve\", \"\
+    language\": \"python\", \"linenos\": false, \"highlight_args\": {\"linenostart\"\
+    : 1}} -->\n\n````python\n\n   from azure.ai.metricsadvisor import MetricsAdvisorKeyCredential,\
     \ MetricsAdvisorAdministrationClient\n\n   service_endpoint = os.getenv(\"METRICS_ADVISOR_ENDPOINT\"\
     )\n   subscription_key = os.getenv(\"METRICS_ADVISOR_SUBSCRIPTION_KEY\")\n   api_key\
     \ = os.getenv(\"METRICS_ADVISOR_API_KEY\")\n\n   client = MetricsAdvisorAdministrationClient(service_endpoint,\n\
@@ -608,20 +609,20 @@ methods:
   - "Get a single data feed by its ID<!--[!code-python[Main](les\\sample_data_feeds.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\
-    \\170\\\\azure-ai-metricsadvisor-1.0.0\\\\samples\\\\sample_data_feeds.py\", \"\
-    xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"highlight_args\"\
-    : {\"linenostart\": 1}} -->\n\n````python\n\n   from azure.ai.metricsadvisor import\
-    \ MetricsAdvisorKeyCredential, MetricsAdvisorAdministrationClient\n\n   service_endpoint\
-    \ = os.getenv(\"METRICS_ADVISOR_ENDPOINT\")\n   subscription_key = os.getenv(\"\
-    METRICS_ADVISOR_SUBSCRIPTION_KEY\")\n   api_key = os.getenv(\"METRICS_ADVISOR_API_KEY\"\
-    )\n\n   client = MetricsAdvisorAdministrationClient(service_endpoint,\n      \
-    \                           MetricsAdvisorKeyCredential(subscription_key, api_key))\n\
-    \n   data_feed = client.get_data_feed(data_feed_id)\n\n   print(\"ID: {}\".format(data_feed.id))\n\
-    \   print(\"Data feed name: {}\".format(data_feed.name))\n   print(\"Created time:\
-    \ {}\".format(data_feed.created_time))\n   print(\"Status: {}\".format(data_feed.status))\n\
-    \   print(\"Source type: {}\".format(data_feed.source.data_source_type))\n   print(\"\
-    Granularity type: {}\".format(data_feed.granularity.granularity_type))\n   print(\"\
-    Data feed metrics: {}\".format([metric.name for metric in data_feed.schema.metrics]))\n\
+    \\170\\\\azure-ai-metricsadvisor-1.0.1a20211013001\\\\samples\\\\sample_data_feeds.py\"\
+    , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
+    highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   from azure.ai.metricsadvisor\
+    \ import MetricsAdvisorKeyCredential, MetricsAdvisorAdministrationClient\n\n \
+    \  service_endpoint = os.getenv(\"METRICS_ADVISOR_ENDPOINT\")\n   subscription_key\
+    \ = os.getenv(\"METRICS_ADVISOR_SUBSCRIPTION_KEY\")\n   api_key = os.getenv(\"\
+    METRICS_ADVISOR_API_KEY\")\n\n   client = MetricsAdvisorAdministrationClient(service_endpoint,\n\
+    \                                 MetricsAdvisorKeyCredential(subscription_key,\
+    \ api_key))\n\n   data_feed = client.get_data_feed(data_feed_id)\n\n   print(\"\
+    ID: {}\".format(data_feed.id))\n   print(\"Data feed name: {}\".format(data_feed.name))\n\
+    \   print(\"Created time: {}\".format(data_feed.created_time))\n   print(\"Status:\
+    \ {}\".format(data_feed.status))\n   print(\"Source type: {}\".format(data_feed.source.data_source_type))\n\
+    \   print(\"Granularity type: {}\".format(data_feed.granularity.granularity_type))\n\
+    \   print(\"Data feed metrics: {}\".format([metric.name for metric in data_feed.schema.metrics]))\n\
     \   print(\"Data feed dimensions: {}\".format([dimension.name for dimension in\
     \ data_feed.schema.dimensions]))\n   print(\"Data feed timestamp column: {}\"\
     .format(data_feed.schema.timestamp_column))\n   print(\"Ingestion data starting\
@@ -654,17 +655,17 @@ methods:
   - "Get the progress of data feed ingestion<!--[!code-python[Main](les\\sample_ingestion.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\
-    \\170\\\\azure-ai-metricsadvisor-1.0.0\\\\samples\\\\sample_ingestion.py\", \"\
-    xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"highlight_args\"\
-    : {\"linenostart\": 1}} -->\n\n````python\n\n   from azure.ai.metricsadvisor import\
-    \ MetricsAdvisorKeyCredential, MetricsAdvisorAdministrationClient\n\n   service_endpoint\
-    \ = os.getenv(\"METRICS_ADVISOR_ENDPOINT\")\n   subscription_key = os.getenv(\"\
-    METRICS_ADVISOR_SUBSCRIPTION_KEY\")\n   api_key = os.getenv(\"METRICS_ADVISOR_API_KEY\"\
-    )\n   data_feed_id = os.getenv(\"METRICS_ADVISOR_DATA_FEED_ID\")\n\n   client\
-    \ = MetricsAdvisorAdministrationClient(service_endpoint,\n                   \
-    \              MetricsAdvisorKeyCredential(subscription_key, api_key))\n\n   progress\
-    \ = client.get_data_feed_ingestion_progress(data_feed_id)\n\n   print(\"Lastest\
-    \ active timestamp: {}\".format(progress.latest_active_timestamp))\n   print(\"\
+    \\170\\\\azure-ai-metricsadvisor-1.0.1a20211013001\\\\samples\\\\sample_ingestion.py\"\
+    , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
+    highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   from azure.ai.metricsadvisor\
+    \ import MetricsAdvisorKeyCredential, MetricsAdvisorAdministrationClient\n\n \
+    \  service_endpoint = os.getenv(\"METRICS_ADVISOR_ENDPOINT\")\n   subscription_key\
+    \ = os.getenv(\"METRICS_ADVISOR_SUBSCRIPTION_KEY\")\n   api_key = os.getenv(\"\
+    METRICS_ADVISOR_API_KEY\")\n   data_feed_id = os.getenv(\"METRICS_ADVISOR_DATA_FEED_ID\"\
+    )\n\n   client = MetricsAdvisorAdministrationClient(service_endpoint,\n      \
+    \                           MetricsAdvisorKeyCredential(subscription_key, api_key))\n\
+    \n   progress = client.get_data_feed_ingestion_progress(data_feed_id)\n\n   print(\"\
+    Lastest active timestamp: {}\".format(progress.latest_active_timestamp))\n   print(\"\
     Latest successful timestamp: {}\".format(progress.latest_success_timestamp))\n\
     \n\n   ````\n"
 - uid: azure.ai.metricsadvisor.MetricsAdvisorAdministrationClient.get_datasource_credential
@@ -688,7 +689,7 @@ methods:
   - "Get a datasource credential by its ID<!--[!code-python[Main](les\\sample_datasource_credentials.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\
-    \\170\\\\azure-ai-metricsadvisor-1.0.0\\\\samples\\\\sample_datasource_credentials.py\"\
+    \\170\\\\azure-ai-metricsadvisor-1.0.1a20211013001\\\\samples\\\\sample_datasource_credentials.py\"\
     , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
     highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   from azure.ai.metricsadvisor\
     \ import MetricsAdvisorKeyCredential, MetricsAdvisorAdministrationClient\n\n \
@@ -721,9 +722,9 @@ methods:
   - "Get a single anomaly detection configuration by its ID<!--[!code-python[Main](les\\\
     sample_detection_configuration.py )]-->\n\n<!-- literal_block {\"ids\": [], \"\
     classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\":\
-    \ \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\170\\\\azure-ai-metricsadvisor-1.0.0\\\\\
-    samples\\\\sample_detection_configuration.py\", \"xml:space\": \"preserve\", \"\
-    language\": \"python\", \"linenos\": false, \"highlight_args\": {\"linenostart\"\
+    \ \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\170\\\\azure-ai-metricsadvisor-1.0.1a20211013001\\\
+    \\samples\\\\sample_detection_configuration.py\", \"xml:space\": \"preserve\"\
+    , \"language\": \"python\", \"linenos\": false, \"highlight_args\": {\"linenostart\"\
     : 1}} -->\n\n````python\n\n   from azure.ai.metricsadvisor import MetricsAdvisorKeyCredential,\
     \ MetricsAdvisorAdministrationClient\n\n   service_endpoint = os.getenv(\"METRICS_ADVISOR_ENDPOINT\"\
     )\n   subscription_key = os.getenv(\"METRICS_ADVISOR_SUBSCRIPTION_KEY\")\n   api_key\
@@ -777,18 +778,19 @@ methods:
   - "Get a notification hook by its ID<!--[!code-python[Main](les\\sample_hooks.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\
-    \\170\\\\azure-ai-metricsadvisor-1.0.0\\\\samples\\\\sample_hooks.py\", \"xml:space\"\
-    : \"preserve\", \"language\": \"python\", \"linenos\": false, \"highlight_args\"\
-    : {\"linenostart\": 1}} -->\n\n````python\n\n   from azure.ai.metricsadvisor import\
-    \ MetricsAdvisorKeyCredential, MetricsAdvisorAdministrationClient\n\n   service_endpoint\
-    \ = os.getenv(\"METRICS_ADVISOR_ENDPOINT\")\n   subscription_key = os.getenv(\"\
-    METRICS_ADVISOR_SUBSCRIPTION_KEY\")\n   api_key = os.getenv(\"METRICS_ADVISOR_API_KEY\"\
-    )\n\n   client = MetricsAdvisorAdministrationClient(service_endpoint,\n      \
-    \                           MetricsAdvisorKeyCredential(subscription_key, api_key))\n\
-    \n   hook = client.get_hook(hook_id)\n\n   print(\"Hook name: {}\".format(hook.name))\n\
-    \   print(\"Description: {}\".format(hook.description))\n   print(\"Emails to\
-    \ alert: {}\".format(hook.emails_to_alert))\n   print(\"External link: {}\".format(hook.external_link))\n\
-    \   print(\"Admins: {}\".format(hook.admins))\n\n\n   ````\n"
+    \\170\\\\azure-ai-metricsadvisor-1.0.1a20211013001\\\\samples\\\\sample_hooks.py\"\
+    , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
+    highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   from azure.ai.metricsadvisor\
+    \ import MetricsAdvisorKeyCredential, MetricsAdvisorAdministrationClient\n\n \
+    \  service_endpoint = os.getenv(\"METRICS_ADVISOR_ENDPOINT\")\n   subscription_key\
+    \ = os.getenv(\"METRICS_ADVISOR_SUBSCRIPTION_KEY\")\n   api_key = os.getenv(\"\
+    METRICS_ADVISOR_API_KEY\")\n\n   client = MetricsAdvisorAdministrationClient(service_endpoint,\n\
+    \                                 MetricsAdvisorKeyCredential(subscription_key,\
+    \ api_key))\n\n   hook = client.get_hook(hook_id)\n\n   print(\"Hook name: {}\"\
+    .format(hook.name))\n   print(\"Description: {}\".format(hook.description))\n\
+    \   print(\"Emails to alert: {}\".format(hook.emails_to_alert))\n   print(\"External\
+    \ link: {}\".format(hook.external_link))\n   print(\"Admins: {}\".format(hook.admins))\n\
+    \n\n   ````\n"
 - uid: azure.ai.metricsadvisor.MetricsAdvisorAdministrationClient.list_alert_configurations
   name: list_alert_configurations
   summary: Query all anomaly alert configurations for specific anomaly detection configuration.
@@ -810,10 +812,10 @@ methods:
   - "List all anomaly alert configurations for specific anomaly detection configuration<!--[!code-python[Main](les\\\
     sample_alert_configuration.py )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\"\
     : [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\\
-    a\\\\1\\\\s\\\\dist_temp\\\\170\\\\azure-ai-metricsadvisor-1.0.0\\\\samples\\\\\
-    sample_alert_configuration.py\", \"xml:space\": \"preserve\", \"language\": \"\
-    python\", \"linenos\": false, \"highlight_args\": {\"linenostart\": 1}} -->\n\n\
-    ````python\n\n   from azure.ai.metricsadvisor import MetricsAdvisorKeyCredential,\
+    a\\\\1\\\\s\\\\dist_temp\\\\170\\\\azure-ai-metricsadvisor-1.0.1a20211013001\\\
+    \\samples\\\\sample_alert_configuration.py\", \"xml:space\": \"preserve\", \"\
+    language\": \"python\", \"linenos\": false, \"highlight_args\": {\"linenostart\"\
+    : 1}} -->\n\n````python\n\n   from azure.ai.metricsadvisor import MetricsAdvisorKeyCredential,\
     \ MetricsAdvisorAdministrationClient\n\n   service_endpoint = os.getenv(\"METRICS_ADVISOR_ENDPOINT\"\
     )\n   subscription_key = os.getenv(\"METRICS_ADVISOR_SUBSCRIPTION_KEY\")\n   api_key\
     \ = os.getenv(\"METRICS_ADVISOR_API_KEY\")\n   detection_configuration_id = os.getenv(\"\
@@ -857,13 +859,13 @@ methods:
   - "List the data feed ingestion statuses by data feed ID<!--[!code-python[Main](les\\\
     sample_ingestion.py )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [],\
     \ \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\\
-    1\\\\s\\\\dist_temp\\\\170\\\\azure-ai-metricsadvisor-1.0.0\\\\samples\\\\sample_ingestion.py\"\
-    , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
-    highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   import datetime\n\
-    \   from azure.ai.metricsadvisor import MetricsAdvisorKeyCredential, MetricsAdvisorAdministrationClient\n\
-    \n   service_endpoint = os.getenv(\"METRICS_ADVISOR_ENDPOINT\")\n   subscription_key\
-    \ = os.getenv(\"METRICS_ADVISOR_SUBSCRIPTION_KEY\")\n   api_key = os.getenv(\"\
-    METRICS_ADVISOR_API_KEY\")\n   data_feed_id = os.getenv(\"METRICS_ADVISOR_DATA_FEED_ID\"\
+    1\\\\s\\\\dist_temp\\\\170\\\\azure-ai-metricsadvisor-1.0.1a20211013001\\\\samples\\\
+    \\sample_ingestion.py\", \"xml:space\": \"preserve\", \"language\": \"python\"\
+    , \"linenos\": false, \"highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\
+    \n   import datetime\n   from azure.ai.metricsadvisor import MetricsAdvisorKeyCredential,\
+    \ MetricsAdvisorAdministrationClient\n\n   service_endpoint = os.getenv(\"METRICS_ADVISOR_ENDPOINT\"\
+    )\n   subscription_key = os.getenv(\"METRICS_ADVISOR_SUBSCRIPTION_KEY\")\n   api_key\
+    \ = os.getenv(\"METRICS_ADVISOR_API_KEY\")\n   data_feed_id = os.getenv(\"METRICS_ADVISOR_DATA_FEED_ID\"\
     )\n\n   client = MetricsAdvisorAdministrationClient(service_endpoint,\n      \
     \                           MetricsAdvisorKeyCredential(subscription_key, api_key))\n\
     \n   ingestion_status = client.list_data_feed_ingestion_status(\n       data_feed_id,\n\
@@ -913,16 +915,16 @@ methods:
   - "List data feeds under an account.<!--[!code-python[Main](les\\sample_data_feeds.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\
-    \\170\\\\azure-ai-metricsadvisor-1.0.0\\\\samples\\\\sample_data_feeds.py\", \"\
-    xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"highlight_args\"\
-    : {\"linenostart\": 1}} -->\n\n````python\n\n   from azure.ai.metricsadvisor import\
-    \ MetricsAdvisorKeyCredential, MetricsAdvisorAdministrationClient\n\n   service_endpoint\
-    \ = os.getenv(\"METRICS_ADVISOR_ENDPOINT\")\n   subscription_key = os.getenv(\"\
-    METRICS_ADVISOR_SUBSCRIPTION_KEY\")\n   api_key = os.getenv(\"METRICS_ADVISOR_API_KEY\"\
-    )\n\n   client = MetricsAdvisorAdministrationClient(service_endpoint,\n      \
-    \                           MetricsAdvisorKeyCredential(subscription_key, api_key))\n\
-    \n   data_feeds = client.list_data_feeds()\n\n   for feed in data_feeds:\n   \
-    \    print(\"Data feed name: {}\".format(feed.name))\n       print(\"ID: {}\"\
+    \\170\\\\azure-ai-metricsadvisor-1.0.1a20211013001\\\\samples\\\\sample_data_feeds.py\"\
+    , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
+    highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   from azure.ai.metricsadvisor\
+    \ import MetricsAdvisorKeyCredential, MetricsAdvisorAdministrationClient\n\n \
+    \  service_endpoint = os.getenv(\"METRICS_ADVISOR_ENDPOINT\")\n   subscription_key\
+    \ = os.getenv(\"METRICS_ADVISOR_SUBSCRIPTION_KEY\")\n   api_key = os.getenv(\"\
+    METRICS_ADVISOR_API_KEY\")\n\n   client = MetricsAdvisorAdministrationClient(service_endpoint,\n\
+    \                                 MetricsAdvisorKeyCredential(subscription_key,\
+    \ api_key))\n\n   data_feeds = client.list_data_feeds()\n\n   for feed in data_feeds:\n\
+    \       print(\"Data feed name: {}\".format(feed.name))\n       print(\"ID: {}\"\
     .format(feed.id))\n       print(\"Created time: {}\".format(feed.created_time))\n\
     \       print(\"Status: {}\".format(feed.status))\n       print(\"Source type:\
     \ {}\".format(feed.source.data_source_type))\n       print(\"Granularity type:\
@@ -951,9 +953,9 @@ methods:
   - "List all of the datasource credentials under the account<!--[!code-python[Main](les\\\
     sample_datasource_credentials.py )]-->\n\n<!-- literal_block {\"ids\": [], \"\
     classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\":\
-    \ \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\170\\\\azure-ai-metricsadvisor-1.0.0\\\\\
-    samples\\\\sample_datasource_credentials.py\", \"xml:space\": \"preserve\", \"\
-    language\": \"python\", \"linenos\": false, \"highlight_args\": {\"linenostart\"\
+    \ \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\170\\\\azure-ai-metricsadvisor-1.0.1a20211013001\\\
+    \\samples\\\\sample_datasource_credentials.py\", \"xml:space\": \"preserve\",\
+    \ \"language\": \"python\", \"linenos\": false, \"highlight_args\": {\"linenostart\"\
     : 1}} -->\n\n````python\n\n   from azure.ai.metricsadvisor import MetricsAdvisorKeyCredential,\
     \ MetricsAdvisorAdministrationClient\n\n   service_endpoint = os.getenv(\"METRICS_ADVISOR_ENDPOINT\"\
     )\n   subscription_key = os.getenv(\"METRICS_ADVISOR_SUBSCRIPTION_KEY\")\n   api_key\
@@ -984,9 +986,9 @@ methods:
   - "List all anomaly detection configurations for a specific metric<!--[!code-python[Main](les\\\
     sample_detection_configuration.py )]-->\n\n<!-- literal_block {\"ids\": [], \"\
     classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\":\
-    \ \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\170\\\\azure-ai-metricsadvisor-1.0.0\\\\\
-    samples\\\\sample_detection_configuration.py\", \"xml:space\": \"preserve\", \"\
-    language\": \"python\", \"linenos\": false, \"highlight_args\": {\"linenostart\"\
+    \ \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\170\\\\azure-ai-metricsadvisor-1.0.1a20211013001\\\
+    \\samples\\\\sample_detection_configuration.py\", \"xml:space\": \"preserve\"\
+    , \"language\": \"python\", \"linenos\": false, \"highlight_args\": {\"linenostart\"\
     : 1}} -->\n\n````python\n\n   from azure.ai.metricsadvisor import MetricsAdvisorKeyCredential,\
     \ MetricsAdvisorAdministrationClient\n\n   service_endpoint = os.getenv(\"METRICS_ADVISOR_ENDPOINT\"\
     )\n   subscription_key = os.getenv(\"METRICS_ADVISOR_SUBSCRIPTION_KEY\")\n   api_key\
@@ -1021,11 +1023,11 @@ methods:
   - "List all of the notification hooks under the account<!--[!code-python[Main](les\\\
     sample_hooks.py )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"\
     names\": [], \"dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\\
-    s\\\\dist_temp\\\\170\\\\azure-ai-metricsadvisor-1.0.0\\\\samples\\\\sample_hooks.py\"\
-    , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
-    highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   from azure.ai.metricsadvisor\
-    \ import MetricsAdvisorKeyCredential, MetricsAdvisorAdministrationClient\n\n \
-    \  service_endpoint = os.getenv(\"METRICS_ADVISOR_ENDPOINT\")\n   subscription_key\
+    s\\\\dist_temp\\\\170\\\\azure-ai-metricsadvisor-1.0.1a20211013001\\\\samples\\\
+    \\sample_hooks.py\", \"xml:space\": \"preserve\", \"language\": \"python\", \"\
+    linenos\": false, \"highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\
+    \n   from azure.ai.metricsadvisor import MetricsAdvisorKeyCredential, MetricsAdvisorAdministrationClient\n\
+    \n   service_endpoint = os.getenv(\"METRICS_ADVISOR_ENDPOINT\")\n   subscription_key\
     \ = os.getenv(\"METRICS_ADVISOR_SUBSCRIPTION_KEY\")\n   api_key = os.getenv(\"\
     METRICS_ADVISOR_API_KEY\")\n\n   client = MetricsAdvisorAdministrationClient(service_endpoint,\n\
     \                                 MetricsAdvisorKeyCredential(subscription_key,\
@@ -1063,13 +1065,13 @@ methods:
   - "Refresh data feed ingestion over a period of time<!--[!code-python[Main](les\\\
     sample_ingestion.py )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [],\
     \ \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\\
-    1\\\\s\\\\dist_temp\\\\170\\\\azure-ai-metricsadvisor-1.0.0\\\\samples\\\\sample_ingestion.py\"\
-    , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
-    highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   import datetime\n\
-    \   from azure.ai.metricsadvisor import MetricsAdvisorKeyCredential, MetricsAdvisorAdministrationClient\n\
-    \n   service_endpoint = os.getenv(\"METRICS_ADVISOR_ENDPOINT\")\n   subscription_key\
-    \ = os.getenv(\"METRICS_ADVISOR_SUBSCRIPTION_KEY\")\n   api_key = os.getenv(\"\
-    METRICS_ADVISOR_API_KEY\")\n   data_feed_id = os.getenv(\"METRICS_ADVISOR_DATA_FEED_ID\"\
+    1\\\\s\\\\dist_temp\\\\170\\\\azure-ai-metricsadvisor-1.0.1a20211013001\\\\samples\\\
+    \\sample_ingestion.py\", \"xml:space\": \"preserve\", \"language\": \"python\"\
+    , \"linenos\": false, \"highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\
+    \n   import datetime\n   from azure.ai.metricsadvisor import MetricsAdvisorKeyCredential,\
+    \ MetricsAdvisorAdministrationClient\n\n   service_endpoint = os.getenv(\"METRICS_ADVISOR_ENDPOINT\"\
+    )\n   subscription_key = os.getenv(\"METRICS_ADVISOR_SUBSCRIPTION_KEY\")\n   api_key\
+    \ = os.getenv(\"METRICS_ADVISOR_API_KEY\")\n   data_feed_id = os.getenv(\"METRICS_ADVISOR_DATA_FEED_ID\"\
     )\n\n   client = MetricsAdvisorAdministrationClient(service_endpoint,\n      \
     \                           MetricsAdvisorKeyCredential(subscription_key, api_key))\n\
     \n   client.refresh_data_feed_ingestion(\n       data_feed_id,\n       datetime.datetime(2020,\
@@ -1128,7 +1130,7 @@ methods:
   - "Update an existing anomaly alert configuration<!--[!code-python[Main](les\\sample_alert_configuration.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\
-    \\170\\\\azure-ai-metricsadvisor-1.0.0\\\\samples\\\\sample_alert_configuration.py\"\
+    \\170\\\\azure-ai-metricsadvisor-1.0.1a20211013001\\\\samples\\\\sample_alert_configuration.py\"\
     , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
     highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   from azure.ai.metricsadvisor\
     \ import MetricsAdvisorKeyCredential, MetricsAdvisorAdministrationClient\n   from\
@@ -1142,16 +1144,16 @@ methods:
     \ api_key))\n\n   alert_config.name = \"updated config name\"\n   additional_alert\
     \ = MetricAlertConfiguration(\n       detection_configuration_id=detection_configuration_id,\n\
     \       alert_scope=MetricAnomalyAlertScope(\n           scope_type=\"SeriesGroup\"\
-    ,\n           series_group_in_scope={'city': 'Shenzhen'}\n       ),\n       alert_conditions=MetricAnomalyAlertConditions(\n\
-    \           metric_boundary_condition=MetricBoundaryCondition(\n             \
-    \  direction=\"Down\",\n               lower=5\n           )\n       )\n   )\n\
-    \   alert_config.metric_alert_configurations.append(additional_alert)\n\n   updated\
-    \ = client.update_alert_configuration(\n       alert_config,\n       cross_metrics_operator=\"\
-    OR\",\n       description=\"updated alert config\"\n   )\n\n   print(\"Updated\
-    \ alert name: {}\".format(updated.name))\n   print(\"Updated alert description:\
-    \ {}\".format(updated.description))\n   print(\"Updated cross metrics operator:\
-    \ {}\".format(updated.cross_metrics_operator))\n   print(\"Updated alert condition\
-    \ configuration scope type: {}\".format(\n       updated.metric_alert_configurations[2].alert_scope.scope_type\n\
+    ,\n           series_group_in_scope={'region': 'Shenzhen'}\n       ),\n      \
+    \ alert_conditions=MetricAnomalyAlertConditions(\n           metric_boundary_condition=MetricBoundaryCondition(\n\
+    \               direction=\"Down\",\n               lower=5\n           )\n  \
+    \     )\n   )\n   alert_config.metric_alert_configurations.append(additional_alert)\n\
+    \n   updated = client.update_alert_configuration(\n       alert_config,\n    \
+    \   cross_metrics_operator=\"OR\",\n       description=\"updated alert config\"\
+    \n   )\n\n   print(\"Updated alert name: {}\".format(updated.name))\n   print(\"\
+    Updated alert description: {}\".format(updated.description))\n   print(\"Updated\
+    \ cross metrics operator: {}\".format(updated.cross_metrics_operator))\n   print(\"\
+    Updated alert condition configuration scope type: {}\".format(\n       updated.metric_alert_configurations[2].alert_scope.scope_type\n\
     \   ))\n\n\n   ````\n"
 - uid: azure.ai.metricsadvisor.MetricsAdvisorAdministrationClient.update_data_feed
   name: update_data_feed
@@ -1289,16 +1291,16 @@ methods:
   - "Update an existing data feed<!--[!code-python[Main](les\\sample_data_feeds.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\
-    \\170\\\\azure-ai-metricsadvisor-1.0.0\\\\samples\\\\sample_data_feeds.py\", \"\
-    xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"highlight_args\"\
-    : {\"linenostart\": 1}} -->\n\n````python\n\n   from azure.ai.metricsadvisor import\
-    \ MetricsAdvisorKeyCredential, MetricsAdvisorAdministrationClient\n\n   service_endpoint\
-    \ = os.getenv(\"METRICS_ADVISOR_ENDPOINT\")\n   subscription_key = os.getenv(\"\
-    METRICS_ADVISOR_SUBSCRIPTION_KEY\")\n   api_key = os.getenv(\"METRICS_ADVISOR_API_KEY\"\
-    )\n\n   client = MetricsAdvisorAdministrationClient(service_endpoint,\n      \
-    \                           MetricsAdvisorKeyCredential(subscription_key, api_key))\n\
-    \n   # update data feed on the data feed itself or by using available keyword\
-    \ arguments\n   data_feed.name = \"updated name\"\n   data_feed.data_feed_description\
+    \\170\\\\azure-ai-metricsadvisor-1.0.1a20211013001\\\\samples\\\\sample_data_feeds.py\"\
+    , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
+    highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   from azure.ai.metricsadvisor\
+    \ import MetricsAdvisorKeyCredential, MetricsAdvisorAdministrationClient\n\n \
+    \  service_endpoint = os.getenv(\"METRICS_ADVISOR_ENDPOINT\")\n   subscription_key\
+    \ = os.getenv(\"METRICS_ADVISOR_SUBSCRIPTION_KEY\")\n   api_key = os.getenv(\"\
+    METRICS_ADVISOR_API_KEY\")\n\n   client = MetricsAdvisorAdministrationClient(service_endpoint,\n\
+    \                                 MetricsAdvisorKeyCredential(subscription_key,\
+    \ api_key))\n\n   # update data feed on the data feed itself or by using available\
+    \ keyword arguments\n   data_feed.name = \"updated name\"\n   data_feed.data_feed_description\
     \ = \"updated description for data feed\"\n\n   updated = client.update_data_feed(\n\
     \       data_feed,\n       access_mode=\"Public\",\n       fill_type=\"CustomValue\"\
     ,\n       custom_fill_value=1\n   )\n   print(\"Updated name: {}\".format(updated.name))\n\
@@ -1327,7 +1329,7 @@ methods:
   - "Update an existing datasource credential<!--[!code-python[Main](les\\sample_datasource_credentials.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\
-    \\170\\\\azure-ai-metricsadvisor-1.0.0\\\\samples\\\\sample_datasource_credentials.py\"\
+    \\170\\\\azure-ai-metricsadvisor-1.0.1a20211013001\\\\samples\\\\sample_datasource_credentials.py\"\
     , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
     highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   from azure.ai.metricsadvisor\
     \ import MetricsAdvisorKeyCredential, MetricsAdvisorAdministrationClient\n\n \
@@ -1398,9 +1400,9 @@ methods:
   - "Update an existing anomaly detection configuration<!--[!code-python[Main](les\\\
     sample_detection_configuration.py )]-->\n\n<!-- literal_block {\"ids\": [], \"\
     classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\":\
-    \ \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\170\\\\azure-ai-metricsadvisor-1.0.0\\\\\
-    samples\\\\sample_detection_configuration.py\", \"xml:space\": \"preserve\", \"\
-    language\": \"python\", \"linenos\": false, \"highlight_args\": {\"linenostart\"\
+    \ \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\170\\\\azure-ai-metricsadvisor-1.0.1a20211013001\\\
+    \\samples\\\\sample_detection_configuration.py\", \"xml:space\": \"preserve\"\
+    , \"language\": \"python\", \"linenos\": false, \"highlight_args\": {\"linenostart\"\
     : 1}} -->\n\n````python\n\n   from azure.ai.metricsadvisor import MetricsAdvisorKeyCredential,\
     \ MetricsAdvisorAdministrationClient\n   from azure.ai.metricsadvisor.models import\
     \ (\n       MetricSeriesGroupDetectionCondition,\n       MetricSingleSeriesDetectionCondition,\n\
@@ -1416,9 +1418,9 @@ methods:
     \           min_ratio=2\n       )\n   )\n\n   updated = client.update_detection_configuration(\n\
     \       detection_config,\n       series_group_detection_conditions=[\n      \
     \     MetricSeriesGroupDetectionCondition(\n               series_group_key={\"\
-    city\": \"Seoul\"},\n               smart_detection_condition=smart_detection_condition\n\
+    region\": \"Seoul\"},\n               smart_detection_condition=smart_detection_condition\n\
     \           )\n       ],\n       series_detection_conditions=[\n           MetricSingleSeriesDetectionCondition(\n\
-    \               series_key={\"city\": \"Osaka\", \"category\": \"Cell Phones\"\
+    \               series_key={\"region\": \"Osaka\", \"category\": \"Cell Phones\"\
     },\n               smart_detection_condition=smart_detection_condition\n     \
     \      )\n       ]\n   )\n   print(\"Updated detection name: {}\".format(updated.name))\n\
     \   print(\"Updated detection description: {}\".format(updated.description))\n\
@@ -1501,16 +1503,17 @@ methods:
   - "Update an existing notification hook<!--[!code-python[Main](les\\sample_hooks.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\
-    \\170\\\\azure-ai-metricsadvisor-1.0.0\\\\samples\\\\sample_hooks.py\", \"xml:space\"\
-    : \"preserve\", \"language\": \"python\", \"linenos\": false, \"highlight_args\"\
-    : {\"linenostart\": 1}} -->\n\n````python\n\n   from azure.ai.metricsadvisor import\
-    \ MetricsAdvisorKeyCredential, MetricsAdvisorAdministrationClient\n\n   service_endpoint\
-    \ = os.getenv(\"METRICS_ADVISOR_ENDPOINT\")\n   subscription_key = os.getenv(\"\
-    METRICS_ADVISOR_SUBSCRIPTION_KEY\")\n   api_key = os.getenv(\"METRICS_ADVISOR_API_KEY\"\
-    )\n\n   client = MetricsAdvisorAdministrationClient(service_endpoint,\n      \
-    \                           MetricsAdvisorKeyCredential(subscription_key, api_key))\n\
-    \n   hook.name = \"updated hook name\"\n   hook.description = \"updated hook description\"\
-    \n\n   client.update_hook(\n       hook,\n       emails_to_alert=[\"newemail@alertme.com\"\
-    ]\n   )\n   updated = client.get_hook(hook.id)\n   print(\"Updated name: {}\"\
-    .format(updated.name))\n   print(\"Updated description: {}\".format(updated.description))\n\
-    \   print(\"Updated emails: {}\".format(updated.emails_to_alert))\n\n   ````\n"
+    \\170\\\\azure-ai-metricsadvisor-1.0.1a20211013001\\\\samples\\\\sample_hooks.py\"\
+    , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
+    highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   from azure.ai.metricsadvisor\
+    \ import MetricsAdvisorKeyCredential, MetricsAdvisorAdministrationClient\n\n \
+    \  service_endpoint = os.getenv(\"METRICS_ADVISOR_ENDPOINT\")\n   subscription_key\
+    \ = os.getenv(\"METRICS_ADVISOR_SUBSCRIPTION_KEY\")\n   api_key = os.getenv(\"\
+    METRICS_ADVISOR_API_KEY\")\n\n   client = MetricsAdvisorAdministrationClient(service_endpoint,\n\
+    \                                 MetricsAdvisorKeyCredential(subscription_key,\
+    \ api_key))\n\n   hook.name = \"updated hook name\"\n   hook.description = \"\
+    updated hook description\"\n\n   client.update_hook(\n       hook,\n       emails_to_alert=[\"\
+    newemail@alertme.com\"]\n   )\n   updated = client.get_hook(hook.id)\n   print(\"\
+    Updated name: {}\".format(updated.name))\n   print(\"Updated description: {}\"\
+    .format(updated.description))\n   print(\"Updated emails: {}\".format(updated.emails_to_alert))\n\
+    \n   ````\n"

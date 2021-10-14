@@ -1,0 +1,34 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.hybridnetwork.models.StorageProfile
+name: StorageProfile
+fullName: azure.mgmt.hybridnetwork.models.StorageProfile
+module: azure.mgmt.hybridnetwork.models
+inheritances:
+- msrest.serialization.Model
+summary: Specifies the storage settings for the virtual machine disks.
+constructor:
+  syntax: 'StorageProfile(*, image_reference: typing.Union[_ForwardRef(''ImageReference''),
+    NoneType] = None, os_disk: typing.Union[_ForwardRef(''OsDisk''), NoneType] = None,
+    data_disks: typing.Union[typing.List[_ForwardRef(''DataDisk'')], NoneType] = None,
+    **kwargs)'
+  parameters:
+  - name: image_reference
+    description: The image reference properties.
+    isRequired: true
+    types:
+    - <xref:hybrid_network_management_client.models.ImageReference>
+  - name: os_disk
+    description: 'Specifies information about the operating system disk used by the
+      virtual
+
+      machine.'
+    isRequired: true
+    types:
+    - <xref:hybrid_network_management_client.models.OsDisk>
+  - name: data_disks
+    description: 'Specifies the parameters that are used to add a data disk to a virtual
+
+      machine.'
+    isRequired: true
+    types:
+    - <xref:list>[<xref:hybrid_network_management_client.models.DataDisk>]

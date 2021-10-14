@@ -11,13 +11,14 @@ constructor:
 attributes:
 - uid: azure.mgmt.core.policies.ARMHttpLoggingPolicy.DEFAULT_HEADERS_WHITELIST
   name: DEFAULT_HEADERS_WHITELIST
-  signature: 'DEFAULT_HEADERS_WHITELIST = {''x-ms-ratelimit-remaining-subscription-reads'',
-    ''Last-Modified'', ''x-ms-request-charge'', ''User-Agent'', ''x-ms-ratelimit-remaining-resource'',
-    ''If-Unmodified-Since'', ''x-ms-return-client-request-id'', ''Content-Length'',
-    ''x-ms-ratelimit-remaining-subscription-resource-entities-read'', ''Accept'',
-    ''x-ms-ratelimit-remaining-tenant-reads'', ''Date'', ''x-ms-ratelimit-remaining-tenant-writes'',
-    ''Cache-Control'', ''ETag'', ''traceparent'', ''x-ms-ratelimit-remaining-tenant-resource-requests'',
-    ''x-ms-request-id'', ''x-ms-ratelimit-remaining-subscription-writes'', ''If-Match'',
-    ''If-None-Match'', ''Retry-After'', ''Transfer-Encoding'', ''Request-Id'', ''x-ms-ratelimit-remaining-subscription-resource-requests'',
-    ''Pragma'', ''Connection'', ''Content-Type'', ''Server'', ''Expires'', ''x-ms-client-request-id'',
-    ''x-ms-ratelimit-remaining-tenant-resource-entities-read'', ''If-Modified-Since''}'
+  signature: 'DEFAULT_HEADERS_WHITELIST = {''Accept'', ''If-Modified-Since'', ''Server'',
+    ''If-Match'', ''Request-Id'', ''x-ms-ratelimit-remaining-subscription-writes'',
+    ''If-None-Match'', ''Date'', ''x-ms-ratelimit-remaining-resource'', ''Pragma'',
+    ''x-ms-client-request-id'', ''Content-Length'', ''x-ms-ratelimit-remaining-subscription-resource-requests'',
+    ''Content-Type'', ''Transfer-Encoding'', ''User-Agent'', ''Retry-After'', ''Connection'',
+    ''x-ms-ratelimit-remaining-tenant-writes'', ''If-Unmodified-Since'', ''Expires'',
+    ''x-ms-ratelimit-remaining-tenant-resource-entities-read'', ''x-ms-return-client-request-id'',
+    ''Last-Modified'', ''x-ms-ratelimit-remaining-subscription-reads'', ''x-ms-ratelimit-remaining-tenant-reads'',
+    ''x-ms-ratelimit-remaining-subscription-resource-entities-read'', ''x-ms-request-id'',
+    ''x-ms-ratelimit-remaining-tenant-resource-requests'', ''Cache-Control'', ''ETag'',
+    ''x-ms-request-charge'', ''traceparent''}'

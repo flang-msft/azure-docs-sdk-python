@@ -1,0 +1,19 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.edgeorder.models.CancellationReason
+name: CancellationReason
+fullName: azure.mgmt.edgeorder.models.CancellationReason
+module: azure.mgmt.edgeorder.models
+inheritances:
+- msrest.serialization.Model
+summary: 'Reason for cancellation.
+
+
+  All required parameters must be populated in order to send to Azure.'
+constructor:
+  syntax: 'CancellationReason(*, reason: str, **kwargs)'
+  parameters:
+  - name: reason
+    description: Required. Reason for cancellation.
+    isRequired: true
+    types:
+    - <xref:str>

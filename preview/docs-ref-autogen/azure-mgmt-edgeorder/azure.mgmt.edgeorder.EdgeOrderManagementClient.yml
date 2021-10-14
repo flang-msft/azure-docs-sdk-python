@@ -1,0 +1,35 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.edgeorder.EdgeOrderManagementClient
+name: EdgeOrderManagementClient
+fullName: azure.mgmt.edgeorder.EdgeOrderManagementClient
+module: azure.mgmt.edgeorder
+inheritances:
+- azure.mgmt.edgeorder.operations._edge_order_management_client_operations.EdgeOrderManagementClientOperationsMixin
+summary: Edge Order API's.
+constructor:
+  syntax: EdgeOrderManagementClient(credential, subscription_id, base_url=None, **kwargs)
+  parameters:
+  - name: credential
+    description: Credential needed for the client to connect to Azure.
+    isRequired: true
+    types:
+    - <xref:azure.core.credentials.TokenCredential>
+  - name: subscription_id
+    description: The ID of the target subscription.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: base_url
+    description: Service URL
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: polling_interval
+    description: Default waiting time between two polls for LRO operations if no Retry-After
+      header is present.
+    types:
+    - <xref:int>
+methods:
+- uid: azure.mgmt.edgeorder.EdgeOrderManagementClient.close
+  name: close
+  signature: close()

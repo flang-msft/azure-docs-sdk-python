@@ -1,0 +1,20 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.edgeorder.models.EncryptionPreferences
+name: EncryptionPreferences
+fullName: azure.mgmt.edgeorder.models.EncryptionPreferences
+module: azure.mgmt.edgeorder.models
+inheritances:
+- msrest.serialization.Model
+summary: Preferences related to the double encryption.
+constructor:
+  syntax: 'EncryptionPreferences(*, double_encryption_status: typing.Union[str, _ForwardRef(''DoubleEncryptionStatus''),
+    NoneType] = ''Disabled'', **kwargs)'
+  parameters:
+  - name: double_encryption_status
+    description: 'Defines secondary layer of software-based encryption
+
+      enablement. Possible values include: "Disabled", "Enabled". Default value: "Disabled".'
+    isRequired: true
+    types:
+    - <xref:str>
+    - <xref:edge_order_management_client.models.DoubleEncryptionStatus>

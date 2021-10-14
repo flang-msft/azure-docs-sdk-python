@@ -170,14 +170,6 @@
       - azure-mgmt-monitor*
       - azure-mgmt-workloadmonitor*
       landingPageType: Service
-  - name: Purview
-    uid: azure.python.sdk.landingPage.services.Purview.pre
-    items:
-    - name: Resource Provider
-      uid: azure.python.sdk.landingPage.services.Purview.ResourceProvider.pre
-      landingPageType: Service
-      children:
-      - azure-mgmt-purview*
   - name: Policy
     uid: azure.python.sdk.landingPage.services.Policy.pre
     landingPageType: Service
