@@ -11,14 +11,13 @@ constructor:
 attributes:
 - uid: azure.mgmt.core.policies.ARMHttpLoggingPolicy.DEFAULT_HEADERS_WHITELIST
   name: DEFAULT_HEADERS_WHITELIST
-  signature: 'DEFAULT_HEADERS_WHITELIST = {''Accept'', ''If-Modified-Since'', ''Server'',
-    ''If-Match'', ''Request-Id'', ''x-ms-ratelimit-remaining-subscription-writes'',
-    ''If-None-Match'', ''Date'', ''x-ms-ratelimit-remaining-resource'', ''Pragma'',
-    ''x-ms-client-request-id'', ''Content-Length'', ''x-ms-ratelimit-remaining-subscription-resource-requests'',
-    ''Content-Type'', ''Transfer-Encoding'', ''User-Agent'', ''Retry-After'', ''Connection'',
-    ''x-ms-ratelimit-remaining-tenant-writes'', ''If-Unmodified-Since'', ''Expires'',
-    ''x-ms-ratelimit-remaining-tenant-resource-entities-read'', ''x-ms-return-client-request-id'',
-    ''Last-Modified'', ''x-ms-ratelimit-remaining-subscription-reads'', ''x-ms-ratelimit-remaining-tenant-reads'',
-    ''x-ms-ratelimit-remaining-subscription-resource-entities-read'', ''x-ms-request-id'',
-    ''x-ms-ratelimit-remaining-tenant-resource-requests'', ''Cache-Control'', ''ETag'',
-    ''x-ms-request-charge'', ''traceparent''}'
+  signature: 'DEFAULT_HEADERS_WHITELIST = {''x-ms-ratelimit-remaining-tenant-resource-requests'',
+    ''Connection'', ''Date'', ''If-Match'', ''x-ms-ratelimit-remaining-resource'',
+    ''traceparent'', ''Expires'', ''If-Modified-Since'', ''Server'', ''x-ms-ratelimit-remaining-subscription-resource-requests'',
+    ''x-ms-ratelimit-remaining-tenant-reads'', ''Content-Type'', ''x-ms-ratelimit-remaining-subscription-resource-entities-read'',
+    ''Request-Id'', ''User-Agent'', ''x-ms-ratelimit-remaining-tenant-resource-entities-read'',
+    ''x-ms-request-id'', ''If-Unmodified-Since'', ''Last-Modified'', ''Transfer-Encoding'',
+    ''Accept'', ''x-ms-return-client-request-id'', ''x-ms-request-charge'', ''Retry-After'',
+    ''x-ms-ratelimit-remaining-tenant-writes'', ''x-ms-ratelimit-remaining-subscription-reads'',
+    ''If-None-Match'', ''x-ms-ratelimit-remaining-subscription-writes'', ''Content-Length'',
+    ''Cache-Control'', ''x-ms-client-request-id'', ''ETag'', ''Pragma''}'
