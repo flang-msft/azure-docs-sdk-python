@@ -266,7 +266,8 @@
         "prefer_source_distribution": "true",
         "name": "azure-mgmt-azureadb2c",
         "install_type": "pypi",
-        "version": ">=1.0.0b1"
+        "version": "==1.0.0a20211014001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       }
     },
     {
@@ -282,20 +283,6 @@
         "install_type": "pypi",
         "version": "==1.0.0a20211013001",
         "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
-      }
-    },
-    {
-      "excludePath": [
-        "test*",
-        "example*",
-        "sample*",
-        "doc*"
-      ],
-      "package_info": {
-        "prefer_source_distribution": "true",
-        "name": "azure-mgmt-portal",
-        "install_type": "pypi",
-        "version": ">=1.0.0b1"
       }
     },
     {
@@ -336,23 +323,10 @@
       ],
       "package_info": {
         "install_type": "pypi",
-        "name": "azure-mgmt-purview",
-        "prefer_source_distribution": "true",
-        "version": ">=1.0.0b1"
-      }
-    },
-    {
-      "exclude_path": [
-        "test*",
-        "example*",
-        "sample*",
-        "doc*"
-      ],
-      "package_info": {
-        "install_type": "pypi",
         "name": "azure-mgmt-quantum",
         "prefer_source_distribution": "true",
-        "version": ">=1.0.0b1"
+        "version": "==1.0.0a20211014001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       }
     },
     {
@@ -544,7 +518,8 @@
         "name": "azure-purview-catalog",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
-        "version": "==1.0.0b1"
+        "version": "==1.0.0a20211014001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       }
     },
     {
@@ -558,7 +533,8 @@
         "name": "azure-purview-scanning",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
-        "version": "==1.0.0b1"
+        "version": "==1.0.0a20211014001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       }
     },
     {
@@ -599,20 +575,6 @@
         "doc*"
       ],
       "package_info": {
-        "name": "azure-identity",
-        "install_type": "pypi",
-        "prefer_source_distribution": "true",
-        "version": "==1.7.0b4"
-      }
-    },
-    {
-      "exclude_path": [
-        "test*",
-        "example*",
-        "sample*",
-        "doc*"
-      ],
-      "package_info": {
         "name": "azure-mgmt-videoanalyzer",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
@@ -640,7 +602,8 @@
         "install_type": "pypi",
         "prefer_source_distribution": "true",
         "name": "azure-mgmt-agrifood",
-        "version": "1.0.0b1"
+        "version": "==1.0.0a20211014001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
         "test*",
@@ -654,7 +617,8 @@
         "install_type": "pypi",
         "prefer_source_distribution": "true",
         "name": "azure-agrifood-farming",
-        "version": "1.0.0b1"
+        "version": "==1.0.0a20211014001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
         "test*",
@@ -772,7 +736,8 @@
         "name": "azure-ai-textanalytics",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
-        "version": "==5.2.0b1"
+        "version": "==5.2.0a20211014001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
         "test*",
@@ -1307,6 +1272,36 @@
     {
       "package_info": {
         "name": "azure-eventhub-checkpointstoretable",
+        "install_type": "pypi",
+        "prefer_source_distribution": "true",
+        "version": "==1.0.0a20211014001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
+      },
+      "exclude_path": [
+        "test*",
+        "example*",
+        "sample*",
+        "doc*"
+      ]
+    },
+    {
+      "package_info": {
+        "name": "azure-mgmt-edgeorder",
+        "install_type": "pypi",
+        "prefer_source_distribution": "true",
+        "version": "==1.0.0a20211014001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
+      },
+      "exclude_path": [
+        "test*",
+        "example*",
+        "sample*",
+        "doc*"
+      ]
+    },
+    {
+      "package_info": {
+        "name": "azure-mgmt-agfood",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
         "version": "==1.0.0a20211014001",
