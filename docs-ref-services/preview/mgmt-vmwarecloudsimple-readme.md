@@ -1,14 +1,14 @@
 ---
 title: 
-keywords: Azure, python, SDK, API, azure-mgmt-vmwarecloudsimple, vmwarebycloudsimple
+keywords: Azure, python, SDK, API, azure-mgmt-vmwarecloudsimple, compute
 author: maggiepint
 ms.author: magpint
-ms.date: 05/26/2021
+ms.date: 10/15/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.service: vmwarebycloudsimple
+ms.service: compute
 ---
 
 # Microsoft Azure SDK for Python
