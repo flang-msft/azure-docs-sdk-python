@@ -1,0 +1,14 @@
+{
+  "Name": "azure-storage-queue",
+  "Version": "12.1.6a20211014005",
+  "DevVersion": "12.1.6a20211014005",
+  "DirectoryPath": "sdk/storage/azure-storage-queue",
+  "ServiceDirectory": "storage",
+  "ReadMePath": "sdk/storage/azure-storage-queue/README.md",
+  "ChangeLogPath": "sdk/storage/azure-storage-queue/CHANGELOG.md",
+  "Group": null,
+  "SdkType": "client",
+  "IsNewSdk": true,
+  "ArtifactName": "azure-storage-queue",
+  "ReleaseStatus": "2021-04-20"
+}
