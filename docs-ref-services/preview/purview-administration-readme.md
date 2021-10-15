@@ -1,6 +1,6 @@
 ---
-title: Azure Purview Scanning client library for Python
-keywords: Azure, python, SDK, API, azure-purview-scanning, purview
+title: Azure Purview Administration client library for Python
+keywords: Azure, python, SDK, API, azure-purview-administration, purview
 author: maggiepint
 ms.author: magpint
 ms.date: 10/15/2021
@@ -11,18 +11,14 @@ ms.devlang: python
 ms.service: purview
 ---
 
-# Azure Purview Scanning client library for Python - Version 1.0.0a20211015001 
+# Azure Purview Administration client library for Python - Version 1.0.0a20211015001 
 
 
-Azure Purview Scanning is a fully managed cloud service whose users can scan your data into your data estate (also known as your **catalog**). Scanning is a process by which the catalog connects directly to a data source on a user-specified schedule.
+Azure Purview is a fully managed cloud service.
 
-- Scan your data into your catalog
-- Examine your data
-- Extract schemas from your data
+**Please rely heavily on the [service's documentation][account_product_documentation] to use this library**
 
-**Please rely heavily on the [service's documentation][scanning_product_documentation] and our [client docs][request_builders_and_client] to use this library**
-
-[Source code][source_code] | [Package (PyPI)][scanning_pypi] | [API reference documentation][scanning_ref_docs]| [Product documentation][scanning_product_documentation]
+[Source code][source_code] |  [Package (PyPI)][account_pypi] | [API reference documentation][account_ref_docs]| [Product documentation][account_product_documentation]
 
 ## _Disclaimer_
 
@@ -41,10 +37,10 @@ Follow [these][purview_resource] instructions to create your Purview resource
 
 ### Install the package
 
-Install the Azure Purview Scanning client library for Python with [pip][pip]:
+Install the Azure Purview Account client library for Python with [pip][pip]:
 
 ```bash
-pip install azure-purview-scanning
+pip install azure-purview-administration
 ```
 
 ### Authenticate the client
@@ -66,48 +62,63 @@ AZURE_CLIENT_ID, AZURE_TENANT_ID, AZURE_CLIENT_SECRET
 Use the returned token credential to authenticate the client:
 
 ```python
-from azure.purview.scanning import PurviewScanningClient
+from azure.purview.administration.account import PurviewAccountClient
+from azure.purview.administration.metadatapolicies import PurviewMetadataPoliciesClient
 from azure.identity import DefaultAzureCredential
 
 credential = DefaultAzureCredential()
-client = PurviewScanningClient(endpoint="https://<my-account-name>.scan.purview.azure.com", credential=credential)
+endpoint = "https://<my-account-name>.purview.azure.com"
+account_client = PurviewAccountClient(endpoint=endpoint, credential=credential)
+metadatapolicy_client = PurviewMetadataPoliciesClient(endpoint=endpoint, credential=credential)
 ```
 
 ## Key concepts
 
 ### Client
 
-This package offers request builders so you can build http requests and send these requests to the service using the `send_request` method.
-For more information on how to use request builders and our clients, see [here][request_builders_and_client].
+The package contains two kinds of client: `PurviewAccountClient` and `PurviewMetadataPoliciesClient`. You could use them 
+with one package according to your requirements. 
 
 ## Examples
 
-The following section shows you how to initialize and authenticate your client, then list all of your data sources.
+The following section shows you how to initialize and authenticate your client, then list all of your keys.
 
-- [List All Data Sources](#list-all-data-sources "List All Data Sources")
+- [Get Keys](#get-keys "Get All Keys")
 
-### List All Data Sources
+### Get Keys
 
 ```python
-from azure.purview.scanning import PurviewScanningClient
+from azure.purview.administration.account import PurviewAccountClient
 from azure.identity import DefaultAzureCredential
-from azure.core.exceptions import HttpResponseError
 
 credential = DefaultAzureCredential()
-client = PurviewScanningClient(endpoint="https://<my-account-name>.scan.purview.azure.com", credential=credential)
-try:
-    response = client.data_sources.list_all()
-    result = [item for item in response]
-    print(result)
-except HttpResponseError as e:
-    print(e)
+client = PurviewAccountClient(endpoint="https://<my-account-name>.purview.azure.com", credential=credential)
+response = client.accounts.get_access_keys()
+print(response)
+```
+
+The following section shows you how to initialize and authenticate your client, then list all of your roles.
+
+- [List_Roles](#list-roles "List Roles")
+
+### List Roles
+
+```python
+from azure.purview.administration.metadatapolicies import PurviewMetadataPoliciesClient
+from azure.identity import DefaultAzureCredential
+
+credential = DefaultAzureCredential()
+client = PurviewMetadataPoliciesClient(endpoint="https://<my-account-name>.purview.azure.com", credential=credential)
+response = client.metadata_roles.list()
+result = [item for item in response]
+print(result)
 ```
 
 ## Troubleshooting
 
 ### General
 
-The Purview Scanning client will raise exceptions defined in [Azure Core][azure_core] if you call `.raise_for_status()` on your responses.
+The Purview client will raise exceptions if status code of your responses is not defined.
 
 ### Logging
 
@@ -123,7 +134,7 @@ headers, can be enabled on a client with the `logging_enable` keyword argument:
 import sys
 import logging
 from azure.identity import DefaultAzureCredential
-from azure.purview.scanning import PurviewScanningClient
+from azure.purview.administration.account import PurviewAccountClient
 
 # Create a logger for the 'azure' SDK
 logger = logging.getLogger('azure')
@@ -133,18 +144,18 @@ logger.setLevel(logging.DEBUG)
 handler = logging.StreamHandler(stream=sys.stdout)
 logger.addHandler(handler)
 
-endpoint = "https://<my-account-name>.scan.purview.azure.com"
+endpoint = "https://<my-account-name>.purview.azure.com"
 credential = DefaultAzureCredential()
 
 # This client will log detailed information about its HTTP sessions, at DEBUG level
-client = PurviewScanningClient(endpoint=endpoint, credential=credential, logging_enable=True)
+client = PurviewAccountClient(endpoint=endpoint, credential=credential, logging_enable=True)
 ```
 
-Similarly, `logging_enable` can enable detailed logging for a single `send_request` call,
+Similarly, `logging_enable` can enable detailed logging for a single call,
 even when it isn't enabled for the client:
 
 ```python
-result = client.data_sources.list_all(logging_enable=True)
+result = client.accounts.get_access_keys(logging_enable=True)
 ```
 
 ## Next steps
@@ -161,10 +172,10 @@ This project has adopted the [Microsoft Open Source Code of Conduct][code_of_con
 
 <!-- LINKS -->
 
-[source_code]: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/purview/azure-purview-scanning/azure/purview/scanning
-[scanning_pypi]: https://aka.ms/azsdk/python/purviewscanning/pypi
-[scanning_ref_docs]: https://aka.ms/azsdk/python/purviewscanning/ref-docs
-[scanning_product_documentation]: https://azure.microsoft.com/services/purview/
+[source_code]: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/purview/
+[account_pypi]: https://pypi.org/project/azure-purview-catalog/#history
+[account_ref_docs]: https://azure.github.io/azure-sdk-for-python/
+[account_product_documentation]: https://azure.microsoft.com/services/purview/
 [azure_subscription]: https://azure.microsoft.com/free/
 [purview_resource]: https://docs.microsoft.com/azure/purview/create-catalog-portal
 [pip]: https://pypi.org/project/pip/
@@ -172,11 +183,11 @@ This project has adopted the [Microsoft Open Source Code of Conduct][code_of_con
 [azure_identity_credentials]: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/identity/azure-identity#credentials
 [azure_identity_pip]: https://pypi.org/project/azure-identity/
 [default_azure_credential]: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/identity/azure-identity#defaultazurecredential
-[request_builders_and_client]: https://aka.ms/azsdk/python/protocol/quickstart
 [enable_aad]: https://docs.microsoft.com/azure/purview/create-catalog-portal#add-a-security-principal-to-a-data-plane-role
 [python_logging]: https://docs.python.org/3.5/library/logging.html
 [cla]: https://cla.microsoft.com
 [code_of_conduct]: https://opensource.microsoft.com/codeofconduct/
 [coc_faq]: https://opensource.microsoft.com/codeofconduct/faq/
 [coc_contact]: mailto:opencode@microsoft.com
+[request_builders_and_client]: https://aka.ms/azsdk/python/protocol/quickstart
 
