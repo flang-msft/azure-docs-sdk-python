@@ -1,14 +1,14 @@
 ---
 title: 
-keywords: Azure, python, SDK, API, azure-mgmt-securityinsight, 
+keywords: Azure, python, SDK, API, azure-mgmt-securityinsight, sentinel
 author: maggiepint
 ms.author: magpint
-ms.date: 11/11/2020
+ms.date: 10/15/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.service: 
+ms.service: sentinel
 ---
 
 # Microsoft Azure SDK for Python
