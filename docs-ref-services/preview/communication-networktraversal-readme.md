@@ -1,17 +1,17 @@
 ---
 title: Azure Communication Network Traversal Package client library for Python
-keywords: Azure, python, SDK, API, azure-communication-networktraversal, 
+keywords: Azure, python, SDK, API, azure-communication-networktraversal, communication
 author: maggiepint
 ms.author: magpint
-ms.date: 08/16/2021
+ms.date: 10/15/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.service: 
+ms.service: communication
 ---
 
-# Azure Communication Network Traversal Package client library for Python - Version 1.0.0b1 
+# Azure Communication Network Traversal Package client library for Python - Version 1.0.0a20211015001 
 
 
 Azure Communication Network Traversal is managing TURN credentials for Azure Communication Services.
