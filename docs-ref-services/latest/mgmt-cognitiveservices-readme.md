@@ -3,7 +3,7 @@ title:
 keywords: Azure, python, SDK, API, azure-mgmt-cognitiveservices, cognitiveservices
 author: maggiepint
 ms.author: magpint
-ms.date: 06/07/2021
+ms.date: 10/16/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
