@@ -3,7 +3,7 @@ title: Azure Core Tracing OpenTelemetry client library for Python
 keywords: Azure, python, SDK, API, azure-core-tracing-opentelemetry, core
 author: maggiepint
 ms.author: magpint
-ms.date: 04/07/2021
+ms.date: 10/16/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
@@ -13,7 +13,7 @@ ms.service: core
 
 
 
-# Azure Core Tracing OpenTelemetry client library for Python - Version 1.0.0b9 
+# Azure Core Tracing OpenTelemetry client library for Python - Version 1.0.0a20211015002 
 
 
 ## Getting started
