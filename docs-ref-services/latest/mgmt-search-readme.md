@@ -3,7 +3,7 @@ title:
 keywords: Azure, python, SDK, API, azure-mgmt-search, search
 author: maggiepint
 ms.author: magpint
-ms.date: 01/04/2021
+ms.date: 10/18/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
