@@ -1,14 +1,14 @@
 ---
 title: 
-keywords: Azure, python, SDK, API, azure-mgmt-guestconfig, 
+keywords: Azure, python, SDK, API, azure-mgmt-guestconfig, machinelearning
 author: maggiepint
 ms.author: magpint
-ms.date: 07/14/2021
+ms.date: 10/18/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.service: 
+ms.service: machinelearning
 ---
 
 # Microsoft Azure SDK for Python
