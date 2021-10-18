@@ -3,7 +3,7 @@ title: Azure Video Analyzer Edge client library for Python
 keywords: Azure, python, SDK, API, azure-media-videoanalyzer-edge, videoanalyzer
 author: maggiepint
 ms.author: magpint
-ms.date: 05/25/2021
+ms.date: 10/18/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
@@ -11,7 +11,7 @@ ms.devlang: python
 ms.service: videoanalyzer
 ---
 
-# Azure Video Analyzer Edge client library for Python - Version 1.0.0b2 
+# Azure Video Analyzer Edge client library for Python - Version 1.0.0a20211018001 
 
 
 Azure Video Analyzer provides a platform to build intelligent video applications that span the edge and the cloud. The platform offers the capability to capture, record, and analyze live video along with publishing the results, video and video analytics, to Azure services in the cloud or the edge. It is designed to be an extensible platform, enabling you to connect different video analysis edge modules (such as Cognitive services containers, custom edge modules built by you with open-source machine learning models or custom models trained with your own data) to it and use them to analyze live video without worrying about the complexity of building and running a live video pipeline.
@@ -94,7 +94,7 @@ To create a live pipeline, you need to have an existing pipeline topology.
 
 ```python
 url_param = ParameterDefinition(name="rtspUrl", value=pipeline_url)
-pass_param = ParameterDefinition(name="rtspPassword", value='testpass')
+pass_param = ParameterDefinition(name="rtspPassword", value="secret_password")
 live_pipeline_properties = LivePipelineProperties(description="Sample pipeline description", topology_name=pipeline_topology_name, parameters=[url_param])
 
 live_pipeline = LivePipeline(name=live_pipeline_name, properties=live_pipeline_properties)
@@ -155,7 +155,7 @@ additional questions or comments.
 [coc_contact]: mailto:opencode@microsoft.com
 [doc_pipelines]: https://go.microsoft.com/fwlink/?linkid=2162396
 [package]: https://aka.ms/ava/sdk/client/python
-[source]: https://github.com/Azure/azure-sdk-for-python/tree/azure-media-videoanalyzer-edge_1.0.0b2/sdk/videoanalyzer
+[source]: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/videoanalyzer
 [samples]: https://github.com/Azure-Samples/live-video-analytics-iot-edge-python
 [doc_product]: https://go.microsoft.com/fwlink/?linkid=2162396
 [doc_direct_methods]: https://go.microsoft.com/fwlink/?linkid=2162396
