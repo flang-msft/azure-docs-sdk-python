@@ -1,14 +1,14 @@
 ---
 title: 
-keywords: Azure, python, SDK, API, azure-mgmt-redisenterprise, 
+keywords: Azure, python, SDK, API, azure-mgmt-redisenterprise, redisenterprise
 author: maggiepint
 ms.author: magpint
-ms.date: 02/22/2021
+ms.date: 10/18/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.service: 
+ms.service: redisenterprise
 ---
 
 # Microsoft Azure SDK for Python
