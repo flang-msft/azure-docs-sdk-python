@@ -1,14 +1,14 @@
 ---
 title: 
-keywords: Azure, python, SDK, API, azure-mgmt-sqlvirtualmachine, sqlserveronvirtualmachines
+keywords: Azure, python, SDK, API, azure-mgmt-sqlvirtualmachine, sql
 author: maggiepint
 ms.author: magpint
-ms.date: 05/20/2021
+ms.date: 10/19/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.service: sqlserveronvirtualmachines
+ms.service: sql
 ---
 
 # Microsoft Azure SDK for Python
