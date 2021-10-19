@@ -1,14 +1,14 @@
 ---
 title: 
-keywords: Azure, python, SDK, API, azure-mgmt-servicefabricmanagedclusters, 
+keywords: Azure, python, SDK, API, azure-mgmt-servicefabricmanagedclusters, servicefabricmanagedclusters
 author: maggiepint
 ms.author: magpint
-ms.date: 04/29/2021
+ms.date: 10/19/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.service: 
+ms.service: servicefabricmanagedclusters
 ---
 
 # Microsoft Azure SDK for Python
