@@ -1,14 +1,14 @@
 ---
 title: 
-keywords: Azure, python, SDK, API, azure-mgmt-confidentialledger, 
+keywords: Azure, python, SDK, API, azure-mgmt-confidentialledger, confidentialledger
 author: maggiepint
 ms.author: magpint
-ms.date: 04/29/2021
+ms.date: 10/20/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.service: 
+ms.service: confidentialledger
 ---
 
 # Microsoft Azure SDK for Python
