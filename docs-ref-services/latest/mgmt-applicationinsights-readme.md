@@ -3,7 +3,7 @@ title:
 keywords: Azure, python, SDK, API, azure-mgmt-applicationinsights, applicationinsights
 author: maggiepint
 ms.author: magpint
-ms.date: 02/04/2021
+ms.date: 10/20/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
