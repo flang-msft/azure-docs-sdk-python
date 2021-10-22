@@ -66,7 +66,8 @@
         "install_type": "pypi",
         "prefer_source_distribution": "true",
         "name": "azure-schemaregistry",
-        "version": "==1.0.0b3"
+        "version": "==1.0.0a20211021002",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
         "test*",
@@ -150,7 +151,8 @@
         "prefer_source_distribution": "true",
         "install_type": "pypi",
         "name": "azure-mgmt-resourcemover",
-        "version": "==1.1.0b2"
+        "version": "==1.1.0a20211021001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
         "test*",
@@ -324,7 +326,8 @@
         "prefer_source_distribution": "true",
         "name": "azure-mgmt-azureadb2c",
         "install_type": "pypi",
-        "version": ">=1.0.0b1"
+        "version": "==1.0.0a20211022001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       }
     },
     {
@@ -339,20 +342,6 @@
         "name": "azure-mgmt-kubernetesconfiguration",
         "install_type": "pypi",
         "version": "==0.3.0"
-      }
-    },
-    {
-      "excludePath": [
-        "test*",
-        "example*",
-        "sample*",
-        "doc*"
-      ],
-      "package_info": {
-        "prefer_source_distribution": "true",
-        "name": "azure-mgmt-portal",
-        "install_type": "pypi",
-        "version": ">=1.0.0b1"
       }
     },
     {
@@ -406,20 +395,6 @@
       ],
       "package_info": {
         "install_type": "pypi",
-        "name": "azure-mgmt-purview",
-        "prefer_source_distribution": "true",
-        "version": ">=1.0.0b1"
-      }
-    },
-    {
-      "exclude_path": [
-        "test*",
-        "example*",
-        "sample*",
-        "doc*"
-      ],
-      "package_info": {
-        "install_type": "pypi",
         "name": "azure-mgmt-frontdoor",
         "prefer_source_distribution": "true",
         "version": ">=1.0.0b1"
@@ -450,7 +425,8 @@
         "install_type": "pypi",
         "name": "azure-mgmt-quantum",
         "prefer_source_distribution": "true",
-        "version": ">=1.0.0b1"
+        "version": "==1.0.0a20211022001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       }
     },
     {
@@ -562,7 +538,8 @@
         "name": "azure-synapse-accesscontrol",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
-        "version": "==0.7.0"
+        "version": "==0.8.0a20211021001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       }
     },
     {
@@ -576,7 +553,8 @@
         "name": "azure-synapse-artifacts",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
-        "version": "==0.9.0"
+        "version": "==0.10.0a20211021001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       }
     },
     {
@@ -590,7 +568,8 @@
         "name": "azure-synapse-managedprivateendpoints",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
-        "version": "==0.4.0"
+        "version": "==0.5.0a20211021001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       }
     },
     {
@@ -604,7 +583,8 @@
         "name": "azure-synapse-monitoring",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
-        "version": "==0.2.0"
+        "version": "==0.3.0a20211021001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       }
     },
     {
@@ -618,7 +598,8 @@
         "name": "azure-synapse-spark",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
-        "version": "==0.7.0"
+        "version": "==0.8.0a20211021001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       }
     },
     {
@@ -674,7 +655,8 @@
         "name": "azure-purview-catalog",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
-        "version": "==1.0.0b2"
+        "version": "==1.0.0a20211022001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       }
     },
     {
@@ -688,7 +670,8 @@
         "name": "azure-purview-scanning",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
-        "version": "==1.0.0b2"
+        "version": "==1.0.0a20211022001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       }
     },
     {
@@ -750,7 +733,8 @@
         "install_type": "pypi",
         "prefer_source_distribution": "true",
         "name": "azure-mgmt-agrifood",
-        "version": "1.0.0b1"
+        "version": "==1.0.0a20211022001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
         "test*",
@@ -764,7 +748,8 @@
         "install_type": "pypi",
         "prefer_source_distribution": "true",
         "name": "azure-agrifood-farming",
-        "version": "1.0.0b1"
+        "version": "==1.0.0a20211022001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
         "test*",
@@ -876,7 +861,8 @@
         "name": "azure-ai-textanalytics",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
-        "version": "==5.2.0b1"
+        "version": "==5.2.0a20211022001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
         "test*",
@@ -946,7 +932,8 @@
         "name": "azure-mgmt-synapse",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
-        "version": "==2.1.0b2"
+        "version": "==2.1.0a20211021001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
         "test*",
@@ -1058,7 +1045,8 @@
         "name": "azure-purview-administration",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
-        "version": "==1.0.0b1"
+        "version": "==1.0.0a20211022001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
         "test*",
@@ -1073,6 +1061,81 @@
         "install_type": "pypi",
         "prefer_source_distribution": "true",
         "version": "==1.0.0b1"
+      },
+      "exclude_path": [
+        "test*",
+        "example*",
+        "sample*",
+        "doc*"
+      ]
+    },
+    {
+      "package_info": {
+        "name": "azure-mgmt-agfood",
+        "install_type": "pypi",
+        "prefer_source_distribution": "true",
+        "version": "==1.0.0a20211022001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
+      },
+      "exclude_path": [
+        "test*",
+        "example*",
+        "sample*",
+        "doc*"
+      ]
+    },
+    {
+      "package_info": {
+        "name": "azure-iot-modelsrepository",
+        "install_type": "pypi",
+        "prefer_source_distribution": "true",
+        "version": "==1.0.0a20211021001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
+      },
+      "exclude_path": [
+        "test*",
+        "example*",
+        "sample*",
+        "doc*"
+      ]
+    },
+    {
+      "package_info": {
+        "name": "azure-synapse",
+        "install_type": "pypi",
+        "prefer_source_distribution": "true",
+        "version": "==0.1.1a20211021001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
+      },
+      "exclude_path": [
+        "test*",
+        "example*",
+        "sample*",
+        "doc*"
+      ]
+    },
+    {
+      "package_info": {
+        "name": "azure-mgmt-edgeorder",
+        "install_type": "pypi",
+        "prefer_source_distribution": "true",
+        "version": "==1.0.0a20211022001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
+      },
+      "exclude_path": [
+        "test*",
+        "example*",
+        "sample*",
+        "doc*"
+      ]
+    },
+    {
+      "package_info": {
+        "name": "azure-mgmt-dataprotection",
+        "install_type": "pypi",
+        "prefer_source_distribution": "true",
+        "version": "==1.0.0a20211022001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
         "test*",
