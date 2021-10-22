@@ -1,0 +1,22 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.recoveryservicessiterecovery.models.MigrationRecoveryPointCollection
+name: MigrationRecoveryPointCollection
+fullName: azure.mgmt.recoveryservicessiterecovery.models.MigrationRecoveryPointCollection
+module: azure.mgmt.recoveryservicessiterecovery.models
+inheritances:
+- msrest.serialization.Model
+summary: Collection of migration recovery points.
+constructor:
+  syntax: 'MigrationRecoveryPointCollection(*, value: typing.Union[typing.List[_ForwardRef(''MigrationRecoveryPoint'')],
+    NoneType] = None, next_link: typing.Union[str, NoneType] = None, **kwargs)'
+  parameters:
+  - name: value
+    description: The migration recovery point details.
+    isRequired: true
+    types:
+    - <xref:list>[<xref:azure.mgmt.recoveryservicessiterecovery.models.MigrationRecoveryPoint>]
+  - name: next_link
+    description: The value of next link.
+    isRequired: true
+    types:
+    - <xref:str>

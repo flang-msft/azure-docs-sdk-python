@@ -1,0 +1,424 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.recoveryservicessiterecovery.models.InMageAzureV2ReplicationDetails
+name: InMageAzureV2ReplicationDetails
+fullName: azure.mgmt.recoveryservicessiterecovery.models.InMageAzureV2ReplicationDetails
+module: azure.mgmt.recoveryservicessiterecovery.models
+inheritances:
+- azure.mgmt.recoveryservicessiterecovery.models._models_py3.ReplicationProviderSpecificSettings
+summary: 'InMageAzureV2 provider specific settings.
+
+
+  Variables are only populated by the server, and will be ignored when sending a request.
+
+
+  All required parameters must be populated in order to send to Azure.'
+constructor:
+  syntax: 'InMageAzureV2ReplicationDetails(*, infrastructure_vm_id: typing.Union[str,
+    NoneType] = None, v_center_infrastructure_id: typing.Union[str, NoneType] = None,
+    protection_stage: typing.Union[str, NoneType] = None, vm_id: typing.Union[str,
+    NoneType] = None, vm_protection_state: typing.Union[str, NoneType] = None, vm_protection_state_description:
+    typing.Union[str, NoneType] = None, resync_progress_percentage: typing.Union[int,
+    NoneType] = None, rpo_in_seconds: typing.Union[int, NoneType] = None, compressed_data_rate_in_mb:
+    typing.Union[float, NoneType] = None, uncompressed_data_rate_in_mb: typing.Union[float,
+    NoneType] = None, ip_address: typing.Union[str, NoneType] = None, agent_version:
+    typing.Union[str, NoneType] = None, agent_expiry_date: typing.Union[datetime.datetime,
+    NoneType] = None, is_agent_update_required: typing.Union[str, NoneType] = None,
+    is_reboot_after_update_required: typing.Union[str, NoneType] = None, last_heartbeat:
+    typing.Union[datetime.datetime, NoneType] = None, process_server_id: typing.Union[str,
+    NoneType] = None, process_server_name: typing.Union[str, NoneType] = None, multi_vm_group_id:
+    typing.Union[str, NoneType] = None, multi_vm_group_name: typing.Union[str, NoneType]
+    = None, multi_vm_sync_status: typing.Union[str, NoneType] = None, protected_disks:
+    typing.Union[typing.List[_ForwardRef(''InMageAzureV2ProtectedDiskDetails'')],
+    NoneType] = None, disk_resized: typing.Union[str, NoneType] = None, master_target_id:
+    typing.Union[str, NoneType] = None, source_vm_cpu_count: typing.Union[int, NoneType]
+    = None, source_vm_ram_size_in_mb: typing.Union[int, NoneType] = None, os_type:
+    typing.Union[str, NoneType] = None, vhd_name: typing.Union[str, NoneType] = None,
+    os_disk_id: typing.Union[str, NoneType] = None, azure_vm_disk_details: typing.Union[typing.List[_ForwardRef(''AzureVmDiskDetails'')],
+    NoneType] = None, recovery_azure_vm_name: typing.Union[str, NoneType] = None,
+    recovery_azure_vm_size: typing.Union[str, NoneType] = None, recovery_azure_storage_account:
+    typing.Union[str, NoneType] = None, recovery_azure_log_storage_account_id: typing.Union[str,
+    NoneType] = None, vm_nics: typing.Union[typing.List[_ForwardRef(''VMNicDetails'')],
+    NoneType] = None, selected_recovery_azure_network_id: typing.Union[str, NoneType]
+    = None, selected_tfo_azure_network_id: typing.Union[str, NoneType] = None, selected_source_nic_id:
+    typing.Union[str, NoneType] = None, discovery_type: typing.Union[str, NoneType]
+    = None, enable_rdp_on_target_option: typing.Union[str, NoneType] = None, datastores:
+    typing.Union[typing.List[str], NoneType] = None, target_vm_id: typing.Union[str,
+    NoneType] = None, recovery_azure_resource_group_id: typing.Union[str, NoneType]
+    = None, recovery_availability_set_id: typing.Union[str, NoneType] = None, target_availability_zone:
+    typing.Union[str, NoneType] = None, target_proximity_placement_group_id: typing.Union[str,
+    NoneType] = None, use_managed_disks: typing.Union[str, NoneType] = None, license_type:
+    typing.Union[str, NoneType] = None, sql_server_license_type: typing.Union[str,
+    NoneType] = None, validation_errors: typing.Union[typing.List[_ForwardRef(''HealthError'')],
+    NoneType] = None, last_rpo_calculated_time: typing.Union[datetime.datetime, NoneType]
+    = None, last_update_received_time: typing.Union[datetime.datetime, NoneType] =
+    None, replica_id: typing.Union[str, NoneType] = None, os_version: typing.Union[str,
+    NoneType] = None, protected_managed_disks: typing.Union[typing.List[_ForwardRef(''InMageAzureV2ManagedDiskDetails'')],
+    NoneType] = None, firmware_type: typing.Union[str, NoneType] = None, azure_vm_generation:
+    typing.Union[str, NoneType] = None, is_additional_stats_available: typing.Union[bool,
+    NoneType] = None, total_data_transferred: typing.Union[int, NoneType] = None,
+    total_progress_health: typing.Union[str, NoneType] = None, target_vm_tags: typing.Union[typing.Dict[str,
+    str], NoneType] = None, seed_managed_disk_tags: typing.Union[typing.Dict[str,
+    str], NoneType] = None, target_managed_disk_tags: typing.Union[typing.Dict[str,
+    str], NoneType] = None, target_nic_tags: typing.Union[typing.Dict[str, str], NoneType]
+    = None, **kwargs)'
+  parameters:
+  - name: instance_type
+    description: Required. Gets the Instance type.Constant filled by server.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: infrastructure_vm_id
+    description: The infrastructure VM Id.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: v_center_infrastructure_id
+    description: The vCenter infrastructure Id.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: protection_stage
+    description: The protection stage.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: vm_id
+    description: The virtual machine Id.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: vm_protection_state
+    description: The protection state for the vm.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: vm_protection_state_description
+    description: The protection state description for the vm.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: resync_progress_percentage
+    description: The resync progress percentage.
+    isRequired: true
+    types:
+    - <xref:int>
+  - name: rpo_in_seconds
+    description: The RPO in seconds.
+    isRequired: true
+    types:
+    - <xref:long>
+  - name: compressed_data_rate_in_mb
+    description: The compressed data change rate in MB.
+    isRequired: true
+    types:
+    - <xref:float>
+  - name: uncompressed_data_rate_in_mb
+    description: The uncompressed data change rate in MB.
+    isRequired: true
+    types:
+    - <xref:float>
+  - name: ip_address
+    description: The source IP address.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: agent_version
+    description: The agent version.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: agent_expiry_date
+    description: Agent expiry date.
+    isRequired: true
+    types:
+    - <xref:datetime.datetime>
+  - name: is_agent_update_required
+    description: 'A value indicating whether installed agent needs to be
+
+      updated.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: is_reboot_after_update_required
+    description: 'A value indicating whether the source server requires a
+
+      restart after update.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: last_heartbeat
+    description: The last heartbeat received from the source server.
+    isRequired: true
+    types:
+    - <xref:datetime.datetime>
+  - name: process_server_id
+    description: The process server Id.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: process_server_name
+    description: The process server name.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: multi_vm_group_id
+    description: The multi vm group Id.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: multi_vm_group_name
+    description: The multi vm group name.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: multi_vm_sync_status
+    description: A value indicating whether multi vm sync is enabled or disabled.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: protected_disks
+    description: The list of protected disks.
+    isRequired: true
+    types:
+    - <xref:list>[<xref:azure.mgmt.recoveryservicessiterecovery.models.InMageAzureV2ProtectedDiskDetails>]
+  - name: disk_resized
+    description: A value indicating whether any disk is resized for this VM.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: master_target_id
+    description: The master target Id.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: source_vm_cpu_count
+    description: The CPU count of the VM on the primary side.
+    isRequired: true
+    types:
+    - <xref:int>
+  - name: source_vm_ram_size_in_mb
+    description: The RAM size of the VM on the primary side.
+    isRequired: true
+    types:
+    - <xref:int>
+  - name: os_type
+    description: The type of the OS on the VM.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: vhd_name
+    description: The OS disk VHD name.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: os_disk_id
+    description: The id of the disk containing the OS.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: azure_vm_disk_details
+    description: Azure VM Disk details.
+    isRequired: true
+    types:
+    - <xref:list>[<xref:azure.mgmt.recoveryservicessiterecovery.models.AzureVmDiskDetails>]
+  - name: recovery_azure_vm_name
+    description: Recovery Azure given name.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: recovery_azure_vm_size
+    description: The Recovery Azure VM size.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: recovery_azure_storage_account
+    description: The recovery Azure storage account.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: recovery_azure_log_storage_account_id
+    description: 'The ARM id of the log storage account used for
+
+      replication. This will be set to null if no log storage account was provided
+      during enable
+
+      protection.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: vm_nics
+    description: The PE Network details.
+    isRequired: true
+    types:
+    - <xref:list>[<xref:azure.mgmt.recoveryservicessiterecovery.models.VMNicDetails>]
+  - name: selected_recovery_azure_network_id
+    description: The selected recovery azure network Id.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: selected_tfo_azure_network_id
+    description: The test failover virtual network.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: selected_source_nic_id
+    description: 'The selected source nic Id which will be used as the primary nic
+
+      during failover.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: discovery_type
+    description: 'A value indicating the discovery type of the machine. Value can
+      be
+
+      vCenter or physical.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: enable_rdp_on_target_option
+    description: 'The selected option to enable RDPSSH on target vm after
+
+      failover. String value of SrsDataContract.EnableRDPOnTargetOption enum.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: datastores
+    description: 'The datastores of the on-premise machine. Value can be list of strings
+      that
+
+      contain datastore names.'
+    isRequired: true
+    types:
+    - <xref:list>[<xref:str>]
+  - name: target_vm_id
+    description: 'The ARM Id of the target Azure VM. This value will be null until
+      the VM is
+
+      failed over. Only after failure it will be populated with the ARM Id of the
+      Azure VM.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: recovery_azure_resource_group_id
+    description: The target resource group Id.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: recovery_availability_set_id
+    description: The recovery availability set Id.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: target_availability_zone
+    description: The target availability zone.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: target_proximity_placement_group_id
+    description: The target proximity placement group Id.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: use_managed_disks
+    description: 'A value indicating whether managed disks should be used during
+
+      failover.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: license_type
+    description: License Type of the VM to be used.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: sql_server_license_type
+    description: The SQL Server license type.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: validation_errors
+    description: 'The validation errors of the on-premise machine Value can be list
+      of
+
+      validation errors.'
+    isRequired: true
+    types:
+    - <xref:list>[<xref:azure.mgmt.recoveryservicessiterecovery.models.HealthError>]
+  - name: last_rpo_calculated_time
+    description: The last RPO calculated time.
+    isRequired: true
+    types:
+    - <xref:datetime.datetime>
+  - name: last_update_received_time
+    description: The last update time received from on-prem components.
+    isRequired: true
+    types:
+    - <xref:datetime.datetime>
+  - name: replica_id
+    description: The replica id of the protected item.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: os_version
+    description: The OS Version of the protected item.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: protected_managed_disks
+    description: The list of protected managed disks.
+    isRequired: true
+    types:
+    - <xref:list>[<xref:azure.mgmt.recoveryservicessiterecovery.models.InMageAzureV2ManagedDiskDetails>]
+  - name: firmware_type
+    description: The firmware type of this protected item.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: azure_vm_generation
+    description: The target generation for this protected item.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: is_additional_stats_available
+    description: 'A value indicating whether additional IR stats are
+
+      available or not.'
+    isRequired: true
+    types:
+    - <xref:bool>
+  - name: total_data_transferred
+    description: The total transferred data in bytes.
+    isRequired: true
+    types:
+    - <xref:long>
+  - name: total_progress_health
+    description: The progress health.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: target_vm_tags
+    description: The target VM tags.
+    isRequired: true
+    types:
+    - <xref:dict>[<xref:str>, <xref:str>]
+  - name: seed_managed_disk_tags
+    description: The tags for the seed managed disks.
+    isRequired: true
+    types:
+    - <xref:dict>[<xref:str>, <xref:str>]
+  - name: target_managed_disk_tags
+    description: The tags for the target managed disks.
+    isRequired: true
+    types:
+    - <xref:dict>[<xref:str>, <xref:str>]
+  - name: target_nic_tags
+    description: The tags for the target NICs.
+    isRequired: true
+    types:
+    - <xref:dict>[<xref:str>, <xref:str>]
+variables:
+- description: The last recovery point received time.
+  name: last_recovery_point_received
+  types:
+  - <xref:datetime.datetime>

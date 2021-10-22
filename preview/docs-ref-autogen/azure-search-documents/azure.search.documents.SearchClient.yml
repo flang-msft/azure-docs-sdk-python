@@ -32,7 +32,7 @@ constructor:
 examples:
 - "Creating the SearchClient with an API key.<!--[!code-python[Main](les\\sample_authentication.py\
   \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
-  : [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\56\\\\azure-search-documents-11.3.0b4\\\
+  : [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\43\\\\azure-search-documents-11.3.0a20211021001\\\
   \\samples\\\\sample_authentication.py\", \"xml:space\": \"preserve\", \"language\"\
   : \"python\", \"linenos\": false, \"highlight_args\": {\"linenostart\": 1}} -->\n\
   \n````python\n\n   from azure.core.credentials import AzureKeyCredential\n   from\
@@ -116,12 +116,12 @@ methods:
   examples:
   - "Get a auto-completions.<!--[!code-python[Main](les\\sample_autocomplete.py )]-->\n\
     \n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
-    : [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\56\\\\\
-    azure-search-documents-11.3.0b4\\\\samples\\\\sample_autocomplete.py\", \"xml:space\"\
-    : \"preserve\", \"language\": \"python\", \"linenos\": false, \"highlight_args\"\
-    : {\"linenostart\": 1}} -->\n\n````python\n\n   from azure.core.credentials import\
-    \ AzureKeyCredential\n   from azure.search.documents import SearchClient\n\n \
-    \  search_client = SearchClient(service_endpoint, index_name, AzureKeyCredential(key))\n\
+    : [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\43\\\\\
+    azure-search-documents-11.3.0a20211021001\\\\samples\\\\sample_autocomplete.py\"\
+    , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
+    highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   from azure.core.credentials\
+    \ import AzureKeyCredential\n   from azure.search.documents import SearchClient\n\
+    \n   search_client = SearchClient(service_endpoint, index_name, AzureKeyCredential(key))\n\
     \n   results = search_client.autocomplete(search_text=\"bo\", suggester_name=\"\
     sg\")\n\n   print(\"Autocomplete suggestions for 'bo'\")\n   for result in results:\n\
     \       print(\"    Completion: {}\".format(result[\"text\"]))\n\n   ````\n"
@@ -162,7 +162,7 @@ methods:
   - "Delete existing documents to an index<!--[!code-python[Main](les\\sample_crud_operations.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\
-    \\56\\\\azure-search-documents-11.3.0b4\\\\samples\\\\sample_crud_operations.py\"\
+    \\43\\\\azure-search-documents-11.3.0a20211021001\\\\samples\\\\sample_crud_operations.py\"\
     , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
     highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   result = search_client.delete_documents(documents=[{\"\
     HotelId\": \"1000\"}])\n\n   print(\"Delete new document succeeded: {}\".format(result[0].succeeded))\n\
@@ -189,7 +189,7 @@ methods:
   - "Get a specific document from the search index.<!--[!code-python[Main](les\\sample_get_document.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\
-    \\56\\\\azure-search-documents-11.3.0b4\\\\samples\\\\sample_get_document.py\"\
+    \\43\\\\azure-search-documents-11.3.0a20211021001\\\\samples\\\\sample_get_document.py\"\
     , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
     highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   from azure.core.credentials\
     \ import AzureKeyCredential\n   from azure.search.documents import SearchClient\n\
@@ -248,12 +248,12 @@ methods:
   - "Merge fields into existing documents to an index<!--[!code-python[Main](les\\\
     sample_crud_operations.py )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\"\
     : [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\\
-    a\\\\1\\\\s\\\\dist_temp\\\\56\\\\azure-search-documents-11.3.0b4\\\\samples\\\
-    \\sample_crud_operations.py\", \"xml:space\": \"preserve\", \"language\": \"python\"\
-    , \"linenos\": false, \"highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\
-    \n   result = search_client.merge_documents(documents=[{\"HotelId\": \"1000\"\
-    , \"Rating\": 4.5}])\n\n   print(\"Merge into new document succeeded: {}\".format(result[0].succeeded))\n\
-    \n   ````\n"
+    a\\\\1\\\\s\\\\dist_temp\\\\43\\\\azure-search-documents-11.3.0a20211021001\\\\\
+    samples\\\\sample_crud_operations.py\", \"xml:space\": \"preserve\", \"language\"\
+    : \"python\", \"linenos\": false, \"highlight_args\": {\"linenostart\": 1}} -->\n\
+    \n````python\n\n   result = search_client.merge_documents(documents=[{\"HotelId\"\
+    : \"1000\", \"Rating\": 4.5}])\n\n   print(\"Merge into new document succeeded:\
+    \ {}\".format(result[0].succeeded))\n\n   ````\n"
 - uid: azure.search.documents.SearchClient.merge_or_upload_documents
   name: merge_or_upload_documents
   summary: 'Merge documents in to existing documents in the Azure search index,
@@ -497,18 +497,53 @@ methods:
       another Search request for the next page of results.'
     types:
     - <xref:int>
+  - name: scoring_statistics
+    description: 'A value that specifies whether we want to calculate scoring
+
+      statistics (such as document frequency) globally for more consistent scoring,
+      or locally, for
+
+      lower latency. The default is ''local''. Use ''global'' to aggregate scoring
+      statistics globally
+
+      before scoring. Using global scoring statistics can increase latency of search
+      queries.
+
+      Possible values include: "local", "global".'
+    types:
+    - <xref:str>
+    - <xref:azure.search.documents.models.ScoringStatistics>
+  - name: session_id
+    description: 'A value to be used to create a sticky session, which can help getting
+      more
+
+      consistent results. As long as the same sessionId is used, a best-effort attempt
+      will be made
+
+      to target the same replica set. Be wary that reusing the same sessionID values
+      repeatedly can
+
+      interfere with the load balancing of the requests across replicas and adversely
+      affect the
+
+      performance of the search service. The value used as sessionId cannot start
+      with a ''_''
+
+      character.'
+    types:
+    - <xref:str>
   return:
     types:
     - <xref:SearchItemPaged>[<xref:dict>]
   examples:
   - "Get search result facets.<!--[!code-python[Main](les\\sample_facet_query.py )]-->\n\
     \n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
-    : [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\56\\\\\
-    azure-search-documents-11.3.0b4\\\\samples\\\\sample_facet_query.py\", \"xml:space\"\
-    : \"preserve\", \"language\": \"python\", \"linenos\": false, \"highlight_args\"\
-    : {\"linenostart\": 1}} -->\n\n````python\n\n   from azure.core.credentials import\
-    \ AzureKeyCredential\n   from azure.search.documents import SearchClient\n\n \
-    \  search_client = SearchClient(service_endpoint, index_name, AzureKeyCredential(key))\n\
+    : [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\43\\\\\
+    azure-search-documents-11.3.0a20211021001\\\\samples\\\\sample_facet_query.py\"\
+    , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
+    highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   from azure.core.credentials\
+    \ import AzureKeyCredential\n   from azure.search.documents import SearchClient\n\
+    \n   search_client = SearchClient(service_endpoint, index_name, AzureKeyCredential(key))\n\
     \n   results = search_client.search(search_text=\"WiFi\", facets=[\"Category,count:3\"\
     , \"ParkingIncluded\"])\n\n   facets = results.get_facets()\n\n   print(\"Catgory\
     \ facet counts for hotels:\")\n   for facet in facets[\"Category\"]:\n       print(\"\
@@ -598,12 +633,12 @@ methods:
   examples:
   - "Get search suggestions.<!--[!code-python[Main](les\\sample_suggestions.py )]-->\n\
     \n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
-    : [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\56\\\\\
-    azure-search-documents-11.3.0b4\\\\samples\\\\sample_suggestions.py\", \"xml:space\"\
-    : \"preserve\", \"language\": \"python\", \"linenos\": false, \"highlight_args\"\
-    : {\"linenostart\": 1}} -->\n\n````python\n\n   from azure.core.credentials import\
-    \ AzureKeyCredential\n   from azure.search.documents import SearchClient\n\n \
-    \  search_client = SearchClient(service_endpoint, index_name, AzureKeyCredential(key))\n\
+    : [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\43\\\\\
+    azure-search-documents-11.3.0a20211021001\\\\samples\\\\sample_suggestions.py\"\
+    , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
+    highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   from azure.core.credentials\
+    \ import AzureKeyCredential\n   from azure.search.documents import SearchClient\n\
+    \n   search_client = SearchClient(service_endpoint, index_name, AzureKeyCredential(key))\n\
     \n   results = search_client.suggest(search_text=\"coffee\", suggester_name=\"\
     sg\")\n\n   print(\"Search suggestions for 'coffee'\")\n   for result in results:\n\
     \       hotel = search_client.get_document(key=result[\"HotelId\"])\n       print(\"\
@@ -633,7 +668,7 @@ methods:
   - "Upload new documents to an index<!--[!code-python[Main](les\\sample_crud_operations.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\
-    \\56\\\\azure-search-documents-11.3.0b4\\\\samples\\\\sample_crud_operations.py\"\
+    \\43\\\\azure-search-documents-11.3.0a20211021001\\\\samples\\\\sample_crud_operations.py\"\
     , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
     highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   DOCUMENT = {\n\
     \       'Category': 'Hotel',\n       'HotelId': '1000',\n       'Rating': 4.0,\n\

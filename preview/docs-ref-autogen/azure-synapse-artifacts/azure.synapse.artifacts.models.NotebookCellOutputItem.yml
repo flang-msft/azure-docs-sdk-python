@@ -1,5 +1,5 @@
 ### YamlMime:PythonClass
-uid: azure.synapse.artifacts.models.NotebookCellOutputItem
+uid: azure.synapse.artifacts.models.NotebookCellOutputItem1
 name: NotebookCellOutputItem
 fullName: azure.synapse.artifacts.models.NotebookCellOutputItem
 module: azure.synapse.artifacts.models
@@ -12,8 +12,7 @@ summary: 'An item of the notebook cell execution output.
 constructor:
   syntax: 'NotebookCellOutputItem(*, output_type: typing.Union[str, _ForwardRef(''CellOutputType'')],
     name: typing.Union[str, NoneType] = None, execution_count: typing.Union[int, NoneType]
-    = None, text: typing.Union[typing.Any, NoneType] = None, data: typing.Union[typing.Any,
-    NoneType] = None, metadata: typing.Union[typing.Any, NoneType] = None, **kwargs)'
+    = None, text: object = None, data: object = None, metadata: object = None, **kwargs)'
   parameters:
   - name: name
     description: For output_type=stream, determines the name of stream (stdout / stderr).
@@ -41,14 +40,14 @@ constructor:
       array of strings.'
     isRequired: true
     types:
-    - <xref:any>
+    - <xref:object>
   - name: data
     description: Output data. Use MIME type as key, and content as value.
     isRequired: true
     types:
-    - <xref:any>
+    - <xref:object>
   - name: metadata
     description: Metadata for the output item.
     isRequired: true
     types:
-    - <xref:any>
+    - <xref:object>

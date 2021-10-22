@@ -1,0 +1,78 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.storageimportexport.models.UpdateJobParameters
+name: UpdateJobParameters
+fullName: azure.mgmt.storageimportexport.models.UpdateJobParameters
+module: azure.mgmt.storageimportexport.models
+inheritances:
+- msrest.serialization.Model
+summary: Update Job parameters.
+constructor:
+  syntax: 'UpdateJobParameters(*, tags: typing.Union[typing.Any, NoneType] = None,
+    cancel_requested: typing.Union[bool, NoneType] = None, state: typing.Union[str,
+    NoneType] = None, return_address: typing.Union[_ForwardRef(''ReturnAddress''),
+    NoneType] = None, return_shipping: typing.Union[_ForwardRef(''ReturnShipping''),
+    NoneType] = None, delivery_package: typing.Union[_ForwardRef(''DeliveryPackageInformation''),
+    NoneType] = None, log_level: typing.Union[str, NoneType] = None, backup_drive_manifest:
+    typing.Union[bool, NoneType] = None, drive_list: typing.Union[typing.List[_ForwardRef(''DriveStatus'')],
+    NoneType] = None, **kwargs)'
+  parameters:
+  - name: tags
+    description: A set of tags. Specifies the tags that will be assigned to the job.
+    isRequired: true
+    types:
+    - <xref:any>
+  - name: cancel_requested
+    description: 'If specified, the value must be true. The service will attempt to
+
+      cancel the job.'
+    isRequired: true
+    types:
+    - <xref:bool>
+  - name: state
+    description: 'If specified, the value must be Shipping, which tells the Import/Export
+      service
+
+      that the package for the job has been shipped. The ReturnAddress and DeliveryPackage
+      properties
+
+      must have been set either in this request or in a previous request, otherwise
+      the request will
+
+      fail.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: return_address
+    description: Specifies the return address information for the job.
+    isRequired: true
+    types:
+    - <xref:storage_import_export.models.ReturnAddress>
+  - name: return_shipping
+    description: Specifies the return carrier and customer's account with the carrier.
+    isRequired: true
+    types:
+    - <xref:storage_import_export.models.ReturnShipping>
+  - name: delivery_package
+    description: 'Contains information about the package being shipped by the customer
+
+      to the Microsoft data center.'
+    isRequired: true
+    types:
+    - <xref:storage_import_export.models.DeliveryPackageInformation>
+  - name: log_level
+    description: Indicates whether error logging or verbose logging is enabled.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: backup_drive_manifest
+    description: 'Indicates whether the manifest files on the drives should be
+
+      copied to block blobs.'
+    isRequired: true
+    types:
+    - <xref:bool>
+  - name: drive_list
+    description: List of drives that comprise the job.
+    isRequired: true
+    types:
+    - <xref:list>[<xref:storage_import_export.models.DriveStatus>]

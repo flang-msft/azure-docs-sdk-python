@@ -1,5 +1,5 @@
 ### YamlMime:PythonClass
-uid: azure.synapse.artifacts.models.DeleteActivity
+uid: azure.synapse.artifacts.models.DeleteActivity1
 name: DeleteActivity
 fullName: azure.synapse.artifacts.models.DeleteActivity
 module: azure.synapse.artifacts.models
@@ -11,15 +11,13 @@ summary: 'Delete activity.
   All required parameters must be populated in order to send to Azure.'
 constructor:
   syntax: 'DeleteActivity(*, name: str, dataset: azure.synapse.artifacts.models._models_py3.DatasetReference,
-    additional_properties: typing.Union[typing.Dict[str, typing.Any], NoneType] =
-    None, description: typing.Union[str, NoneType] = None, depends_on: typing.Union[typing.List[_ForwardRef(''ActivityDependency'')],
+    additional_properties: typing.Union[typing.Dict[str, object], NoneType] = None,
+    description: typing.Union[str, NoneType] = None, depends_on: typing.Union[typing.List[_ForwardRef(''ActivityDependency'')],
     NoneType] = None, user_properties: typing.Union[typing.List[_ForwardRef(''UserProperty'')],
     NoneType] = None, linked_service_name: typing.Union[_ForwardRef(''LinkedServiceReference''),
     NoneType] = None, policy: typing.Union[_ForwardRef(''ActivityPolicy''), NoneType]
-    = None, recursive: typing.Union[typing.Any, NoneType] = None, max_concurrent_connections:
-    typing.Union[int, NoneType] = None, enable_logging: typing.Union[typing.Any, NoneType]
-    = None, log_storage_settings: typing.Union[_ForwardRef(''LogStorageSettings''),
-    NoneType] = None, store_settings: typing.Union[_ForwardRef(''StoreReadSettings''),
+    = None, recursive: object = None, max_concurrent_connections: typing.Union[int,
+    NoneType] = None, enable_logging: object = None, log_storage_settings: typing.Union[_ForwardRef(''LogStorageSettings''),
     NoneType] = None, **kwargs)'
   parameters:
   - name: additional_properties
@@ -28,7 +26,7 @@ constructor:
       collection.'
     isRequired: true
     types:
-    - <xref:dict>[<xref:str>, <xref:any>]
+    - <xref:dict>[<xref:str>, <xref:object>]
   - name: name
     description: Required. Activity name.
     isRequired: true
@@ -72,7 +70,7 @@ constructor:
       boolean).'
     isRequired: true
     types:
-    - <xref:any>
+    - <xref:object>
   - name: max_concurrent_connections
     description: 'The max concurrent connections to connect data source at the
 
@@ -86,7 +84,7 @@ constructor:
       value is false. Type: boolean (or Expression with resultType boolean).'
     isRequired: true
     types:
-    - <xref:any>
+    - <xref:object>
   - name: log_storage_settings
     description: 'Log storage settings customer need to provide when enableLogging
 
@@ -99,8 +97,3 @@ constructor:
     isRequired: true
     types:
     - <xref:azure.synapse.artifacts.models.DatasetReference>
-  - name: store_settings
-    description: Delete activity store settings.
-    isRequired: true
-    types:
-    - <xref:azure.synapse.artifacts.models.StoreReadSettings>

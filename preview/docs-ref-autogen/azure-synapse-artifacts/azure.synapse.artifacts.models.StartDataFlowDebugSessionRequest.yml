@@ -1,5 +1,5 @@
 ### YamlMime:PythonClass
-uid: azure.synapse.artifacts.models.StartDataFlowDebugSessionRequest
+uid: azure.synapse.artifacts.models.StartDataFlowDebugSessionRequest1
 name: StartDataFlowDebugSessionRequest
 fullName: azure.synapse.artifacts.models.StartDataFlowDebugSessionRequest
 module: azure.synapse.artifacts.models
@@ -11,9 +11,8 @@ constructor:
     = None, data_flow: typing.Union[_ForwardRef(''DataFlowResource''), NoneType] =
     None, datasets: typing.Union[typing.List[_ForwardRef(''DatasetResource'')], NoneType]
     = None, linked_services: typing.Union[typing.List[_ForwardRef(''LinkedServiceResource'')],
-    NoneType] = None, staging: typing.Union[typing.Any, NoneType] = None, debug_settings:
-    typing.Union[typing.Any, NoneType] = None, incremental_debug: typing.Union[bool,
-    NoneType] = None, **kwargs)'
+    NoneType] = None, staging: object = None, debug_settings: object = None, incremental_debug:
+    typing.Union[bool, NoneType] = None, **kwargs)'
   parameters:
   - name: session_id
     description: The ID of data flow debug session.
@@ -39,12 +38,12 @@ constructor:
     description: Staging info for debug session.
     isRequired: true
     types:
-    - <xref:any>
+    - <xref:object>
   - name: debug_settings
     description: Data flow debug settings.
     isRequired: true
     types:
-    - <xref:any>
+    - <xref:object>
   - name: incremental_debug
     description: The type of new Databricks cluster.
     isRequired: true

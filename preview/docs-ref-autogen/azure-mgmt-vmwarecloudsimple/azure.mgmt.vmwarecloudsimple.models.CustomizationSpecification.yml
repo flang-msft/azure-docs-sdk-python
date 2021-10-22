@@ -1,0 +1,23 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.vmwarecloudsimple.models.CustomizationSpecification
+name: CustomizationSpecification
+fullName: azure.mgmt.vmwarecloudsimple.models.CustomizationSpecification
+module: azure.mgmt.vmwarecloudsimple.models
+inheritances:
+- msrest.serialization.Model
+summary: The specification for Customization Policy.
+constructor:
+  syntax: 'CustomizationSpecification(*, identity: typing.Union[_ForwardRef(''CustomizationIdentity''),
+    NoneType] = None, nic_settings: typing.Union[typing.List[_ForwardRef(''CustomizationNicSetting'')],
+    NoneType] = None, **kwargs)'
+  parameters:
+  - name: identity
+    description: Customization Identity. It contains data about user and hostname.
+    isRequired: true
+    types:
+    - <xref:azure.mgmt.vmwarecloudsimple.models.CustomizationIdentity>
+  - name: nic_settings
+    description: Network interface settings.
+    isRequired: true
+    types:
+    - <xref:list>[<xref:azure.mgmt.vmwarecloudsimple.models.CustomizationNicSetting>]

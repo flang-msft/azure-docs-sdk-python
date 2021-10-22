@@ -1,5 +1,5 @@
 ### YamlMime:PythonClass
-uid: azure.synapse.artifacts.models.MappingDataFlow
+uid: azure.synapse.artifacts.models.MappingDataFlow1
 name: MappingDataFlow
 fullName: azure.synapse.artifacts.models.MappingDataFlow
 module: azure.synapse.artifacts.models
@@ -11,7 +11,7 @@ summary: 'Mapping data flow.
   All required parameters must be populated in order to send to Azure.'
 constructor:
   syntax: 'MappingDataFlow(*, description: typing.Union[str, NoneType] = None, annotations:
-    typing.Union[typing.List[typing.Any], NoneType] = None, folder: typing.Union[_ForwardRef(''DataFlowFolder''),
+    typing.Union[typing.List[object], NoneType] = None, folder: typing.Union[_ForwardRef(''DataFlowFolder''),
     NoneType] = None, sources: typing.Union[typing.List[_ForwardRef(''DataFlowSource'')],
     NoneType] = None, sinks: typing.Union[typing.List[_ForwardRef(''DataFlowSink'')],
     NoneType] = None, transformations: typing.Union[typing.List[_ForwardRef(''Transformation'')],
@@ -31,7 +31,7 @@ constructor:
     description: List of tags that can be used for describing the data flow.
     isRequired: true
     types:
-    - <xref:list>[<xref:any>]
+    - <xref:list>[<xref:object>]
   - name: folder
     description: 'The folder that this data flow is in. If not specified, Data flow
       will appear at

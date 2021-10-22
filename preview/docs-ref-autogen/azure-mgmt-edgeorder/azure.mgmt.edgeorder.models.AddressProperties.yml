@@ -1,0 +1,26 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.edgeorder.models.AddressProperties
+name: AddressProperties
+fullName: azure.mgmt.edgeorder.models.AddressProperties
+module: azure.mgmt.edgeorder.models
+inheritances:
+- msrest.serialization.Model
+summary: 'Address Properties.
+
+
+  All required parameters must be populated in order to send to Azure.'
+constructor:
+  syntax: 'AddressProperties(*, contact_details: azure.mgmt.edgeorder.models._models_py3.ContactDetails,
+    shipping_address: typing.Union[_ForwardRef(''ShippingAddress''), NoneType] = None,
+    **kwargs)'
+  parameters:
+  - name: shipping_address
+    description: Shipping details for the address.
+    isRequired: true
+    types:
+    - <xref:edge_order_management_client.models.ShippingAddress>
+  - name: contact_details
+    description: Required. Contact details for the address.
+    isRequired: true
+    types:
+    - <xref:edge_order_management_client.models.ContactDetails>

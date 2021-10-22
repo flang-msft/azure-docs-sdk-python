@@ -1,5 +1,5 @@
 ### YamlMime:PythonClass
-uid: azure.synapse.artifacts.models.DatasetZipDeflateCompression
+uid: azure.synapse.artifacts.models.DatasetZipDeflateCompression1
 name: DatasetZipDeflateCompression
 fullName: azure.synapse.artifacts.models.DatasetZipDeflateCompression
 module: azure.synapse.artifacts.models
@@ -11,8 +11,8 @@ summary: 'The ZipDeflate compression method used on a dataset.
   All required parameters must be populated in order to send to Azure.'
 constructor:
   syntax: 'DatasetZipDeflateCompression(*, additional_properties: typing.Union[typing.Dict[str,
-    typing.Any], NoneType] = None, level: typing.Union[typing.Any, NoneType] = None,
-    **kwargs)'
+    object], NoneType] = None, level: typing.Union[str, _ForwardRef(''DatasetCompressionLevel''),
+    NoneType] = None, **kwargs)'
   parameters:
   - name: additional_properties
     description: 'Unmatched properties from the message are deserialized to this
@@ -20,17 +20,16 @@ constructor:
       collection.'
     isRequired: true
     types:
-    - <xref:dict>[<xref:str>, <xref:any>]
+    - <xref:dict>[<xref:str>, <xref:object>]
   - name: type
     description: Required. Type of dataset compression.Constant filled by server.
     isRequired: true
     types:
     - <xref:str>
   - name: level
-    description: 'The ZipDeflate compression level. Type: string (or Expression with
-      resultType
-
-      string).'
+    description: 'The ZipDeflate compression level. Possible values include: "Optimal",
+      "Fastest".'
     isRequired: true
     types:
-    - <xref:any>
+    - <xref:str>
+    - <xref:azure.synapse.artifacts.models.DatasetCompressionLevel>

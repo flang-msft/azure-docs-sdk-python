@@ -1,0 +1,39 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.vmwarecloudsimple.models.GuestOSCustomization
+name: GuestOSCustomization
+fullName: azure.mgmt.vmwarecloudsimple.models.GuestOSCustomization
+module: azure.mgmt.vmwarecloudsimple.models
+inheritances:
+- msrest.serialization.Model
+summary: Guest OS Customization properties.
+constructor:
+  syntax: 'GuestOSCustomization(*, dns_servers: typing.Union[typing.List[str], NoneType]
+    = None, host_name: typing.Union[str, NoneType] = None, password: typing.Union[str,
+    NoneType] = None, policy_id: typing.Union[str, NoneType] = None, username: typing.Union[str,
+    NoneType] = None, **kwargs)'
+  parameters:
+  - name: dns_servers
+    description: List of dns servers to use.
+    isRequired: true
+    types:
+    - <xref:list>[<xref:str>]
+  - name: host_name
+    description: Virtual Machine hostname.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: password
+    description: Password for login.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: policy_id
+    description: id of customization policy.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: username
+    description: Username for login.
+    isRequired: true
+    types:
+    - <xref:str>

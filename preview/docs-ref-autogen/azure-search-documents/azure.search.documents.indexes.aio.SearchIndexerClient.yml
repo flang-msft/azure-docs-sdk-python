@@ -46,8 +46,8 @@ methods:
   - "Create a SearchIndexerDataSourceConnection<!--[!code-python[Main](les\\async_samples\\\
     sample_data_source_operations_async.py )]-->\n\n<!-- literal_block {\"ids\": [],\
     \ \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\"\
-    : \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\56\\\\azure-search-documents-11.3.0b4\\\\\
-    samples\\\\async_samples\\\\sample_data_source_operations_async.py\", \"xml:space\"\
+    : \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\43\\\\azure-search-documents-11.3.0a20211021001\\\
+    \\samples\\\\async_samples\\\\sample_data_source_operations_async.py\", \"xml:space\"\
     : \"preserve\", \"language\": \"python\", \"linenos\": false, \"highlight_args\"\
     : {\"linenostart\": 1}} -->\n\n````python\n\n   container = SearchIndexerDataContainer(name='searchcontainer')\n\
     \   data_source = SearchIndexerDataSourceConnection(\n       name=\"async-sample-data-source-connection\"\
@@ -183,8 +183,8 @@ methods:
   - "Delete a SearchIndexerDataSourceConnection<!--[!code-python[Main](les\\async_samples\\\
     sample_data_source_operations_async.py )]-->\n\n<!-- literal_block {\"ids\": [],\
     \ \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\"\
-    : \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\56\\\\azure-search-documents-11.3.0b4\\\\\
-    samples\\\\async_samples\\\\sample_data_source_operations_async.py\", \"xml:space\"\
+    : \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\43\\\\azure-search-documents-11.3.0a20211021001\\\
+    \\samples\\\\async_samples\\\\sample_data_source_operations_async.py\", \"xml:space\"\
     : \"preserve\", \"language\": \"python\", \"linenos\": false, \"highlight_args\"\
     : {\"linenostart\": 1}} -->\n\n````python\n\n\n   ````\n"
 - uid: azure.search.documents.indexes.aio.SearchIndexerClient.delete_indexer
@@ -232,6 +232,15 @@ methods:
   summary: Retrieves a data source connection definition.
   signature: get_data_source_connection(name, **kwargs)
   parameters:
+  - name: select
+    description: 'Selects which top-level properties of the skillsets to retrieve.
+      Specified as a
+
+      list of JSON property names, or ''*'' for all properties. The default is all
+
+      properties.'
+    types:
+    - <xref:list>[<xref:str>]
   - name: name
     description: The name of the data source connection to retrieve.
     isRequired: true
@@ -243,7 +252,7 @@ methods:
     - '<xref:azure.search.documents.indexes.models.SearchIndexerDataSourceConnectionRetrieve
       a SearchIndexerDataSourceConnection<!-->[<xref:!code-python>[<xref:Main>](<xref:les\async_samples\sample_data_source_operations_async.py
       >)]<xref:--><!-- literal_block {"ids": >[], <xref:"classes": >[], <xref:"names":
-      >[], <xref:"dupnames": >[], <xref:"backrefs": >[], <xref:"source": "D:\\a\\1\\s\\dist_temp\\56\\azure-search-documents-11.3.0b4\\samples\\async_samples\\sample_data_source_operations_async.py">,
+      >[], <xref:"dupnames": >[], <xref:"backrefs": >[], <xref:"source": "D:\\a\\1\\s\\dist_temp\\43\\azure-search-documents-11.3.0a20211021001\\samples\\async_samples\\sample_data_source_operations_async.py">,
       <xref:"xml:space": "preserve">, <xref:"language": "python">, <xref:"linenos":
       false>, <xref:"highlight_args": {"linenostart": 1}} -->````python   result =
       await client.get_data_source_connection>(<xref:"async-sample-data-source-connection">)<xref:   print>(<xref:"Retrived
@@ -269,8 +278,8 @@ methods:
   - "List all SearchIndexerDataSourceConnections<!--[!code-python[Main](les\\async_samples\\\
     sample_data_source_operations_async.py )]-->\n\n<!-- literal_block {\"ids\": [],\
     \ \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\"\
-    : \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\56\\\\azure-search-documents-11.3.0b4\\\\\
-    samples\\\\async_samples\\\\sample_data_source_operations_async.py\", \"xml:space\"\
+    : \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\43\\\\azure-search-documents-11.3.0a20211021001\\\
+    \\samples\\\\async_samples\\\\sample_data_source_operations_async.py\", \"xml:space\"\
     : \"preserve\", \"language\": \"python\", \"linenos\": false, \"highlight_args\"\
     : {\"linenostart\": 1}} -->\n\n````python\n\n   result = await client.get_data_source_connections()\n\
     \   names = [x.name for x in result]\n   print(\"Found {} Data Source Connections\
@@ -315,6 +324,16 @@ methods:
   name: get_indexers
   summary: Lists all indexers available for a search service.
   signature: get_indexers(**kwargs)
+  parameters:
+  - name: select
+    description: 'Selects which top-level properties of the skillsets to retrieve.
+      Specified as a
+
+      list of JSON property names, or ''*'' for all properties. The default is all
+
+      properties.'
+    types:
+    - <xref:list>[<xref:str>]
   return:
     description: List of all the SearchIndexers.
     types:
@@ -347,6 +366,16 @@ methods:
   name: get_skillsets
   summary: List the SearchIndexerSkillsets in an Azure Search service.
   signature: get_skillsets(**kwargs)
+  parameters:
+  - name: select
+    description: 'Selects which top-level properties of the skillsets to retrieve.
+      Specified as a
+
+      list of JSON property names, or ''*'' for all properties. The default is all
+
+      properties.'
+    types:
+    - <xref:list>[<xref:str>]
   return:
     description: List of SearchIndexerSkillsets
     types:

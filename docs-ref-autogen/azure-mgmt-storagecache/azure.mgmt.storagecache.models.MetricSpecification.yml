@@ -1,0 +1,58 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.storagecache.models.MetricSpecification
+name: MetricSpecification
+fullName: azure.mgmt.storagecache.models.MetricSpecification
+module: azure.mgmt.storagecache.models
+inheritances:
+- msrest.serialization.Model
+summary: Details about operation related to metrics.
+constructor:
+  syntax: 'MetricSpecification(*, name: typing.Union[str, NoneType] = None, display_name:
+    typing.Union[str, NoneType] = None, display_description: typing.Union[str, NoneType]
+    = None, unit: typing.Union[str, NoneType] = None, aggregation_type: typing.Union[str,
+    NoneType] = None, supported_aggregation_types: typing.Union[typing.List[typing.Union[str,
+    _ForwardRef(''MetricAggregationType'')]], NoneType] = None, metric_class: typing.Union[str,
+    NoneType] = None, dimensions: typing.Union[typing.List[_ForwardRef(''MetricDimension'')],
+    NoneType] = None, **kwargs)'
+  parameters:
+  - name: name
+    description: The name of the metric.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: display_name
+    description: Localized display name of the metric.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: display_description
+    description: The description of the metric.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: unit
+    description: The unit that the metric is measured in.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: aggregation_type
+    description: The type of metric aggregation.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: supported_aggregation_types
+    description: Support metric aggregation type.
+    isRequired: true
+    types:
+    - <xref:list>[<xref:str>
+    - <xref:storage_cache_management_client.models.MetricAggregationType>]
+  - name: metric_class
+    description: Type of metrics.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: dimensions
+    description: Dimensions of the metric.
+    isRequired: true
+    types:
+    - <xref:list>[<xref:storage_cache_management_client.models.MetricDimension>]

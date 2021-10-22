@@ -1,0 +1,16 @@
+### YamlMime:PythonEnum
+uid: azure.ai.language.conversations.models.TargetKind
+name: TargetKind
+fullName: azure.ai.language.conversations.models.TargetKind
+summary: The type of a target service.
+module: azure.ai.language.conversations.models
+inheritances:
+- builtins.str
+- enum.Enum
+fields:
+- name: LUIS
+  uid: azure.ai.language.conversations.models.TargetKind.LUIS
+- name: LUIS_DEEPSTACK
+  uid: azure.ai.language.conversations.models.TargetKind.LUIS_DEEPSTACK
+- name: QUESTION_ANSWERING
+  uid: azure.ai.language.conversations.models.TargetKind.QUESTION_ANSWERING

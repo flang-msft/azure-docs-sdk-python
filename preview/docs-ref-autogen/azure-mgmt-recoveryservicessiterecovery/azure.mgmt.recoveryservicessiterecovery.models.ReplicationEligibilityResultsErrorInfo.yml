@@ -1,0 +1,41 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.recoveryservicessiterecovery.models.ReplicationEligibilityResultsErrorInfo
+name: ReplicationEligibilityResultsErrorInfo
+fullName: azure.mgmt.recoveryservicessiterecovery.models.ReplicationEligibilityResultsErrorInfo
+module: azure.mgmt.recoveryservicessiterecovery.models
+inheritances:
+- msrest.serialization.Model
+summary: 'Error model that can be exposed to the user.
+
+
+  Variables are only populated by the server, and will be ignored when sending a request.'
+constructor:
+  syntax: 'ReplicationEligibilityResultsErrorInfo(*, code: typing.Union[str, NoneType]
+    = None, message: typing.Union[str, NoneType] = None, possible_causes: typing.Union[str,
+    NoneType] = None, recommended_action: typing.Union[str, NoneType] = None, **kwargs)'
+  parameters:
+  - name: code
+    description: The error code.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: message
+    description: The error message.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: possible_causes
+    description: The possible causes.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: recommended_action
+    description: The recommended action.
+    isRequired: true
+    types:
+    - <xref:str>
+variables:
+- description: The error status.
+  name: status
+  types:
+  - <xref:str>

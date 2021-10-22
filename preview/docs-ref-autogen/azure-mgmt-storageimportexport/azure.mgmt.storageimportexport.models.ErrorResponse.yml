@@ -1,0 +1,38 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.storageimportexport.models.ErrorResponse
+name: ErrorResponse
+fullName: azure.mgmt.storageimportexport.models.ErrorResponse
+module: azure.mgmt.storageimportexport.models
+inheritances:
+- msrest.serialization.Model
+summary: Response when errors occurred.
+constructor:
+  syntax: 'ErrorResponse(*, code: typing.Union[str, NoneType] = None, message: typing.Union[str,
+    NoneType] = None, target: typing.Union[str, NoneType] = None, details: typing.Union[typing.List[_ForwardRef(''ErrorResponseErrorDetailsItem'')],
+    NoneType] = None, innererror: typing.Union[typing.Any, NoneType] = None, **kwargs)'
+  parameters:
+  - name: code
+    description: Provides information about the error code.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: message
+    description: Provides information about the error message.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: target
+    description: Provides information about the error target.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: details
+    description: Describes the error details if present.
+    isRequired: true
+    types:
+    - <xref:list>[<xref:storage_import_export.models.ErrorResponseErrorDetailsItem>]
+  - name: innererror
+    description: Inner error object if present.
+    isRequired: true
+    types:
+    - <xref:any>

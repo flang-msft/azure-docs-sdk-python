@@ -1,5 +1,5 @@
 ### YamlMime:PythonClass
-uid: azure.synapse.artifacts.models.SapTableResourceDataset
+uid: azure.synapse.artifacts.models.SapTableResourceDataset1
 name: SapTableResourceDataset
 fullName: azure.synapse.artifacts.models.SapTableResourceDataset
 module: azure.synapse.artifacts.models
@@ -11,13 +11,12 @@ summary: 'SAP Table Resource properties.
   All required parameters must be populated in order to send to Azure.'
 constructor:
   syntax: 'SapTableResourceDataset(*, linked_service_name: azure.synapse.artifacts.models._models_py3.LinkedServiceReference,
-    table_name: typing.Any, additional_properties: typing.Union[typing.Dict[str, typing.Any],
+    table_name: object, additional_properties: typing.Union[typing.Dict[str, object],
     NoneType] = None, description: typing.Union[str, NoneType] = None, structure:
-    typing.Union[typing.Any, NoneType] = None, schema: typing.Union[typing.Any, NoneType]
-    = None, parameters: typing.Union[typing.Dict[str, _ForwardRef(''ParameterSpecification'')],
-    NoneType] = None, annotations: typing.Union[typing.List[typing.Any], NoneType]
-    = None, folder: typing.Union[_ForwardRef(''DatasetFolder''), NoneType] = None,
-    **kwargs)'
+    object = None, schema: object = None, parameters: typing.Union[typing.Dict[str,
+    _ForwardRef(''ParameterSpecification'')], NoneType] = None, annotations: typing.Union[typing.List[object],
+    NoneType] = None, folder: typing.Union[_ForwardRef(''DatasetFolder''), NoneType]
+    = None, **kwargs)'
   parameters:
   - name: additional_properties
     description: 'Unmatched properties from the message are deserialized to this
@@ -25,7 +24,7 @@ constructor:
       collection.'
     isRequired: true
     types:
-    - <xref:dict>[<xref:str>, <xref:any>]
+    - <xref:dict>[<xref:str>, <xref:object>]
   - name: type
     description: Required. Type of dataset.Constant filled by server.
     isRequired: true
@@ -43,7 +42,7 @@ constructor:
       with resultType array), itemType: DatasetDataElement.'
     isRequired: true
     types:
-    - <xref:any>
+    - <xref:object>
   - name: schema
     description: 'Columns that define the physical type schema of the dataset. Type:
       array (or
@@ -51,7 +50,7 @@ constructor:
       Expression with resultType array), itemType: DatasetSchemaDataElement.'
     isRequired: true
     types:
-    - <xref:any>
+    - <xref:object>
   - name: linked_service_name
     description: Required. Linked service reference.
     isRequired: true
@@ -66,7 +65,7 @@ constructor:
     description: List of tags that can be used for describing the Dataset.
     isRequired: true
     types:
-    - <xref:list>[<xref:any>]
+    - <xref:list>[<xref:object>]
   - name: folder
     description: 'The folder that this Dataset is in. If not specified, Dataset will
       appear at the
@@ -82,4 +81,4 @@ constructor:
       resultType string).'
     isRequired: true
     types:
-    - <xref:any>
+    - <xref:object>

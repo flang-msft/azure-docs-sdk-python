@@ -1,5 +1,5 @@
 ### YamlMime:PythonClass
-uid: azure.synapse.artifacts.models.AzureDatabricksLinkedService
+uid: azure.synapse.artifacts.models.AzureDatabricksLinkedService1
 name: AzureDatabricksLinkedService
 fullName: azure.synapse.artifacts.models.AzureDatabricksLinkedService
 module: azure.synapse.artifacts.models
@@ -10,25 +10,19 @@ summary: 'Azure Databricks linked service.
 
   All required parameters must be populated in order to send to Azure.'
 constructor:
-  syntax: 'AzureDatabricksLinkedService(*, domain: typing.Any, additional_properties:
-    typing.Union[typing.Dict[str, typing.Any], NoneType] = None, connect_via: typing.Union[_ForwardRef(''IntegrationRuntimeReference''),
-    NoneType] = None, description: typing.Union[str, NoneType] = None, parameters:
-    typing.Union[typing.Dict[str, _ForwardRef(''ParameterSpecification'')], NoneType]
-    = None, annotations: typing.Union[typing.List[typing.Any], NoneType] = None, access_token:
-    typing.Union[_ForwardRef(''SecretBase''), NoneType] = None, authentication: typing.Union[typing.Any,
-    NoneType] = None, workspace_resource_id: typing.Union[typing.Any, NoneType] =
-    None, existing_cluster_id: typing.Union[typing.Any, NoneType] = None, instance_pool_id:
-    typing.Union[typing.Any, NoneType] = None, new_cluster_version: typing.Union[typing.Any,
-    NoneType] = None, new_cluster_num_of_worker: typing.Union[typing.Any, NoneType]
-    = None, new_cluster_node_type: typing.Union[typing.Any, NoneType] = None, new_cluster_spark_conf:
-    typing.Union[typing.Dict[str, typing.Any], NoneType] = None, new_cluster_spark_env_vars:
-    typing.Union[typing.Dict[str, typing.Any], NoneType] = None, new_cluster_custom_tags:
-    typing.Union[typing.Dict[str, typing.Any], NoneType] = None, new_cluster_log_destination:
-    typing.Union[typing.Any, NoneType] = None, new_cluster_driver_node_type: typing.Union[typing.Any,
-    NoneType] = None, new_cluster_init_scripts: typing.Union[typing.Any, NoneType]
-    = None, new_cluster_enable_elastic_disk: typing.Union[typing.Any, NoneType] =
-    None, encrypted_credential: typing.Union[typing.Any, NoneType] = None, policy_id:
-    typing.Union[typing.Any, NoneType] = None, **kwargs)'
+  syntax: 'AzureDatabricksLinkedService(*, domain: object, access_token: azure.synapse.artifacts.models._models_py3.SecretBase,
+    additional_properties: typing.Union[typing.Dict[str, object], NoneType] = None,
+    connect_via: typing.Union[_ForwardRef(''IntegrationRuntimeReference''), NoneType]
+    = None, description: typing.Union[str, NoneType] = None, parameters: typing.Union[typing.Dict[str,
+    _ForwardRef(''ParameterSpecification'')], NoneType] = None, annotations: typing.Union[typing.List[object],
+    NoneType] = None, existing_cluster_id: object = None, instance_pool_id: object
+    = None, new_cluster_version: object = None, new_cluster_num_of_worker: object
+    = None, new_cluster_node_type: object = None, new_cluster_spark_conf: typing.Union[typing.Dict[str,
+    object], NoneType] = None, new_cluster_spark_env_vars: typing.Union[typing.Dict[str,
+    object], NoneType] = None, new_cluster_custom_tags: typing.Union[typing.Dict[str,
+    object], NoneType] = None, new_cluster_driver_node_type: object = None, new_cluster_init_scripts:
+    object = None, new_cluster_enable_elastic_disk: object = None, encrypted_credential:
+    object = None, **kwargs)'
   parameters:
   - name: additional_properties
     description: 'Unmatched properties from the message are deserialized to this
@@ -36,7 +30,7 @@ constructor:
       collection.'
     isRequired: true
     types:
-    - <xref:dict>[<xref:str>, <xref:any>]
+    - <xref:dict>[<xref:str>, <xref:object>]
   - name: type
     description: Required. Type of linked service.Constant filled by server.
     isRequired: true
@@ -61,16 +55,16 @@ constructor:
     description: List of tags that can be used for describing the linked service.
     isRequired: true
     types:
-    - <xref:list>[<xref:any>]
+    - <xref:list>[<xref:object>]
   - name: domain
     description: 'Required. `<REGION>`.azuredatabricks.net, domain name of your Databricks
 
       deployment. Type: string (or Expression with resultType string).'
     isRequired: true
     types:
-    - <xref:any>
+    - <xref:object>
   - name: access_token
-    description: 'Access token for databricks REST API. Refer to
+    description: 'Required. Access token for databricks REST API. Refer to
 
       [https://docs.azuredatabricks.net/api/latest/authentication.html](https://docs.azuredatabricks.net/api/latest/authentication.html).
       Type: string (or Expression
@@ -79,20 +73,6 @@ constructor:
     isRequired: true
     types:
     - <xref:azure.synapse.artifacts.models.SecretBase>
-  - name: authentication
-    description: 'Required to specify MSI, if using Workspace resource id for databricks
-
-      REST API. Type: string (or Expression with resultType string).'
-    isRequired: true
-    types:
-    - <xref:any>
-  - name: workspace_resource_id
-    description: 'Workspace resource id for databricks REST API. Type: string (or
-
-      Expression with resultType string).'
-    isRequired: true
-    types:
-    - <xref:any>
   - name: existing_cluster_id
     description: 'The id of an existing interactive cluster that will be used for
       all
@@ -100,7 +80,7 @@ constructor:
       runs of this activity. Type: string (or Expression with resultType string).'
     isRequired: true
     types:
-    - <xref:any>
+    - <xref:object>
   - name: instance_pool_id
     description: 'The id of an existing instance pool that will be used for all runs
       of
@@ -108,7 +88,7 @@ constructor:
       this activity. Type: string (or Expression with resultType string).'
     isRequired: true
     types:
-    - <xref:any>
+    - <xref:object>
   - name: new_cluster_version
     description: 'If not using an existing interactive cluster, this specifies the
 
@@ -121,7 +101,7 @@ constructor:
       string).'
     isRequired: true
     types:
-    - <xref:any>
+    - <xref:object>
   - name: new_cluster_num_of_worker
     description: 'If not using an existing interactive cluster, this specifies
 
@@ -129,18 +109,18 @@ constructor:
       For new job
 
       clusters, this a string-formatted Int32, like ''1'' means numOfWorker is 1 or
-      ''1:10'' means
+      ''1:10'' means auto-
 
-      auto-scale from 1 (min) to 10 (max). For instance pools, this is a string-formatted
-      Int32, and
+      scale from 1 (min) to 10 (max). For instance pools, this is a string-formatted
+      Int32, and can
 
-      can only specify a fixed number of worker nodes, such as ''2''. Required if
-      newClusterVersion is
+      only specify a fixed number of worker nodes, such as ''2''. Required if newClusterVersion
+      is
 
       specified. Type: string (or Expression with resultType string).'
     isRequired: true
     types:
-    - <xref:any>
+    - <xref:object>
   - name: new_cluster_node_type
     description: 'The node type of the new job cluster. This property is required
 
@@ -151,35 +131,28 @@ constructor:
       string).'
     isRequired: true
     types:
-    - <xref:any>
+    - <xref:object>
   - name: new_cluster_spark_conf
     description: 'A set of optional, user-specified Spark configuration key-value
 
       pairs.'
     isRequired: true
     types:
-    - <xref:dict>[<xref:str>, <xref:any>]
+    - <xref:dict>[<xref:str>, <xref:object>]
   - name: new_cluster_spark_env_vars
     description: 'A set of optional, user-specified Spark environment
 
       variables key-value pairs.'
     isRequired: true
     types:
-    - <xref:dict>[<xref:str>, <xref:any>]
+    - <xref:dict>[<xref:str>, <xref:object>]
   - name: new_cluster_custom_tags
     description: 'Additional tags for cluster resources. This property is ignored
 
       in instance pool configurations.'
     isRequired: true
     types:
-    - <xref:dict>[<xref:str>, <xref:any>]
-  - name: new_cluster_log_destination
-    description: 'Specify a location to deliver Spark driver, worker, and
-
-      event logs. Type: string (or Expression with resultType string).'
-    isRequired: true
-    types:
-    - <xref:any>
+    - <xref:dict>[<xref:str>, <xref:object>]
   - name: new_cluster_driver_node_type
     description: 'The driver node type for the new job cluster. This
 
@@ -189,14 +162,14 @@ constructor:
       resultType string).'
     isRequired: true
     types:
-    - <xref:any>
+    - <xref:object>
   - name: new_cluster_init_scripts
     description: 'User-defined initialization scripts for the new cluster. Type:
 
       array of strings (or Expression with resultType array of strings).'
     isRequired: true
     types:
-    - <xref:any>
+    - <xref:object>
   - name: new_cluster_enable_elastic_disk
     description: 'Enable the elastic disk on the new cluster. This
 
@@ -206,7 +179,7 @@ constructor:
       disks are always enabled). Type: boolean (or Expression with resultType boolean).'
     isRequired: true
     types:
-    - <xref:any>
+    - <xref:object>
   - name: encrypted_credential
     description: 'The encrypted credential used for authentication. Credentials are
 
@@ -216,12 +189,4 @@ constructor:
       resultType string).'
     isRequired: true
     types:
-    - <xref:any>
-  - name: policy_id
-    description: 'The policy id for limiting the ability to configure clusters based
-      on a user
-
-      defined set of rules. Type: string (or Expression with resultType string).'
-    isRequired: true
-    types:
-    - <xref:any>
+    - <xref:object>

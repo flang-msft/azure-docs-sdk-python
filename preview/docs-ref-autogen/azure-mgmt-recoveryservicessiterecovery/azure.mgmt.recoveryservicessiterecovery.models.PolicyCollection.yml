@@ -1,0 +1,22 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.recoveryservicessiterecovery.models.PolicyCollection
+name: PolicyCollection
+fullName: azure.mgmt.recoveryservicessiterecovery.models.PolicyCollection
+module: azure.mgmt.recoveryservicessiterecovery.models
+inheritances:
+- msrest.serialization.Model
+summary: Protection Profile Collection details.
+constructor:
+  syntax: 'PolicyCollection(*, value: typing.Union[typing.List[_ForwardRef(''Policy'')],
+    NoneType] = None, next_link: typing.Union[str, NoneType] = None, **kwargs)'
+  parameters:
+  - name: value
+    description: The policy details.
+    isRequired: true
+    types:
+    - <xref:list>[<xref:azure.mgmt.recoveryservicessiterecovery.models.Policy>]
+  - name: next_link
+    description: The value of next link.
+    isRequired: true
+    types:
+    - <xref:str>

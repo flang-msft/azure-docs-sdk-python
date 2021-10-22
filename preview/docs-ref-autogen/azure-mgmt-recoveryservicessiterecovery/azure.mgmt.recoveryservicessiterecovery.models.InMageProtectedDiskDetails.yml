@@ -1,0 +1,137 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.recoveryservicessiterecovery.models.InMageProtectedDiskDetails
+name: InMageProtectedDiskDetails
+fullName: azure.mgmt.recoveryservicessiterecovery.models.InMageProtectedDiskDetails
+module: azure.mgmt.recoveryservicessiterecovery.models
+inheritances:
+- msrest.serialization.Model
+summary: InMage protected disk details.
+constructor:
+  syntax: 'InMageProtectedDiskDetails(*, disk_id: typing.Union[str, NoneType] = None,
+    disk_name: typing.Union[str, NoneType] = None, protection_stage: typing.Union[str,
+    NoneType] = None, health_error_code: typing.Union[str, NoneType] = None, rpo_in_seconds:
+    typing.Union[int, NoneType] = None, resync_required: typing.Union[str, NoneType]
+    = None, resync_progress_percentage: typing.Union[int, NoneType] = None, resync_duration_in_seconds:
+    typing.Union[int, NoneType] = None, disk_capacity_in_bytes: typing.Union[int,
+    NoneType] = None, file_system_capacity_in_bytes: typing.Union[int, NoneType] =
+    None, source_data_in_mb: typing.Union[float, NoneType] = None, ps_data_in_mb:
+    typing.Union[float, NoneType] = None, target_data_in_mb: typing.Union[float, NoneType]
+    = None, disk_resized: typing.Union[str, NoneType] = None, last_rpo_calculated_time:
+    typing.Union[datetime.datetime, NoneType] = None, resync_processed_bytes: typing.Union[int,
+    NoneType] = None, resync_total_transferred_bytes: typing.Union[int, NoneType]
+    = None, resync_last15_minutes_transferred_bytes: typing.Union[int, NoneType] =
+    None, resync_last_data_transfer_time_utc: typing.Union[datetime.datetime, NoneType]
+    = None, resync_start_time: typing.Union[datetime.datetime, NoneType] = None, progress_health:
+    typing.Union[str, NoneType] = None, progress_status: typing.Union[str, NoneType]
+    = None, **kwargs)'
+  parameters:
+  - name: disk_id
+    description: The disk id.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: disk_name
+    description: The disk name.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: protection_stage
+    description: The protection stage.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: health_error_code
+    description: The health error code for the disk.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: rpo_in_seconds
+    description: The RPO in seconds.
+    isRequired: true
+    types:
+    - <xref:long>
+  - name: resync_required
+    description: A value indicating whether resync is required for this disk.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: resync_progress_percentage
+    description: The resync progress percentage.
+    isRequired: true
+    types:
+    - <xref:int>
+  - name: resync_duration_in_seconds
+    description: The resync duration in seconds.
+    isRequired: true
+    types:
+    - <xref:long>
+  - name: disk_capacity_in_bytes
+    description: The disk capacity in bytes.
+    isRequired: true
+    types:
+    - <xref:long>
+  - name: file_system_capacity_in_bytes
+    description: The file system capacity in bytes.
+    isRequired: true
+    types:
+    - <xref:long>
+  - name: source_data_in_mb
+    description: The source data transit in MB.
+    isRequired: true
+    types:
+    - <xref:float>
+  - name: ps_data_in_mb
+    description: The PS data transit in MB.
+    isRequired: true
+    types:
+    - <xref:float>
+  - name: target_data_in_mb
+    description: The target data transit in MB.
+    isRequired: true
+    types:
+    - <xref:float>
+  - name: disk_resized
+    description: A value indicating whether disk is resized.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: last_rpo_calculated_time
+    description: The last RPO calculated time.
+    isRequired: true
+    types:
+    - <xref:datetime.datetime>
+  - name: resync_processed_bytes
+    description: The resync processed bytes.
+    isRequired: true
+    types:
+    - <xref:long>
+  - name: resync_total_transferred_bytes
+    description: The resync total transferred bytes.
+    isRequired: true
+    types:
+    - <xref:long>
+  - name: resync_last15_minutes_transferred_bytes
+    description: The resync last 15 minutes transferred bytes.
+    isRequired: true
+    types:
+    - <xref:long>
+  - name: resync_last_data_transfer_time_utc
+    description: The last data transfer time in UTC.
+    isRequired: true
+    types:
+    - <xref:datetime.datetime>
+  - name: resync_start_time
+    description: The resync start time.
+    isRequired: true
+    types:
+    - <xref:datetime.datetime>
+  - name: progress_health
+    description: The Progress Health.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: progress_status
+    description: The Progress Status.
+    isRequired: true
+    types:
+    - <xref:str>

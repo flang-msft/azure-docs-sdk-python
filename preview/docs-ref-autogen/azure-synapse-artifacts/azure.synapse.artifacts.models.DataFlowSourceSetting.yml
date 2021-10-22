@@ -1,5 +1,5 @@
 ### YamlMime:PythonClass
-uid: azure.synapse.artifacts.models.DataFlowSourceSetting
+uid: azure.synapse.artifacts.models.DataFlowSourceSetting1
 name: DataFlowSourceSetting
 fullName: azure.synapse.artifacts.models.DataFlowSourceSetting
 module: azure.synapse.artifacts.models
@@ -8,8 +8,8 @@ inheritances:
 summary: Definition of data flow source setting for debug.
 constructor:
   syntax: 'DataFlowSourceSetting(*, additional_properties: typing.Union[typing.Dict[str,
-    typing.Any], NoneType] = None, source_name: typing.Union[str, NoneType] = None,
-    row_limit: typing.Union[int, NoneType] = None, **kwargs)'
+    object], NoneType] = None, source_name: typing.Union[str, NoneType] = None, row_limit:
+    typing.Union[int, NoneType] = None, **kwargs)'
   parameters:
   - name: additional_properties
     description: 'Unmatched properties from the message are deserialized to this
@@ -17,7 +17,7 @@ constructor:
       collection.'
     isRequired: true
     types:
-    - <xref:dict>[<xref:str>, <xref:any>]
+    - <xref:dict>[<xref:str>, <xref:object>]
   - name: source_name
     description: The data flow source name.
     isRequired: true

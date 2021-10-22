@@ -1,0 +1,22 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.recoveryservicessiterecovery.models.TargetComputeSizeCollection
+name: TargetComputeSizeCollection
+fullName: azure.mgmt.recoveryservicessiterecovery.models.TargetComputeSizeCollection
+module: azure.mgmt.recoveryservicessiterecovery.models
+inheritances:
+- msrest.serialization.Model
+summary: Target compute size collection.
+constructor:
+  syntax: 'TargetComputeSizeCollection(*, value: typing.Union[typing.List[_ForwardRef(''TargetComputeSize'')],
+    NoneType] = None, next_link: typing.Union[str, NoneType] = None, **kwargs)'
+  parameters:
+  - name: value
+    description: The list of target compute sizes.
+    isRequired: true
+    types:
+    - <xref:list>[<xref:azure.mgmt.recoveryservicessiterecovery.models.TargetComputeSize>]
+  - name: next_link
+    description: The value of next link.
+    isRequired: true
+    types:
+    - <xref:str>

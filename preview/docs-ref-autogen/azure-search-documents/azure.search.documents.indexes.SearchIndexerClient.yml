@@ -47,7 +47,7 @@ methods:
   - "Create a Data Source<!--[!code-python[Main](les\\sample_data_source_operations.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\
-    \\56\\\\azure-search-documents-11.3.0b4\\\\samples\\\\sample_data_source_operations.py\"\
+    \\43\\\\azure-search-documents-11.3.0a20211021001\\\\samples\\\\sample_data_source_operations.py\"\
     , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
     highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   container = SearchIndexerDataContainer(name='searchcontainer')\n\
     \   data_source_connection = SearchIndexerDataSourceConnection(\n       name=\"\
@@ -184,7 +184,7 @@ methods:
   - "Delete a SearchIndexerDataSourceConnection<!--[!code-python[Main](les\\sample_data_source_operations.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\
-    \\56\\\\azure-search-documents-11.3.0b4\\\\samples\\\\sample_data_source_operations.py\"\
+    \\43\\\\azure-search-documents-11.3.0a20211021001\\\\samples\\\\sample_data_source_operations.py\"\
     , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
     highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   client.delete_data_source_connection(\"\
     sample-data-source-connection\")\n   print(\"Data Source Connection 'sample-data-source-connection'\
@@ -247,7 +247,7 @@ methods:
   - "Retrieve a SearchIndexerDataSourceConnection<!--[!code-python[Main](les\\sample_data_source_operations.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\
-    \\56\\\\azure-search-documents-11.3.0b4\\\\samples\\\\sample_data_source_operations.py\"\
+    \\43\\\\azure-search-documents-11.3.0a20211021001\\\\samples\\\\sample_data_source_operations.py\"\
     , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
     highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   result = client.get_data_source_connection(\"\
     sample-data-source-connection\")\n   print(\"Retrived Data Source Connection 'sample-data-source-connection'\"\
@@ -264,6 +264,16 @@ methods:
   name: get_data_source_connections
   summary: Lists all data source connections available for a search service.
   signature: get_data_source_connections(**kwargs)
+  parameters:
+  - name: select
+    description: 'Selects which top-level properties of the skillsets to retrieve.
+      Specified as a
+
+      list of JSON property names, or ''*'' for all properties. The default is all
+
+      properties.'
+    types:
+    - <xref:list>[<xref:str>]
   return:
     description: List of all the data source connections.
     types:
@@ -272,9 +282,9 @@ methods:
   - "List all the SearchIndexerDataSourceConnections<!--[!code-python[Main](les\\\
     sample_data_source_operations.py )]-->\n\n<!-- literal_block {\"ids\": [], \"\
     classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\":\
-    \ \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\56\\\\azure-search-documents-11.3.0b4\\\\\
-    samples\\\\sample_data_source_operations.py\", \"xml:space\": \"preserve\", \"\
-    language\": \"python\", \"linenos\": false, \"highlight_args\": {\"linenostart\"\
+    \ \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\43\\\\azure-search-documents-11.3.0a20211021001\\\
+    \\samples\\\\sample_data_source_operations.py\", \"xml:space\": \"preserve\",\
+    \ \"language\": \"python\", \"linenos\": false, \"highlight_args\": {\"linenostart\"\
     : 1}} -->\n\n````python\n\n   result = client.get_data_source_connections()\n\
     \   names = [ds.name for ds in result]\n   print(\"Found {} Data Source Connections\
     \ in the service: {}\".format(len(result), \", \".join(names)))\n\n   ````\n"
@@ -318,6 +328,16 @@ methods:
   name: get_indexers
   summary: Lists all indexers available for a search service.
   signature: get_indexers(**kwargs)
+  parameters:
+  - name: select
+    description: 'Selects which top-level properties of the skillsets to retrieve.
+      Specified as a
+
+      list of JSON property names, or ''*'' for all properties. The default is all
+
+      properties.'
+    types:
+    - <xref:list>[<xref:str>]
   return:
     description: List of all the SearchIndexers.
     types:
@@ -350,6 +370,16 @@ methods:
   name: get_skillsets
   summary: List the SearchIndexerSkillsets in an Azure Search service.
   signature: get_skillsets(**kwargs)
+  parameters:
+  - name: select
+    description: 'Selects which top-level properties of the skillsets to retrieve.
+      Specified as a
+
+      list of JSON property names, or ''*'' for all properties. The default is all
+
+      properties.'
+    types:
+    - <xref:list>[<xref:str>]
   return:
     description: List of SearchIndexerSkillsets
     types:

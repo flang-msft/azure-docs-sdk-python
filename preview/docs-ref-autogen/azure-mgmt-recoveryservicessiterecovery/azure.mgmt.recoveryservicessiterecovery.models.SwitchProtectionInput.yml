@@ -1,0 +1,17 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.recoveryservicessiterecovery.models.SwitchProtectionInput
+name: SwitchProtectionInput
+fullName: azure.mgmt.recoveryservicessiterecovery.models.SwitchProtectionInput
+module: azure.mgmt.recoveryservicessiterecovery.models
+inheritances:
+- msrest.serialization.Model
+summary: Switch protection input.
+constructor:
+  syntax: 'SwitchProtectionInput(*, properties: typing.Union[_ForwardRef(''SwitchProtectionInputProperties''),
+    NoneType] = None, **kwargs)'
+  parameters:
+  - name: properties
+    description: Switch protection properties.
+    isRequired: true
+    types:
+    - <xref:azure.mgmt.recoveryservicessiterecovery.models.SwitchProtectionInputProperties>

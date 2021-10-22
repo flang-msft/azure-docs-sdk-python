@@ -1,0 +1,204 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.recoveryservicessiterecovery.models.VMwareDetails
+name: VMwareDetails
+fullName: azure.mgmt.recoveryservicessiterecovery.models.VMwareDetails
+module: azure.mgmt.recoveryservicessiterecovery.models
+inheritances:
+- azure.mgmt.recoveryservicessiterecovery.models._models_py3.FabricSpecificDetails
+summary: 'Store the fabric details specific to the VMware fabric.
+
+
+  All required parameters must be populated in order to send to Azure.'
+constructor:
+  syntax: 'VMwareDetails(*, process_servers: typing.Union[typing.List[_ForwardRef(''ProcessServer'')],
+    NoneType] = None, master_target_servers: typing.Union[typing.List[_ForwardRef(''MasterTargetServer'')],
+    NoneType] = None, run_as_accounts: typing.Union[typing.List[_ForwardRef(''RunAsAccount'')],
+    NoneType] = None, replication_pair_count: typing.Union[str, NoneType] = None,
+    process_server_count: typing.Union[str, NoneType] = None, agent_count: typing.Union[str,
+    NoneType] = None, protected_servers: typing.Union[str, NoneType] = None, system_load:
+    typing.Union[str, NoneType] = None, system_load_status: typing.Union[str, NoneType]
+    = None, cpu_load: typing.Union[str, NoneType] = None, cpu_load_status: typing.Union[str,
+    NoneType] = None, total_memory_in_bytes: typing.Union[int, NoneType] = None, available_memory_in_bytes:
+    typing.Union[int, NoneType] = None, memory_usage_status: typing.Union[str, NoneType]
+    = None, total_space_in_bytes: typing.Union[int, NoneType] = None, available_space_in_bytes:
+    typing.Union[int, NoneType] = None, space_usage_status: typing.Union[str, NoneType]
+    = None, web_load: typing.Union[str, NoneType] = None, web_load_status: typing.Union[str,
+    NoneType] = None, database_server_load: typing.Union[str, NoneType] = None, database_server_load_status:
+    typing.Union[str, NoneType] = None, cs_service_status: typing.Union[str, NoneType]
+    = None, ip_address: typing.Union[str, NoneType] = None, agent_version: typing.Union[str,
+    NoneType] = None, host_name: typing.Union[str, NoneType] = None, last_heartbeat:
+    typing.Union[datetime.datetime, NoneType] = None, version_status: typing.Union[str,
+    NoneType] = None, ssl_cert_expiry_date: typing.Union[datetime.datetime, NoneType]
+    = None, ssl_cert_expiry_remaining_days: typing.Union[int, NoneType] = None, ps_template_version:
+    typing.Union[str, NoneType] = None, agent_expiry_date: typing.Union[datetime.datetime,
+    NoneType] = None, agent_version_details: typing.Union[_ForwardRef(''VersionDetails''),
+    NoneType] = None, **kwargs)'
+  parameters:
+  - name: instance_type
+    description: 'Required. Gets the class type. Overridden in derived classes.Constant
+
+      filled by server.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: process_servers
+    description: The list of Process Servers associated with the fabric.
+    isRequired: true
+    types:
+    - <xref:list>[<xref:azure.mgmt.recoveryservicessiterecovery.models.ProcessServer>]
+  - name: master_target_servers
+    description: The list of Master Target servers associated with the fabric.
+    isRequired: true
+    types:
+    - <xref:list>[<xref:azure.mgmt.recoveryservicessiterecovery.models.MasterTargetServer>]
+  - name: run_as_accounts
+    description: The list of run as accounts created on the server.
+    isRequired: true
+    types:
+    - <xref:list>[<xref:azure.mgmt.recoveryservicessiterecovery.models.RunAsAccount>]
+  - name: replication_pair_count
+    description: The number of replication pairs configured in this CS.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: process_server_count
+    description: The number of process servers.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: agent_count
+    description: The number of source and target servers configured to talk to this
+      CS.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: protected_servers
+    description: The number of protected servers.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: system_load
+    description: The percentage of the system load.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: system_load_status
+    description: The system load status.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: cpu_load
+    description: The percentage of the CPU load.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: cpu_load_status
+    description: The CPU load status.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: total_memory_in_bytes
+    description: The total memory.
+    isRequired: true
+    types:
+    - <xref:long>
+  - name: available_memory_in_bytes
+    description: The available memory.
+    isRequired: true
+    types:
+    - <xref:long>
+  - name: memory_usage_status
+    description: The memory usage status.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: total_space_in_bytes
+    description: The total space.
+    isRequired: true
+    types:
+    - <xref:long>
+  - name: available_space_in_bytes
+    description: The available space.
+    isRequired: true
+    types:
+    - <xref:long>
+  - name: space_usage_status
+    description: The space usage status.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: web_load
+    description: The web load.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: web_load_status
+    description: The web load status.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: database_server_load
+    description: The database server load.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: database_server_load_status
+    description: The database server load status.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: cs_service_status
+    description: The CS service status.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: ip_address
+    description: The IP address.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: agent_version
+    description: The agent Version.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: host_name
+    description: The host name.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: last_heartbeat
+    description: The last heartbeat received from CS server.
+    isRequired: true
+    types:
+    - <xref:datetime.datetime>
+  - name: version_status
+    description: Version status.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: ssl_cert_expiry_date
+    description: CS SSL cert expiry date.
+    isRequired: true
+    types:
+    - <xref:datetime.datetime>
+  - name: ssl_cert_expiry_remaining_days
+    description: CS SSL cert expiry date.
+    isRequired: true
+    types:
+    - <xref:int>
+  - name: ps_template_version
+    description: PS template version.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: agent_expiry_date
+    description: Agent expiry date.
+    isRequired: true
+    types:
+    - <xref:datetime.datetime>
+  - name: agent_version_details
+    description: The agent version details.
+    isRequired: true
+    types:
+    - <xref:azure.mgmt.recoveryservicessiterecovery.models.VersionDetails>
