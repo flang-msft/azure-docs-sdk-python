@@ -34,7 +34,6 @@ methods:
 - uid: azure.synapse.artifacts.aio.operations.KqlScriptsOperations.get_all
   name: get_all
   summary: Get all KQL scripts.
-  signature: 'get_all(**kwargs: typing.Any) -> typing.AsyncIterable[_ForwardRef(''_models.KqlScriptsResourceCollectionResponse'')]'
   parameters:
   - name: cls
     description: A custom type or function that will be passed the direct response

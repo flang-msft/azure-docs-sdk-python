@@ -11,14 +11,12 @@ constructor:
 attributes:
 - uid: azure.mgmt.core.policies.ARMHttpLoggingPolicy.DEFAULT_HEADERS_WHITELIST
   name: DEFAULT_HEADERS_WHITELIST
-  signature: 'DEFAULT_HEADERS_WHITELIST = {''x-ms-ratelimit-remaining-tenant-resource-requests'',
-    ''Server'', ''x-ms-request-charge'', ''Transfer-Encoding'', ''Connection'', ''If-None-Match'',
-    ''If-Match'', ''x-ms-request-id'', ''x-ms-ratelimit-remaining-tenant-writes'',
-    ''If-Modified-Since'', ''User-Agent'', ''traceparent'', ''x-ms-return-client-request-id'',
-    ''Request-Id'', ''Expires'', ''Content-Type'', ''Content-Length'', ''Cache-Control'',
-    ''x-ms-ratelimit-remaining-subscription-reads'', ''Date'', ''x-ms-ratelimit-remaining-subscription-resource-requests'',
-    ''x-ms-ratelimit-remaining-subscription-resource-entities-read'', ''Pragma'',
-    ''ETag'', ''Retry-After'', ''x-ms-ratelimit-remaining-tenant-resource-entities-read'',
-    ''x-ms-ratelimit-remaining-resource'', ''x-ms-client-request-id'', ''Last-Modified'',
-    ''x-ms-ratelimit-remaining-tenant-reads'', ''If-Unmodified-Since'', ''x-ms-ratelimit-remaining-subscription-writes'',
-    ''Accept''}'
+  signature: 'DEFAULT_HEADERS_WHITELIST = {''x-ms-return-client-request-id'', ''Date'',
+    ''Content-Length'', ''If-Match'', ''Cache-Control'', ''x-ms-ratelimit-remaining-tenant-reads'',
+    ''Content-Type'', ''Server'', ''Retry-After'', ''If-None-Match'', ''Connection'',
+    ''If-Modified-Since'', ''Transfer-Encoding'', ''Accept'', ''x-ms-request-id'',
+    ''x-ms-request-charge'', ''User-Agent'', ''Last-Modified'', ''x-ms-ratelimit-remaining-subscription-resource-entities-read'',
+    ''ETag'', ''traceparent'', ''x-ms-ratelimit-remaining-resource'', ''x-ms-ratelimit-remaining-subscription-reads'',
+    ''If-Unmodified-Since'', ''x-ms-ratelimit-remaining-tenant-writes'', ''x-ms-ratelimit-remaining-tenant-resource-requests'',
+    ''x-ms-ratelimit-remaining-subscription-writes'', ''x-ms-ratelimit-remaining-tenant-resource-entities-read'',
+    ''Expires'', ''x-ms-client-request-id'', ''Pragma'', ''Request-Id'', ''x-ms-ratelimit-remaining-subscription-resource-requests''}'

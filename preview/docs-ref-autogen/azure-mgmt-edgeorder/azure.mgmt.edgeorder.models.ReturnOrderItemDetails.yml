@@ -1,0 +1,25 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.edgeorder.models.ReturnOrderItemDetails
+name: ReturnOrderItemDetails
+fullName: azure.mgmt.edgeorder.models.ReturnOrderItemDetails
+module: azure.mgmt.edgeorder.models
+inheritances:
+- msrest.serialization.Model
+summary: 'Return order item request body.
+
+
+  All required parameters must be populated in order to send to Azure.'
+constructor:
+  syntax: 'ReturnOrderItemDetails(*, return_reason: str, return_address: typing.Union[_ForwardRef(''AddressProperties''),
+    NoneType] = None, **kwargs)'
+  parameters:
+  - name: return_address
+    description: customer return address.
+    isRequired: true
+    types:
+    - <xref:edge_order_management_client.models.AddressProperties>
+  - name: return_reason
+    description: Required. Return Reason.
+    isRequired: true
+    types:
+    - <xref:str>

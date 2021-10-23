@@ -1,5 +1,5 @@
 ### YamlMime:PythonClass
-uid: azure.synapse.artifacts.models.Notebook
+uid: azure.synapse.artifacts.models.Notebook1
 name: Notebook
 fullName: azure.synapse.artifacts.models.Notebook
 module: azure.synapse.artifacts.models
@@ -12,11 +12,10 @@ summary: 'Notebook.
 constructor:
   syntax: 'Notebook(*, metadata: azure.synapse.artifacts.models._models_py3.NotebookMetadata,
     nbformat: int, nbformat_minor: int, cells: typing.List[_ForwardRef(''NotebookCell'')],
-    additional_properties: typing.Union[typing.Dict[str, typing.Any], NoneType] =
-    None, description: typing.Union[str, NoneType] = None, big_data_pool: typing.Union[_ForwardRef(''BigDataPoolReference''),
+    additional_properties: typing.Union[typing.Dict[str, object], NoneType] = None,
+    description: typing.Union[str, NoneType] = None, big_data_pool: typing.Union[_ForwardRef(''BigDataPoolReference''),
     NoneType] = None, session_properties: typing.Union[_ForwardRef(''NotebookSessionProperties''),
-    NoneType] = None, folder: typing.Union[_ForwardRef(''NotebookFolder''), NoneType]
-    = None, **kwargs)'
+    NoneType] = None, **kwargs)'
   parameters:
   - name: additional_properties
     description: 'Unmatched properties from the message are deserialized to this
@@ -24,7 +23,7 @@ constructor:
       collection.'
     isRequired: true
     types:
-    - <xref:dict>[<xref:str>, <xref:any>]
+    - <xref:dict>[<xref:str>, <xref:object>]
   - name: description
     description: The description of the notebook.
     isRequired: true
@@ -64,11 +63,3 @@ constructor:
     isRequired: true
     types:
     - <xref:list>[<xref:azure.synapse.artifacts.models.NotebookCell>]
-  - name: folder
-    description: 'The folder that this notebook is in. If not specified, this notebook
-      will appear
-
-      at the root level.'
-    isRequired: true
-    types:
-    - <xref:azure.synapse.artifacts.models.NotebookFolder>

@@ -1,5 +1,5 @@
 ### YamlMime:PythonClass
-uid: azure.synapse.artifacts.models.RestServiceLinkedService
+uid: azure.synapse.artifacts.models.RestServiceLinkedService1
 name: RestServiceLinkedService
 fullName: azure.synapse.artifacts.models.RestServiceLinkedService
 module: azure.synapse.artifacts.models
@@ -10,19 +10,16 @@ summary: 'Rest Service linked service.
 
   All required parameters must be populated in order to send to Azure.'
 constructor:
-  syntax: 'RestServiceLinkedService(*, url: typing.Any, authentication_type: typing.Union[str,
+  syntax: 'RestServiceLinkedService(*, url: object, authentication_type: typing.Union[str,
     _ForwardRef(''RestServiceAuthenticationType'')], additional_properties: typing.Union[typing.Dict[str,
-    typing.Any], NoneType] = None, connect_via: typing.Union[_ForwardRef(''IntegrationRuntimeReference''),
+    object], NoneType] = None, connect_via: typing.Union[_ForwardRef(''IntegrationRuntimeReference''),
     NoneType] = None, description: typing.Union[str, NoneType] = None, parameters:
     typing.Union[typing.Dict[str, _ForwardRef(''ParameterSpecification'')], NoneType]
-    = None, annotations: typing.Union[typing.List[typing.Any], NoneType] = None, enable_server_certificate_validation:
-    typing.Union[typing.Any, NoneType] = None, user_name: typing.Union[typing.Any,
-    NoneType] = None, password: typing.Union[_ForwardRef(''SecretBase''), NoneType]
-    = None, service_principal_id: typing.Union[typing.Any, NoneType] = None, service_principal_key:
-    typing.Union[_ForwardRef(''SecretBase''), NoneType] = None, tenant: typing.Union[typing.Any,
-    NoneType] = None, azure_cloud_type: typing.Union[typing.Any, NoneType] = None,
-    aad_resource_id: typing.Union[typing.Any, NoneType] = None, encrypted_credential:
-    typing.Union[typing.Any, NoneType] = None, **kwargs)'
+    = None, annotations: typing.Union[typing.List[object], NoneType] = None, enable_server_certificate_validation:
+    object = None, user_name: object = None, password: typing.Union[_ForwardRef(''SecretBase''),
+    NoneType] = None, service_principal_id: object = None, service_principal_key:
+    typing.Union[_ForwardRef(''SecretBase''), NoneType] = None, tenant: object = None,
+    aad_resource_id: object = None, encrypted_credential: object = None, **kwargs)'
   parameters:
   - name: additional_properties
     description: 'Unmatched properties from the message are deserialized to this
@@ -30,7 +27,7 @@ constructor:
       collection.'
     isRequired: true
     types:
-    - <xref:dict>[<xref:str>, <xref:any>]
+    - <xref:dict>[<xref:str>, <xref:object>]
   - name: type
     description: Required. Type of linked service.Constant filled by server.
     isRequired: true
@@ -55,12 +52,12 @@ constructor:
     description: List of tags that can be used for describing the linked service.
     isRequired: true
     types:
-    - <xref:list>[<xref:any>]
+    - <xref:list>[<xref:object>]
   - name: url
     description: Required. The base URL of the REST service.
     isRequired: true
     types:
-    - <xref:any>
+    - <xref:object>
   - name: enable_server_certificate_validation
     description: 'Whether to validate server side SSL certificate
 
@@ -70,7 +67,7 @@ constructor:
       resultType boolean).'
     isRequired: true
     types:
-    - <xref:any>
+    - <xref:object>
   - name: authentication_type
     description: 'Required. Type of authentication used to connect to the REST
 
@@ -85,7 +82,7 @@ constructor:
     description: The user name used in Basic authentication type.
     isRequired: true
     types:
-    - <xref:any>
+    - <xref:object>
   - name: password
     description: The password used in Basic authentication type.
     isRequired: true
@@ -97,7 +94,7 @@ constructor:
       authentication type.'
     isRequired: true
     types:
-    - <xref:any>
+    - <xref:object>
   - name: service_principal_key
     description: 'The application''s key used in AadServicePrincipal authentication
 
@@ -111,20 +108,12 @@ constructor:
       authentication type under which your application resides.'
     isRequired: true
     types:
-    - <xref:any>
-  - name: azure_cloud_type
-    description: "Indicates the azure cloud type of the service principle auth. Allowed\n\
-      values are AzurePublic, AzureChina, AzureUsGovernment, AzureGermany. Default\
-      \ value is the data\nfactory regions\u2019 cloud type. Type: string (or Expression\
-      \ with resultType string)."
-    isRequired: true
-    types:
-    - <xref:any>
+    - <xref:object>
   - name: aad_resource_id
     description: The resource you are requesting authorization to use.
     isRequired: true
     types:
-    - <xref:any>
+    - <xref:object>
   - name: encrypted_credential
     description: 'The encrypted credential used for authentication. Credentials are
 
@@ -134,4 +123,4 @@ constructor:
       resultType string).'
     isRequired: true
     types:
-    - <xref:any>
+    - <xref:object>

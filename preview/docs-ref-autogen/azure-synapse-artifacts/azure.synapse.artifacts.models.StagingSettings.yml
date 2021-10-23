@@ -1,5 +1,5 @@
 ### YamlMime:PythonClass
-uid: azure.synapse.artifacts.models.StagingSettings
+uid: azure.synapse.artifacts.models.StagingSettings1
 name: StagingSettings
 fullName: azure.synapse.artifacts.models.StagingSettings
 module: azure.synapse.artifacts.models
@@ -11,9 +11,8 @@ summary: 'Staging settings.
   All required parameters must be populated in order to send to Azure.'
 constructor:
   syntax: 'StagingSettings(*, linked_service_name: azure.synapse.artifacts.models._models_py3.LinkedServiceReference,
-    additional_properties: typing.Union[typing.Dict[str, typing.Any], NoneType] =
-    None, path: typing.Union[typing.Any, NoneType] = None, enable_compression: typing.Union[typing.Any,
-    NoneType] = None, **kwargs)'
+    additional_properties: typing.Union[typing.Dict[str, object], NoneType] = None,
+    path: object = None, enable_compression: object = None, **kwargs)'
   parameters:
   - name: additional_properties
     description: 'Unmatched properties from the message are deserialized to this
@@ -21,7 +20,7 @@ constructor:
       collection.'
     isRequired: true
     types:
-    - <xref:dict>[<xref:str>, <xref:any>]
+    - <xref:dict>[<xref:str>, <xref:object>]
   - name: linked_service_name
     description: Required. Staging linked service reference.
     isRequired: true
@@ -34,7 +33,7 @@ constructor:
       resultType string).'
     isRequired: true
     types:
-    - <xref:any>
+    - <xref:object>
   - name: enable_compression
     description: 'Specifies whether to use compression when copying data via an
 
@@ -42,4 +41,4 @@ constructor:
       boolean).'
     isRequired: true
     types:
-    - <xref:any>
+    - <xref:object>

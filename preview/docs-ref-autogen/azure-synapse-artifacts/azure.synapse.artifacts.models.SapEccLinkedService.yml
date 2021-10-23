@@ -1,5 +1,5 @@
 ### YamlMime:PythonClass
-uid: azure.synapse.artifacts.models.SapEccLinkedService
+uid: azure.synapse.artifacts.models.SapEccLinkedService1
 name: SapEccLinkedService
 fullName: azure.synapse.artifacts.models.SapEccLinkedService
 module: azure.synapse.artifacts.models
@@ -11,10 +11,10 @@ summary: 'Linked service for SAP ERP Central Component(SAP ECC).
   All required parameters must be populated in order to send to Azure.'
 constructor:
   syntax: 'SapEccLinkedService(*, url: str, additional_properties: typing.Union[typing.Dict[str,
-    typing.Any], NoneType] = None, connect_via: typing.Union[_ForwardRef(''IntegrationRuntimeReference''),
+    object], NoneType] = None, connect_via: typing.Union[_ForwardRef(''IntegrationRuntimeReference''),
     NoneType] = None, description: typing.Union[str, NoneType] = None, parameters:
     typing.Union[typing.Dict[str, _ForwardRef(''ParameterSpecification'')], NoneType]
-    = None, annotations: typing.Union[typing.List[typing.Any], NoneType] = None, username:
+    = None, annotations: typing.Union[typing.List[object], NoneType] = None, username:
     typing.Union[str, NoneType] = None, password: typing.Union[_ForwardRef(''SecretBase''),
     NoneType] = None, encrypted_credential: typing.Union[str, NoneType] = None, **kwargs)'
   parameters:
@@ -24,7 +24,7 @@ constructor:
       collection.'
     isRequired: true
     types:
-    - <xref:dict>[<xref:str>, <xref:any>]
+    - <xref:dict>[<xref:str>, <xref:object>]
   - name: type
     description: Required. Type of linked service.Constant filled by server.
     isRequired: true
@@ -49,7 +49,7 @@ constructor:
     description: List of tags that can be used for describing the linked service.
     isRequired: true
     types:
-    - <xref:list>[<xref:any>]
+    - <xref:list>[<xref:object>]
   - name: url
     description: 'Required. The URL of SAP ECC OData API. For example,
 

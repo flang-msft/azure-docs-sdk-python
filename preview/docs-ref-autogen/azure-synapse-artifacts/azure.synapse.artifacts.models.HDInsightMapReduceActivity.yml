@@ -1,5 +1,5 @@
 ### YamlMime:PythonClass
-uid: azure.synapse.artifacts.models.HDInsightMapReduceActivity
+uid: azure.synapse.artifacts.models.HDInsightMapReduceActivity1
 name: HDInsightMapReduceActivity
 fullName: azure.synapse.artifacts.models.HDInsightMapReduceActivity
 module: azure.synapse.artifacts.models
@@ -10,19 +10,18 @@ summary: 'HDInsight MapReduce activity type.
 
   All required parameters must be populated in order to send to Azure.'
 constructor:
-  syntax: 'HDInsightMapReduceActivity(*, name: str, class_name: typing.Any, jar_file_path:
-    typing.Any, additional_properties: typing.Union[typing.Dict[str, typing.Any],
-    NoneType] = None, description: typing.Union[str, NoneType] = None, depends_on:
-    typing.Union[typing.List[_ForwardRef(''ActivityDependency'')], NoneType] = None,
-    user_properties: typing.Union[typing.List[_ForwardRef(''UserProperty'')], NoneType]
-    = None, linked_service_name: typing.Union[_ForwardRef(''LinkedServiceReference''),
+  syntax: 'HDInsightMapReduceActivity(*, name: str, class_name: object, jar_file_path:
+    object, additional_properties: typing.Union[typing.Dict[str, object], NoneType]
+    = None, description: typing.Union[str, NoneType] = None, depends_on: typing.Union[typing.List[_ForwardRef(''ActivityDependency'')],
+    NoneType] = None, user_properties: typing.Union[typing.List[_ForwardRef(''UserProperty'')],
+    NoneType] = None, linked_service_name: typing.Union[_ForwardRef(''LinkedServiceReference''),
     NoneType] = None, policy: typing.Union[_ForwardRef(''ActivityPolicy''), NoneType]
     = None, storage_linked_services: typing.Union[typing.List[_ForwardRef(''LinkedServiceReference'')],
-    NoneType] = None, arguments: typing.Union[typing.List[typing.Any], NoneType] =
-    None, get_debug_info: typing.Union[str, _ForwardRef(''HDInsightActivityDebugInfoOption''),
+    NoneType] = None, arguments: typing.Union[typing.List[object], NoneType] = None,
+    get_debug_info: typing.Union[str, _ForwardRef(''HDInsightActivityDebugInfoOption''),
     NoneType] = None, jar_linked_service: typing.Union[_ForwardRef(''LinkedServiceReference''),
-    NoneType] = None, jar_libs: typing.Union[typing.List[typing.Any], NoneType] =
-    None, defines: typing.Union[typing.Dict[str, typing.Any], NoneType] = None, **kwargs)'
+    NoneType] = None, jar_libs: typing.Union[typing.List[object], NoneType] = None,
+    defines: typing.Union[typing.Dict[str, object], NoneType] = None, **kwargs)'
   parameters:
   - name: additional_properties
     description: 'Unmatched properties from the message are deserialized to this
@@ -30,7 +29,7 @@ constructor:
       collection.'
     isRequired: true
     types:
-    - <xref:dict>[<xref:str>, <xref:any>]
+    - <xref:dict>[<xref:str>, <xref:object>]
   - name: name
     description: Required. Activity name.
     isRequired: true
@@ -75,7 +74,7 @@ constructor:
     description: User specified arguments to HDInsightActivity.
     isRequired: true
     types:
-    - <xref:list>[<xref:any>]
+    - <xref:list>[<xref:object>]
   - name: get_debug_info
     description: 'Debug info option. Possible values include: "None", "Always", "Failure".'
     isRequired: true
@@ -87,13 +86,13 @@ constructor:
       string).'
     isRequired: true
     types:
-    - <xref:any>
+    - <xref:object>
   - name: jar_file_path
     description: 'Required. Jar path. Type: string (or Expression with resultType
       string).'
     isRequired: true
     types:
-    - <xref:any>
+    - <xref:object>
   - name: jar_linked_service
     description: Jar linked service reference.
     isRequired: true
@@ -103,9 +102,9 @@ constructor:
     description: Jar libs.
     isRequired: true
     types:
-    - <xref:list>[<xref:any>]
+    - <xref:list>[<xref:object>]
   - name: defines
     description: Allows user to specify defines for the MapReduce job request.
     isRequired: true
     types:
-    - <xref:dict>[<xref:str>, <xref:any>]
+    - <xref:dict>[<xref:str>, <xref:object>]
