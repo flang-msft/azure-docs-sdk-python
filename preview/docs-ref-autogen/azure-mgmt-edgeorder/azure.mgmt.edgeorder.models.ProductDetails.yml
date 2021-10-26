@@ -1,0 +1,41 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.edgeorder.models.ProductDetails
+name: ProductDetails
+fullName: azure.mgmt.edgeorder.models.ProductDetails
+module: azure.mgmt.edgeorder.models
+inheritances:
+- msrest.serialization.Model
+summary: 'Represents product details.
+
+
+  Variables are only populated by the server, and will be ignored when sending a request.
+
+
+  All required parameters must be populated in order to send to Azure.'
+constructor:
+  syntax: 'ProductDetails(*, hierarchy_information: azure.mgmt.edgeorder.models._models_py3.HierarchyInformation,
+    display_info: typing.Union[_ForwardRef(''DisplayInfo''), NoneType] = None, count:
+    typing.Union[int, NoneType] = None, **kwargs)'
+  parameters:
+  - name: display_info
+    description: Display details of the product.
+    isRequired: true
+    types:
+    - <xref:edge_order_management_client.models.DisplayInfo>
+  - name: hierarchy_information
+    description: 'Required. Hierarchy of the product which uniquely identifies the
+
+      product.'
+    isRequired: true
+    types:
+    - <xref:edge_order_management_client.models.HierarchyInformation>
+  - name: count
+    description: Quantity of the product.
+    isRequired: true
+    types:
+    - <xref:int>
+variables:
+- description: list of device details.
+  name: device_details
+  types:
+  - <xref:list>[<xref:edge_order_management_client.models.DeviceDetails>]

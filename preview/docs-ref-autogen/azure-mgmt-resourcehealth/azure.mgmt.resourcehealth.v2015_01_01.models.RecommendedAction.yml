@@ -1,0 +1,31 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.resourcehealth.v2015_01_01.models.RecommendedAction
+name: RecommendedAction
+fullName: azure.mgmt.resourcehealth.v2015_01_01.models.RecommendedAction
+module: azure.mgmt.resourcehealth.v2015_01_01.models
+inheritances:
+- msrest.serialization.Model
+summary: Lists actions the user can take based on the current availabilityState of
+  the resource.
+constructor:
+  syntax: 'RecommendedAction(*, action: typing.Union[str, NoneType] = None, action_url:
+    typing.Union[str, NoneType] = None, action_url_text: typing.Union[str, NoneType]
+    = None, **kwargs)'
+  parameters:
+  - name: action
+    description: Recommended action.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: action_url
+    description: Link to the action.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: action_url_text
+    description: 'Substring of action, it describes which text should host the action
+
+      url.'
+    isRequired: true
+    types:
+    - <xref:str>

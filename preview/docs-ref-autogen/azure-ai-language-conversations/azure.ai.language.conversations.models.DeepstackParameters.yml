@@ -1,0 +1,32 @@
+### YamlMime:PythonClass
+uid: azure.ai.language.conversations.models.DeepstackParameters
+name: DeepstackParameters
+fullName: azure.ai.language.conversations.models.DeepstackParameters
+module: azure.ai.language.conversations.models
+inheritances:
+- azure.ai.language.conversations.models._models_py3.AnalyzeParameters
+summary: 'This is a set of request parameters for LUIS Deepstack projects.
+
+
+  All required parameters must be populated in order to send to Azure.'
+constructor:
+  syntax: 'DeepstackParameters(*, api_version: typing.Union[str, NoneType] = None,
+    calling_options: typing.Union[_ForwardRef(''DeepstackCallingOptions''), NoneType]
+    = None, **kwargs)'
+variables:
+- description: 'Required. The type of a target service.Constant filled by server.
+    Possible
+
+    values include: "luis", "luis_deepstack", "question_answering".'
+  name: target_kind
+  types:
+  - <xref:str>
+  - <xref:azure.ai.language.conversations.models.TargetKind>
+- description: The API version to use when call a specific target service.
+  name: api_version
+  types:
+  - <xref:str>
+- description: The option to set to call a LUIS Deepstack project.
+  name: calling_options
+  types:
+  - <xref:azure.ai.language.conversations.models.DeepstackCallingOptions>

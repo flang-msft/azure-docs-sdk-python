@@ -1,0 +1,17 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.trafficmanager.models.ProfileListResult
+name: ProfileListResult
+fullName: azure.mgmt.trafficmanager.models.ProfileListResult
+module: azure.mgmt.trafficmanager.models
+inheritances:
+- msrest.serialization.Model
+summary: The list Traffic Manager profiles operation response.
+constructor:
+  syntax: 'ProfileListResult(*, value: typing.Union[typing.List[_ForwardRef(''Profile'')],
+    NoneType] = None, **kwargs)'
+  parameters:
+  - name: value
+    description: Gets the list of Traffic manager profiles.
+    isRequired: true
+    types:
+    - <xref:list>[<xref:azure.mgmt.trafficmanager.models.Profile>]

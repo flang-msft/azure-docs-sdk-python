@@ -1,0 +1,34 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.recoveryservicessiterecovery.models.TestFailoverInputProperties
+name: TestFailoverInputProperties
+fullName: azure.mgmt.recoveryservicessiterecovery.models.TestFailoverInputProperties
+module: azure.mgmt.recoveryservicessiterecovery.models
+inheritances:
+- msrest.serialization.Model
+summary: Input definition for test failover input properties.
+constructor:
+  syntax: 'TestFailoverInputProperties(*, failover_direction: typing.Union[str, NoneType]
+    = None, network_type: typing.Union[str, NoneType] = None, network_id: typing.Union[str,
+    NoneType] = None, provider_specific_details: typing.Union[_ForwardRef(''TestFailoverProviderSpecificInput''),
+    NoneType] = None, **kwargs)'
+  parameters:
+  - name: failover_direction
+    description: Test failover direction.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: network_type
+    description: Network type to be used for test failover.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: network_id
+    description: The id of the network to be used for test failover.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: provider_specific_details
+    description: Provider specific settings.
+    isRequired: true
+    types:
+    - <xref:azure.mgmt.recoveryservicessiterecovery.models.TestFailoverProviderSpecificInput>

@@ -1,0 +1,215 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.recoveryservicessiterecovery.models.ProcessServer
+name: ProcessServer
+fullName: azure.mgmt.recoveryservicessiterecovery.models.ProcessServer
+module: azure.mgmt.recoveryservicessiterecovery.models
+inheritances:
+- msrest.serialization.Model
+summary: 'Details of the Process Server.
+
+
+  Variables are only populated by the server, and will be ignored when sending a request.'
+constructor:
+  syntax: 'ProcessServer(*, friendly_name: typing.Union[str, NoneType] = None, id:
+    typing.Union[str, NoneType] = None, ip_address: typing.Union[str, NoneType] =
+    None, os_type: typing.Union[str, NoneType] = None, agent_version: typing.Union[str,
+    NoneType] = None, last_heartbeat: typing.Union[datetime.datetime, NoneType] =
+    None, version_status: typing.Union[str, NoneType] = None, mobility_service_updates:
+    typing.Union[typing.List[_ForwardRef(''MobilityServiceUpdate'')], NoneType] =
+    None, host_id: typing.Union[str, NoneType] = None, machine_count: typing.Union[str,
+    NoneType] = None, replication_pair_count: typing.Union[str, NoneType] = None,
+    system_load: typing.Union[str, NoneType] = None, system_load_status: typing.Union[str,
+    NoneType] = None, cpu_load: typing.Union[str, NoneType] = None, cpu_load_status:
+    typing.Union[str, NoneType] = None, total_memory_in_bytes: typing.Union[int, NoneType]
+    = None, available_memory_in_bytes: typing.Union[int, NoneType] = None, memory_usage_status:
+    typing.Union[str, NoneType] = None, total_space_in_bytes: typing.Union[int, NoneType]
+    = None, available_space_in_bytes: typing.Union[int, NoneType] = None, space_usage_status:
+    typing.Union[str, NoneType] = None, ps_service_status: typing.Union[str, NoneType]
+    = None, ssl_cert_expiry_date: typing.Union[datetime.datetime, NoneType] = None,
+    ssl_cert_expiry_remaining_days: typing.Union[int, NoneType] = None, os_version:
+    typing.Union[str, NoneType] = None, health_errors: typing.Union[typing.List[_ForwardRef(''HealthError'')],
+    NoneType] = None, agent_expiry_date: typing.Union[datetime.datetime, NoneType]
+    = None, agent_version_details: typing.Union[_ForwardRef(''VersionDetails''), NoneType]
+    = None, **kwargs)'
+  parameters:
+  - name: friendly_name
+    description: The Process Server's friendly name.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: id
+    description: The Process Server Id.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: ip_address
+    description: The IP address of the server.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: os_type
+    description: The OS type of the server.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: agent_version
+    description: The version of the scout component on the server.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: last_heartbeat
+    description: The last heartbeat received from the server.
+    isRequired: true
+    types:
+    - <xref:datetime.datetime>
+  - name: version_status
+    description: Version status.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: mobility_service_updates
+    description: 'The list of the mobility service updates available on the
+
+      Process Server.'
+    isRequired: true
+    types:
+    - <xref:list>[<xref:azure.mgmt.recoveryservicessiterecovery.models.MobilityServiceUpdate>]
+  - name: host_id
+    description: The agent generated Id.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: machine_count
+    description: The servers configured with this PS.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: replication_pair_count
+    description: The number of replication pairs configured in this PS.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: system_load
+    description: The percentage of the system load.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: system_load_status
+    description: The system load status.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: cpu_load
+    description: The percentage of the CPU load.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: cpu_load_status
+    description: The CPU load status.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: total_memory_in_bytes
+    description: The total memory.
+    isRequired: true
+    types:
+    - <xref:long>
+  - name: available_memory_in_bytes
+    description: The available memory.
+    isRequired: true
+    types:
+    - <xref:long>
+  - name: memory_usage_status
+    description: The memory usage status.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: total_space_in_bytes
+    description: The total space.
+    isRequired: true
+    types:
+    - <xref:long>
+  - name: available_space_in_bytes
+    description: The available space.
+    isRequired: true
+    types:
+    - <xref:long>
+  - name: space_usage_status
+    description: The space usage status.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: ps_service_status
+    description: The PS service status.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: ssl_cert_expiry_date
+    description: The PS SSL cert expiry date.
+    isRequired: true
+    types:
+    - <xref:datetime.datetime>
+  - name: ssl_cert_expiry_remaining_days
+    description: CS SSL cert expiry date.
+    isRequired: true
+    types:
+    - <xref:int>
+  - name: os_version
+    description: 'OS Version of the process server. Note: This will get populated
+      if user has
+
+      CS version greater than 9.12.0.0.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: health_errors
+    description: Health errors.
+    isRequired: true
+    types:
+    - <xref:list>[<xref:azure.mgmt.recoveryservicessiterecovery.models.HealthError>]
+  - name: agent_expiry_date
+    description: Agent expiry date.
+    isRequired: true
+    types:
+    - <xref:datetime.datetime>
+  - name: agent_version_details
+    description: The agent version details.
+    isRequired: true
+    types:
+    - <xref:azure.mgmt.recoveryservicessiterecovery.models.VersionDetails>
+variables:
+- description: 'The health of Process Server. Possible values include: "None", "Normal",
+
+    "Warning", "Critical".'
+  name: health
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.recoveryservicessiterecovery.models.ProtectionHealth>
+- description: The process server stats refresh time.
+  name: ps_stats_refresh_time
+  types:
+  - <xref:datetime.datetime>
+- description: The uploading pending data in bytes.
+  name: throughput_upload_pending_data_in_bytes
+  types:
+  - <xref:long>
+- description: The throughput in MBps.
+  name: throughput_in_m_bps
+  types:
+  - <xref:long>
+- description: The throughput in bytes.
+  name: throughput_in_bytes
+  types:
+  - <xref:long>
+- description: The throughput status.
+  name: throughput_status
+  types:
+  - <xref:str>
+- description: The MARS communication status.
+  name: mars_communication_status
+  types:
+  - <xref:str>
+- description: The MARS registration status.
+  name: mars_registration_status
+  types:
+  - <xref:str>

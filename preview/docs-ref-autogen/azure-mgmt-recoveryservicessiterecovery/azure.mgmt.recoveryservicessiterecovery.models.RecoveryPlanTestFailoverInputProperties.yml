@@ -1,0 +1,40 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.recoveryservicessiterecovery.models.RecoveryPlanTestFailoverInputProperties
+name: RecoveryPlanTestFailoverInputProperties
+fullName: azure.mgmt.recoveryservicessiterecovery.models.RecoveryPlanTestFailoverInputProperties
+module: azure.mgmt.recoveryservicessiterecovery.models
+inheritances:
+- msrest.serialization.Model
+summary: 'Recovery plan test failover input properties.
+
+
+  All required parameters must be populated in order to send to Azure.'
+constructor:
+  syntax: 'RecoveryPlanTestFailoverInputProperties(*, failover_direction: typing.Union[str,
+    _ForwardRef(''PossibleOperationsDirections'')], network_type: str, network_id:
+    typing.Union[str, NoneType] = None, provider_specific_details: typing.Union[typing.List[_ForwardRef(''RecoveryPlanProviderSpecificFailoverInput'')],
+    NoneType] = None, **kwargs)'
+  parameters:
+  - name: failover_direction
+    description: 'Required. The failover direction. Possible values include:
+
+      "PrimaryToRecovery", "RecoveryToPrimary".'
+    isRequired: true
+    types:
+    - <xref:str>
+    - <xref:azure.mgmt.recoveryservicessiterecovery.models.PossibleOperationsDirections>
+  - name: network_type
+    description: Required. The network type to be used for test failover.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: network_id
+    description: The Id of the network to be used for test failover.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: provider_specific_details
+    description: The provider specific properties.
+    isRequired: true
+    types:
+    - <xref:list>[<xref:azure.mgmt.recoveryservicessiterecovery.models.RecoveryPlanProviderSpecificFailoverInput>]

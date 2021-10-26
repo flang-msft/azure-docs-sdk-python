@@ -28,10 +28,10 @@ examples:
 - "Creating the ChatClient from a URL and token.<!--[!code-python[Main](les\\chat_client_sample.py\
   \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
   : [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\155\\\\\
-  azure-communication-chat-1.1.0\\\\samples\\\\chat_client_sample.py\", \"xml:space\"\
-  : \"preserve\", \"language\": \"python\", \"linenos\": false, \"highlight_args\"\
-  : {\"linenostart\": 1}} -->\n\n````python\n\n   from azure.communication.chat import\
-  \ ChatClient, CommunicationTokenCredential\n\n   # set `endpoint` to an existing\
+  azure-communication-chat-1.1.0a20211025001\\\\samples\\\\chat_client_sample.py\"\
+  , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
+  highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   from azure.communication.chat\
+  \ import ChatClient, CommunicationTokenCredential\n\n   # set `endpoint` to an existing\
   \ ACS endpoint\n   chat_client = ChatClient(endpoint, CommunicationTokenCredential(token))\n\
   \n   ````\n"
 methods:
@@ -77,7 +77,7 @@ methods:
   - "Creating a new chat thread.<!--[!code-python[Main](les\\chat_client_sample.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\
-    \\155\\\\azure-communication-chat-1.1.0\\\\samples\\\\chat_client_sample.py\"\
+    \\155\\\\azure-communication-chat-1.1.0a20211025001\\\\samples\\\\chat_client_sample.py\"\
     , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
     highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   from datetime\
     \ import datetime\n\n   from azure.communication.chat import(\n       ChatClient,\n\
@@ -110,9 +110,9 @@ methods:
   - "Deleting a chat thread.<!--[!code-python[Main](les\\chat_client_sample.py )]-->\n\
     \n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
     : [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\155\\\\\
-    azure-communication-chat-1.1.0\\\\samples\\\\chat_client_sample.py\", \"xml:space\"\
-    : \"preserve\", \"language\": \"python\", \"linenos\": false, \"highlight_args\"\
-    : {\"linenostart\": 1}} -->\n\n````python\n\n   from azure.communication.chat\
+    azure-communication-chat-1.1.0a20211025001\\\\samples\\\\chat_client_sample.py\"\
+    , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
+    highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   from azure.communication.chat\
     \ import ChatClient, CommunicationTokenCredential\n\n   # set `endpoint` to an\
     \ existing ACS endpoint\n   chat_client = ChatClient(endpoint, CommunicationTokenCredential(token))\n\
     \n   # set `thread_id` to an existing chat thread id\n   chat_client.delete_chat_thread(thread_id)\n\
@@ -135,13 +135,14 @@ methods:
   - "Retrieving the ChatThreadClient from an existing chat thread id.<!--[!code-python[Main](les\\\
     chat_client_sample.py )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [],\
     \ \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\\
-    1\\\\s\\\\dist_temp\\\\155\\\\azure-communication-chat-1.1.0\\\\samples\\\\chat_client_sample.py\"\
-    , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
-    highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   from azure.communication.chat\
-    \ import ChatClient, CommunicationTokenCredential\n\n   # set `endpoint` to an\
-    \ existing ACS endpoint\n   chat_client = ChatClient(endpoint, CommunicationTokenCredential(token))\n\
-    \n   # set `thread_id` to an existing chat thread id\n   chat_thread_client =\
-    \ chat_client.get_chat_thread_client(thread_id)\n\n   ````\n"
+    1\\\\s\\\\dist_temp\\\\155\\\\azure-communication-chat-1.1.0a20211025001\\\\samples\\\
+    \\chat_client_sample.py\", \"xml:space\": \"preserve\", \"language\": \"python\"\
+    , \"linenos\": false, \"highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\
+    \n   from azure.communication.chat import ChatClient, CommunicationTokenCredential\n\
+    \n   # set `endpoint` to an existing ACS endpoint\n   chat_client = ChatClient(endpoint,\
+    \ CommunicationTokenCredential(token))\n\n   # set `thread_id` to an existing\
+    \ chat thread id\n   chat_thread_client = chat_client.get_chat_thread_client(thread_id)\n\
+    \n   ````\n"
 - uid: azure.communication.chat.ChatClient.list_chat_threads
   name: list_chat_threads
   summary: Gets the list of chat threads of a user.
@@ -163,9 +164,9 @@ methods:
   - "Listing chat threads.<!--[!code-python[Main](les\\chat_client_sample.py )]-->\n\
     \n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
     : [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\155\\\\\
-    azure-communication-chat-1.1.0\\\\samples\\\\chat_client_sample.py\", \"xml:space\"\
-    : \"preserve\", \"language\": \"python\", \"linenos\": false, \"highlight_args\"\
-    : {\"linenostart\": 1}} -->\n\n````python\n\n   from azure.communication.chat\
+    azure-communication-chat-1.1.0a20211025001\\\\samples\\\\chat_client_sample.py\"\
+    , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
+    highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   from azure.communication.chat\
     \ import ChatClient, CommunicationTokenCredential\n   from datetime import datetime,\
     \ timedelta\n\n   # set `endpoint` to an existing ACS endpoint\n   chat_client\
     \ = ChatClient(endpoint, CommunicationTokenCredential(token))\n   start_time =\

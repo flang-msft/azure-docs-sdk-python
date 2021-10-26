@@ -1,0 +1,49 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.recoveryservicessiterecovery.models.VMwareCbtNicInput
+name: VMwareCbtNicInput
+fullName: azure.mgmt.recoveryservicessiterecovery.models.VMwareCbtNicInput
+module: azure.mgmt.recoveryservicessiterecovery.models
+inheritances:
+- msrest.serialization.Model
+summary: 'VMwareCbt NIC input.
+
+
+  All required parameters must be populated in order to send to Azure.'
+constructor:
+  syntax: 'VMwareCbtNicInput(*, nic_id: str, is_primary_nic: str, target_subnet_name:
+    typing.Union[str, NoneType] = None, target_static_ip_address: typing.Union[str,
+    NoneType] = None, is_selected_for_migration: typing.Union[str, NoneType] = None,
+    target_nic_name: typing.Union[str, NoneType] = None, **kwargs)'
+  parameters:
+  - name: nic_id
+    description: Required. The NIC Id.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: is_primary_nic
+    description: Required. A value indicating whether this is the primary NIC.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: target_subnet_name
+    description: Target subnet name.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: target_static_ip_address
+    description: The static IP address.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: is_selected_for_migration
+    description: 'A value indicating whether this NIC is selected for
+
+      migration.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: target_nic_name
+    description: Target NIC name.
+    isRequired: true
+    types:
+    - <xref:str>

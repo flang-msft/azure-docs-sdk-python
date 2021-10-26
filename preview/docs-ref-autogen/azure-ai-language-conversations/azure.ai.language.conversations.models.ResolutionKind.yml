@@ -1,0 +1,12 @@
+### YamlMime:PythonEnum
+uid: azure.ai.language.conversations.models.ResolutionKind
+name: ResolutionKind
+fullName: azure.ai.language.conversations.models.ResolutionKind
+summary: The type of an entity resolution.
+module: azure.ai.language.conversations.models
+inheritances:
+- builtins.str
+- enum.Enum
+fields:
+- name: DICTIONARY_NORMALIZED_VALUE
+  uid: azure.ai.language.conversations.models.ResolutionKind.DICTIONARY_NORMALIZED_VALUE
