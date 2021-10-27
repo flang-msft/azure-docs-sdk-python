@@ -1,0 +1,116 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.storageimportexport.models.Location
+name: Location
+fullName: azure.mgmt.storageimportexport.models.Location
+module: azure.mgmt.storageimportexport.models
+inheritances:
+- msrest.serialization.Model
+summary: Provides information about an Azure data center location.
+constructor:
+  syntax: 'Location(*, id: typing.Union[str, NoneType] = None, name: typing.Union[str,
+    NoneType] = None, type: typing.Union[str, NoneType] = None, recipient_name: typing.Union[str,
+    NoneType] = None, street_address1: typing.Union[str, NoneType] = None, street_address2:
+    typing.Union[str, NoneType] = None, city: typing.Union[str, NoneType] = None,
+    state_or_province: typing.Union[str, NoneType] = None, postal_code: typing.Union[str,
+    NoneType] = None, country_or_region: typing.Union[str, NoneType] = None, phone:
+    typing.Union[str, NoneType] = None, additional_shipping_information: typing.Union[str,
+    NoneType] = None, supported_carriers: typing.Union[typing.List[str], NoneType]
+    = None, alternate_locations: typing.Union[typing.List[str], NoneType] = None,
+    **kwargs)'
+  parameters:
+  - name: id
+    description: Specifies the resource identifier of the location.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: name
+    description: 'Specifies the name of the location. Use List Locations to get all
+      supported
+
+      locations.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: type
+    description: Specifies the type of the location.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: recipient_name
+    description: 'The recipient name to use when shipping the drives to the Azure
+      data
+
+      center.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: street_address1
+    description: 'The first line of the street address to use when shipping the drives
+      to
+
+      the Azure data center.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: street_address2
+    description: 'The second line of the street address to use when shipping the drives
+
+      to the Azure data center.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: city
+    description: The city name to use when shipping the drives to the Azure data center.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: state_or_province
+    description: 'The state or province to use when shipping the drives to the Azure
+
+      data center.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: postal_code
+    description: The postal code to use when shipping the drives to the Azure data
+      center.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: country_or_region
+    description: 'The country or region to use when shipping the drives to the Azure
+
+      data center.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: phone
+    description: The phone number for the Azure data center.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: additional_shipping_information
+    description: 'Additional shipping information for customer, specific
+
+      to datacenter to which customer should send their disks.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: supported_carriers
+    description: A list of carriers that are supported at this location.
+    isRequired: true
+    types:
+    - <xref:list>[<xref:str>]
+  - name: alternate_locations
+    description: 'A list of location IDs that should be used to ship shipping drives
+
+      to for jobs created against the current location. If the current location is
+      active, it will be
+
+      part of the list. If it is temporarily closed due to maintenance, this list
+      may contain other
+
+      locations.'
+    isRequired: true
+    types:
+    - <xref:list>[<xref:str>]

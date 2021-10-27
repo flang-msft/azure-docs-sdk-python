@@ -1,0 +1,16 @@
+### YamlMime:PythonEnum
+uid: azure.mgmt.edgeorder.models.OrderItemReturnEnum
+name: OrderItemReturnEnum
+fullName: azure.mgmt.edgeorder.models.OrderItemReturnEnum
+summary: Describes whether the orderItem is returnable or not.
+module: azure.mgmt.edgeorder.models
+inheritances:
+- builtins.str
+- enum.Enum
+fields:
+- name: NOT_RETURNABLE
+  uid: azure.mgmt.edgeorder.models.OrderItemReturnEnum.NOT_RETURNABLE
+- name: RETURNABLE
+  uid: azure.mgmt.edgeorder.models.OrderItemReturnEnum.RETURNABLE
+- name: RETURNABLE_WITH_FEE
+  uid: azure.mgmt.edgeorder.models.OrderItemReturnEnum.RETURNABLE_WITH_FEE

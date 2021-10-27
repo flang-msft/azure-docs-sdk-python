@@ -1,0 +1,39 @@
+### YamlMime:PythonClass
+uid: azure.ai.language.conversations.models.TargetIntentResult
+name: TargetIntentResult
+fullName: azure.ai.language.conversations.models.TargetIntentResult
+module: azure.ai.language.conversations.models
+inheritances:
+- msrest.serialization.Model
+summary: 'This is the base class of an intent prediction.
+
+
+  You probably want to use the sub-classes and not this class directly. Known
+
+  sub-classes are: LUISTargetIntentResult, DSTargetIntentResult, QuestionAnsweringTargetIntentResult.
+
+
+  All required parameters must be populated in order to send to Azure.'
+constructor:
+  syntax: 'TargetIntentResult(*, api_version: typing.Union[str, NoneType] = None,
+    confidence_score: typing.Union[float, NoneType] = None, **kwargs)'
+variables:
+- description: The API version used to call a target service.
+  name: api_version
+  types:
+  - <xref:str>
+- description: The prediction score and it ranges from 0.0 to 1.0.
+  name: confidence_score
+  types:
+  - <xref:float>
+- description: 'Required. This discriminator property specifies the type of the target
+
+    project that returns the response. ''luis'' means the type is LUIS Generally Available.
+
+    ''luis_deepstack'' means LUIS vNext. ''question_answering'' means Question Answering.Constant
+
+    filled by server. Possible values include: "luis", "luis_deepstack", "question_answering".'
+  name: target_kind
+  types:
+  - <xref:str>
+  - <xref:azure.ai.language.conversations.models.TargetKind>

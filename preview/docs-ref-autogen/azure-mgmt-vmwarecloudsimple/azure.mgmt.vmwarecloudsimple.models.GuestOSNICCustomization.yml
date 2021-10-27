@@ -1,0 +1,53 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.vmwarecloudsimple.models.GuestOSNICCustomization
+name: GuestOSNICCustomization
+fullName: azure.mgmt.vmwarecloudsimple.models.GuestOSNICCustomization
+module: azure.mgmt.vmwarecloudsimple.models
+inheritances:
+- msrest.serialization.Model
+summary: Guest OS nic customization.
+constructor:
+  syntax: 'GuestOSNICCustomization(*, allocation: typing.Union[str, _ForwardRef(''GuestOSNICCustomizationAllocation''),
+    NoneType] = None, dns_servers: typing.Union[typing.List[str], NoneType] = None,
+    gateway: typing.Union[typing.List[str], NoneType] = None, ip_address: typing.Union[str,
+    NoneType] = None, mask: typing.Union[str, NoneType] = None, primary_wins_server:
+    typing.Union[str, NoneType] = None, secondary_wins_server: typing.Union[str, NoneType]
+    = None, **kwargs)'
+  parameters:
+  - name: allocation
+    description: 'IP address allocation method. Possible values include: "static",
+      "dynamic".'
+    isRequired: true
+    types:
+    - <xref:str>
+    - <xref:azure.mgmt.vmwarecloudsimple.models.GuestOSNICCustomizationAllocation>
+  - name: dns_servers
+    description: List of dns servers to use.
+    isRequired: true
+    types:
+    - <xref:list>[<xref:str>]
+  - name: gateway
+    description: Gateway addresses assigned to nic.
+    isRequired: true
+    types:
+    - <xref:list>[<xref:str>]
+  - name: ip_address
+    description: Static ip address for nic.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: mask
+    description: Network mask for nic.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: primary_wins_server
+    description: primary WINS server for Windows.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: secondary_wins_server
+    description: secondary WINS server for Windows.
+    isRequired: true
+    types:
+    - <xref:str>

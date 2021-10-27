@@ -1,5 +1,5 @@
 ### YamlMime:PythonClass
-uid: azure.synapse.artifacts.models.SapOpenHubLinkedService
+uid: azure.synapse.artifacts.models.SapOpenHubLinkedService1
 name: SapOpenHubLinkedService
 fullName: azure.synapse.artifacts.models.SapOpenHubLinkedService
 module: azure.synapse.artifacts.models
@@ -10,18 +10,14 @@ summary: 'SAP Business Warehouse Open Hub Destination Linked Service.
 
   All required parameters must be populated in order to send to Azure.'
 constructor:
-  syntax: 'SapOpenHubLinkedService(*, server: typing.Any, system_number: typing.Any,
-    client_id: typing.Any, additional_properties: typing.Union[typing.Dict[str, typing.Any],
-    NoneType] = None, connect_via: typing.Union[_ForwardRef(''IntegrationRuntimeReference''),
+  syntax: 'SapOpenHubLinkedService(*, server: object, system_number: object, client_id:
+    object, additional_properties: typing.Union[typing.Dict[str, object], NoneType]
+    = None, connect_via: typing.Union[_ForwardRef(''IntegrationRuntimeReference''),
     NoneType] = None, description: typing.Union[str, NoneType] = None, parameters:
     typing.Union[typing.Dict[str, _ForwardRef(''ParameterSpecification'')], NoneType]
-    = None, annotations: typing.Union[typing.List[typing.Any], NoneType] = None, language:
-    typing.Union[typing.Any, NoneType] = None, system_id: typing.Union[typing.Any,
-    NoneType] = None, user_name: typing.Union[typing.Any, NoneType] = None, password:
-    typing.Union[_ForwardRef(''SecretBase''), NoneType] = None, message_server: typing.Union[typing.Any,
-    NoneType] = None, message_server_service: typing.Union[typing.Any, NoneType] =
-    None, logon_group: typing.Union[typing.Any, NoneType] = None, encrypted_credential:
-    typing.Union[typing.Any, NoneType] = None, **kwargs)'
+    = None, annotations: typing.Union[typing.List[object], NoneType] = None, language:
+    object = None, user_name: object = None, password: typing.Union[_ForwardRef(''SecretBase''),
+    NoneType] = None, encrypted_credential: object = None, **kwargs)'
   parameters:
   - name: additional_properties
     description: 'Unmatched properties from the message are deserialized to this
@@ -29,7 +25,7 @@ constructor:
       collection.'
     isRequired: true
     types:
-    - <xref:dict>[<xref:str>, <xref:any>]
+    - <xref:dict>[<xref:str>, <xref:object>]
   - name: type
     description: Required. Type of linked service.Constant filled by server.
     isRequired: true
@@ -54,7 +50,7 @@ constructor:
     description: List of tags that can be used for describing the linked service.
     isRequired: true
     types:
-    - <xref:list>[<xref:any>]
+    - <xref:list>[<xref:object>]
   - name: server
     description: 'Required. Host name of the SAP BW instance where the open hub destination
       is
@@ -62,7 +58,7 @@ constructor:
       located. Type: string (or Expression with resultType string).'
     isRequired: true
     types:
-    - <xref:any>
+    - <xref:object>
   - name: system_number
     description: 'Required. System number of the BW system where the open hub destination
 
@@ -72,7 +68,7 @@ constructor:
       Expression with resultType string).'
     isRequired: true
     types:
-    - <xref:any>
+    - <xref:object>
   - name: client_id
     description: 'Required. Client ID of the client on the BW system where the open
       hub
@@ -83,7 +79,7 @@ constructor:
       string (or Expression with resultType string).'
     isRequired: true
     types:
-    - <xref:any>
+    - <xref:object>
   - name: language
     description: 'Language of the BW system where the open hub destination is located.
       The
@@ -91,15 +87,7 @@ constructor:
       default value is EN. Type: string (or Expression with resultType string).'
     isRequired: true
     types:
-    - <xref:any>
-  - name: system_id
-    description: 'SystemID of the SAP system where the table is located. Type: string
-      (or
-
-      Expression with resultType string).'
-    isRequired: true
-    types:
-    - <xref:any>
+    - <xref:object>
   - name: user_name
     description: 'Username to access the SAP BW server where the open hub destination
       is
@@ -107,7 +95,7 @@ constructor:
       located. Type: string (or Expression with resultType string).'
     isRequired: true
     types:
-    - <xref:any>
+    - <xref:object>
   - name: password
     description: 'Password to access the SAP BW server where the open hub destination
       is
@@ -116,29 +104,6 @@ constructor:
     isRequired: true
     types:
     - <xref:azure.synapse.artifacts.models.SecretBase>
-  - name: message_server
-    description: 'The hostname of the SAP Message Server. Type: string (or Expression
-      with
-
-      resultType string).'
-    isRequired: true
-    types:
-    - <xref:any>
-  - name: message_server_service
-    description: 'The service name or port number of the Message Server. Type:
-
-      string (or Expression with resultType string).'
-    isRequired: true
-    types:
-    - <xref:any>
-  - name: logon_group
-    description: 'The Logon Group for the SAP System. Type: string (or Expression
-      with
-
-      resultType string).'
-    isRequired: true
-    types:
-    - <xref:any>
   - name: encrypted_credential
     description: 'The encrypted credential used for authentication. Credentials are
 
@@ -148,4 +113,4 @@ constructor:
       resultType string).'
     isRequired: true
     types:
-    - <xref:any>
+    - <xref:object>

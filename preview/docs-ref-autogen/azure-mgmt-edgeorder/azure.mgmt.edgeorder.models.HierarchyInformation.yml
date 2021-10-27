@@ -1,0 +1,37 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.edgeorder.models.HierarchyInformation
+name: HierarchyInformation
+fullName: azure.mgmt.edgeorder.models.HierarchyInformation
+module: azure.mgmt.edgeorder.models
+inheritances:
+- msrest.serialization.Model
+summary: Holds details about product hierarchy information.
+constructor:
+  syntax: 'HierarchyInformation(*, product_family_name: typing.Union[str, NoneType]
+    = None, product_line_name: typing.Union[str, NoneType] = None, product_name: typing.Union[str,
+    NoneType] = None, configuration_name: typing.Union[str, NoneType] = None, **kwargs)'
+  parameters:
+  - name: product_family_name
+    description: 'Represents product family name that uniquely identifies product
+
+      family.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: product_line_name
+    description: Represents product line name that uniquely identifies product line.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: product_name
+    description: Represents product name that uniquely identifies product.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: configuration_name
+    description: 'Represents configuration name that uniquely identifies
+
+      configuration.'
+    isRequired: true
+    types:
+    - <xref:str>

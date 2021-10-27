@@ -1,5 +1,5 @@
 ### YamlMime:PythonClass
-uid: azure.synapse.artifacts.models.DatasetBZip2Compression
+uid: azure.synapse.artifacts.models.DatasetBZip2Compression1
 name: DatasetBZip2Compression
 fullName: azure.synapse.artifacts.models.DatasetBZip2Compression
 module: azure.synapse.artifacts.models
@@ -11,7 +11,7 @@ summary: 'The BZip2 compression method used on a dataset.
   All required parameters must be populated in order to send to Azure.'
 constructor:
   syntax: 'DatasetBZip2Compression(*, additional_properties: typing.Union[typing.Dict[str,
-    typing.Any], NoneType] = None, **kwargs)'
+    object], NoneType] = None, **kwargs)'
   parameters:
   - name: additional_properties
     description: 'Unmatched properties from the message are deserialized to this
@@ -19,7 +19,7 @@ constructor:
       collection.'
     isRequired: true
     types:
-    - <xref:dict>[<xref:str>, <xref:any>]
+    - <xref:dict>[<xref:str>, <xref:object>]
   - name: type
     description: Required. Type of dataset compression.Constant filled by server.
     isRequired: true

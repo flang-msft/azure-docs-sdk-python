@@ -1,0 +1,14 @@
+### YamlMime:PythonEnum
+uid: azure.mgmt.avs.models.QuotaEnabled
+name: QuotaEnabled
+fullName: azure.mgmt.avs.models.QuotaEnabled
+summary: Host quota is active for current subscription
+module: azure.mgmt.avs.models
+inheritances:
+- builtins.str
+- enum.Enum
+fields:
+- name: DISABLED
+  uid: azure.mgmt.avs.models.QuotaEnabled.DISABLED
+- name: ENABLED
+  uid: azure.mgmt.avs.models.QuotaEnabled.ENABLED

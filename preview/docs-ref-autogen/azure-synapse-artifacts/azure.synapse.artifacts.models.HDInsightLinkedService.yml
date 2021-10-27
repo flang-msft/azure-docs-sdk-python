@@ -1,5 +1,5 @@
 ### YamlMime:PythonClass
-uid: azure.synapse.artifacts.models.HDInsightLinkedService
+uid: azure.synapse.artifacts.models.HDInsightLinkedService1
 name: HDInsightLinkedService
 fullName: azure.synapse.artifacts.models.HDInsightLinkedService
 module: azure.synapse.artifacts.models
@@ -10,17 +10,16 @@ summary: 'HDInsight linked service.
 
   All required parameters must be populated in order to send to Azure.'
 constructor:
-  syntax: 'HDInsightLinkedService(*, cluster_uri: typing.Any, additional_properties:
-    typing.Union[typing.Dict[str, typing.Any], NoneType] = None, connect_via: typing.Union[_ForwardRef(''IntegrationRuntimeReference''),
+  syntax: 'HDInsightLinkedService(*, cluster_uri: object, additional_properties: typing.Union[typing.Dict[str,
+    object], NoneType] = None, connect_via: typing.Union[_ForwardRef(''IntegrationRuntimeReference''),
     NoneType] = None, description: typing.Union[str, NoneType] = None, parameters:
     typing.Union[typing.Dict[str, _ForwardRef(''ParameterSpecification'')], NoneType]
-    = None, annotations: typing.Union[typing.List[typing.Any], NoneType] = None, user_name:
-    typing.Union[typing.Any, NoneType] = None, password: typing.Union[_ForwardRef(''SecretBase''),
-    NoneType] = None, linked_service_name: typing.Union[_ForwardRef(''LinkedServiceReference''),
+    = None, annotations: typing.Union[typing.List[object], NoneType] = None, user_name:
+    object = None, password: typing.Union[_ForwardRef(''SecretBase''), NoneType] =
+    None, linked_service_name: typing.Union[_ForwardRef(''LinkedServiceReference''),
     NoneType] = None, hcatalog_linked_service_name: typing.Union[_ForwardRef(''LinkedServiceReference''),
-    NoneType] = None, encrypted_credential: typing.Union[typing.Any, NoneType] = None,
-    is_esp_enabled: typing.Union[typing.Any, NoneType] = None, file_system: typing.Union[typing.Any,
-    NoneType] = None, **kwargs)'
+    NoneType] = None, encrypted_credential: object = None, is_esp_enabled: object
+    = None, file_system: object = None, **kwargs)'
   parameters:
   - name: additional_properties
     description: 'Unmatched properties from the message are deserialized to this
@@ -28,7 +27,7 @@ constructor:
       collection.'
     isRequired: true
     types:
-    - <xref:dict>[<xref:str>, <xref:any>]
+    - <xref:dict>[<xref:str>, <xref:object>]
   - name: type
     description: Required. Type of linked service.Constant filled by server.
     isRequired: true
@@ -53,21 +52,21 @@ constructor:
     description: List of tags that can be used for describing the linked service.
     isRequired: true
     types:
-    - <xref:list>[<xref:any>]
+    - <xref:list>[<xref:object>]
   - name: cluster_uri
     description: 'Required. HDInsight cluster URI. Type: string (or Expression with
 
       resultType string).'
     isRequired: true
     types:
-    - <xref:any>
+    - <xref:object>
   - name: user_name
     description: 'HDInsight cluster user name. Type: string (or Expression with resultType
 
       string).'
     isRequired: true
     types:
-    - <xref:any>
+    - <xref:object>
   - name: password
     description: HDInsight cluster password.
     isRequired: true
@@ -94,14 +93,14 @@ constructor:
       resultType string).'
     isRequired: true
     types:
-    - <xref:any>
+    - <xref:object>
   - name: is_esp_enabled
     description: 'Specify if the HDInsight is created with ESP (Enterprise Security
 
       Package). Type: Boolean.'
     isRequired: true
     types:
-    - <xref:any>
+    - <xref:object>
   - name: file_system
     description: 'Specify the FileSystem if the main storage for the HDInsight is
       ADLS Gen2.
@@ -109,4 +108,4 @@ constructor:
       Type: string (or Expression with resultType string).'
     isRequired: true
     types:
-    - <xref:any>
+    - <xref:object>

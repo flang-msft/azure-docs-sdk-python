@@ -1,0 +1,29 @@
+### YamlMime:PythonClass
+uid: azure.ai.language.conversations.models.DeepStackEntityResolution
+name: DeepStackEntityResolution
+fullName: azure.ai.language.conversations.models.DeepStackEntityResolution
+module: azure.ai.language.conversations.models
+inheritances:
+- msrest.serialization.Model
+summary: 'This is the base class of all kinds of entity resolutions.
+
+
+  All required parameters must be populated in order to send to Azure.'
+constructor:
+  syntax: 'DeepStackEntityResolution(*, resolution_kind: typing.Union[str, _ForwardRef(''ResolutionKind'')],
+    additional_properties: typing.Union[typing.Dict[str, typing.Any], NoneType] =
+    None, **kwargs)'
+variables:
+- description: 'Unmatched properties from the message are deserialized to this
+
+    collection.'
+  name: additional_properties
+  types:
+  - <xref:dict>[<xref:str>, <xref:any>]
+- description: 'Required. The type of an entity resolution. Possible values include:
+
+    "DictionaryNormalizedValue".'
+  name: resolution_kind
+  types:
+  - <xref:str>
+  - <xref:azure.ai.language.conversations.models.ResolutionKind>

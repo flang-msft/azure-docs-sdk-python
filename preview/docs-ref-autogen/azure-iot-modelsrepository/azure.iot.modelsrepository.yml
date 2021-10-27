@@ -1,0 +1,11 @@
+### YamlMime:PythonPackage
+uid: azure.iot.modelsrepository
+name: modelsrepository
+fullName: azure.iot.modelsrepository
+type: import
+classes:
+- azure.iot.modelsrepository.ModelsRepositoryClient
+- azure.iot.modelsrepository.ModelError
+modules:
+- azure.iot.modelsrepository.dtmi_conventions
+- azure.iot.modelsrepository.exceptions

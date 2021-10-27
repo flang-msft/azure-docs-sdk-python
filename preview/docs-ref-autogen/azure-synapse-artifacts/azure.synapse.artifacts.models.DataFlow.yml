@@ -1,5 +1,5 @@
 ### YamlMime:PythonClass
-uid: azure.synapse.artifacts.models.DataFlow
+uid: azure.synapse.artifacts.models.DataFlow1
 name: DataFlow
 fullName: azure.synapse.artifacts.models.DataFlow
 module: azure.synapse.artifacts.models
@@ -17,7 +17,7 @@ summary: 'Azure Synapse nested object which contains a flow with data movements 
   All required parameters must be populated in order to send to Azure.'
 constructor:
   syntax: 'DataFlow(*, description: typing.Union[str, NoneType] = None, annotations:
-    typing.Union[typing.List[typing.Any], NoneType] = None, folder: typing.Union[_ForwardRef(''DataFlowFolder''),
+    typing.Union[typing.List[object], NoneType] = None, folder: typing.Union[_ForwardRef(''DataFlowFolder''),
     NoneType] = None, **kwargs)'
   parameters:
   - name: type
@@ -34,7 +34,7 @@ constructor:
     description: List of tags that can be used for describing the data flow.
     isRequired: true
     types:
-    - <xref:list>[<xref:any>]
+    - <xref:list>[<xref:object>]
   - name: folder
     description: 'The folder that this data flow is in. If not specified, Data flow
       will appear at

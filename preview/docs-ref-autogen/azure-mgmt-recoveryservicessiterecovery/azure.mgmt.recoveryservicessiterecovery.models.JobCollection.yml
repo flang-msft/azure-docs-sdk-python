@@ -1,0 +1,22 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.recoveryservicessiterecovery.models.JobCollection
+name: JobCollection
+fullName: azure.mgmt.recoveryservicessiterecovery.models.JobCollection
+module: azure.mgmt.recoveryservicessiterecovery.models
+inheritances:
+- msrest.serialization.Model
+summary: Collection of jobs.
+constructor:
+  syntax: 'JobCollection(*, value: typing.Union[typing.List[_ForwardRef(''Job'')],
+    NoneType] = None, next_link: typing.Union[str, NoneType] = None, **kwargs)'
+  parameters:
+  - name: value
+    description: The list of jobs.
+    isRequired: true
+    types:
+    - <xref:list>[<xref:azure.mgmt.recoveryservicessiterecovery.models.Job>]
+  - name: next_link
+    description: The value of next link.
+    isRequired: true
+    types:
+    - <xref:str>

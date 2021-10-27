@@ -10,7 +10,7 @@ summary: 'A client to interact with a specific Queue.
 
   For more optional configuration, please click
 
-  [here](https://github.com/Azure/azure-sdk-for-python/tree/master/sdk/storage/azure-storage-queue#optional-configuration).'
+  [here](https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/storage/azure-storage-queue#optional-configuration).'
 constructor:
   syntax: QueueClient(account_url, queue_name, credential=None, **kwargs)
   parameters:
@@ -38,9 +38,11 @@ constructor:
       shared access key, or an instance of a TokenCredentials class from azure.identity.'
     isRequired: true
   - name: api_version
-    description: 'The Storage API version to use for requests. Default value is ''2019-07-07''.
+    description: 'The Storage API version to use for requests. Default value is the
+      most recent service version that is
 
-      Setting to an older version may result in reduced feature compatibility.'
+      compatible with the current SDK. Setting to an older version may result in reduced
+      feature compatibility.'
     types:
     - <xref:str>
   - name: secondary_hostname
@@ -62,7 +64,7 @@ constructor:
 examples:
 - "Create the queue client with url and credential.<!--[!code-python[Main](les\\queue_samples_message.py\
   \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
-  : [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\90\\\\azure-storage-queue-12.1.6\\\
+  : [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\90\\\\azure-storage-queue-12.1.6a20211025001\\\
   \\samples\\\\queue_samples_message.py\", \"xml:space\": \"preserve\", \"language\"\
   : \"python\", \"linenos\": false, \"highlight_args\": {\"linenostart\": 1}} -->\n\
   \n````python\n\n   token_auth_queue = QueueClient.from_queue_url(\n       queue_url=queue.url,\n\
@@ -81,9 +83,10 @@ methods:
   - "Clears all messages.<!--[!code-python[Main](les\\queue_samples_message.py )]-->\n\
     \n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
     : [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\90\\\\\
-    azure-storage-queue-12.1.6\\\\samples\\\\queue_samples_message.py\", \"xml:space\"\
-    : \"preserve\", \"language\": \"python\", \"linenos\": false, \"highlight_args\"\
-    : {\"linenostart\": 1}} -->\n\n````python\n\n   queue.clear_messages()\n\n   ````\n"
+    azure-storage-queue-12.1.6a20211025001\\\\samples\\\\queue_samples_message.py\"\
+    , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
+    highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   queue.clear_messages()\n\
+    \n   ````\n"
 - uid: azure.storage.queue.QueueClient.create_queue
   name: create_queue
   summary: 'Creates a new queue in the storage account.
@@ -114,9 +117,10 @@ methods:
   - "Create a queue.<!--[!code-python[Main](les\\queue_samples_hello_world.py )]-->\n\
     \n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
     : [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\90\\\\\
-    azure-storage-queue-12.1.6\\\\samples\\\\queue_samples_hello_world.py\", \"xml:space\"\
-    : \"preserve\", \"language\": \"python\", \"linenos\": false, \"highlight_args\"\
-    : {\"linenostart\": 1}} -->\n\n````python\n\n   queue.create_queue()\n\n   ````\n"
+    azure-storage-queue-12.1.6a20211025001\\\\samples\\\\queue_samples_hello_world.py\"\
+    , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
+    highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   queue.create_queue()\n\
+    \n   ````\n"
 - uid: azure.storage.queue.QueueClient.delete_message
   name: delete_message
   summary: 'Deletes the specified message.
@@ -165,11 +169,11 @@ methods:
   - "Delete a message.<!--[!code-python[Main](les\\queue_samples_message.py )]-->\n\
     \n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
     : [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\90\\\\\
-    azure-storage-queue-12.1.6\\\\samples\\\\queue_samples_message.py\", \"xml:space\"\
-    : \"preserve\", \"language\": \"python\", \"linenos\": false, \"highlight_args\"\
-    : {\"linenostart\": 1}} -->\n\n````python\n\n   # Get the message at the front\
-    \ of the queue\n   msg = next(queue.receive_messages())\n\n   # Delete the specified\
-    \ message\n   queue.delete_message(msg)\n\n   ````\n"
+    azure-storage-queue-12.1.6a20211025001\\\\samples\\\\queue_samples_message.py\"\
+    , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
+    highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   # Get the message\
+    \ at the front of the queue\n   msg = next(queue.receive_messages())\n\n   # Delete\
+    \ the specified message\n   queue.delete_message(msg)\n\n   ````\n"
 - uid: azure.storage.queue.QueueClient.delete_queue
   name: delete_queue
   summary: 'Deletes the specified queue and any messages it contains.
@@ -200,9 +204,10 @@ methods:
   - "Delete a queue.<!--[!code-python[Main](les\\queue_samples_hello_world.py )]-->\n\
     \n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
     : [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\90\\\\\
-    azure-storage-queue-12.1.6\\\\samples\\\\queue_samples_hello_world.py\", \"xml:space\"\
-    : \"preserve\", \"language\": \"python\", \"linenos\": false, \"highlight_args\"\
-    : {\"linenostart\": 1}} -->\n\n````python\n\n   queue.delete_queue()\n\n   ````\n"
+    azure-storage-queue-12.1.6a20211025001\\\\samples\\\\queue_samples_hello_world.py\"\
+    , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
+    highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   queue.delete_queue()\n\
+    \n   ````\n"
 - uid: azure.storage.queue.QueueClient.from_connection_string
   name: from_connection_string
   summary: Create QueueClient from a Connection String.
@@ -241,10 +246,10 @@ methods:
   - "Create the queue client from connection string.<!--[!code-python[Main](les\\\
     queue_samples_message.py )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\"\
     : [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\\
-    a\\\\1\\\\s\\\\dist_temp\\\\90\\\\azure-storage-queue-12.1.6\\\\samples\\\\queue_samples_message.py\"\
-    , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
-    highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   from azure.storage.queue\
-    \ import QueueClient\n   queue = QueueClient.from_connection_string(self.connection_string,\
+    a\\\\1\\\\s\\\\dist_temp\\\\90\\\\azure-storage-queue-12.1.6a20211025001\\\\samples\\\
+    \\queue_samples_message.py\", \"xml:space\": \"preserve\", \"language\": \"python\"\
+    , \"linenos\": false, \"highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\
+    \n   from azure.storage.queue import QueueClient\n   queue = QueueClient.from_connection_string(self.connection_string,\
     \ \"myqueue1\")\n\n   ````\n"
 - uid: azure.storage.queue.QueueClient.from_queue_url
   name: from_queue_url
@@ -307,9 +312,9 @@ methods:
   - "Get the properties on the queue.<!--[!code-python[Main](les\\queue_samples_message.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\
-    \\90\\\\azure-storage-queue-12.1.6\\\\samples\\\\queue_samples_message.py\", \"\
-    xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"highlight_args\"\
-    : {\"linenostart\": 1}} -->\n\n````python\n\n   properties = queue.get_queue_properties().metadata\n\
+    \\90\\\\azure-storage-queue-12.1.6a20211025001\\\\samples\\\\queue_samples_message.py\"\
+    , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
+    highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   properties = queue.get_queue_properties().metadata\n\
     \n   ````\n"
 - uid: azure.storage.queue.QueueClient.peek_messages
   name: peek_messages
@@ -365,12 +370,13 @@ methods:
   - "Peek messages.<!--[!code-python[Main](les\\queue_samples_message.py )]-->\n\n\
     <!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
     : [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\90\\\\\
-    azure-storage-queue-12.1.6\\\\samples\\\\queue_samples_message.py\", \"xml:space\"\
-    : \"preserve\", \"language\": \"python\", \"linenos\": false, \"highlight_args\"\
-    : {\"linenostart\": 1}} -->\n\n````python\n\n   # Peek at one message at the front\
-    \ of the queue\n   msg = queue.peek_messages()\n\n   # Peek at the last 5 messages\n\
-    \   messages = queue.peek_messages(max_messages=5)\n\n   # Print the last 5 messages\n\
-    \   for message in messages:\n       print(message.content)\n\n   ````\n"
+    azure-storage-queue-12.1.6a20211025001\\\\samples\\\\queue_samples_message.py\"\
+    , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
+    highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   # Peek at one\
+    \ message at the front of the queue\n   msg = queue.peek_messages()\n\n   # Peek\
+    \ at the last 5 messages\n   messages = queue.peek_messages(max_messages=5)\n\n\
+    \   # Print the last 5 messages\n   for message in messages:\n       print(message.content)\n\
+    \n   ````\n"
 - uid: azure.storage.queue.QueueClient.receive_message
   name: receive_message
   summary: 'Removes one message from the front of the queue.
@@ -419,13 +425,13 @@ methods:
   - "Receive one message from the queue.<!--[!code-python[Main](les\\queue_samples_message.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\
-    \\90\\\\azure-storage-queue-12.1.6\\\\samples\\\\queue_samples_message.py\", \"\
-    xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"highlight_args\"\
-    : {\"linenostart\": 1}} -->\n\n````python\n\n   # Pop two messages from the front\
-    \ of the queue\n   message1 = queue.receive_message()\n   message2 = queue.receive_message()\n\
-    \   # We should see message 3 if we peek\n   message3 = queue.peek_messages()[0]\n\
-    \n   print(message1.content)\n   print(message2.content)\n   print(message3.content)\n\
-    \n   ````\n"
+    \\90\\\\azure-storage-queue-12.1.6a20211025001\\\\samples\\\\queue_samples_message.py\"\
+    , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
+    highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   # Pop two messages\
+    \ from the front of the queue\n   message1 = queue.receive_message()\n   message2\
+    \ = queue.receive_message()\n   # We should see message 3 if we peek\n   message3\
+    \ = queue.peek_messages()[0]\n\n   print(message1.content)\n   print(message2.content)\n\
+    \   print(message3.content)\n\n   ````\n"
 - uid: azure.storage.queue.QueueClient.receive_messages
   name: receive_messages
   summary: 'Removes one or more messages from the front of the queue.
@@ -474,11 +480,11 @@ methods:
   - "Receive messages from the queue.<!--[!code-python[Main](les\\queue_samples_message.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\
-    \\90\\\\azure-storage-queue-12.1.6\\\\samples\\\\queue_samples_message.py\", \"\
-    xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"highlight_args\"\
-    : {\"linenostart\": 1}} -->\n\n````python\n\n   # Receive messages one-by-one\n\
-    \   messages = queue.receive_messages()\n   for msg in messages:\n       print(msg.content)\n\
-    \n   # Receive messages by batch\n   messages = queue.receive_messages(messages_per_page=5)\n\
+    \\90\\\\azure-storage-queue-12.1.6a20211025001\\\\samples\\\\queue_samples_message.py\"\
+    , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
+    highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   # Receive messages\
+    \ one-by-one\n   messages = queue.receive_messages()\n   for msg in messages:\n\
+    \       print(msg.content)\n\n   # Receive messages by batch\n   messages = queue.receive_messages(messages_per_page=5)\n\
     \   for msg_batch in messages.by_page():\n       for msg in msg_batch:\n     \
     \      print(msg.content)\n           queue.delete_message(msg)\n\n   ````\n"
 - uid: azure.storage.queue.QueueClient.send_message
@@ -554,11 +560,11 @@ methods:
   - "Send messages.<!--[!code-python[Main](les\\queue_samples_message.py )]-->\n\n\
     <!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
     : [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\90\\\\\
-    azure-storage-queue-12.1.6\\\\samples\\\\queue_samples_message.py\", \"xml:space\"\
-    : \"preserve\", \"language\": \"python\", \"linenos\": false, \"highlight_args\"\
-    : {\"linenostart\": 1}} -->\n\n````python\n\n   queue.send_message(u\"message1\"\
-    )\n   queue.send_message(u\"message2\", visibility_timeout=30)  # wait 30s before\
-    \ becoming visible\n   queue.send_message(u\"message3\")\n   queue.send_message(u\"\
+    azure-storage-queue-12.1.6a20211025001\\\\samples\\\\queue_samples_message.py\"\
+    , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
+    highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   queue.send_message(u\"\
+    message1\")\n   queue.send_message(u\"message2\", visibility_timeout=30)  # wait\
+    \ 30s before becoming visible\n   queue.send_message(u\"message3\")\n   queue.send_message(u\"\
     message4\")\n   queue.send_message(u\"message5\")\n\n   ````\n"
 - uid: azure.storage.queue.QueueClient.set_queue_access_policy
   name: set_queue_access_policy
@@ -605,15 +611,15 @@ methods:
   - "Set an access policy on the queue.<!--[!code-python[Main](les\\queue_samples_message.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\
-    \\90\\\\azure-storage-queue-12.1.6\\\\samples\\\\queue_samples_message.py\", \"\
-    xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"highlight_args\"\
-    : {\"linenostart\": 1}} -->\n\n````python\n\n   # Create an access policy\n  \
-    \ from azure.storage.queue import AccessPolicy, QueueSasPermissions\n   access_policy\
-    \ = AccessPolicy()\n   access_policy.start = datetime.utcnow() - timedelta(hours=1)\n\
-    \   access_policy.expiry = datetime.utcnow() + timedelta(hours=1)\n   access_policy.permission\
-    \ = QueueSasPermissions(read=True)\n   identifiers = {'my-access-policy-id': access_policy}\n\
-    \n   # Set the access policy\n   queue.set_queue_access_policy(identifiers)\n\n\
-    \   ````\n"
+    \\90\\\\azure-storage-queue-12.1.6a20211025001\\\\samples\\\\queue_samples_message.py\"\
+    , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
+    highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   # Create an access\
+    \ policy\n   from azure.storage.queue import AccessPolicy, QueueSasPermissions\n\
+    \   access_policy = AccessPolicy()\n   access_policy.start = datetime.utcnow()\
+    \ - timedelta(hours=1)\n   access_policy.expiry = datetime.utcnow() + timedelta(hours=1)\n\
+    \   access_policy.permission = QueueSasPermissions(read=True)\n   identifiers\
+    \ = {'my-access-policy-id': access_policy}\n\n   # Set the access policy\n   queue.set_queue_access_policy(identifiers)\n\
+    \n   ````\n"
 - uid: azure.storage.queue.QueueClient.set_queue_metadata
   name: set_queue_metadata
   summary: 'Sets user-defined metadata on the specified queue.
@@ -637,11 +643,11 @@ methods:
   - "Set metadata on the queue.<!--[!code-python[Main](les\\queue_samples_message.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\
-    \\90\\\\azure-storage-queue-12.1.6\\\\samples\\\\queue_samples_message.py\", \"\
-    xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"highlight_args\"\
-    : {\"linenostart\": 1}} -->\n\n````python\n\n   metadata = {'foo': 'val1', 'bar':\
-    \ 'val2', 'baz': 'val3'}\n   queue.set_queue_metadata(metadata=metadata)\n\n \
-    \  ````\n"
+    \\90\\\\azure-storage-queue-12.1.6a20211025001\\\\samples\\\\queue_samples_message.py\"\
+    , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
+    highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   metadata = {'foo':\
+    \ 'val1', 'bar': 'val2', 'baz': 'val3'}\n   queue.set_queue_metadata(metadata=metadata)\n\
+    \n   ````\n"
 - uid: azure.storage.queue.QueueClient.update_message
   name: update_message
   summary: 'Updates the visibility timeout of a message. You can also use this
@@ -720,10 +726,10 @@ methods:
   - "Update a message.<!--[!code-python[Main](les\\queue_samples_message.py )]-->\n\
     \n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
     : [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\90\\\\\
-    azure-storage-queue-12.1.6\\\\samples\\\\queue_samples_message.py\", \"xml:space\"\
-    : \"preserve\", \"language\": \"python\", \"linenos\": false, \"highlight_args\"\
-    : {\"linenostart\": 1}} -->\n\n````python\n\n   # Send a message\n   queue.send_message(u\"\
-    update me\")\n\n   # Receive the message\n   messages = queue.receive_messages()\n\
-    \n   # Update the message\n   list_result = next(messages)\n   message = queue.update_message(\n\
-    \       list_result.id,\n       pop_receipt=list_result.pop_receipt,\n       visibility_timeout=0,\n\
-    \       content=u\"updated\")\n\n   ````\n"
+    azure-storage-queue-12.1.6a20211025001\\\\samples\\\\queue_samples_message.py\"\
+    , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
+    highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   # Send a message\n\
+    \   queue.send_message(u\"update me\")\n\n   # Receive the message\n   messages\
+    \ = queue.receive_messages()\n\n   # Update the message\n   list_result = next(messages)\n\
+    \   message = queue.update_message(\n       list_result.id,\n       pop_receipt=list_result.pop_receipt,\n\
+    \       visibility_timeout=0,\n       content=u\"updated\")\n\n   ````\n"

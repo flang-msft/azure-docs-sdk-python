@@ -1,5 +1,5 @@
 ### YamlMime:PythonClass
-uid: azure.synapse.artifacts.models.Trigger
+uid: azure.synapse.artifacts.models.Trigger1
 name: Trigger
 fullName: azure.synapse.artifacts.models.Trigger
 module: azure.synapse.artifacts.models
@@ -11,8 +11,7 @@ summary: 'Azure Synapse nested object which contains information about creating 
 
   You probably want to use the sub-classes and not this class directly. Known
 
-  sub-classes are: ChainingTrigger, MultiplePipelineTrigger, RerunTumblingWindowTrigger,
-  TumblingWindowTrigger.
+  sub-classes are: MultiplePipelineTrigger, RerunTumblingWindowTrigger.
 
 
   Variables are only populated by the server, and will be ignored when sending a request.
@@ -20,9 +19,9 @@ summary: 'Azure Synapse nested object which contains information about creating 
 
   All required parameters must be populated in order to send to Azure.'
 constructor:
-  syntax: 'Trigger(*, additional_properties: typing.Union[typing.Dict[str, typing.Any],
+  syntax: 'Trigger(*, additional_properties: typing.Union[typing.Dict[str, object],
     NoneType] = None, description: typing.Union[str, NoneType] = None, annotations:
-    typing.Union[typing.List[typing.Any], NoneType] = None, **kwargs)'
+    typing.Union[typing.List[object], NoneType] = None, **kwargs)'
   parameters:
   - name: additional_properties
     description: 'Unmatched properties from the message are deserialized to this
@@ -30,7 +29,7 @@ constructor:
       collection.'
     isRequired: true
     types:
-    - <xref:dict>[<xref:str>, <xref:any>]
+    - <xref:dict>[<xref:str>, <xref:object>]
   - name: type
     description: Required. Trigger type.Constant filled by server.
     isRequired: true
@@ -45,7 +44,7 @@ constructor:
     description: List of tags that can be used for describing the trigger.
     isRequired: true
     types:
-    - <xref:list>[<xref:any>]
+    - <xref:list>[<xref:object>]
 variables:
 - description: 'Indicates if trigger is running or not. Updated when Start/Stop APIs
     are

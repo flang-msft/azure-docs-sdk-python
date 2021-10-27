@@ -1,0 +1,82 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.recoveryservicessiterecovery.models.EventProperties
+name: EventProperties
+fullName: azure.mgmt.recoveryservicessiterecovery.models.EventProperties
+module: azure.mgmt.recoveryservicessiterecovery.models
+inheritances:
+- msrest.serialization.Model
+summary: The properties of a monitoring event.
+constructor:
+  syntax: 'EventProperties(*, event_code: typing.Union[str, NoneType] = None, description:
+    typing.Union[str, NoneType] = None, event_type: typing.Union[str, NoneType] =
+    None, affected_object_friendly_name: typing.Union[str, NoneType] = None, affected_object_correlation_id:
+    typing.Union[str, NoneType] = None, severity: typing.Union[str, NoneType] = None,
+    time_of_occurrence: typing.Union[datetime.datetime, NoneType] = None, fabric_id:
+    typing.Union[str, NoneType] = None, provider_specific_details: typing.Union[_ForwardRef(''EventProviderSpecificDetails''),
+    NoneType] = None, event_specific_details: typing.Union[_ForwardRef(''EventSpecificDetails''),
+    NoneType] = None, health_errors: typing.Union[typing.List[_ForwardRef(''HealthError'')],
+    NoneType] = None, **kwargs)'
+  parameters:
+  - name: event_code
+    description: The Id of the monitoring event.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: description
+    description: The event name.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: event_type
+    description: 'The type of the event. for example: VM Health, Server Health, Job
+      Failure
+
+      etc.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: affected_object_friendly_name
+    description: 'The friendly name of the source of the event on which it
+
+      is raised (for example, VM, VMM etc).'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: affected_object_correlation_id
+    description: The affected object correlationId for the event.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: severity
+    description: The severity of the event.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: time_of_occurrence
+    description: The time of occurrence of the event.
+    isRequired: true
+    types:
+    - <xref:datetime.datetime>
+  - name: fabric_id
+    description: The ARM ID of the fabric.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: provider_specific_details
+    description: The provider specific settings.
+    isRequired: true
+    types:
+    - <xref:azure.mgmt.recoveryservicessiterecovery.models.EventProviderSpecificDetails>
+  - name: event_specific_details
+    description: The event specific settings.
+    isRequired: true
+    types:
+    - <xref:azure.mgmt.recoveryservicessiterecovery.models.EventSpecificDetails>
+  - name: health_errors
+    description: 'The list of errors / warnings capturing details associated with
+      the
+
+      issue(s).'
+    isRequired: true
+    types:
+    - <xref:list>[<xref:azure.mgmt.recoveryservicessiterecovery.models.HealthError>]

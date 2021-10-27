@@ -1,0 +1,45 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.recoveryservicessiterecovery.models.InMageDiskDetails
+name: InMageDiskDetails
+fullName: azure.mgmt.recoveryservicessiterecovery.models.InMageDiskDetails
+module: azure.mgmt.recoveryservicessiterecovery.models
+inheritances:
+- msrest.serialization.Model
+summary: VMware/Physical specific Disk Details.
+constructor:
+  syntax: 'InMageDiskDetails(*, disk_id: typing.Union[str, NoneType] = None, disk_name:
+    typing.Union[str, NoneType] = None, disk_size_in_mb: typing.Union[str, NoneType]
+    = None, disk_type: typing.Union[str, NoneType] = None, disk_configuration: typing.Union[str,
+    NoneType] = None, volume_list: typing.Union[typing.List[_ForwardRef(''DiskVolumeDetails'')],
+    NoneType] = None, **kwargs)'
+  parameters:
+  - name: disk_id
+    description: The disk Id.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: disk_name
+    description: The disk name.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: disk_size_in_mb
+    description: The disk size in MB.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: disk_type
+    description: Whether disk is system disk or data disk.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: disk_configuration
+    description: Whether disk is dynamic disk or basic disk.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: volume_list
+    description: Volumes of the disk.
+    isRequired: true
+    types:
+    - <xref:list>[<xref:azure.mgmt.recoveryservicessiterecovery.models.DiskVolumeDetails>]

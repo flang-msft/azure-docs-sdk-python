@@ -1,0 +1,178 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.vmwarecloudsimple.models.PrivateCloud
+name: PrivateCloud
+fullName: azure.mgmt.vmwarecloudsimple.models.PrivateCloud
+module: azure.mgmt.vmwarecloudsimple.models
+inheritances:
+- msrest.serialization.Model
+summary: 'Private cloud model.
+
+
+  Variables are only populated by the server, and will be ignored when sending a request.'
+constructor:
+  syntax: 'PrivateCloud(*, id: typing.Union[str, NoneType] = None, location: typing.Union[str,
+    NoneType] = None, name: typing.Union[str, NoneType] = None, availability_zone_id:
+    typing.Union[str, NoneType] = None, availability_zone_name: typing.Union[str,
+    NoneType] = None, clusters_number: typing.Union[int, NoneType] = None, created_by:
+    typing.Union[str, NoneType] = None, created_on: typing.Union[datetime.datetime,
+    NoneType] = None, dns_servers: typing.Union[typing.List[str], NoneType] = None,
+    expires: typing.Union[str, NoneType] = None, nsx_type: typing.Union[str, NoneType]
+    = None, placement_group_id: typing.Union[str, NoneType] = None, placement_group_name:
+    typing.Union[str, NoneType] = None, private_cloud_id: typing.Union[str, NoneType]
+    = None, resource_pools: typing.Union[typing.List[_ForwardRef(''ResourcePool'')],
+    NoneType] = None, state: typing.Union[str, NoneType] = None, total_cpu_cores:
+    typing.Union[int, NoneType] = None, total_nodes: typing.Union[int, NoneType] =
+    None, total_ram: typing.Union[int, NoneType] = None, total_storage: typing.Union[float,
+    NoneType] = None, type_properties_type: typing.Union[str, NoneType] = None, v_sphere_version:
+    typing.Union[str, NoneType] = None, vcenter_fqdn: typing.Union[str, NoneType]
+    = None, vcenter_refid: typing.Union[str, NoneType] = None, virtual_machine_templates:
+    typing.Union[typing.List[_ForwardRef(''VirtualMachineTemplate'')], NoneType] =
+    None, virtual_networks: typing.Union[typing.List[_ForwardRef(''VirtualNetwork'')],
+    NoneType] = None, vr_ops_enabled: typing.Union[bool, NoneType] = None, **kwargs)'
+  parameters:
+  - name: id
+    description: 'Azure Id, e.g.
+
+      "/subscriptions/4da99247-a172-4ed6-8ae9-ebed2d12f839/providers/Microsoft.VMwareCloudSimple/privateClouds/cloud123".'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: location
+    description: Location where private cloud created, e.g "westus".
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: name
+    description: Private cloud name.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: availability_zone_id
+    description: Availability Zone id, e.g. "az1".
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: availability_zone_name
+    description: Availability Zone name, e.g. "Availability Zone 1".
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: clusters_number
+    description: Number of clusters.
+    isRequired: true
+    types:
+    - <xref:int>
+  - name: created_by
+    description: User's emails who created cloud.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: created_on
+    description: When private cloud was created.
+    isRequired: true
+    types:
+    - <xref:datetime.datetime>
+  - name: dns_servers
+    description: Array of DNS servers.
+    isRequired: true
+    types:
+    - <xref:list>[<xref:str>]
+  - name: expires
+    description: Expiration date of PC.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: nsx_type
+    description: Nsx Type, e.g. "Advanced".
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: placement_group_id
+    description: Placement Group id, e.g. "n1".
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: placement_group_name
+    description: Placement Group name.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: private_cloud_id
+    description: Id of a private cloud.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: resource_pools
+    description: The list of Resource Pools.
+    isRequired: true
+    types:
+    - <xref:list>[<xref:azure.mgmt.vmwarecloudsimple.models.ResourcePool>]
+  - name: state
+    description: Private Cloud state, e.g. "operational".
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: total_cpu_cores
+    description: Number of cores.
+    isRequired: true
+    types:
+    - <xref:int>
+  - name: total_nodes
+    description: Number of nodes.
+    isRequired: true
+    types:
+    - <xref:int>
+  - name: total_ram
+    description: Memory size.
+    isRequired: true
+    types:
+    - <xref:int>
+  - name: total_storage
+    description: Disk space in TB.
+    isRequired: true
+    types:
+    - <xref:float>
+  - name: type_properties_type
+    description: Virtualization type e.g. "vSphere".
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: v_sphere_version
+    description: e.g. "6.5u2".
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: vcenter_fqdn
+    description: FQDN for vcenter access.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: vcenter_refid
+    description: Vcenter ip address.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: virtual_machine_templates
+    description: The list of Virtual Machine Templates.
+    isRequired: true
+    types:
+    - <xref:list>[<xref:azure.mgmt.vmwarecloudsimple.models.VirtualMachineTemplate>]
+  - name: virtual_networks
+    description: The list of Virtual Networks.
+    isRequired: true
+    types:
+    - <xref:list>[<xref:azure.mgmt.vmwarecloudsimple.models.VirtualNetwork>]
+  - name: vr_ops_enabled
+    description: Is Vrops enabled/disabled.
+    isRequired: true
+    types:
+    - <xref:bool>
+variables:
+- description: 'Azure Resource type. Default value: "Microsoft.VMwareCloudSimple/privateClouds".'
+  name: type
+  types:
+  - <xref:str>
+attributes:
+- uid: azure.mgmt.vmwarecloudsimple.models.PrivateCloud.type
+  name: type
+  signature: type = 'Microsoft.VMwareCloudSimple/privateClouds'

@@ -1,0 +1,22 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.recoveryservicessiterecovery.models.ReplicationProtectedItemCollection
+name: ReplicationProtectedItemCollection
+fullName: azure.mgmt.recoveryservicessiterecovery.models.ReplicationProtectedItemCollection
+module: azure.mgmt.recoveryservicessiterecovery.models
+inheritances:
+- msrest.serialization.Model
+summary: Replication protected item collection.
+constructor:
+  syntax: 'ReplicationProtectedItemCollection(*, value: typing.Union[typing.List[_ForwardRef(''ReplicationProtectedItem'')],
+    NoneType] = None, next_link: typing.Union[str, NoneType] = None, **kwargs)'
+  parameters:
+  - name: value
+    description: The Replication protected item details.
+    isRequired: true
+    types:
+    - <xref:list>[<xref:azure.mgmt.recoveryservicessiterecovery.models.ReplicationProtectedItem>]
+  - name: next_link
+    description: The value of next link.
+    isRequired: true
+    types:
+    - <xref:str>

@@ -1,0 +1,73 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.recoveryservicessiterecovery.models.VMwareCbtNicDetails
+name: VMwareCbtNicDetails
+fullName: azure.mgmt.recoveryservicessiterecovery.models.VMwareCbtNicDetails
+module: azure.mgmt.recoveryservicessiterecovery.models
+inheritances:
+- msrest.serialization.Model
+summary: 'VMwareCbt NIC details.
+
+
+  Variables are only populated by the server, and will be ignored when sending a request.'
+constructor:
+  syntax: 'VMwareCbtNicDetails(*, is_primary_nic: typing.Union[str, NoneType] = None,
+    target_ip_address: typing.Union[str, NoneType] = None, target_ip_address_type:
+    typing.Union[str, _ForwardRef(''EthernetAddressType''), NoneType] = None, target_subnet_name:
+    typing.Union[str, NoneType] = None, target_nic_name: typing.Union[str, NoneType]
+    = None, is_selected_for_migration: typing.Union[str, NoneType] = None, **kwargs)'
+  parameters:
+  - name: is_primary_nic
+    description: A value indicating whether this is the primary NIC.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: target_ip_address
+    description: The target IP address.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: target_ip_address_type
+    description: 'The target IP address type. Possible values include: "Dynamic",
+
+      "Static".'
+    isRequired: true
+    types:
+    - <xref:str>
+    - <xref:azure.mgmt.recoveryservicessiterecovery.models.EthernetAddressType>
+  - name: target_subnet_name
+    description: Target subnet name.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: target_nic_name
+    description: Target NIC name.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: is_selected_for_migration
+    description: 'A value indicating whether this NIC is selected for
+
+      migration.'
+    isRequired: true
+    types:
+    - <xref:str>
+variables:
+- description: The NIC Id.
+  name: nic_id
+  types:
+  - <xref:str>
+- description: The source IP address.
+  name: source_ip_address
+  types:
+  - <xref:str>
+- description: 'The source IP address type. Possible values include: "Dynamic",
+
+    "Static".'
+  name: source_ip_address_type
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.recoveryservicessiterecovery.models.EthernetAddressType>
+- description: Source network Id.
+  name: source_network_id
+  types:
+  - <xref:str>

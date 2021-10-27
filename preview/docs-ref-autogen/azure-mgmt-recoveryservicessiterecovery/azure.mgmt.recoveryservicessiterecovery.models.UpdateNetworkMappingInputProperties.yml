@@ -1,0 +1,29 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.recoveryservicessiterecovery.models.UpdateNetworkMappingInputProperties
+name: UpdateNetworkMappingInputProperties
+fullName: azure.mgmt.recoveryservicessiterecovery.models.UpdateNetworkMappingInputProperties
+module: azure.mgmt.recoveryservicessiterecovery.models
+inheritances:
+- msrest.serialization.Model
+summary: Common input details for network mapping operation.
+constructor:
+  syntax: 'UpdateNetworkMappingInputProperties(*, recovery_fabric_name: typing.Union[str,
+    NoneType] = None, recovery_network_id: typing.Union[str, NoneType] = None, fabric_specific_details:
+    typing.Union[_ForwardRef(''FabricSpecificUpdateNetworkMappingInput''), NoneType]
+    = None, **kwargs)'
+  parameters:
+  - name: recovery_fabric_name
+    description: Recovery fabric name.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: recovery_network_id
+    description: Recovery network Id.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: fabric_specific_details
+    description: Fabrics specific input network Id.
+    isRequired: true
+    types:
+    - <xref:azure.mgmt.recoveryservicessiterecovery.models.FabricSpecificUpdateNetworkMappingInput>

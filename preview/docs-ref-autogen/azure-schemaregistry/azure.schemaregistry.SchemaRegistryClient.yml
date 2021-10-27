@@ -28,10 +28,10 @@ examples:
 - "Create a new instance of the SchemaRegistryClient.<!--[!code-python[Main](les\\\
   sync_samples\\sample_code_schemaregistry.py )]-->\n\n<!-- literal_block {\"ids\"\
   : [], \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\"\
-  : \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\4\\\\azure-schemaregistry-1.0.0b3\\\\samples\\\
-  \\sync_samples\\\\sample_code_schemaregistry.py\", \"xml:space\": \"preserve\",\
-  \ \"language\": \"python\", \"linenos\": false, \"highlight_args\": {\"linenostart\"\
-  : 1}} -->\n\n````python\n\n   SCHEMAREGISTRY_FQN = os.environ['SCHEMAREGISTRY_FULLY_QUALIFIED_NAMESPACE']\n\
+  : \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\4\\\\azure-schemaregistry-1.0.0a20211025001\\\
+  \\samples\\\\sync_samples\\\\sample_code_schemaregistry.py\", \"xml:space\": \"\
+  preserve\", \"language\": \"python\", \"linenos\": false, \"highlight_args\": {\"\
+  linenostart\": 1}} -->\n\n````python\n\n   SCHEMAREGISTRY_FQN = os.environ['SCHEMAREGISTRY_FULLY_QUALIFIED_NAMESPACE']\n\
   \   token_credential = DefaultAzureCredential()\n   schema_registry_client = SchemaRegistryClient(fully_qualified_namespace=SCHEMAREGISTRY_FQN,\
   \ credential=token_credential)\n\n   ````\n"
 methods:
@@ -60,7 +60,7 @@ methods:
   - "Get schema by id.<!--[!code-python[Main](les\\sync_samples\\sample_code_schemaregistry.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\
-    \\4\\\\azure-schemaregistry-1.0.0b3\\\\samples\\\\sync_samples\\\\sample_code_schemaregistry.py\"\
+    \\4\\\\azure-schemaregistry-1.0.0a20211025001\\\\samples\\\\sync_samples\\\\sample_code_schemaregistry.py\"\
     , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
     highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   schema = schema_registry_client.get_schema(id)\n\
     \   schema_definition = schema.schema_definition\n\n   ````\n"
@@ -99,7 +99,7 @@ methods:
   - "Get schema id.<!--[!code-python[Main](les\\sync_samples\\sample_code_schemaregistry.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\
-    \\4\\\\azure-schemaregistry-1.0.0b3\\\\samples\\\\sync_samples\\\\sample_code_schemaregistry.py\"\
+    \\4\\\\azure-schemaregistry-1.0.0a20211025001\\\\samples\\\\sync_samples\\\\sample_code_schemaregistry.py\"\
     , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
     highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   schema_properties\
     \ = schema_registry_client.get_schema_properties(group_name, name, schema_definition,\
@@ -144,7 +144,7 @@ methods:
   - "Register a new schema.<!--[!code-python[Main](les\\sync_samples\\sample_code_schemaregistry.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\
-    \\4\\\\azure-schemaregistry-1.0.0b3\\\\samples\\\\sync_samples\\\\sample_code_schemaregistry.py\"\
+    \\4\\\\azure-schemaregistry-1.0.0a20211025001\\\\samples\\\\sync_samples\\\\sample_code_schemaregistry.py\"\
     , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
     highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   GROUP_NAME = os.environ['SCHEMAREGISTRY_GROUP']\n\
     \   NAME = 'your-schema-name'\n   FORMAT = SchemaFormat.AVRO\n   SCHEMA_DEFINITION\

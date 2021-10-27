@@ -58,6 +58,10 @@ methods:
   - name: indexing_directive
     description: Indicate whether the document should be omitted from indexing.
     isRequired: true
+  - name: enable_automatic_id_generation
+    description: Enable automatic id generation if no id present.
+    types:
+    - <xref:bool>
   - name: session_token
     description: Token for use with Session consistency.
     types:
@@ -311,22 +315,22 @@ methods:
   - "Get all products that have not been discontinued:<!--[!code-python[Main](les\\\
     examples.py )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\"\
     : [], \"dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\\
-    dist_temp\\\\115\\\\azure-cosmos-4.2.0\\\\samples\\\\examples.py\", \"xml:space\"\
-    : \"preserve\", \"language\": \"python\", \"linenos\": false, \"highlight_args\"\
-    : {\"linenostart\": 1}} -->\n\n````python\n\n   import json\n\n   for item in\
-    \ container.query_items(\n       query='SELECT * FROM products p WHERE p.productModel\
-    \ <> \"DISCONTINUED\"',\n       enable_cross_partition_query=True,\n   ):\n  \
-    \     print(json.dumps(item, indent=True))\n\n   ````\n\nParameterized query to\
-    \ get all products that have been discontinued:<!--[!code-python[Main](les\\examples.py\
-    \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
-    dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\
-    \\115\\\\azure-cosmos-4.2.0\\\\samples\\\\examples.py\", \"xml:space\": \"preserve\"\
-    , \"language\": \"python\", \"linenos\": false, \"highlight_args\": {\"linenostart\"\
-    : 1}} -->\n\n````python\n\n   discontinued_items = container.query_items(\n  \
-    \     query='SELECT * FROM products p WHERE p.productModel = @model AND p.productName=\"\
-    Widget\"',\n       parameters=[dict(name=\"@model\", value=\"DISCONTINUED\")],\n\
-    \   )\n   for item in discontinued_items:\n       print(json.dumps(item, indent=True))\n\
-    \n   ````\n"
+    dist_temp\\\\115\\\\azure-cosmos-4.2.1a20211025003\\\\samples\\\\examples.py\"\
+    , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
+    highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   import json\n\n\
+    \   for item in container.query_items(\n       query='SELECT * FROM products p\
+    \ WHERE p.productModel <> \"DISCONTINUED\"',\n       enable_cross_partition_query=True,\n\
+    \   ):\n       print(json.dumps(item, indent=True))\n\n   ````\n\nParameterized\
+    \ query to get all products that have been discontinued:<!--[!code-python[Main](les\\\
+    examples.py )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\"\
+    : [], \"dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\\
+    dist_temp\\\\115\\\\azure-cosmos-4.2.1a20211025003\\\\samples\\\\examples.py\"\
+    , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
+    highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   discontinued_items\
+    \ = container.query_items(\n       query='SELECT * FROM products p WHERE p.productModel\
+    \ = @model AND p.productName=\"Widget\"',\n       parameters=[dict(name=\"@model\"\
+    , value=\"DISCONTINUED\")],\n   )\n   for item in discontinued_items:\n      \
+    \ print(json.dumps(item, indent=True))\n\n   ````\n"
 - uid: azure.cosmos.container.ContainerProxy.query_items_change_feed
   name: query_items_change_feed
   summary: Get a sorted list of items that were changed, in the order in which they
@@ -470,9 +474,9 @@ methods:
   - "Get an item from the database and update one of its properties:<!--[!code-python[Main](les\\\
     examples.py )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\"\
     : [], \"dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\\
-    dist_temp\\\\115\\\\azure-cosmos-4.2.0\\\\samples\\\\examples.py\", \"xml:space\"\
-    : \"preserve\", \"language\": \"python\", \"linenos\": false, \"highlight_args\"\
-    : {\"linenostart\": 1}} -->\n\n````python\n\n   item = container.read_item(\"\
+    dist_temp\\\\115\\\\azure-cosmos-4.2.1a20211025003\\\\samples\\\\examples.py\"\
+    , \"xml:space\": \"preserve\", \"language\": \"python\", \"linenos\": false, \"\
+    highlight_args\": {\"linenostart\": 1}} -->\n\n````python\n\n   item = container.read_item(\"\
     item2\", partition_key=\"Widget\")\n   item[\"productModel\"] = \"DISCONTINUED\"\
     \n   updated_item = container.upsert_item(item)\n\n   ````\n"
 - uid: azure.cosmos.container.ContainerProxy.read_offer
