@@ -1,14 +1,14 @@
 ---
 title: 
-keywords: Azure, python, SDK, API, azure-communication-nspkg, 
+keywords: Azure, python, SDK, API, azure-communication-nspkg, nspkg
 author: maggiepint
 ms.author: magpint
-ms.date: 10/05/2020
+ms.date: 10/28/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.service: 
+ms.service: nspkg
 ---
 
 # Microsoft Azure Communication SDK for Python
