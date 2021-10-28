@@ -1,0 +1,35 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.edgeorder.models.Preferences
+name: Preferences
+fullName: azure.mgmt.edgeorder.models.Preferences
+module: azure.mgmt.edgeorder.models
+inheritances:
+- msrest.serialization.Model
+summary: Preferences related to the order.
+constructor:
+  syntax: 'Preferences(*, notification_preferences: typing.Union[typing.List[_ForwardRef(''NotificationPreference'')],
+    NoneType] = None, transport_preferences: typing.Union[_ForwardRef(''TransportPreferences''),
+    NoneType] = None, encryption_preferences: typing.Union[_ForwardRef(''EncryptionPreferences''),
+    NoneType] = None, management_resource_preferences: typing.Union[_ForwardRef(''ManagementResourcePreferences''),
+    NoneType] = None, **kwargs)'
+  parameters:
+  - name: notification_preferences
+    description: Notification preferences.
+    isRequired: true
+    types:
+    - <xref:list>[<xref:edge_order_management_client.models.NotificationPreference>]
+  - name: transport_preferences
+    description: Preferences related to the shipment logistics of the order.
+    isRequired: true
+    types:
+    - <xref:edge_order_management_client.models.TransportPreferences>
+  - name: encryption_preferences
+    description: Preferences related to the Encryption.
+    isRequired: true
+    types:
+    - <xref:edge_order_management_client.models.EncryptionPreferences>
+  - name: management_resource_preferences
+    description: Preferences related to the Management resource.
+    isRequired: true
+    types:
+    - <xref:edge_order_management_client.models.ManagementResourcePreferences>

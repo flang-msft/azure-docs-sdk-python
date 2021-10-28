@@ -1,0 +1,12 @@
+### YamlMime:PythonEnum
+uid: azure.mgmt.avs.models.PortMirroringDirectionEnum
+name: PortMirroringDirectionEnum
+fullName: azure.mgmt.avs.models.PortMirroringDirectionEnum
+summary: Direction of port mirroring profile.
+module: azure.mgmt.avs.models
+inheritances:
+- builtins.str
+- enum.Enum
+fields:
+- name: INGRESS_EGRESS_BIDIRECTIONAL
+  uid: azure.mgmt.avs.models.PortMirroringDirectionEnum.INGRESS_EGRESS_BIDIRECTIONAL

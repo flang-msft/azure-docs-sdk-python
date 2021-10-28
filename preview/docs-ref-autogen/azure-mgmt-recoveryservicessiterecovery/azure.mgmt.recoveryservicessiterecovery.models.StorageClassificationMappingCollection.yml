@@ -1,0 +1,22 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.recoveryservicessiterecovery.models.StorageClassificationMappingCollection
+name: StorageClassificationMappingCollection
+fullName: azure.mgmt.recoveryservicessiterecovery.models.StorageClassificationMappingCollection
+module: azure.mgmt.recoveryservicessiterecovery.models
+inheritances:
+- msrest.serialization.Model
+summary: Collection of storage mapping details.
+constructor:
+  syntax: 'StorageClassificationMappingCollection(*, value: typing.Union[typing.List[_ForwardRef(''StorageClassificationMapping'')],
+    NoneType] = None, next_link: typing.Union[str, NoneType] = None, **kwargs)'
+  parameters:
+  - name: value
+    description: The storage details.
+    isRequired: true
+    types:
+    - <xref:list>[<xref:azure.mgmt.recoveryservicessiterecovery.models.StorageClassificationMapping>]
+  - name: next_link
+    description: The value of next link.
+    isRequired: true
+    types:
+    - <xref:str>

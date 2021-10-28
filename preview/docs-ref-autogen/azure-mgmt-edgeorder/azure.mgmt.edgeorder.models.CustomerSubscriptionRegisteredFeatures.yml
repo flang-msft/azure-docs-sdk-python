@@ -1,0 +1,22 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.edgeorder.models.CustomerSubscriptionRegisteredFeatures
+name: CustomerSubscriptionRegisteredFeatures
+fullName: azure.mgmt.edgeorder.models.CustomerSubscriptionRegisteredFeatures
+module: azure.mgmt.edgeorder.models
+inheritances:
+- msrest.serialization.Model
+summary: Represents subscription registered features.
+constructor:
+  syntax: 'CustomerSubscriptionRegisteredFeatures(*, name: typing.Union[str, NoneType]
+    = None, state: typing.Union[str, NoneType] = None, **kwargs)'
+  parameters:
+  - name: name
+    description: Name of subscription registered feature.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: state
+    description: State of subscription registered feature.
+    isRequired: true
+    types:
+    - <xref:str>

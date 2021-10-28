@@ -1,0 +1,162 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.batchai.models.JobCreateParameters
+name: JobCreateParameters
+fullName: azure.mgmt.batchai.models.JobCreateParameters
+module: azure.mgmt.batchai.models
+inheritances:
+- msrest.serialization.Model
+summary: Job creation parameters.
+constructor:
+  syntax: 'JobCreateParameters(*, scheduling_priority: typing.Union[str, _ForwardRef(''JobPriority''),
+    NoneType] = None, cluster: typing.Union[_ForwardRef(''ResourceId''), NoneType]
+    = None, mount_volumes: typing.Union[_ForwardRef(''MountVolumes''), NoneType] =
+    None, node_count: typing.Union[int, NoneType] = None, container_settings: typing.Union[_ForwardRef(''ContainerSettings''),
+    NoneType] = None, cntk_settings: typing.Union[_ForwardRef(''CNTKsettings''), NoneType]
+    = None, py_torch_settings: typing.Union[_ForwardRef(''PyTorchSettings''), NoneType]
+    = None, tensor_flow_settings: typing.Union[_ForwardRef(''TensorFlowSettings''),
+    NoneType] = None, caffe_settings: typing.Union[_ForwardRef(''CaffeSettings''),
+    NoneType] = None, caffe2_settings: typing.Union[_ForwardRef(''Caffe2Settings''),
+    NoneType] = None, chainer_settings: typing.Union[_ForwardRef(''ChainerSettings''),
+    NoneType] = None, custom_toolkit_settings: typing.Union[_ForwardRef(''CustomToolkitSettings''),
+    NoneType] = None, custom_mpi_settings: typing.Union[_ForwardRef(''CustomMpiSettings''),
+    NoneType] = None, horovod_settings: typing.Union[_ForwardRef(''HorovodSettings''),
+    NoneType] = None, job_preparation: typing.Union[_ForwardRef(''JobPreparation''),
+    NoneType] = None, std_out_err_path_prefix: typing.Union[str, NoneType] = None,
+    input_directories: typing.Union[typing.List[_ForwardRef(''InputDirectory'')],
+    NoneType] = None, output_directories: typing.Union[typing.List[_ForwardRef(''OutputDirectory'')],
+    NoneType] = None, environment_variables: typing.Union[typing.List[_ForwardRef(''EnvironmentVariable'')],
+    NoneType] = None, secrets: typing.Union[typing.List[_ForwardRef(''EnvironmentVariableWithSecretValue'')],
+    NoneType] = None, constraints: typing.Union[_ForwardRef(''JobBasePropertiesConstraints''),
+    NoneType] = None, **kwargs)'
+  parameters:
+  - name: scheduling_priority
+    description: 'Scheduling priority associated with the job. Possible values: low,
+
+      normal, high. Possible values include: "low", "normal", "high".'
+    isRequired: true
+    types:
+    - <xref:str>
+    - <xref:batch_ai.models.JobPriority>
+  - name: cluster
+    description: Resource ID of the cluster on which this job will run.
+    isRequired: true
+    types:
+    - <xref:batch_ai.models.ResourceId>
+  - name: mount_volumes
+    description: 'Information on mount volumes to be used by the job. These volumes
+      will be
+
+      mounted before the job execution and will be unmounted after the job completion.
+      The volumes
+
+      will be mounted at location specified by $AZ_BATCHAI_JOB_MOUNT_ROOT environment
+      variable.'
+    isRequired: true
+    types:
+    - <xref:batch_ai.models.MountVolumes>
+  - name: node_count
+    description: 'Number of compute nodes to run the job on. The job will be gang
+      scheduled on
+
+      that many compute nodes.'
+    isRequired: true
+    types:
+    - <xref:int>
+  - name: container_settings
+    description: 'Docker container settings for the job. If not provided, the job
+      will
+
+      run directly on the node.'
+    isRequired: true
+    types:
+    - <xref:batch_ai.models.ContainerSettings>
+  - name: cntk_settings
+    description: Settings for CNTK (aka Microsoft Cognitive Toolkit) job.
+    isRequired: true
+    types:
+    - <xref:batch_ai.models.CNTKsettings>
+  - name: py_torch_settings
+    description: Settings for pyTorch job.
+    isRequired: true
+    types:
+    - <xref:batch_ai.models.PyTorchSettings>
+  - name: tensor_flow_settings
+    description: Settings for Tensor Flow job.
+    isRequired: true
+    types:
+    - <xref:batch_ai.models.TensorFlowSettings>
+  - name: caffe_settings
+    description: Settings for Caffe job.
+    isRequired: true
+    types:
+    - <xref:batch_ai.models.CaffeSettings>
+  - name: caffe2_settings
+    description: Settings for Caffe2 job.
+    isRequired: true
+    types:
+    - <xref:batch_ai.models.Caffe2Settings>
+  - name: chainer_settings
+    description: Settings for Chainer job.
+    isRequired: true
+    types:
+    - <xref:batch_ai.models.ChainerSettings>
+  - name: custom_toolkit_settings
+    description: Settings for custom tool kit job.
+    isRequired: true
+    types:
+    - <xref:batch_ai.models.CustomToolkitSettings>
+  - name: custom_mpi_settings
+    description: Settings for custom MPI job.
+    isRequired: true
+    types:
+    - <xref:batch_ai.models.CustomMpiSettings>
+  - name: horovod_settings
+    description: Settings for Horovod job.
+    isRequired: true
+    types:
+    - <xref:batch_ai.models.HorovodSettings>
+  - name: job_preparation
+    description: 'A command line to be executed on each node allocated for the job
+      before
+
+      tool kit is launched.'
+    isRequired: true
+    types:
+    - <xref:batch_ai.models.JobPreparation>
+  - name: std_out_err_path_prefix
+    description: 'The path where the Batch AI service will store stdout, stderror
+
+      and execution log of the job.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: input_directories
+    description: A list of input directories for the job.
+    isRequired: true
+    types:
+    - <xref:list>[<xref:batch_ai.models.InputDirectory>]
+  - name: output_directories
+    description: A list of output directories for the job.
+    isRequired: true
+    types:
+    - <xref:list>[<xref:batch_ai.models.OutputDirectory>]
+  - name: environment_variables
+    description: 'A list of user defined environment variables which will be setup
+
+      for the job.'
+    isRequired: true
+    types:
+    - <xref:list>[<xref:batch_ai.models.EnvironmentVariable>]
+  - name: secrets
+    description: 'A list of user defined environment variables with secret values
+      which will be
+
+      setup for the job. Server will never report values of these variables back.'
+    isRequired: true
+    types:
+    - <xref:list>[<xref:batch_ai.models.EnvironmentVariableWithSecretValue>]
+  - name: constraints
+    description: Constraints associated with the Job.
+    isRequired: true
+    types:
+    - <xref:batch_ai.models.JobBasePropertiesConstraints>

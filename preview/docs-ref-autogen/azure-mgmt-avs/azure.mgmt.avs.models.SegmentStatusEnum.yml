@@ -1,0 +1,12 @@
+### YamlMime:PythonEnum
+uid: azure.mgmt.avs.models.SegmentStatusEnum
+name: SegmentStatusEnum
+fullName: azure.mgmt.avs.models.SegmentStatusEnum
+summary: Segment status.
+module: azure.mgmt.avs.models
+inheritances:
+- builtins.str
+- enum.Enum
+fields:
+- name: SUCCESS_FAILURE
+  uid: azure.mgmt.avs.models.SegmentStatusEnum.SUCCESS_FAILURE

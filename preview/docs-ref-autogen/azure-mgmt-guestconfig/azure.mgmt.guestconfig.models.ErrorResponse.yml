@@ -1,0 +1,16 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.guestconfig.models.ErrorResponse
+name: ErrorResponse
+fullName: azure.mgmt.guestconfig.models.ErrorResponse
+module: azure.mgmt.guestconfig.models
+inheritances:
+- msrest.serialization.Model
+summary: Error response of an operation failure.
+constructor:
+  syntax: 'ErrorResponse(*, error: typing.Union[_ForwardRef(''ErrorResponseError''),
+    NoneType] = None, **kwargs)'
+  parameters:
+  - name: error
+    isRequired: true
+    types:
+    - <xref:azure.mgmt.guestconfig.models.ErrorResponseError>

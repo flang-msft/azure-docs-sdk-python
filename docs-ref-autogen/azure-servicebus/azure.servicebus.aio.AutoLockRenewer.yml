@@ -37,17 +37,17 @@ examples:
 - "Automatically renew a message lock<!--[!code-python[Main](les\\async_samples\\\
   sample_code_servicebus_async.py )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\"\
   : [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\
-  \\1\\\\s\\\\dist_temp\\\\63\\\\azure-servicebus-7.3.4\\\\samples\\\\async_samples\\\
-  \\sample_code_servicebus_async.py\", \"xml:space\": \"preserve\", \"language\":\
-  \ \"python\", \"linenos\": false, \"highlight_args\": {\"linenostart\": 1}} -->\n\
-  \n````python\n\n   from azure.servicebus.aio import AutoLockRenewer\n\n   lock_renewal\
-  \ = AutoLockRenewer()\n   async with servicebus_receiver:\n       async for message\
-  \ in servicebus_receiver:\n           lock_renewal.register(servicebus_receiver,\
+  \\1\\\\s\\\\dist_temp\\\\63\\\\azure-servicebus-7.3.5a20211027001\\\\samples\\\\\
+  async_samples\\\\sample_code_servicebus_async.py\", \"xml:space\": \"preserve\"\
+  , \"language\": \"python\", \"linenos\": false, \"highlight_args\": {\"linenostart\"\
+  : 1}} -->\n\n````python\n\n   from azure.servicebus.aio import AutoLockRenewer\n\
+  \n   lock_renewal = AutoLockRenewer()\n   async with servicebus_receiver:\n    \
+  \   async for message in servicebus_receiver:\n           lock_renewal.register(servicebus_receiver,\
   \ message, max_lock_renewal_duration=60)\n           await process_message(message)\n\
   \           await servicebus_receiver.complete_message(message)\n\n   ````\n\nAutomatically\
   \ renew a session lock<!--[!code-python[Main](les\\async_samples\\sample_code_servicebus_async.py\
   \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
-  : [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\63\\\\azure-servicebus-7.3.4\\\
+  : [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\63\\\\azure-servicebus-7.3.5a20211027001\\\
   \\samples\\\\async_samples\\\\sample_code_servicebus_async.py\", \"xml:space\":\
   \ \"preserve\", \"language\": \"python\", \"linenos\": false, \"highlight_args\"\
   : {\"linenostart\": 1}} -->\n\n````python\n\n       from azure.servicebus.aio import\

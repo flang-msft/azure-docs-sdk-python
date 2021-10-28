@@ -1,5 +1,5 @@
 ### YamlMime:PythonClass
-uid: azure.synapse.artifacts.models.WebBasicAuthentication
+uid: azure.synapse.artifacts.models.WebBasicAuthentication1
 name: WebBasicAuthentication
 fullName: azure.synapse.artifacts.models.WebBasicAuthentication
 module: azure.synapse.artifacts.models
@@ -11,8 +11,8 @@ summary: 'A WebLinkedService that uses basic authentication to communicate with 
 
   All required parameters must be populated in order to send to Azure.'
 constructor:
-  syntax: 'WebBasicAuthentication(*, url: typing.Any, username: typing.Any, password:
-    azure.synapse.artifacts.models._models_py3.SecretBase, **kwargs)'
+  syntax: 'WebBasicAuthentication(*, url: object, username: object, password: azure.synapse.artifacts.models._models_py3.SecretBase,
+    **kwargs)'
   parameters:
   - name: url
     description: 'Required. The URL of the web service endpoint, e.g. [http://www.microsoft.com](http://www.microsoft.com)
@@ -21,7 +21,7 @@ constructor:
       Type: string (or Expression with resultType string).'
     isRequired: true
     types:
-    - <xref:any>
+    - <xref:object>
   - name: authentication_type
     description: 'Required. Type of authentication used to connect to the web table
 
@@ -39,7 +39,7 @@ constructor:
       resultType string).'
     isRequired: true
     types:
-    - <xref:any>
+    - <xref:object>
   - name: password
     description: Required. The password for Basic authentication.
     isRequired: true

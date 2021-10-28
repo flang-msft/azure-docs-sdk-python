@@ -1,0 +1,35 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.recoveryservicessiterecovery.models.EnableProtectionInputProperties
+name: EnableProtectionInputProperties
+fullName: azure.mgmt.recoveryservicessiterecovery.models.EnableProtectionInputProperties
+module: azure.mgmt.recoveryservicessiterecovery.models
+inheritances:
+- msrest.serialization.Model
+summary: Enable protection input properties.
+constructor:
+  syntax: 'EnableProtectionInputProperties(*, policy_id: typing.Union[str, NoneType]
+    = None, protectable_item_id: typing.Union[str, NoneType] = None, provider_specific_details:
+    typing.Union[_ForwardRef(''EnableProtectionProviderSpecificInput''), NoneType]
+    = None, **kwargs)'
+  parameters:
+  - name: policy_id
+    description: The Policy Id.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: protectable_item_id
+    description: The protectable item Id.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: provider_specific_details
+    description: 'The ReplicationProviderInput. For HyperVReplicaAzure
+
+      provider, it will be AzureEnableProtectionInput object. For San provider, it
+      will be
+
+      SanEnableProtectionInput object. For HyperVReplicaAzure provider, it can be
+      null.'
+    isRequired: true
+    types:
+    - <xref:azure.mgmt.recoveryservicessiterecovery.models.EnableProtectionProviderSpecificInput>

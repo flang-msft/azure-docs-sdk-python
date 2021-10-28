@@ -1,0 +1,42 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.resourcehealth.v2015_01_01.models.ServiceImpactingEvent
+name: ServiceImpactingEvent
+fullName: azure.mgmt.resourcehealth.v2015_01_01.models.ServiceImpactingEvent
+module: azure.mgmt.resourcehealth.v2015_01_01.models
+inheritances:
+- msrest.serialization.Model
+summary: Lists the service impacting events that may be affecting the health of the
+  resource.
+constructor:
+  syntax: 'ServiceImpactingEvent(*, event_start_time: typing.Union[datetime.datetime,
+    NoneType] = None, event_status_last_modified_time: typing.Union[datetime.datetime,
+    NoneType] = None, correlation_id: typing.Union[str, NoneType] = None, status:
+    typing.Union[_ForwardRef(''ServiceImpactingEventStatus''), NoneType] = None, incident_properties:
+    typing.Union[_ForwardRef(''ServiceImpactingEventIncidentProperties''), NoneType]
+    = None, **kwargs)'
+  parameters:
+  - name: event_start_time
+    description: Timestamp for when the event started.
+    isRequired: true
+    types:
+    - <xref:datetime.datetime>
+  - name: event_status_last_modified_time
+    description: Timestamp for when event was submitted/detected.
+    isRequired: true
+    types:
+    - <xref:datetime.datetime>
+  - name: correlation_id
+    description: Correlation id for the event.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: status
+    description: Status of the service impacting event.
+    isRequired: true
+    types:
+    - <xref:azure.mgmt.resourcehealth.v2015_01_01.models.ServiceImpactingEventStatus>
+  - name: incident_properties
+    description: Properties of the service impacting event.
+    isRequired: true
+    types:
+    - <xref:azure.mgmt.resourcehealth.v2015_01_01.models.ServiceImpactingEventIncidentProperties>

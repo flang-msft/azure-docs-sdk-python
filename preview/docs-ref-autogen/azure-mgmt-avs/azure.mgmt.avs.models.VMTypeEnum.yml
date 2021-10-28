@@ -1,0 +1,12 @@
+### YamlMime:PythonEnum
+uid: azure.mgmt.avs.models.VMTypeEnum
+name: VMTypeEnum
+fullName: azure.mgmt.avs.models.VMTypeEnum
+summary: Virtual machine type.
+module: azure.mgmt.avs.models
+inheritances:
+- builtins.str
+- enum.Enum
+fields:
+- name: REGULAR_EDGE_SERVICE
+  uid: azure.mgmt.avs.models.VMTypeEnum.REGULAR_EDGE_SERVICE

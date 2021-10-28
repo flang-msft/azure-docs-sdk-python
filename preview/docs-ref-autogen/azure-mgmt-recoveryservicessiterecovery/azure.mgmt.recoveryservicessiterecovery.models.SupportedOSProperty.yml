@@ -1,0 +1,23 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.recoveryservicessiterecovery.models.SupportedOSProperty
+name: SupportedOSProperty
+fullName: azure.mgmt.recoveryservicessiterecovery.models.SupportedOSProperty
+module: azure.mgmt.recoveryservicessiterecovery.models
+inheritances:
+- msrest.serialization.Model
+summary: Supported operating systems property.
+constructor:
+  syntax: 'SupportedOSProperty(*, instance_type: typing.Union[str, NoneType] = None,
+    supported_os: typing.Union[typing.List[_ForwardRef(''SupportedOSDetails'')], NoneType]
+    = None, **kwargs)'
+  parameters:
+  - name: instance_type
+    description: The replication provider type.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: supported_os
+    description: The list of supported operating systems.
+    isRequired: true
+    types:
+    - <xref:list>[<xref:azure.mgmt.recoveryservicessiterecovery.models.SupportedOSDetails>]

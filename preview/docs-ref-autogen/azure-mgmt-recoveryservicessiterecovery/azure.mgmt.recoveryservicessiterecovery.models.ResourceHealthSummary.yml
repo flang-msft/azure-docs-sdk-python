@@ -1,0 +1,31 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.recoveryservicessiterecovery.models.ResourceHealthSummary
+name: ResourceHealthSummary
+fullName: azure.mgmt.recoveryservicessiterecovery.models.ResourceHealthSummary
+module: azure.mgmt.recoveryservicessiterecovery.models
+inheritances:
+- msrest.serialization.Model
+summary: Base class to define the health summary of the resources contained under
+  an Arm resource.
+constructor:
+  syntax: 'ResourceHealthSummary(*, resource_count: typing.Union[int, NoneType] =
+    None, issues: typing.Union[typing.List[_ForwardRef(''HealthErrorSummary'')], NoneType]
+    = None, categorized_resource_counts: typing.Union[typing.Dict[str, int], NoneType]
+    = None, **kwargs)'
+  parameters:
+  - name: resource_count
+    description: The count of total resources under the container.
+    isRequired: true
+    types:
+    - <xref:int>
+  - name: issues
+    description: The list of summary of health errors across the resources under the
+      container.
+    isRequired: true
+    types:
+    - <xref:list>[<xref:azure.mgmt.recoveryservicessiterecovery.models.HealthErrorSummary>]
+  - name: categorized_resource_counts
+    description: The categorized resource counts.
+    isRequired: true
+    types:
+    - <xref:dict>[<xref:str>, <xref:int>]

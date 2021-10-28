@@ -1,0 +1,40 @@
+### YamlMime:PythonClass
+uid: azure.ai.language.conversations.models.DeepstackEntity
+name: DeepstackEntity
+fullName: azure.ai.language.conversations.models.DeepstackEntity
+module: azure.ai.language.conversations.models
+inheritances:
+- msrest.serialization.Model
+summary: 'The entity extraction result of a LUIS Deepstack project.
+
+
+  All required parameters must be populated in order to send to Azure.'
+constructor:
+  syntax: 'DeepstackEntity(*, category: str, text: str, offset: int, length: int,
+    confidence_score: float, resolution: typing.Union[typing.List[_ForwardRef(''DeepStackEntityResolution'')],
+    NoneType] = None, **kwargs)'
+variables:
+- description: Required. The entity category.
+  name: category
+  types:
+  - <xref:str>
+- description: Required. The predicted entity text.
+  name: text
+  types:
+  - <xref:str>
+- description: Required. The starting index of this entity in the query.
+  name: offset
+  types:
+  - <xref:int>
+- description: Required. The length of the text.
+  name: length
+  types:
+  - <xref:int>
+- description: Required. The entity confidence score.
+  name: confidence_score
+  types:
+  - <xref:float>
+- description: A array with extra information about the entity.
+  name: resolution
+  types:
+  - <xref:list>[<xref:azure.ai.language.conversations.models.DeepStackEntityResolution>]

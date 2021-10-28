@@ -1,0 +1,31 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.sqlvirtualmachine.models.SqlStorageUpdateSettings
+name: SqlStorageUpdateSettings
+fullName: azure.mgmt.sqlvirtualmachine.models.SqlStorageUpdateSettings
+module: azure.mgmt.sqlvirtualmachine.models
+inheritances:
+- msrest.serialization.Model
+summary: Set disk storage settings for SQL Server.
+constructor:
+  syntax: 'SqlStorageUpdateSettings(*, disk_count: typing.Union[int, NoneType] = None,
+    starting_device_id: typing.Union[int, NoneType] = None, disk_configuration_type:
+    typing.Union[str, _ForwardRef(''DiskConfigurationType''), NoneType] = None, **kwargs)'
+  parameters:
+  - name: disk_count
+    description: Virtual machine disk count.
+    isRequired: true
+    types:
+    - <xref:int>
+  - name: starting_device_id
+    description: Device id of the first disk to be updated.
+    isRequired: true
+    types:
+    - <xref:int>
+  - name: disk_configuration_type
+    description: 'Disk configuration to apply to SQL Server. Possible values
+
+      include: "NEW", "EXTEND", "ADD".'
+    isRequired: true
+    types:
+    - <xref:str>
+    - <xref:azure.mgmt.sqlvirtualmachine.models.DiskConfigurationType>

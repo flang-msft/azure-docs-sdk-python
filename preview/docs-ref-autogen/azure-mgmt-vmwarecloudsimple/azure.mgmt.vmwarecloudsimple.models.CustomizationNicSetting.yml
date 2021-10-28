@@ -1,0 +1,22 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.vmwarecloudsimple.models.CustomizationNicSetting
+name: CustomizationNicSetting
+fullName: azure.mgmt.vmwarecloudsimple.models.CustomizationNicSetting
+module: azure.mgmt.vmwarecloudsimple.models
+inheritances:
+- msrest.serialization.Model
+summary: CustomizationNicSetting.
+constructor:
+  syntax: 'CustomizationNicSetting(*, adapter: typing.Union[_ForwardRef(''CustomizationIPSettings''),
+    NoneType] = None, mac_address: typing.Union[str, NoneType] = None, **kwargs)'
+  parameters:
+  - name: adapter
+    description: The list of adapters' settings.
+    isRequired: true
+    types:
+    - <xref:azure.mgmt.vmwarecloudsimple.models.CustomizationIPSettings>
+  - name: mac_address
+    description: NIC mac address.
+    isRequired: true
+    types:
+    - <xref:str>

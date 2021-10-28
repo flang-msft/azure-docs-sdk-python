@@ -35,7 +35,7 @@ methods:
   name: get_spark_job_list
   summary: Get list of spark applications for the workspace.
   signature: 'get_spark_job_list(x_ms_client_request_id: typing.Union[str, NoneType]
-    = None, **kwargs) -> azure.synapse.monitoring.models._models_py3.SparkJobListViewResponse'
+    = None, **kwargs: typing.Any) -> azure.synapse.monitoring.models._models_py3.SparkJobListViewResponse'
   parameters:
   - name: x_ms_client_request_id
     description: 'Can provide a guid, which is helpful for debugging and to
@@ -57,7 +57,8 @@ methods:
   summary: Get SQL OD/DW Query for the workspace.
   signature: 'get_sql_job_query_string(x_ms_client_request_id: typing.Union[str, NoneType]
     = None, filter: typing.Union[str, NoneType] = None, orderby: typing.Union[str,
-    NoneType] = None, skip: typing.Union[str, NoneType] = None, **kwargs) -> azure.synapse.monitoring.models._models_py3.SqlQueryStringDataModel'
+    NoneType] = None, skip: typing.Union[str, NoneType] = None, **kwargs: typing.Any)
+    -> azure.synapse.monitoring.models._models_py3.SqlQueryStringDataModel'
   parameters:
   - name: x_ms_client_request_id
     description: 'Can provide a guid, which is helpful for debugging and to

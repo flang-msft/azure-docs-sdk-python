@@ -1,0 +1,35 @@
+### YamlMime:PythonClass
+uid: azure.ai.language.conversations.models.DictionaryNormalizedValueResolution
+name: DictionaryNormalizedValueResolution
+fullName: azure.ai.language.conversations.models.DictionaryNormalizedValueResolution
+module: azure.ai.language.conversations.models
+inheritances:
+- azure.ai.language.conversations.models._models_py3.DeepStackEntityResolution
+summary: 'The DictionaryNormalizedValue resolution indicates entity values are extracted
+  from a predefined dictionary. For example, Coca could be a normalized name for Coca-Cola.
+
+
+  All required parameters must be populated in order to send to Azure.'
+constructor:
+  syntax: 'DictionaryNormalizedValueResolution(*, resolution_kind: typing.Union[str,
+    _ForwardRef(''ResolutionKind'')], additional_properties: typing.Union[typing.Dict[str,
+    typing.Any], NoneType] = None, values: typing.Union[typing.List[str], NoneType]
+    = None, **kwargs)'
+variables:
+- description: 'Unmatched properties from the message are deserialized to this
+
+    collection.'
+  name: additional_properties
+  types:
+  - <xref:dict>[<xref:str>, <xref:any>]
+- description: 'Required. The type of an entity resolution. Possible values include:
+
+    "DictionaryNormalizedValue".'
+  name: resolution_kind
+  types:
+  - <xref:str>
+  - <xref:azure.ai.language.conversations.models.ResolutionKind>
+- description: A list of normalized entities.
+  name: values
+  types:
+  - <xref:list>[<xref:str>]

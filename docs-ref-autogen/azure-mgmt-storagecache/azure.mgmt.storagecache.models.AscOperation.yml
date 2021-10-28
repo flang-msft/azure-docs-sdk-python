@@ -1,0 +1,50 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.storagecache.models.AscOperation
+name: AscOperation
+fullName: azure.mgmt.storagecache.models.AscOperation
+module: azure.mgmt.storagecache.models
+inheritances:
+- msrest.serialization.Model
+summary: The status of operation.
+constructor:
+  syntax: 'AscOperation(*, id: typing.Union[str, NoneType] = None, name: typing.Union[str,
+    NoneType] = None, start_time: typing.Union[str, NoneType] = None, end_time: typing.Union[str,
+    NoneType] = None, status: typing.Union[str, NoneType] = None, error: typing.Union[_ForwardRef(''ErrorResponse''),
+    NoneType] = None, output: typing.Union[typing.Dict[str, typing.Any], NoneType]
+    = None, **kwargs)'
+  parameters:
+  - name: id
+    description: The operation Id.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: name
+    description: The operation name.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: start_time
+    description: The start time of the operation.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: end_time
+    description: The end time of the operation.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: status
+    description: The status of the operation.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: error
+    description: The error detail of the operation if any.
+    isRequired: true
+    types:
+    - <xref:storage_cache_management_client.models.ErrorResponse>
+  - name: output
+    description: Additional operation-specific output.
+    isRequired: true
+    types:
+    - <xref:dict>[<xref:str>, <xref:any>]

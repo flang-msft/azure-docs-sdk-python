@@ -1,0 +1,28 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.storageimportexport.models.ErrorResponseErrorDetailsItem
+name: ErrorResponseErrorDetailsItem
+fullName: azure.mgmt.storageimportexport.models.ErrorResponseErrorDetailsItem
+module: azure.mgmt.storageimportexport.models
+inheritances:
+- msrest.serialization.Model
+summary: ErrorResponseErrorDetailsItem.
+constructor:
+  syntax: 'ErrorResponseErrorDetailsItem(*, code: typing.Union[str, NoneType] = None,
+    target: typing.Union[str, NoneType] = None, message: typing.Union[str, NoneType]
+    = None, **kwargs)'
+  parameters:
+  - name: code
+    description: Provides information about the error code.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: target
+    description: Provides information about the error target.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: message
+    description: Provides information about the error message.
+    isRequired: true
+    types:
+    - <xref:str>

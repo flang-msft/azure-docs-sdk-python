@@ -1,0 +1,16 @@
+### YamlMime:PythonEnum
+uid: azure.mgmt.avs.models.GlobalReachConnectionStatus
+name: GlobalReachConnectionStatus
+fullName: azure.mgmt.avs.models.GlobalReachConnectionStatus
+summary: The connection status of the global reach connection
+module: azure.mgmt.avs.models
+inheritances:
+- builtins.str
+- enum.Enum
+fields:
+- name: CONNECTED
+  uid: azure.mgmt.avs.models.GlobalReachConnectionStatus.CONNECTED
+- name: CONNECTING
+  uid: azure.mgmt.avs.models.GlobalReachConnectionStatus.CONNECTING
+- name: DISCONNECTED
+  uid: azure.mgmt.avs.models.GlobalReachConnectionStatus.DISCONNECTED

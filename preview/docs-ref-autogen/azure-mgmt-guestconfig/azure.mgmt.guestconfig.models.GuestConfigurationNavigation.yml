@@ -1,0 +1,70 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.guestconfig.models.GuestConfigurationNavigation
+name: GuestConfigurationNavigation
+fullName: azure.mgmt.guestconfig.models.GuestConfigurationNavigation
+module: azure.mgmt.guestconfig.models
+inheritances:
+- msrest.serialization.Model
+summary: Guest configuration is an artifact that encapsulates DSC configuration and
+  its dependencies. The artifact is a zip file containing DSC configuration (as MOF)
+  and dependent resources and other dependencies like modules.
+constructor:
+  syntax: 'GuestConfigurationNavigation(*, kind: typing.Union[str, _ForwardRef(''Kind''),
+    NoneType] = None, name: typing.Union[str, NoneType] = None, version: typing.Union[str,
+    NoneType] = None, content_uri: typing.Union[str, NoneType] = None, content_hash:
+    typing.Union[str, NoneType] = None, assignment_type: typing.Union[str, _ForwardRef(''AssignmentType''),
+    NoneType] = None, configuration_parameter: typing.Union[typing.List[_ForwardRef(''ConfigurationParameter'')],
+    NoneType] = None, configuration_setting: typing.Union[_ForwardRef(''ConfigurationSetting''),
+    NoneType] = None, **kwargs)'
+  parameters:
+  - name: kind
+    description: 'Kind of the guest configuration. For example:DSC. Possible values
+      include: "DSC".'
+    isRequired: true
+    types:
+    - <xref:str>
+    - <xref:azure.mgmt.guestconfig.models.Kind>
+  - name: name
+    description: Name of the guest configuration.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: version
+    description: Version of the guest configuration.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: content_uri
+    description: Uri of the storage where guest configuration package is uploaded.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: content_hash
+    description: 'Combined hash of the guest configuration package and configuration
+
+      parameters.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: assignment_type
+    description: 'Specifies the assignment type and execution of the configuration.
+
+      Possible values are Audit, DeployAndAutoCorrect, ApplyAndAutoCorrect and ApplyAndMonitor.
+
+      Possible values include: "Audit", "DeployAndAutoCorrect", "ApplyAndAutoCorrect",
+
+      "ApplyAndMonitor".'
+    isRequired: true
+    types:
+    - <xref:str>
+    - <xref:azure.mgmt.guestconfig.models.AssignmentType>
+  - name: configuration_parameter
+    description: The configuration parameters for the guest configuration.
+    isRequired: true
+    types:
+    - <xref:list>[<xref:azure.mgmt.guestconfig.models.ConfigurationParameter>]
+  - name: configuration_setting
+    description: The configuration setting for the guest configuration.
+    isRequired: true
+    types:
+    - <xref:azure.mgmt.guestconfig.models.ConfigurationSetting>

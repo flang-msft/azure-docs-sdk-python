@@ -1,0 +1,38 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.imagebuilder.models.Operation
+name: Operation
+fullName: azure.mgmt.imagebuilder.models.Operation
+module: azure.mgmt.imagebuilder.models
+inheritances:
+- msrest.serialization.Model
+summary: A REST API operation.
+constructor:
+  syntax: 'Operation(*, name: typing.Union[str, NoneType] = None, display: typing.Union[_ForwardRef(''OperationDisplay''),
+    NoneType] = None, origin: typing.Union[str, NoneType] = None, properties: typing.Union[typing.Any,
+    NoneType] = None, is_data_action: typing.Union[bool, NoneType] = None, **kwargs)'
+  parameters:
+  - name: name
+    description: This is of the format {provider}/{resource}/{operation}.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: display
+    description: The object that describes the operation.
+    isRequired: true
+    types:
+    - <xref:azure.mgmt.imagebuilder.models.OperationDisplay>
+  - name: origin
+    description: The intended executor of the operation.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: properties
+    description: Any object.
+    isRequired: true
+    types:
+    - <xref:any>
+  - name: is_data_action
+    description: The flag that indicates whether the operation applies to data plane.
+    isRequired: true
+    types:
+    - <xref:bool>

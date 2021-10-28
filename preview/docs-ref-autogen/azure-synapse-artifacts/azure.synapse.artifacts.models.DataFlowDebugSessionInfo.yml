@@ -1,5 +1,5 @@
 ### YamlMime:PythonClass
-uid: azure.synapse.artifacts.models.DataFlowDebugSessionInfo
+uid: azure.synapse.artifacts.models.DataFlowDebugSessionInfo1
 name: DataFlowDebugSessionInfo
 fullName: azure.synapse.artifacts.models.DataFlowDebugSessionInfo
 module: azure.synapse.artifacts.models
@@ -8,7 +8,7 @@ inheritances:
 summary: Data flow debug session info.
 constructor:
   syntax: 'DataFlowDebugSessionInfo(*, additional_properties: typing.Union[typing.Dict[str,
-    typing.Any], NoneType] = None, data_flow_name: typing.Union[str, NoneType] = None,
+    object], NoneType] = None, data_flow_name: typing.Union[str, NoneType] = None,
     compute_type: typing.Union[str, NoneType] = None, core_count: typing.Union[int,
     NoneType] = None, node_count: typing.Union[int, NoneType] = None, integration_runtime_name:
     typing.Union[str, NoneType] = None, session_id: typing.Union[str, NoneType] =
@@ -22,7 +22,7 @@ constructor:
       collection.'
     isRequired: true
     types:
-    - <xref:dict>[<xref:str>, <xref:any>]
+    - <xref:dict>[<xref:str>, <xref:object>]
   - name: data_flow_name
     description: The name of the data flow.
     isRequired: true

@@ -1,5 +1,5 @@
 ### YamlMime:PythonClass
-uid: azure.synapse.artifacts.models.Activity
+uid: azure.synapse.artifacts.models.Activity1
 name: Activity
 fullName: azure.synapse.artifacts.models.Activity
 module: azure.synapse.artifacts.models
@@ -10,16 +10,18 @@ summary: 'A pipeline activity.
 
   You probably want to use the sub-classes and not this class directly. Known
 
-  sub-classes are: ControlActivity, ExecutionActivity, SqlPoolStoredProcedureActivity.
+  sub-classes are: AppendVariableActivity, ControlActivity, ExecutePipelineActivity,
+  ExecutionActivity, FilterActivity, ForEachActivity, IfConditionActivity, SetVariableActivity,
+  SwitchActivity, UntilActivity, ValidationActivity, WaitActivity, WebHookActivity.
 
 
   All required parameters must be populated in order to send to Azure.'
 constructor:
   syntax: 'Activity(*, name: str, additional_properties: typing.Union[typing.Dict[str,
-    typing.Any], NoneType] = None, description: typing.Union[str, NoneType] = None,
-    depends_on: typing.Union[typing.List[_ForwardRef(''ActivityDependency'')], NoneType]
-    = None, user_properties: typing.Union[typing.List[_ForwardRef(''UserProperty'')],
-    NoneType] = None, **kwargs)'
+    object], NoneType] = None, description: typing.Union[str, NoneType] = None, depends_on:
+    typing.Union[typing.List[_ForwardRef(''ActivityDependency'')], NoneType] = None,
+    user_properties: typing.Union[typing.List[_ForwardRef(''UserProperty'')], NoneType]
+    = None, **kwargs)'
   parameters:
   - name: additional_properties
     description: 'Unmatched properties from the message are deserialized to this
@@ -27,7 +29,7 @@ constructor:
       collection.'
     isRequired: true
     types:
-    - <xref:dict>[<xref:str>, <xref:any>]
+    - <xref:dict>[<xref:str>, <xref:object>]
   - name: name
     description: Required. Activity name.
     isRequired: true

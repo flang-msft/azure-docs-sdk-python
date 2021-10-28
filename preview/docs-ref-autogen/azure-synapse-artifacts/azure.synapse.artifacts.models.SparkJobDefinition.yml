@@ -1,5 +1,5 @@
 ### YamlMime:PythonClass
-uid: azure.synapse.artifacts.models.SparkJobDefinition
+uid: azure.synapse.artifacts.models.SparkJobDefinition1
 name: SparkJobDefinition
 fullName: azure.synapse.artifacts.models.SparkJobDefinition
 module: azure.synapse.artifacts.models
@@ -12,11 +12,9 @@ summary: 'Spark job definition.
 constructor:
   syntax: 'SparkJobDefinition(*, target_big_data_pool: azure.synapse.artifacts.models._models_py3.BigDataPoolReference,
     job_properties: azure.synapse.artifacts.models._models_py3.SparkJobProperties,
-    additional_properties: typing.Union[typing.Dict[str, typing.Any], NoneType] =
-    None, description: typing.Union[str, NoneType] = None, required_spark_version:
-    typing.Union[str, NoneType] = None, language: typing.Union[str, NoneType] = None,
-    folder: typing.Union[_ForwardRef(''SparkJobDefinitionFolder''), NoneType] = None,
-    **kwargs)'
+    additional_properties: typing.Union[typing.Dict[str, object], NoneType] = None,
+    description: typing.Union[str, NoneType] = None, required_spark_version: typing.Union[str,
+    NoneType] = None, language: typing.Union[str, NoneType] = None, **kwargs)'
   parameters:
   - name: additional_properties
     description: 'Unmatched properties from the message are deserialized to this
@@ -24,7 +22,7 @@ constructor:
       collection.'
     isRequired: true
     types:
-    - <xref:dict>[<xref:str>, <xref:any>]
+    - <xref:dict>[<xref:str>, <xref:object>]
   - name: description
     description: The description of the Spark job definition.
     isRequired: true
@@ -50,11 +48,3 @@ constructor:
     isRequired: true
     types:
     - <xref:azure.synapse.artifacts.models.SparkJobProperties>
-  - name: folder
-    description: 'The folder that this Spark job definition is in. If not specified,
-      this Spark
-
-      job definition will appear at the root level.'
-    isRequired: true
-    types:
-    - <xref:azure.synapse.artifacts.models.SparkJobDefinitionFolder>

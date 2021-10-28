@@ -1,22 +1,21 @@
 ### YamlMime:PythonClass
-uid: azure.synapse.artifacts.models.ValidationActivity
+uid: azure.synapse.artifacts.models.ValidationActivity1
 name: ValidationActivity
 fullName: azure.synapse.artifacts.models.ValidationActivity
 module: azure.synapse.artifacts.models
 inheritances:
-- azure.synapse.artifacts.models._models_py3.ControlActivity
+- azure.synapse.artifacts.models._models_py3.Activity
 summary: 'This activity verifies that an external resource exists.
 
 
   All required parameters must be populated in order to send to Azure.'
 constructor:
   syntax: 'ValidationActivity(*, name: str, dataset: azure.synapse.artifacts.models._models_py3.DatasetReference,
-    additional_properties: typing.Union[typing.Dict[str, typing.Any], NoneType] =
-    None, description: typing.Union[str, NoneType] = None, depends_on: typing.Union[typing.List[_ForwardRef(''ActivityDependency'')],
+    additional_properties: typing.Union[typing.Dict[str, object], NoneType] = None,
+    description: typing.Union[str, NoneType] = None, depends_on: typing.Union[typing.List[_ForwardRef(''ActivityDependency'')],
     NoneType] = None, user_properties: typing.Union[typing.List[_ForwardRef(''UserProperty'')],
-    NoneType] = None, timeout: typing.Union[typing.Any, NoneType] = None, sleep: typing.Union[typing.Any,
-    NoneType] = None, minimum_size: typing.Union[typing.Any, NoneType] = None, child_items:
-    typing.Union[typing.Any, NoneType] = None, **kwargs)'
+    NoneType] = None, timeout: object = None, sleep: object = None, minimum_size:
+    object = None, child_items: object = None, **kwargs)'
   parameters:
   - name: additional_properties
     description: 'Unmatched properties from the message are deserialized to this
@@ -24,7 +23,7 @@ constructor:
       collection.'
     isRequired: true
     types:
-    - <xref:dict>[<xref:str>, <xref:any>]
+    - <xref:dict>[<xref:str>, <xref:object>]
   - name: name
     description: Required. Activity name.
     isRequired: true
@@ -62,7 +61,7 @@ constructor:
       ((d+).)?(dd):(60|([0-5][0-9])):(60|([0-5][0-9])).'
     isRequired: true
     types:
-    - <xref:any>
+    - <xref:object>
   - name: sleep
     description: 'A delay in seconds between validation attempts. If no value is specified,
       10
@@ -71,7 +70,7 @@ constructor:
       integer).'
     isRequired: true
     types:
-    - <xref:any>
+    - <xref:object>
   - name: minimum_size
     description: 'Can be used if dataset points to a file. The file must be greater
       than or
@@ -80,7 +79,7 @@ constructor:
       integer).'
     isRequired: true
     types:
-    - <xref:any>
+    - <xref:object>
   - name: child_items
     description: 'Can be used if dataset points to a folder. If set to true, the folder
       must
@@ -91,7 +90,7 @@ constructor:
       with resultType boolean).'
     isRequired: true
     types:
-    - <xref:any>
+    - <xref:object>
   - name: dataset
     description: Required. Validation activity dataset reference.
     isRequired: true

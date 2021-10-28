@@ -32,7 +32,7 @@ classes:
 - azure.ai.formrecognizer.AnalyzeResult
 - azure.ai.formrecognizer.AnalyzedDocument
 - azure.ai.formrecognizer.BoundingRegion
-- azure.ai.formrecognizer.DocumentElement
+- azure.ai.formrecognizer.DocumentContentElement
 - azure.ai.formrecognizer.DocumentEntity
 - azure.ai.formrecognizer.DocumentField
 - azure.ai.formrecognizer.DocumentKeyValueElement

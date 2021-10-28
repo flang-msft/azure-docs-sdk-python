@@ -1,0 +1,104 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.recoveryservicessiterecovery.models.RecoveryPlanProperties
+name: RecoveryPlanProperties
+fullName: azure.mgmt.recoveryservicessiterecovery.models.RecoveryPlanProperties
+module: azure.mgmt.recoveryservicessiterecovery.models
+inheritances:
+- msrest.serialization.Model
+summary: Recovery plan properties.
+constructor:
+  syntax: 'RecoveryPlanProperties(*, friendly_name: typing.Union[str, NoneType] =
+    None, primary_fabric_id: typing.Union[str, NoneType] = None, primary_fabric_friendly_name:
+    typing.Union[str, NoneType] = None, recovery_fabric_id: typing.Union[str, NoneType]
+    = None, recovery_fabric_friendly_name: typing.Union[str, NoneType] = None, failover_deployment_model:
+    typing.Union[str, NoneType] = None, replication_providers: typing.Union[typing.List[str],
+    NoneType] = None, allowed_operations: typing.Union[typing.List[str], NoneType]
+    = None, last_planned_failover_time: typing.Union[datetime.datetime, NoneType]
+    = None, last_unplanned_failover_time: typing.Union[datetime.datetime, NoneType]
+    = None, last_test_failover_time: typing.Union[datetime.datetime, NoneType] = None,
+    current_scenario: typing.Union[_ForwardRef(''CurrentScenarioDetails''), NoneType]
+    = None, current_scenario_status: typing.Union[str, NoneType] = None, current_scenario_status_description:
+    typing.Union[str, NoneType] = None, groups: typing.Union[typing.List[_ForwardRef(''RecoveryPlanGroup'')],
+    NoneType] = None, provider_specific_details: typing.Union[typing.List[_ForwardRef(''RecoveryPlanProviderSpecificDetails'')],
+    NoneType] = None, **kwargs)'
+  parameters:
+  - name: friendly_name
+    description: The friendly name.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: primary_fabric_id
+    description: The primary fabric Id.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: primary_fabric_friendly_name
+    description: The primary fabric friendly name.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: recovery_fabric_id
+    description: The recovery fabric Id.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: recovery_fabric_friendly_name
+    description: The recovery fabric friendly name.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: failover_deployment_model
+    description: The failover deployment model.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: replication_providers
+    description: The list of replication providers.
+    isRequired: true
+    types:
+    - <xref:list>[<xref:str>]
+  - name: allowed_operations
+    description: The list of allowed operations.
+    isRequired: true
+    types:
+    - <xref:list>[<xref:str>]
+  - name: last_planned_failover_time
+    description: The start time of the last planned failover.
+    isRequired: true
+    types:
+    - <xref:datetime.datetime>
+  - name: last_unplanned_failover_time
+    description: The start time of the last unplanned failover.
+    isRequired: true
+    types:
+    - <xref:datetime.datetime>
+  - name: last_test_failover_time
+    description: The start time of the last test failover.
+    isRequired: true
+    types:
+    - <xref:datetime.datetime>
+  - name: current_scenario
+    description: The current scenario details.
+    isRequired: true
+    types:
+    - <xref:azure.mgmt.recoveryservicessiterecovery.models.CurrentScenarioDetails>
+  - name: current_scenario_status
+    description: The recovery plan status.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: current_scenario_status_description
+    description: The recovery plan status description.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: groups
+    description: The recovery plan groups.
+    isRequired: true
+    types:
+    - <xref:list>[<xref:azure.mgmt.recoveryservicessiterecovery.models.RecoveryPlanGroup>]
+  - name: provider_specific_details
+    description: The provider id and provider specific details.
+    isRequired: true
+    types:
+    - <xref:list>[<xref:azure.mgmt.recoveryservicessiterecovery.models.RecoveryPlanProviderSpecificDetails>]
