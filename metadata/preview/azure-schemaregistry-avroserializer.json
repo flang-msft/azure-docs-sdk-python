@@ -1,0 +1,14 @@
+{
+  "Name": "azure-schemaregistry-avroserializer",
+  "Version": "1.0.0a20211028002",
+  "DevVersion": "1.0.0a20211028002",
+  "DirectoryPath": "sdk/schemaregistry/azure-schemaregistry-avroserializer",
+  "ServiceDirectory": "schemaregistry",
+  "ReadMePath": "sdk/schemaregistry/azure-schemaregistry-avroserializer/README.md",
+  "ChangeLogPath": "sdk/schemaregistry/azure-schemaregistry-avroserializer/CHANGELOG.md",
+  "Group": null,
+  "SdkType": "client",
+  "IsNewSdk": false,
+  "ArtifactName": "azure-schemaregistry-avroserializer",
+  "ReleaseStatus": "Unreleased"
+}
