@@ -1,7 +1,7 @@
 {
   "Name": "azure-mgmt-appconfiguration",
-  "Version": "2.0.0",
-  "DevVersion": "2.0.0",
+  "Version": "2.0.0a20211028005",
+  "DevVersion": "2.0.0a20211028005",
   "DirectoryPath": "sdk/appconfiguration/azure-mgmt-appconfiguration",
   "ServiceDirectory": "appconfiguration",
   "ReadMePath": "sdk/appconfiguration/azure-mgmt-appconfiguration/README.md",
