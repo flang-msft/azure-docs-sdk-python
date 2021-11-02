@@ -1,0 +1,14 @@
+{
+  "Name": "azure-ai-nspkg",
+  "Version": "1.0.0",
+  "DevVersion": "1.0.0",
+  "DirectoryPath": "sdk/nspkg/azure-ai-nspkg",
+  "ServiceDirectory": "nspkg",
+  "ReadMePath": "sdk/nspkg/azure-ai-nspkg/README.md",
+  "ChangeLogPath": "sdk/nspkg/azure-ai-nspkg/CHANGELOG.md",
+  "Group": null,
+  "SdkType": "client",
+  "IsNewSdk": false,
+  "ArtifactName": "azure-ai-nspkg",
+  "ReleaseStatus": "2020-01-09"
+}

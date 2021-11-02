@@ -1,14 +1,14 @@
 ---
 title: 
-keywords: Azure, python, SDK, API, azure-data-nspkg, 
+keywords: Azure, python, SDK, API, azure-data-nspkg, nspkg
 author: maggiepint
 ms.author: magpint
-ms.date: 09/08/2020
+ms.date: 11/02/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.service: 
+ms.service: nspkg
 ---
 
 # Microsoft Azure Data SDK for Python

@@ -1,0 +1,14 @@
+{
+  "Name": "azure-ai-language-nspkg",
+  "Version": "1.0.0",
+  "DevVersion": "1.0.0",
+  "DirectoryPath": "sdk/nspkg/azure-ai-language-nspkg",
+  "ServiceDirectory": "nspkg",
+  "ReadMePath": "sdk/nspkg/azure-ai-language-nspkg/README.md",
+  "ChangeLogPath": "sdk/nspkg/azure-ai-language-nspkg/CHANGELOG.md",
+  "Group": null,
+  "SdkType": "client",
+  "IsNewSdk": false,
+  "ArtifactName": "azure-ai-language-nspkg",
+  "ReleaseStatus": "2021-07-27"
+}
