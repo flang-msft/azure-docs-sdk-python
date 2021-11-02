@@ -3,7 +3,7 @@ title:
 keywords: Azure, python, SDK, API, azure-mgmt-keyvault, keyvault
 author: maggiepint
 ms.author: magpint
-ms.date: 10/25/2021
+ms.date: 11/02/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
