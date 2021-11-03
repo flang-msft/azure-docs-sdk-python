@@ -1,14 +1,14 @@
 ---
 title: 
-keywords: Azure, python, SDK, API, azure-cognitiveservices-knowledge-qnamaker, qnamaker
+keywords: Azure, python, SDK, API, azure-cognitiveservices-knowledge-qnamaker, cognitiveservices
 author: maggiepint
 ms.author: magpint
-ms.date: 11/09/2020
+ms.date: 11/03/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.service: qnamaker
+ms.service: cognitiveservices
 ---
 
 # Microsoft Azure SDK for Python
