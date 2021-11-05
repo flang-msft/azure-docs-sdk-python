@@ -1,14 +1,14 @@
 ---
 title: 
-keywords: Azure, python, SDK, API, azure-purview-nspkg, 
+keywords: Azure, python, SDK, API, azure-purview-nspkg, nspkg
 author: maggiepint
 ms.author: magpint
-ms.date: 05/06/2021
+ms.date: 11/05/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.service: 
+ms.service: nspkg
 ---
 
 # Microsoft Azure Purview SDK for Python
