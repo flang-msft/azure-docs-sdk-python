@@ -3,7 +3,7 @@ title: Azure Schema Registry Avro Serializer client library for Python
 keywords: Azure, python, SDK, API, azure-schemaregistry-avroserializer, schemaregistry
 author: maggiepint
 ms.author: magpint
-ms.date: 10/06/2021
+ms.date: 11/05/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
@@ -11,7 +11,7 @@ ms.devlang: python
 ms.service: schemaregistry
 ---
 
-# Azure Schema Registry Avro Serializer client library for Python - Version 1.0.0b3 
+# Azure Schema Registry Avro Serializer client library for Python - Version 1.0.0a20211104002 
 
 
 Azure Schema Registry is a schema repository service hosted by Azure Event Hubs, providing schema storage, versioning,
@@ -297,13 +297,13 @@ contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additio
 [pip]: https://pypi.org/project/pip/
 [pypi]: https://pypi.org/project/azure-schemaregistry-avroserializer
 [python]: https://www.python.org/downloads/
-[azure_core]: https://github.com/Azure/azure-sdk-for-python/blob/azure-schemaregistry-avroserializer_1.0.0b3/sdk/core/azure-core/README.md
+[azure_core]: https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/core/azure-core/README.md
 [azure_sub]: https://azure.microsoft.com/free/
 [python_logging]: https://docs.python.org/3/library/logging.html
-[sr_avro_samples]: https://github.com/Azure/azure-sdk-for-python/tree/azure-schemaregistry-avroserializer_1.0.0b3/sdk/schemaregistry/azure-schemaregistry-avroserializer/samples
+[sr_avro_samples]: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/schemaregistry/azure-schemaregistry-avroserializer/samples
 [api_reference]: https://azuresdkdocs.blob.core.windows.net/$web/python/azure-schemaregistry-avroserializer/latest/index.html
-[source_code]: https://github.com/Azure/azure-sdk-for-python/tree/azure-schemaregistry-avroserializer_1.0.0b3/sdk/schemaregistry/azure-schemaregistry-avroserializer
-[change_log]: https://github.com/Azure/azure-sdk-for-python/tree/azure-schemaregistry-avroserializer_1.0.0b3/sdk/schemaregistry/azure-schemaregistry-avroserializer/CHANGELOG.md
-[schemaregistry_client]: https://github.com/Azure/azure-sdk-for-python/tree/azure-schemaregistry-avroserializer_1.0.0b3/sdk/schemaregistry/azure-schemaregistry
+[source_code]: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/schemaregistry/azure-schemaregistry-avroserializer
+[change_log]: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/schemaregistry/azure-schemaregistry-avroserializer/CHANGELOG.md
+[schemaregistry_client]: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/schemaregistry/azure-schemaregistry
 [schemaregistry_service]: https://aka.ms/schemaregistry
-[eventhubs_repo]: https://github.com/Azure/azure-sdk-for-python/tree/azure-schemaregistry-avroserializer_1.0.0b3/sdk/eventhub/azure-eventhub
+[eventhubs_repo]: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/eventhub/azure-eventhub
