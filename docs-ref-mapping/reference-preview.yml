@@ -3,6 +3,15 @@
   landingPageType: Root
   expanded: true
   items:
+  - name: Active Directory
+    uid: azure.python.sdk.landingPage.services.Active.Directory.pre
+    landingPageType: Service
+    items:
+    - name: Management
+      uid: azure.python.sdk.landingPage.services.Active.Directory.Management.pre
+      landingPageType: Service
+      children:
+      - azure-mgmt-msi*
   - name: AgriFood
     uid: azure.python.sdk.landingPage.services.Azure.agrifood.pre
     landingPageType: Service
@@ -50,15 +59,16 @@
       landingPageType: Service
       children:
       - azure-mgmt-batch
-  - name: Consumption
-    uid: azure.python.sdk.landingPage.services.Consumption.pre
-    href: ~/docs-ref-services/preview/consumption.md
+  - name: Communication
+    uid: azure.python.sdk.landingPage.services.Communication.pre
+    landingPageType: Service
     items:
-    - name: Management
-      uid: azure.python.sdk.landingPage.services.consumption.Management.pre
+    - name: Identity
+      uid: azure.python.sdk.landingPage.services.Communication.Identity.pre
+      href: ~/docs-ref-services/preview/communication-identity-readme.md
       landingPageType: Service
       children:
-      - azure-mgmt-consumption*
+      - azure-communication-identity
   - name: Container Registry
     uid: azure.python.sdk.landingPage.services.Container.Registry.pre
     href: ~/docs-ref-services/preview/container-registry.md
@@ -77,24 +87,15 @@
       landingPageType: Service
       children:
       - azure-mgmt-cosmosdb*
-  - name: Digital Twins
-    uid: azure.python.sdk.landingPage.services.digitaltwins.pre
+  - name: Data Lake Analytics
+    uid: azure.python.sdk.landingPage.services.Data.Lake.Analytics.pre
+    href: ~/docs-ref-services/preview/data-lake-analytics.md
     items:
     - name: Management
-      uid: azure.python.sdk.landingPage.services.DigitalTwins.Management.pre
+      uid: azure.python.sdk.landingPage.services.Data.Lake.Analytics.Management.pre
       landingPageType: Service
       children:
-      - azure-mgmt-digitaltwins*
-  - name: DNS
-    uid: azure.python.sdk.landingPage.services.DNS.pre
-    href: ~/docs-ref-services/preview/dns.md
-    items:
-    - name: Management
-      uid: azure.python.sdk.landingPage.services.DNS.Management.pre
-      landingPageType: Service
-      children:
-      - azure-mgmt-dns*
-      - azure-mgmt-privatedns*
+      - azure-mgmt-datalake-analytics*
   - name: Form Recognizer
     uid: azure.python.sdk.landingPage.services.FormRecognizer.pre
     href: ~/docs-ref-services/preview/ai-formrecognizer-readme.md
@@ -141,6 +142,14 @@
       href: ~/docs-ref-services/preview/keyvault-secrets-readme.md
       children:
       - azure-keyvault-secrets*
+  - name: Log Analytics
+    uid: azure.python.sdk.landingPage.services.loganalytics.pre
+    items:
+    - name: Client
+      uid: azure.python.sdk.landingPage.services.loganalytics.Client.pre
+      landingPageType: Service
+      children:
+      - azure-loganalytics*
   - name: Monitoring
     uid: azure.python.sdk.landingPage.services.Monitor.pre
     landingPageType: Service
@@ -231,20 +240,15 @@
       href: ~/docs-ref-services/preview/servicebus-readme.md
       children:
       - azure-servicebus*
-  - name: Service Fabric
-    uid: azure.python.sdk.landingPage.services.Service.Fabric.pre
-    landingPageType: Service
+  - name: SQL
+    href: ~/docs-ref-services/preview/sql.md
+    uid: azure.python.sdk.landingPage.services.Sql.pre
     items:
     - name: Management
-      uid: azure.python.sdk.landingPage.services.Service.Fabric.Management.pre
+      uid: azure.python.sdk.landingPage.services.Sql.Management.pre
       landingPageType: Service
       children:
-      - azure-mgmt-servicefabric*
-    - name: Client
-      uid: azure.python.sdk.landingPage.services.Service.Fabric.Client.pre
-      landingPageType: Service
-      children:
-      - azure-servicefabric*
+      - azure-mgmt-sql*
   - name: Stack
     uid: azure.python.sdk.landingPage.services.Stack.pre
     landingPageType: Service
@@ -287,6 +291,15 @@
     href: ~/docs-ref-services/preview/ai-textanalytics-readme.md
     children:
     - azure-ai-textanalytics
+  - name: Traffic Manager
+    uid: azure.python.sdk.landingPage.services.Traffic.Manager.pre
+    href: ~/docs-ref-services/preview/traffic-manager.md
+    items:
+    - name: Management
+      uid: azure.python.sdk.landingPage.services.Traffoc.Manager.Management.pre
+      landingPageType: Service
+      children:
+      - azure-mgmt-trafficmanager*
   - name: Translator
     uid: azure.python.sdk.landingPage.services.Translator.pre
     href: ~/docs-ref-services/preview/ai-translation-document-readme.md

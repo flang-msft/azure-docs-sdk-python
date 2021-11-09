@@ -1,0 +1,61 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.sqlvirtualmachine.models.WsfcDomainProfile
+name: WsfcDomainProfile
+fullName: azure.mgmt.sqlvirtualmachine.models.WsfcDomainProfile
+module: azure.mgmt.sqlvirtualmachine.models
+inheritances:
+- msrest.serialization.Model
+summary: Active Directory account details to operate Windows Server Failover Cluster.
+constructor:
+  syntax: 'WsfcDomainProfile(*, domain_fqdn: Optional[str] = None, ou_path: Optional[str]
+    = None, cluster_bootstrap_account: Optional[str] = None, cluster_operator_account:
+    Optional[str] = None, sql_service_account: Optional[str] = None, file_share_witness_path:
+    Optional[str] = None, storage_account_url: Optional[str] = None, storage_account_primary_key:
+    Optional[str] = None, **kwargs)'
+  parameters:
+  - name: domain_fqdn
+    description: Fully qualified name of the domain.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: ou_path
+    description: Organizational Unit path in which the nodes and cluster will be present.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: cluster_bootstrap_account
+    description: 'Account name used for creating cluster (at minimum needs
+
+      permissions to ''Create Computer Objects'' in domain).'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: cluster_operator_account
+    description: 'Account name used for operating cluster i.e. will be part of
+
+      administrators group on all the participating virtual machines in the cluster.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: sql_service_account
+    description: 'Account name under which SQL service will run on all participating
+
+      SQL virtual machines in the cluster.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: file_share_witness_path
+    description: Optional path for fileshare witness.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: storage_account_url
+    description: Fully qualified ARM resource id of the witness storage account.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: storage_account_primary_key
+    description: Primary key of the witness storage account.
+    isRequired: true
+    types:
+    - <xref:str>

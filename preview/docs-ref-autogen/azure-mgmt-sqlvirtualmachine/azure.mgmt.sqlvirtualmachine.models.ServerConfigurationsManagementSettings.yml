@@ -1,0 +1,36 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.sqlvirtualmachine.models.ServerConfigurationsManagementSettings
+name: ServerConfigurationsManagementSettings
+fullName: azure.mgmt.sqlvirtualmachine.models.ServerConfigurationsManagementSettings
+module: azure.mgmt.sqlvirtualmachine.models
+inheritances:
+- msrest.serialization.Model
+summary: Set the connectivity, storage and workload settings.
+constructor:
+  syntax: 'ServerConfigurationsManagementSettings(*, sql_connectivity_update_settings:
+    Optional[azure.mgmt.sqlvirtualmachine.models._models_py3.SqlConnectivityUpdateSettings]
+    = None, sql_workload_type_update_settings: Optional[azure.mgmt.sqlvirtualmachine.models._models_py3.SqlWorkloadTypeUpdateSettings]
+    = None, sql_storage_update_settings: Optional[azure.mgmt.sqlvirtualmachine.models._models_py3.SqlStorageUpdateSettings]
+    = None, additional_features_server_configurations: Optional[azure.mgmt.sqlvirtualmachine.models._models_py3.AdditionalFeaturesServerConfigurations]
+    = None, **kwargs)'
+  parameters:
+  - name: sql_connectivity_update_settings
+    description: SQL connectivity type settings.
+    isRequired: true
+    types:
+    - <xref:azure.mgmt.sqlvirtualmachine.models.SqlConnectivityUpdateSettings>
+  - name: sql_workload_type_update_settings
+    description: SQL workload type settings.
+    isRequired: true
+    types:
+    - <xref:azure.mgmt.sqlvirtualmachine.models.SqlWorkloadTypeUpdateSettings>
+  - name: sql_storage_update_settings
+    description: SQL storage update settings.
+    isRequired: true
+    types:
+    - <xref:azure.mgmt.sqlvirtualmachine.models.SqlStorageUpdateSettings>
+  - name: additional_features_server_configurations
+    description: Additional SQL feature settings.
+    isRequired: true
+    types:
+    - <xref:azure.mgmt.sqlvirtualmachine.models.AdditionalFeaturesServerConfigurations>

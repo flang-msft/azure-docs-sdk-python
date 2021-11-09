@@ -1,0 +1,17 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.sqlvirtualmachine.models.SqlVirtualMachineGroupUpdate
+name: SqlVirtualMachineGroupUpdate
+fullName: azure.mgmt.sqlvirtualmachine.models.SqlVirtualMachineGroupUpdate
+module: azure.mgmt.sqlvirtualmachine.models
+inheritances:
+- msrest.serialization.Model
+summary: An update to a SQL virtual machine group.
+constructor:
+  syntax: 'SqlVirtualMachineGroupUpdate(*, tags: Optional[Dict[str, str]] = None,
+    **kwargs)'
+  parameters:
+  - name: tags
+    description: A set of tags. Resource tags.
+    isRequired: true
+    types:
+    - <xref:dict>[<xref:str>, <xref:str>]

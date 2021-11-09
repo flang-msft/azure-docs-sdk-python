@@ -1,0 +1,22 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.sqlvirtualmachine.models.PrivateIPAddress
+name: PrivateIPAddress
+fullName: azure.mgmt.sqlvirtualmachine.models.PrivateIPAddress
+module: azure.mgmt.sqlvirtualmachine.models
+inheritances:
+- msrest.serialization.Model
+summary: A private IP address bound to the availability group listener.
+constructor:
+  syntax: 'PrivateIPAddress(*, ip_address: Optional[str] = None, subnet_resource_id:
+    Optional[str] = None, **kwargs)'
+  parameters:
+  - name: ip_address
+    description: Private IP address bound to the availability group listener.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: subnet_resource_id
+    description: Subnet used to include private IP.
+    isRequired: true
+    types:
+    - <xref:str>

@@ -1,0 +1,23 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.msi.models.UserAssignedIdentitiesListResult
+name: UserAssignedIdentitiesListResult
+fullName: azure.mgmt.msi.models.UserAssignedIdentitiesListResult
+module: azure.mgmt.msi.models
+inheritances:
+- msrest.serialization.Model
+summary: Values returned by the List operation.
+constructor:
+  syntax: 'UserAssignedIdentitiesListResult(*, value: Optional[List[azure.mgmt.msi.models._models_py3.Identity]]
+    = None, next_link: Optional[str] = None, **kwargs)'
+  parameters:
+  - name: value
+    description: The collection of userAssignedIdentities returned by the listing
+      operation.
+    isRequired: true
+    types:
+    - <xref:list>[<xref:managed_service_identity_client.models.Identity>]
+  - name: next_link
+    description: The url to get the next page of results, if any.
+    isRequired: true
+    types:
+    - <xref:str>
