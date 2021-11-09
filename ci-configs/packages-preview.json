@@ -38,7 +38,8 @@
         "install_type": "pypi",
         "prefer_source_distribution": "true",
         "name": "azure-storage-blob-changefeed",
-        "version": "==12.0.0b2"
+        "version": "==12.0.0a20211108005",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
         "test*",
@@ -80,7 +81,8 @@
         "install_type": "pypi",
         "prefer_source_distribution": "true",
         "name": "azure-schemaregistry-avroserializer",
-        "version": "==1.0.0b3"
+        "version": "==1.0.0a20211108002",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
         "test*",
@@ -150,7 +152,8 @@
         "prefer_source_distribution": "true",
         "install_type": "pypi",
         "name": "azure-mgmt-resourcemover",
-        "version": "==1.1.0b2"
+        "version": "==1.1.0a20211108001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
         "test*",
@@ -534,7 +537,8 @@
         "name": "azure-synapse-accesscontrol",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
-        "version": "==0.7.0"
+        "version": "==0.8.0a20211108004",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       }
     },
     {
@@ -548,7 +552,8 @@
         "name": "azure-synapse-artifacts",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
-        "version": "==0.9.0"
+        "version": "==0.10.0a20211108004",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       }
     },
     {
@@ -562,7 +567,8 @@
         "name": "azure-synapse-managedprivateendpoints",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
-        "version": "==0.4.0"
+        "version": "==0.5.0a20211108004",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       }
     },
     {
@@ -576,7 +582,8 @@
         "name": "azure-synapse-monitoring",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
-        "version": "==0.2.0"
+        "version": "==0.3.0a20211108004",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       }
     },
     {
@@ -590,7 +597,8 @@
         "name": "azure-synapse-spark",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
-        "version": "==0.7.0"
+        "version": "==0.8.0a20211108004",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       }
     },
     {
@@ -891,7 +899,8 @@
         "name": "azure-mgmt-synapse",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
-        "version": "==2.1.0b2"
+        "version": "==2.1.0a20211108004",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
         "test*",
@@ -1059,7 +1068,7 @@
         "name": "azure-storage-blob",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
-        "version": "==12.10.0b1",
+        "version": "==12.10.0a20211108005",
         "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
@@ -1074,7 +1083,82 @@
         "name": "azure-storage-file-datalake",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
-        "version": "==12.6.0b1",
+        "version": "==12.6.0a20211108005",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
+      },
+      "exclude_path": [
+        "test*",
+        "example*",
+        "sample*",
+        "doc*"
+      ]
+    },
+    {
+      "package_info": {
+        "name": "azure-storage-file-share",
+        "install_type": "pypi",
+        "prefer_source_distribution": "true",
+        "version": "==12.7.0a20211108005",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
+      },
+      "exclude_path": [
+        "test*",
+        "example*",
+        "sample*",
+        "doc*"
+      ]
+    },
+    {
+      "package_info": {
+        "name": "azure-storage-queue",
+        "install_type": "pypi",
+        "prefer_source_distribution": "true",
+        "version": "==12.2.0a20211108005",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
+      },
+      "exclude_path": [
+        "test*",
+        "example*",
+        "sample*",
+        "doc*"
+      ]
+    },
+    {
+      "package_info": {
+        "name": "azure-mgmt-storageimportexport",
+        "install_type": "pypi",
+        "prefer_source_distribution": "true",
+        "version": "==1.0.0a20211108005",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
+      },
+      "exclude_path": [
+        "test*",
+        "example*",
+        "sample*",
+        "doc*"
+      ]
+    },
+    {
+      "package_info": {
+        "name": "azure-iot-modelsrepository",
+        "install_type": "pypi",
+        "prefer_source_distribution": "true",
+        "version": "==1.0.0a20211108001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
+      },
+      "exclude_path": [
+        "test*",
+        "example*",
+        "sample*",
+        "doc*"
+      ]
+    },
+    {
+      "package_info": {
+        "name": "azure-synapse",
+        "install_type": "pypi",
+        "prefer_source_distribution": "true",
+        "version": "==0.1.1a20211108004",
         "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
