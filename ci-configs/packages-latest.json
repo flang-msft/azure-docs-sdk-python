@@ -1953,7 +1953,8 @@
         "install_type": "pypi",
         "name": "azure-mgmt-operationsmanagement",
         "prefer_source_distribution": "true",
-        "version": "==1.0.0"
+        "version": "==1.0.0a20211108001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
         "test*",
@@ -2541,7 +2542,8 @@
         "name": "azure-mgmt-azurearcdata",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
-        "version": "==1.0.0"
+        "version": "==1.0.0a20211108001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
         "test*",
