@@ -1,0 +1,14 @@
+{
+  "Name": "azure-communication-nspkg",
+  "Version": "0.0.0b1",
+  "DevVersion": "0.0.0b1",
+  "DirectoryPath": "sdk/nspkg/azure-communication-nspkg",
+  "ServiceDirectory": "nspkg",
+  "ReadMePath": "sdk/nspkg/azure-communication-nspkg/README.md",
+  "ChangeLogPath": "sdk/nspkg/azure-communication-nspkg/CHANGELOG.md",
+  "Group": null,
+  "SdkType": "client",
+  "IsNewSdk": false,
+  "ArtifactName": "azure-communication-nspkg",
+  "ReleaseStatus": "2020-09-22"
+}
