@@ -1489,7 +1489,8 @@
         "name": "azure-identity",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
-        "version": "==1.7.0"
+        "version": "==1.7.1",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
         "test*",
@@ -1997,7 +1998,9 @@
       "package_info": {
         "name": "azure-mgmt-redisenterprise",
         "prefer_source_distribution": "true",
-        "install_type": "pypi"
+        "install_type": "pypi",
+        "version": "==1.0.0a20211109001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       }
     },
     {
@@ -2328,7 +2331,8 @@
         "name": "azure-mgmt-databoxedge",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
-        "version": "==1.0.0"
+        "version": "==1.0.0a20211109001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       }
     },
     {

@@ -548,7 +548,8 @@
         "name": "azure-synapse-artifacts",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
-        "version": "==0.9.0"
+        "version": "==0.10.0",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       }
     },
     {
@@ -709,7 +710,8 @@
         "install_type": "pypi",
         "prefer_source_distribution": "true",
         "name": "azure-mgmt-agrifood",
-        "version": "1.0.0b1"
+        "version": "==1.0.0a20211109001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
         "test*",
@@ -723,7 +725,8 @@
         "install_type": "pypi",
         "prefer_source_distribution": "true",
         "name": "azure-agrifood-farming",
-        "version": "1.0.0b1"
+        "version": "==1.0.0a20211109001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
         "test*",
@@ -757,7 +760,8 @@
         "name": "azure-search-documents",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
-        "version": "==11.3.0b4"
+        "version": "==11.3.0b5",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       }
     },
     {
@@ -821,7 +825,8 @@
         "name": "azure-ai-textanalytics",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
-        "version": "==5.2.0b2"
+        "version": "==5.2.0a20211109001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
         "test*",
@@ -891,7 +896,8 @@
         "name": "azure-mgmt-synapse",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
-        "version": "==2.1.0b2"
+        "version": "==2.1.0b3",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
         "test*",
@@ -975,7 +981,8 @@
         "name": "azure-ai-formrecognizer",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
-        "version": "==3.2.0b1"
+        "version": "==3.2.0b2",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
         "test*",
@@ -1074,6 +1081,21 @@
         "install_type": "pypi",
         "prefer_source_distribution": "true",
         "version": "==12.6.0b1"
+      },
+      "exclude_path": [
+        "test*",
+        "example*",
+        "sample*",
+        "doc*"
+      ]
+    },
+    {
+      "package_info": {
+        "name": "azure-communication-identity",
+        "install_type": "pypi",
+        "prefer_source_distribution": "true",
+        "version": "==1.1.0b1",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
         "test*",
