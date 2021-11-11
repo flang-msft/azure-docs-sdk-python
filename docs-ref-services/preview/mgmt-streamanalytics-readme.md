@@ -1,14 +1,14 @@
 ---
 title: 
-keywords: Azure, python, SDK, API, azure-mgmt-streamanalytics, 
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 09/21/2020
+keywords: Azure, python, SDK, API, azure-mgmt-streamanalytics, streamanalytics
+author: maggiepint
+ms.author: magpint
+ms.date: 11/11/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.service: 
+ms.service: streamanalytics
 ---
 
 # Microsoft Azure SDK for Python
