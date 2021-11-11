@@ -242,7 +242,8 @@
         "folder": "azure-eventgrid",
         "install_type": "pypi",
         "name": "azure-eventgrid",
-        "version": "==4.6.0"
+        "version": "==4.7.0",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
         "test*",
@@ -1001,7 +1002,8 @@
         "install_type": "pypi",
         "name": "azure-servicebus",
         "prefer_source_distribution": "true",
-        "version": "==7.3.4"
+        "version": "==7.4.0",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
         "test*",
@@ -1997,7 +1999,9 @@
       "package_info": {
         "name": "azure-mgmt-redisenterprise",
         "prefer_source_distribution": "true",
-        "install_type": "pypi"
+        "install_type": "pypi",
+        "version": "==1.0.0a20211110001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       }
     },
     {
@@ -2328,7 +2332,8 @@
         "name": "azure-mgmt-databoxedge",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
-        "version": "==1.0.0"
+        "version": "==1.0.0a20211110001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       }
     },
     {
@@ -2546,6 +2551,21 @@
         "install_type": "pypi",
         "prefer_source_distribution": "true",
         "version": "==1.0.0"
+      },
+      "exclude_path": [
+        "test*",
+        "example*",
+        "sample*",
+        "doc*"
+      ]
+    },
+    {
+      "package_info": {
+        "name": "azure-schemaregistry",
+        "install_type": "pypi",
+        "prefer_source_distribution": "true",
+        "version": "==1.0.0",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
         "test*",
