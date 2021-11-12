@@ -1,14 +1,14 @@
 ---
 title: 
-keywords: Azure, python, SDK, API, azure-mgmt-hybridnetwork, 
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 08/05/2021
+keywords: Azure, python, SDK, API, azure-mgmt-hybridnetwork, hybridnetwork
+author: maggiepint
+ms.author: magpint
+ms.date: 11/12/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.service: 
+ms.service: hybridnetwork
 ---
 
 # Microsoft Azure SDK for Python
