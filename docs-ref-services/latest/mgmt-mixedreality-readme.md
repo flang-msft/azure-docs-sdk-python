@@ -1,9 +1,9 @@
 ---
 title: 
 keywords: Azure, python, SDK, API, azure-mgmt-mixedreality, mixedreality
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 04/28/2021
+author: maggiepint
+ms.author: magpint
+ms.date: 11/12/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
