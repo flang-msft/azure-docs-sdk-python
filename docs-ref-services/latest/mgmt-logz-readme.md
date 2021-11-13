@@ -1,14 +1,14 @@
 ---
 title: 
-keywords: Azure, python, SDK, API, azure-mgmt-logz, 
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 09/06/2021
+keywords: Azure, python, SDK, API, azure-mgmt-logz, logz
+author: maggiepint
+ms.author: magpint
+ms.date: 11/13/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.service: 
+ms.service: logz
 ---
 
 # Microsoft Azure SDK for Python
