@@ -1,9 +1,9 @@
 ---
 title: 
 keywords: Azure, python, SDK, API, azure-mgmt-appplatform, springcloud
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 07/09/2021
+author: maggiepint
+ms.author: magpint
+ms.date: 11/13/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
