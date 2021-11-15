@@ -1,14 +1,14 @@
 ---
 title: 
-keywords: Azure, python, SDK, API, azure-mgmt-elastic, 
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 08/04/2021
+keywords: Azure, python, SDK, API, azure-mgmt-elastic, elastic
+author: maggiepint
+ms.author: magpint
+ms.date: 11/15/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.service: 
+ms.service: elastic
 ---
 
 # Microsoft Azure SDK for Python
