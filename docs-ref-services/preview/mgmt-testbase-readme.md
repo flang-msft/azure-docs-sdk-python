@@ -1,14 +1,14 @@
 ---
 title: 
-keywords: Azure, python, SDK, API, azure-mgmt-testbase, 
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 06/18/2021
+keywords: Azure, python, SDK, API, azure-mgmt-testbase, testbase
+author: maggiepint
+ms.author: magpint
+ms.date: 11/17/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.service: 
+ms.service: testbase
 ---
 
 # Microsoft Azure SDK for Python
