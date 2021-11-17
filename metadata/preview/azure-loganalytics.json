@@ -1,7 +1,7 @@
 {
   "Name": "azure-loganalytics",
-  "Version": "0.1.1",
-  "DevVersion": null,
+  "Version": "0.1.1a20211117001",
+  "DevVersion": "0.1.1a20211117001",
   "DirectoryPath": "sdk/loganalytics/azure-loganalytics",
   "ServiceDirectory": "loganalytics",
   "ReadMePath": "sdk/loganalytics/azure-loganalytics/README.md",
