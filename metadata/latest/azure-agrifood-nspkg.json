@@ -1,0 +1,14 @@
+{
+  "Name": "azure-agrifood-nspkg",
+  "Version": "1.0.0",
+  "DevVersion": "1.0.0",
+  "DirectoryPath": "sdk/nspkg/azure-agrifood-nspkg",
+  "ServiceDirectory": "nspkg",
+  "ReadMePath": "sdk/nspkg/azure-agrifood-nspkg/README.md",
+  "ChangeLogPath": "sdk/nspkg/azure-agrifood-nspkg/CHANGELOG.md",
+  "Group": null,
+  "SdkType": "client",
+  "IsNewSdk": false,
+  "ArtifactName": "azure-agrifood-nspkg",
+  "ReleaseStatus": "2021-05-07"
+}
