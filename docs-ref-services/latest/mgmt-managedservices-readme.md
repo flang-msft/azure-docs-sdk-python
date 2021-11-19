@@ -1,9 +1,9 @@
 ---
 title: 
 keywords: Azure, python, SDK, API, azure-mgmt-managedservices, managedservices
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 04/23/2021
+author: maggiepint
+ms.author: magpint
+ms.date: 11/19/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
