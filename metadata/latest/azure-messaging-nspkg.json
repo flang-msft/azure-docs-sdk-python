@@ -1,0 +1,14 @@
+{
+  "Name": "azure-messaging-nspkg",
+  "Version": "1.0.0",
+  "DevVersion": "1.0.0",
+  "DirectoryPath": "sdk/nspkg/azure-messaging-nspkg",
+  "ServiceDirectory": "nspkg",
+  "ReadMePath": "sdk/nspkg/azure-messaging-nspkg/README.md",
+  "ChangeLogPath": "sdk/nspkg/azure-messaging-nspkg/CHANGELOG.md",
+  "Group": null,
+  "SdkType": "client",
+  "IsNewSdk": false,
+  "ArtifactName": "azure-messaging-nspkg",
+  "ReleaseStatus": "2021-04-23"
+}
