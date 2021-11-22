@@ -1,14 +1,14 @@
 ---
 title: 
-keywords: Azure, python, SDK, API, azure-mgmt-resourcegraph, resourcegraph
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 04/25/2021
+keywords: Azure, python, SDK, API, azure-mgmt-resourcegraph, resources
+author: maggiepint
+ms.author: magpint
+ms.date: 11/22/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.service: resourcegraph
+ms.service: resources
 ---
 
 # Microsoft Azure SDK for Python
