@@ -1,0 +1,14 @@
+{
+  "Name": "azure-cognitiveservices-search-nspkg",
+  "Version": "3.0.1",
+  "DevVersion": "3.0.1",
+  "DirectoryPath": "sdk/nspkg/azure-cognitiveservices-search-nspkg",
+  "ServiceDirectory": "nspkg",
+  "ReadMePath": "sdk/nspkg/azure-cognitiveservices-search-nspkg/README.md",
+  "ChangeLogPath": "",
+  "Group": null,
+  "SdkType": "client",
+  "IsNewSdk": false,
+  "ArtifactName": "azure-cognitiveservices-search-nspkg",
+  "ReleaseStatus": null
+}
