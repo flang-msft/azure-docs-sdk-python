@@ -1,14 +1,14 @@
 ---
 title: 
-keywords: Azure, python, SDK, API, azure-mgmt-msi, managedserviceidentity
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 05/20/2021
+keywords: Azure, python, SDK, API, azure-mgmt-msi, resources
+author: maggiepint
+ms.author: magpint
+ms.date: 11/23/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.service: managedserviceidentity
+ms.service: resources
 ---
 
 # Microsoft Azure SDK for Python
