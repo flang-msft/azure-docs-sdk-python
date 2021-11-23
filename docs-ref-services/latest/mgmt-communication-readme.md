@@ -1,9 +1,9 @@
 ---
 title: 
 keywords: Azure, python, SDK, API, azure-mgmt-communication, communication
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 03/30/2021
+author: maggiepint
+ms.author: magpint
+ms.date: 11/23/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
