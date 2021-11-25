@@ -1,9 +1,9 @@
 ---
 title: 
 keywords: Azure, python, SDK, API, azure-mgmt-eventhub, eventhubs
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 11/01/2021
+author: annatisch
+ms.author: annatisch
+ms.date: 11/25/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
