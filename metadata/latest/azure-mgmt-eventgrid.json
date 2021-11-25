@@ -1,7 +1,7 @@
 {
   "Name": "azure-mgmt-eventgrid",
-  "Version": "10.0.0",
-  "DevVersion": null,
+  "Version": "10.0.0a20211125001",
+  "DevVersion": "10.0.0a20211125001",
   "DirectoryPath": "sdk/eventgrid/azure-mgmt-eventgrid",
   "ServiceDirectory": "eventgrid",
   "ReadMePath": "sdk/eventgrid/azure-mgmt-eventgrid/README.md",
