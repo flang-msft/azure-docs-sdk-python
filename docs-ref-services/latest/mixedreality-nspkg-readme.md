@@ -1,6 +1,6 @@
 ---
 title: 
-keywords: Azure, python, SDK, API, azure-communication-nspkg, nspkg
+keywords: Azure, python, SDK, API, azure-mixedreality-nspkg, nspkg
 author: mayurid
 ms.author: mayurid
 ms.date: 11/26/2021
@@ -11,14 +11,14 @@ ms.devlang: python
 ms.service: nspkg
 ---
 
-# Microsoft Azure Communication SDK for Python
+# Microsoft Azure Mixed Reality SDK for Python
 
-This is the Microsoft Azure Communication namespace package.
+This is the Microsoft Azure Mixed Reality namespace package.
 
 This package is not intended to be installed directly by the end user.
 
 It provides the necessary files for other packages to extend the
-azure.communication namespace.
+azure.mixedreality namespace.
 
 The complete list of available packages can be found at:
 https://aka.ms/azsdk/python/all
