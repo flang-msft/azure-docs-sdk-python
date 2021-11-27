@@ -1,9 +1,9 @@
 ---
 title: 
 keywords: Azure, python, SDK, API, azure-mgmt-storageimportexport, storage
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 05/28/2021
+author: amishra-dev
+ms.author: amishra-dev
+ms.date: 11/27/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
