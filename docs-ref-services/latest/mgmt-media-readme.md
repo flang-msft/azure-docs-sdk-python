@@ -1,9 +1,9 @@
 ---
 title: 
 keywords: Azure, python, SDK, API, azure-mgmt-media, mediaservices
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 07/28/2021
+author: naiteeks
+ms.author: naiteeks
+ms.date: 11/30/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
