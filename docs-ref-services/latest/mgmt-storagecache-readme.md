@@ -1,9 +1,9 @@
 ---
 title: 
 keywords: Azure, python, SDK, API, azure-mgmt-storagecache, storage
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 10/08/2021
+author: amishra-dev
+ms.author: amishra-dev
+ms.date: 11/30/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
