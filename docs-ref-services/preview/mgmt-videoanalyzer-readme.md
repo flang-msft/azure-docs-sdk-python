@@ -1,9 +1,9 @@
 ---
 title: 
 keywords: Azure, python, SDK, API, azure-mgmt-videoanalyzer, videoanalyzer
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 10/28/2021
+author: mayurid
+ms.author: mayurid
+ms.date: 11/30/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
