@@ -1,9 +1,9 @@
 ---
 title: 
 keywords: Azure, python, SDK, API, azure-mgmt-dataprotection, dataprotection
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 10/22/2021
+author: mayurid
+ms.author: mayurid
+ms.date: 11/30/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
