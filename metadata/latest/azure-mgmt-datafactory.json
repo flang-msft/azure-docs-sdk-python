@@ -1,7 +1,7 @@
 {
   "Name": "azure-mgmt-datafactory",
-  "Version": "2.1.0",
-  "DevVersion": null,
+  "Version": "2.1.0a20211201001",
+  "DevVersion": "2.1.0a20211201001",
   "DirectoryPath": "sdk/datafactory/azure-mgmt-datafactory",
   "ServiceDirectory": "datafactory",
   "ReadMePath": "sdk/datafactory/azure-mgmt-datafactory/README.md",
