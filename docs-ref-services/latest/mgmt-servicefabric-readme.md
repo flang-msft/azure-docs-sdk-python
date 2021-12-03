@@ -1,9 +1,9 @@
 ---
 title: 
 keywords: Azure, python, SDK, API, azure-mgmt-servicefabric, servicefabric
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 09/06/2021
+author: QingChenmsft
+ms.author: QingChenmsft
+ms.date: 12/03/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
