@@ -1,7 +1,7 @@
 {
   "Name": "azure-data-tables",
-  "Version": "12.2.0",
-  "DevVersion": null,
+  "Version": "12.2.1a20211203002",
+  "DevVersion": "12.2.1a20211203002",
   "DirectoryPath": "sdk/tables/azure-data-tables",
   "ServiceDirectory": "tables",
   "ReadMePath": "sdk/tables/azure-data-tables/README.md",
@@ -10,5 +10,5 @@
   "SdkType": "client",
   "IsNewSdk": true,
   "ArtifactName": "azure-data-tables",
-  "ReleaseStatus": "2021-11-10"
+  "ReleaseStatus": "Unreleased"
 }
