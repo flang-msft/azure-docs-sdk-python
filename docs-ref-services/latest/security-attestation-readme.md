@@ -1,9 +1,9 @@
 ---
 title: Azure Attestation client library for Python
 keywords: Azure, python, SDK, API, azure-security-attestation, attestation
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 07/06/2021
+author: larryosterman
+ms.author: larryosterman
+ms.date: 12/03/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
@@ -11,7 +11,7 @@ ms.devlang: python
 ms.service: attestation
 ---
 
-# Azure Attestation client library for Python - Version 1.0.0 
+# Azure Attestation client library for Python - Version 1.0.1a20211203001 
 
 
 The Microsoft Azure Attestation (MAA) service is a unified solution for remotely verifying the trustworthiness of a platform and integrity of the binaries running inside it. The service supports attestation of the platforms backed by Trusted Platform Modules (TPMs) alongside the ability to attest to the state of Trusted Execution Environments (TEEs) such as Intel(tm) Software Guard Extensions (SGX) enclaves and Virtualization-based Security (VBS) enclaves.
@@ -97,7 +97,7 @@ Use the [Azure CLI][azure_cli] snippet below to create/get client secret credent
     $Env:AZURE_TENANT_ID="tenant-ID"
     ```
 
-For more information about the Azure Identity APIs and how to use them, see [Azure Identity client library](https://github.com/Azure/azure-sdk-for-python/tree/azure-security-attestation_1.0.0/sdk/identity/azure-identity)
+For more information about the Azure Identity APIs and how to use them, see [Azure Identity client library](https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/identity/azure-identity)
 
 ## Key concepts
 
@@ -300,7 +300,7 @@ for signer in signers:
 
 ## Troubleshooting
 
-Most Attestation service operations will raise exceptions defined in [Azure Core](https://github.com/Azure/azure-sdk-for-python/blob/azure-security-attestation_1.0.0/sdk/core/azure-core/README.md). The attestation service APIs will throw a `HttpResponseError` on failure with helpful error codes. Many of these errors are recoverable.
+Most Attestation service operations will raise exceptions defined in [Azure Core](https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/core/azure-core/README.md). The attestation service APIs will throw a `HttpResponseError` on failure with helpful error codes. Many of these errors are recoverable.
 
 ```python
 try:
@@ -337,14 +337,14 @@ If you encounter any bugs or have suggestions, please file an issue in the
 section of the project.
 
 <!-- LINKS -->
-[source_code]: https://github.com/Azure/azure-sdk-for-python/tree/azure-security-attestation_1.0.0/sdk/attestation/azure-security-attestation
+[source_code]: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/attestation/azure-security-attestation
 [azure_identity]: https://docs.microsoft.com/python/api/overview/azure/identity-readme?view=azure-python-preview
 [DefaultAzureCredential]: https://docs.microsoft.com/python/api/azure-identity/azure.identity.defaultazurecredential?view=azure-python
 [ClientSecretCredential]: https://docs.microsoft.com/python/api/azure-identity/azure.identity.clientsecretcredential?view=azure-python
-[attestation_policy_result]:https://docs.microsoft.com/python/api/azure-security-attestation/azure.security.attestation.policyresult?view=azure-python-preview
-[attestation_client]: https://docs.microsoft.com/python/api/azure-security-attestation/azure.security.attestation.attestationclient?view=azure-python-preview
-[attestation_admin_client]: https://docs.microsoft.com/python/api/azure-security-attestation/azure.security.attestation.attestationadministrationclient?view=azure-python-preview
-[attestation_policy_result_parameters]: https://docs.microsoft.com/python/api/azure-security-attestation/azure.security.attestation.policyresult?view=azure-python-preview#parameters
+[attestation_policy_result]:https://docs.microsoft.com/python/api/azure-security-attestation/azure.security.attestation.attestationpolicyresult
+[attestation_client]: https://docs.microsoft.com/python/api/azure-security-attestation/azure.security.attestation.attestationclient
+[attestation_admin_client]: https://docs.microsoft.com/python/api/azure-security-attestation/azure.security.attestation.attestationadministrationclient
+[attestation_policy_result_parameters]: https://docs.microsoft.com/python/api/azure-security-attestation/azure.security.attestation.attestationpolicyresult#parameters
 [attest_sgx]: https://docs.microsoft.com/python/api/azure-security-attestation/azure.security.attestation.attestationclient?view=azure-python-preview#attest-sgx-enclave-quote--inittime-data-none--runtime-data-none--draft-policy-none----kwargs-
 [attestation_pypi]: https://aka.ms/azsdk/python/azure-security-attestation
 [API_reference]:https://docs.microsoft.com/python/api/overview/azure/security-attestation-readme?view=azure-python-preview
@@ -357,7 +357,7 @@ section of the project.
 [json_web_token]: https://tools.ietf.org/html/rfc7519
 [JWK]: https://tools.ietf.org/html/rfc7517
 [base64url_encoding]: https://tools.ietf.org/html/rfc4648#section-5
-[contributing]: https://github.com/Azure/azure-sdk-for-python/blob/azure-security-attestation_1.0.0/CONTRIBUTING.md
+[contributing]: https://github.com/Azure/azure-sdk-for-python/blob/main/CONTRIBUTING.md
 [coc_faq]: https://opensource.microsoft.com/codeofconduct/faq/
 
 ![Impressions](https://azure-sdk-impressions.azurewebsites.net/api/impressions/azure-sdk-for-python%2Fsdk%2Fattestation%2Fazure-security-attestation%2FREADME.png)
