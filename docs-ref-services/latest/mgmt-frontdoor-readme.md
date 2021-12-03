@@ -1,14 +1,14 @@
 ---
 title: 
-keywords: Azure, python, SDK, API, azure-mgmt-frontdoor, frontdoor
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 03/30/2021
+keywords: Azure, python, SDK, API, azure-mgmt-frontdoor, network
+author: mayurid
+ms.author: mayurid
+ms.date: 12/03/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.service: frontdoor
+ms.service: network
 ---
 
 ## Microsoft Azure SDK for Python
