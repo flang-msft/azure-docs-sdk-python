@@ -3,7 +3,7 @@ title:
 keywords: Azure, python, SDK, API, azure-mgmt-confluent, confluent
 author: ramya-rao-a
 ms.author: ramyar
-ms.date: 05/25/2021
+ms.date: 12/03/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
