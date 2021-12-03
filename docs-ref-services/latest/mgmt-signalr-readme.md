@@ -1,9 +1,9 @@
 ---
 title: 
 keywords: Azure, python, SDK, API, azure-mgmt-signalr, signalr
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 11/02/2021
+author: mayurid
+ms.author: mayurid
+ms.date: 12/03/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
