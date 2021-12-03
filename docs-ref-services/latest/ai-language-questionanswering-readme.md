@@ -1,9 +1,9 @@
 ---
 title: Azure Cognitive Language Services Question Answering client library for Python
 keywords: Azure, python, SDK, API, azure-ai-language-questionanswering, cognitivelanguage
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 11/03/2021
+author: mayurid
+ms.author: mayurid
+ms.date: 12/03/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
@@ -13,7 +13,7 @@ ms.service: cognitivelanguage
 
 [![Build Status](https://dev.azure.com/azure-sdk/public/_apis/build/status/azure-sdk-for-python.client?branchName=main)](https://dev.azure.com/azure-sdk/public/_build/latest?definitionId=46?branchName=main)
 
-# Azure Cognitive Language Services Question Answering client library for Python - Version 1.0.0 
+# Azure Cognitive Language Services Question Answering client library for Python - Version 1.0.1a20211203001 
 
 
 Question Answering is a cloud-based API service that lets you create a conversational question-and-answer layer over your existing data. Use it to build a knowledge base by extracting questions and answers from your semi-structured content, including FAQ, manuals, and documents. Answer users’ questions with the best answers from the QnAs in your knowledge base—automatically. Your knowledge base gets smarter, too, as it continually learns from users' behavior.
@@ -207,15 +207,15 @@ This project has adopted the [Microsoft Open Source Code of Conduct][code_of_con
 [coc_faq]: https://opensource.microsoft.com/codeofconduct/faq/
 [code_of_conduct]: https://opensource.microsoft.com/codeofconduct/
 [cognitive_auth]: https://docs.microsoft.com/azure/cognitive-services/authentication/
-[contributing]: https://github.com/Azure/azure-sdk-for-python/blob/azure-ai-language-questionanswering_1.0.0/CONTRIBUTING.md
+[contributing]: https://github.com/Azure/azure-sdk-for-python/blob/main/CONTRIBUTING.md
 [python_logging]: https://docs.python.org/3/library/logging.html
 [sdk_logging_docs]: https://docs.microsoft.com/azure/developer/python/azure-sdk-logging
 [azure_core_ref_docs]: https://azuresdkdocs.blob.core.windows.net/$web/python/azure-core/latest/azure.core.html
-[azure_core_readme]: https://github.com/Azure/azure-sdk-for-python/blob/azure-ai-language-questionanswering_1.0.0/sdk/core/azure-core/README.md
+[azure_core_readme]: https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/core/azure-core/README.md
 [pip_link]: https://pypi.org/project/pip/
 [questionanswering_client_class]: https://azuresdkdocs.blob.core.windows.net/$web/python/azure-ai-language-questionanswering/latest/azure.ai.language.questionanswering.html#azure.ai.language.questionanswering.QuestionAnsweringClient
 [questionanswering_refdocs_prompts]: https://azuresdkdocs.blob.core.windows.net/$web/python/azure-ai-language-questionanswering/latest/azure.ai.language.questionanswering.models.html#azure.ai.language.questionanswering.models.KnowledgeBaseAnswerDialog
-[questionanswering_client_src]: https://github.com/Azure/azure-sdk-for-python/tree/azure-ai-language-questionanswering_1.0.0/sdk/cognitivelanguage/azure-ai-language-questionanswering/
+[questionanswering_client_src]: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/cognitivelanguage/azure-ai-language-questionanswering/
 [questionanswering_docs]: https://azure.microsoft.com/services/cognitive-services/qna-maker/
 [questionanswering_docs_chat]: https://docs.microsoft.com/azure/cognitive-services/qnamaker/how-to/chit-chat-knowledge-base
 [questionanswering_docs_demos]: https://azure.microsoft.com/services/cognitive-services/qna-maker/#demo
@@ -223,7 +223,7 @@ This project has adopted the [Microsoft Open Source Code of Conduct][code_of_con
 [questionanswering_pypi_package]: https://pypi.org/project/azure-ai-language-questionanswering/
 [questionanswering_refdocs]: https://azuresdkdocs.blob.core.windows.net/$web/python/azure-ai-language-questionanswering/latest/azure.ai.language.questionanswering.html
 [questionanswering_rest_docs]: https://docs.microsoft.com/rest/api/cognitiveservices-qnamaker/
-[questionanswering_samples]: https://github.com/Azure/azure-sdk-for-python/tree/azure-ai-language-questionanswering_1.0.0/sdk/cognitivelanguage/azure-ai-language-questionanswering/samples/README.md
+[questionanswering_samples]: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/cognitivelanguage/azure-ai-language-questionanswering/samples/README.md
 
 ![Impressions](https://azure-sdk-impressions.azurewebsites.net/api/impressions/azure-sdk-for-python%2Fsdk%2Ftemplate%2Fazure-template%2FREADME.png)
 
