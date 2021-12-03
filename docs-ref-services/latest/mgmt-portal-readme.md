@@ -1,14 +1,14 @@
 ---
 title: 
-keywords: Azure, python, SDK, API, azure-mgmt-portal, 
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 05/21/2021
+keywords: Azure, python, SDK, API, azure-mgmt-portal, portal
+author: mayurid
+ms.author: mayurid
+ms.date: 12/03/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.service: 
+ms.service: portal
 ---
 
 # Microsoft Azure SDK for Python
