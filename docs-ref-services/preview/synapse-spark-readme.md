@@ -1,9 +1,9 @@
 ---
 title: 
 keywords: Azure, python, SDK, API, azure-synapse-spark, synapseanalytics
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 10/05/2021
+author: wonner
+ms.author: wonner
+ms.date: 12/04/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
