@@ -1,14 +1,14 @@
 ---
 title: 
-keywords: Azure, python, SDK, API, azure-mgmt-datalake-store, datalakestorage
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 01/07/2021
+keywords: Azure, python, SDK, API, azure-mgmt-datalake-store, datalake
+author: ro-joowan
+ms.author: ro-joowan
+ms.date: 12/04/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.service: datalakestorage
+ms.service: datalake
 ---
 
 # Microsoft Azure SDK for Python
