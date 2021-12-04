@@ -1,14 +1,14 @@
 ---
 title: 
-keywords: Azure, python, SDK, API, azure-mgmt-extendedlocation, 
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 09/28/2021
+keywords: Azure, python, SDK, API, azure-mgmt-extendedlocation, extendedlocation
+author: mayurid
+ms.author: mayurid
+ms.date: 12/04/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.service: 
+ms.service: extendedlocation
 ---
 
 # Microsoft Azure SDK for Python
