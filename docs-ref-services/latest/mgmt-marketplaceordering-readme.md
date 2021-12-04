@@ -1,9 +1,9 @@
 ---
 title: 
 keywords: Azure, python, SDK, API, azure-mgmt-marketplaceordering, marketplaceordering
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 03/18/2021
+author: mayurid
+ms.author: mayurid
+ms.date: 12/04/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
