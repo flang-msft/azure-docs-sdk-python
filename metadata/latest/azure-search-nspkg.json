@@ -1,0 +1,14 @@
+{
+  "Name": "azure-search-nspkg",
+  "Version": "1.0.0",
+  "DevVersion": "1.0.0",
+  "DirectoryPath": "sdk/nspkg/azure-search-nspkg",
+  "ServiceDirectory": "nspkg",
+  "ReadMePath": "sdk/nspkg/azure-search-nspkg/README.md",
+  "ChangeLogPath": "sdk/nspkg/azure-search-nspkg/CHANGELOG.md",
+  "Group": null,
+  "SdkType": "client",
+  "IsNewSdk": false,
+  "ArtifactName": "azure-search-nspkg",
+  "ReleaseStatus": "2020-03-18"
+}

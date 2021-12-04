@@ -1,0 +1,14 @@
+{
+  "Name": "azure-monitor-nspkg",
+  "Version": "1.0.0",
+  "DevVersion": "1.0.0",
+  "DirectoryPath": "sdk/nspkg/azure-monitor-nspkg",
+  "ServiceDirectory": "nspkg",
+  "ReadMePath": "sdk/nspkg/azure-monitor-nspkg/README.md",
+  "ChangeLogPath": "sdk/nspkg/azure-monitor-nspkg/CHANGELOG.md",
+  "Group": null,
+  "SdkType": "client",
+  "IsNewSdk": false,
+  "ArtifactName": "azure-monitor-nspkg",
+  "ReleaseStatus": "2021-06-08"
+}

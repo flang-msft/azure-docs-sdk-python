@@ -1,0 +1,14 @@
+{
+  "Name": "azure-cognitiveservices-language-nspkg",
+  "Version": "3.0.1",
+  "DevVersion": "3.0.1",
+  "DirectoryPath": "sdk/nspkg/azure-cognitiveservices-language-nspkg",
+  "ServiceDirectory": "nspkg",
+  "ReadMePath": "sdk/nspkg/azure-cognitiveservices-language-nspkg/README.md",
+  "ChangeLogPath": "sdk/nspkg/azure-cognitiveservices-language-nspkg/CHANGELOG.md",
+  "Group": null,
+  "SdkType": "client",
+  "IsNewSdk": false,
+  "ArtifactName": "azure-cognitiveservices-language-nspkg",
+  "ReleaseStatus": "2019-03-01"
+}

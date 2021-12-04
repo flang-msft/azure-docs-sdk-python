@@ -1,6 +1,6 @@
 ---
 title: 
-keywords: Azure, python, SDK, API, azure-ai-language-nspkg, nspkg
+keywords: Azure, python, SDK, API, azure-ai-translation-nspkg, nspkg
 author: mayurid
 ms.author: mayurid
 ms.date: 12/04/2021
@@ -13,7 +13,7 @@ ms.service: nspkg
 
 # Microsoft Azure SDK for Python
 
-This is the Microsoft Azure ai-language Services namespace package.
+This is the Microsoft Azure ai-translation Services namespace package.
 
 This package is not intended to be installed directly by the end user.
 

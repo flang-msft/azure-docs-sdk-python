@@ -1,0 +1,14 @@
+{
+  "Name": "azure-media-nspkg",
+  "Version": "1.0.0",
+  "DevVersion": "1.0.0",
+  "DirectoryPath": "sdk/nspkg/azure-media-nspkg",
+  "ServiceDirectory": "nspkg",
+  "ReadMePath": "sdk/nspkg/azure-media-nspkg/README.md",
+  "ChangeLogPath": "sdk/nspkg/azure-media-nspkg/CHANGELOG.md",
+  "Group": null,
+  "SdkType": "client",
+  "IsNewSdk": false,
+  "ArtifactName": "azure-media-nspkg",
+  "ReleaseStatus": "2020-12-11"
+}

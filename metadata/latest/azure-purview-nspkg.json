@@ -1,0 +1,14 @@
+{
+  "Name": "azure-purview-nspkg",
+  "Version": "2.0.0",
+  "DevVersion": "2.0.0",
+  "DirectoryPath": "sdk/nspkg/azure-purview-nspkg",
+  "ServiceDirectory": "nspkg",
+  "ReadMePath": "sdk/nspkg/azure-purview-nspkg/README.md",
+  "ChangeLogPath": "sdk/nspkg/azure-purview-nspkg/CHANGELOG.md",
+  "Group": null,
+  "SdkType": "client",
+  "IsNewSdk": false,
+  "ArtifactName": "azure-purview-nspkg",
+  "ReleaseStatus": "2021-03-08"
+}

@@ -1,0 +1,14 @@
+{
+  "Name": "azure-cognitiveservices-vision-nspkg",
+  "Version": "3.0.1",
+  "DevVersion": "3.0.1",
+  "DirectoryPath": "sdk/nspkg/azure-cognitiveservices-vision-nspkg",
+  "ServiceDirectory": "nspkg",
+  "ReadMePath": "sdk/nspkg/azure-cognitiveservices-vision-nspkg/README.md",
+  "ChangeLogPath": "",
+  "Group": null,
+  "SdkType": "client",
+  "IsNewSdk": false,
+  "ArtifactName": "azure-cognitiveservices-vision-nspkg",
+  "ReleaseStatus": null
+}
