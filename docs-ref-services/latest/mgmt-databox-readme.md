@@ -1,9 +1,9 @@
 ---
 title: 
 keywords: Azure, python, SDK, API, azure-mgmt-databox, databox
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 03/18/2021
+author: mayurid
+ms.author: mayurid
+ms.date: 12/04/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
@@ -37,5 +37,4 @@ section of the project.
 
 
 ![Impressions](https://azure-sdk-impressions.azurewebsites.net/api/impressions/azure-sdk-for-python%2Fazure-mgmt-databox%2FREADME.png)
-
 
