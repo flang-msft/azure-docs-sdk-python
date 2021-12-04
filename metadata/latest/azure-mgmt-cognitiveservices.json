@@ -1,7 +1,7 @@
 {
   "Name": "azure-mgmt-cognitiveservices",
-  "Version": "13.0.0",
-  "DevVersion": null,
+  "Version": "13.0.0a20211203003",
+  "DevVersion": "13.0.0a20211203003",
   "DirectoryPath": "sdk/cognitiveservices/azure-mgmt-cognitiveservices",
   "ServiceDirectory": "cognitiveservices",
   "ReadMePath": "sdk/cognitiveservices/azure-mgmt-cognitiveservices/README.md",
