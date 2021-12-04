@@ -1,9 +1,9 @@
 ---
 title: 
 keywords: Azure, python, SDK, API, azure-mgmt-batch, batch
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 07/30/2021
+author: cRui861
+ms.author: cRui861
+ms.date: 12/04/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
