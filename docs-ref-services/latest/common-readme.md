@@ -1,9 +1,9 @@
 ---
 title: 
 keywords: Azure, python, SDK, API, azure-common, core
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 03/26/2021
+author: lmazuel
+ms.author: lmazuel
+ms.date: 12/04/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
