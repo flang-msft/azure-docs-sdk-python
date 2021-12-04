@@ -1,7 +1,7 @@
 {
   "Name": "azure-mgmt-subscription",
-  "Version": "2.0.0",
-  "DevVersion": null,
+  "Version": "2.0.0a20211204001",
+  "DevVersion": "2.0.0a20211204001",
   "DirectoryPath": "sdk/subscription/azure-mgmt-subscription",
   "ServiceDirectory": "subscription",
   "ReadMePath": "sdk/subscription/azure-mgmt-subscription/README.md",
