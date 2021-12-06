@@ -3,7 +3,7 @@ title:
 keywords: Azure, python, SDK, API, azure-mgmt-maintenance, maintenance
 author: mayurid
 ms.author: mayurid
-ms.date: 11/24/2021
+ms.date: 12/06/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
