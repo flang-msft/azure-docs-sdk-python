@@ -1,26 +1,25 @@
 ---
 title: 
 keywords: Azure, python, SDK, API, azure-mgmt-keyvault, keyvault
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 09/18/2020
+author: schaabs
+ms.author: schaabs
+ms.date: 12/06/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: keyvault
 ---
-
 # Microsoft Azure SDK for Python
 
-This is the Microsoft Azure MyService Management Client Library.
+This is the Microsoft Azure Keyvault Management Client Library.
 This package has been tested with Python 2.7, 3.5, 3.6, 3.7 and 3.8.
 For a more complete view of Azure libraries, see the [azure sdk python release](https://aka.ms/azsdk/python/all).
 
 
 # Usage
 
-For code examples, see [MyService Management](https://docs.microsoft.com/python/api/overview/azure/?view=azure-python-preview)
+For code examples, see [Keyvault Management](https://docs.microsoft.com/python/api/overview/azure/?view=azure-python-preview)
 on docs.microsoft.com.
 
 
