@@ -66,7 +66,8 @@
         "install_type": "pypi",
         "prefer_source_distribution": "true",
         "name": "azure-schemaregistry-avroserializer",
-        "version": "==1.0.0b3"
+        "version": "==1.0.0b4",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
         "test*",
@@ -472,7 +473,8 @@
         "name": "azure-template",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
-        "version": "==0.1.0b1147355"
+        "version": "==0.1.0b1225851",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
         "test*",
@@ -1060,6 +1062,66 @@
         "install_type": "pypi",
         "prefer_source_distribution": "true",
         "version": "==1.1.0b1"
+      },
+      "exclude_path": [
+        "test*",
+        "example*",
+        "sample*",
+        "doc*"
+      ]
+    },
+    {
+      "package_info": {
+        "name": "azure-mixedreality-remoterendering",
+        "install_type": "pypi",
+        "prefer_source_distribution": "true",
+        "version": "==1.0.0b1",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
+      },
+      "exclude_path": [
+        "test*",
+        "example*",
+        "sample*",
+        "doc*"
+      ]
+    },
+    {
+      "package_info": {
+        "name": "azure-mgmt-maintenance",
+        "install_type": "pypi",
+        "prefer_source_distribution": "true",
+        "version": "==2.1.0b1",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
+      },
+      "exclude_path": [
+        "test*",
+        "example*",
+        "sample*",
+        "doc*"
+      ]
+    },
+    {
+      "package_info": {
+        "name": "azure-mgmt-connectedvmware",
+        "install_type": "pypi",
+        "prefer_source_distribution": "true",
+        "version": "==1.0.0b1",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
+      },
+      "exclude_path": [
+        "test*",
+        "example*",
+        "sample*",
+        "doc*"
+      ]
+    },
+    {
+      "package_info": {
+        "name": "azure-mgmt-resourceconnector",
+        "install_type": "pypi",
+        "prefer_source_distribution": "true",
+        "version": "==1.0.0b1",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
         "test*",
