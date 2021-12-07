@@ -1,16 +1,15 @@
 ---
 title: 
 keywords: Azure, python, SDK, API, azure-mgmt-maps, maps
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 12/08/2020
+author: mayurid
+ms.author: mayurid
+ms.date: 12/07/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: maps
 ---
-
 # Microsoft Azure SDK for Python
 
 This is the Microsoft Azure Maps Client Library.
@@ -38,5 +37,4 @@ section of the project.
 
 
 ![Impressions](https://azure-sdk-impressions.azurewebsites.net/api/impressions/azure-sdk-for-python%2Fazure-mgmt-maps%2FREADME.png)
-
 
