@@ -10,7 +10,7 @@ ms.technology: azure
 ms.devlang: python
 ms.service: identity
 ---
-# Azure Identity client library for Python - Version 1.7.2a20211206005 
+# Azure Identity client library for Python - Version 1.7.2a20211207001 
 
 
 The Azure Identity library provides Azure Active Directory token authentication support across the Azure SDK. It
