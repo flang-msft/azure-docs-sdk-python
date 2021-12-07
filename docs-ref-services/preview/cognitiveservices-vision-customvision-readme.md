@@ -1,16 +1,15 @@
 ---
 title: 
-keywords: Azure, python, SDK, API, azure-cognitiveservices-vision-customvision, customvision
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 11/11/2020
+keywords: Azure, python, SDK, API, azure-cognitiveservices-vision-customvision, cognitiveservices
+author: areddish
+ms.author: areddish
+ms.date: 12/07/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.service: customvision
+ms.service: cognitiveservices
 ---
-
 # Microsoft Azure SDK for Python
 
 This is the Microsoft Azure Custom Vision Client Library.
