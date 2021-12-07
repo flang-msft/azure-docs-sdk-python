@@ -1,16 +1,15 @@
 ---
 title: 
-keywords: Azure, python, SDK, API, azure-mgmt-azureadb2c, 
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 12/17/2020
+keywords: Azure, python, SDK, API, azure-mgmt-azureadb2c, azureadb2c
+author: mayurid
+ms.author: mayurid
+ms.date: 12/07/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.service: 
+ms.service: azureadb2c
 ---
-
 # Microsoft Azure SDK for Python
 
 This is the Microsoft Azure Azureadb2c Management Client Library.
@@ -38,5 +37,4 @@ section of the project.
 
 
 ![Impressions](https://azure-sdk-impressions.azurewebsites.net/api/impressions/azure-sdk-for-python%2Fazure-mgmt-workloadmonitor%2FREADME.png)
-
 
