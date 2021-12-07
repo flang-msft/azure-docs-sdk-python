@@ -1,16 +1,15 @@
 ---
 title: 
 keywords: Azure, python, SDK, API, azure-mgmt-storageimportexport, storage
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 05/28/2021
+author: amishra-dev
+ms.author: amishra-dev
+ms.date: 12/07/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: storage
 ---
-
 # Microsoft Azure SDK for Python
 
 This is the Microsoft Azure Storageimportexport Management Client Library.
