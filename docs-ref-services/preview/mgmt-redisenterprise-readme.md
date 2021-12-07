@@ -1,16 +1,15 @@
 ---
 title: 
-keywords: Azure, python, SDK, API, azure-mgmt-redisenterprise, 
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 02/02/2021
+keywords: Azure, python, SDK, API, azure-mgmt-redisenterprise, redisenterprise
+author: mayurid
+ms.author: mayurid
+ms.date: 12/07/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.service: 
+ms.service: redisenterprise
 ---
-
 # Microsoft Azure SDK for Python
 
 This is the Microsoft Azure Redisenterprise Management Client Library.
@@ -38,15 +37,4 @@ section of the project.
 
 
 ![Impressions](https://azure-sdk-impressions.azurewebsites.net/api/impressions/azure-sdk-for-python%2Fazure-mgmt-redisenterprise%2FREADME.png)
-# Usage
-
-
-To learn how to use this package, see the [quickstart guide](https://aka.ms/azsdk/python/mgmt)
-
-
- 
-For docs and references, see [Python SDK References](https://docs.microsoft.com/python/api/overview/azure/)
-Code samples for this package can be found at [Redisenterprise Management](https://docs.microsoft.com/samples/browse/?languages=python&term=Getting%20started%20-%20Managing&terms=Getting%20started%20-%20Managing) on docs.microsoft.com.
-Additional code samples for different Azure services are available at [Samples Repo](https://aka.ms/azsdk/python/mgmt/samples)
-
 
