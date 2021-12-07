@@ -1,16 +1,15 @@
 ---
 title: 
 keywords: Azure, python, SDK, API, azure-mgmt-media, mediaservices
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 12/10/2020
+author: naiteeks
+ms.author: naiteeks
+ms.date: 12/07/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: mediaservices
 ---
-
 # Microsoft Azure SDK for Python
 
 This is the Microsoft Azure Media Services Client Library.
@@ -38,5 +37,4 @@ section of the project.
 
 
 ![Impressions](https://azure-sdk-impressions.azurewebsites.net/api/impressions/azure-sdk-for-python%2Fazure-mgmt-media%2FREADME.png)
-
 
