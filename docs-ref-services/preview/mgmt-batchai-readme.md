@@ -1,16 +1,15 @@
 ---
 title: 
 keywords: Azure, python, SDK, API, azure-mgmt-batchai, batchai
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 06/03/2021
+author: cRui861
+ms.author: cRui861
+ms.date: 12/07/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: batchai
 ---
-
 # Microsoft Azure SDK for Python
 
 This is the Microsoft Azure Batchai Management Client Library.
