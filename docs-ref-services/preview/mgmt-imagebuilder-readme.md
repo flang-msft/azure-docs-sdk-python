@@ -1,16 +1,15 @@
 ---
 title: 
 keywords: Azure, python, SDK, API, azure-mgmt-imagebuilder, compute
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 05/26/2021
+author: mayurid
+ms.author: mayurid
+ms.date: 12/07/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: compute
 ---
-
 # Microsoft Azure SDK for Python
 
 This is the Microsoft Azure Image Builder Client Library.
