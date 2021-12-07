@@ -1,16 +1,15 @@
 ---
 title: 
-keywords: Azure, python, SDK, API, azure-mgmt-portal, 
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 12/17/2020
+keywords: Azure, python, SDK, API, azure-mgmt-portal, portal
+author: mayurid
+ms.author: mayurid
+ms.date: 12/07/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.service: 
+ms.service: portal
 ---
-
 # Microsoft Azure SDK for Python
 
 This is the Microsoft Azure Portal Management Client Library.
@@ -38,5 +37,4 @@ section of the project.
 
 
 ![Impressions](https://azure-sdk-impressions.azurewebsites.net/api/impressions/azure-sdk-for-python%2Fazure-mgmt-portal%2FREADME.png)
-
 
