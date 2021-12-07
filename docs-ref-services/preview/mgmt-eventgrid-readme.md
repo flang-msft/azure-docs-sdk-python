@@ -1,16 +1,15 @@
 ---
 title: 
 keywords: Azure, python, SDK, API, azure-mgmt-eventgrid, eventgrid
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 11/18/2020
+author: lmazuel
+ms.author: lmazuel
+ms.date: 12/07/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: eventgrid
 ---
-
 # Microsoft Azure SDK for Python
 
 This is the Microsoft Azure EventGrid Management Client Library.
