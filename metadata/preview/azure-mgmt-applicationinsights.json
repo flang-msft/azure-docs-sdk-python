@@ -1,0 +1,14 @@
+{
+  "Name": "azure-mgmt-applicationinsights",
+  "Version": "1.0.0a20211206001",
+  "DevVersion": "1.0.0a20211206001",
+  "DirectoryPath": "sdk/applicationinsights/azure-mgmt-applicationinsights",
+  "ServiceDirectory": "applicationinsights",
+  "ReadMePath": "sdk/applicationinsights/azure-mgmt-applicationinsights/README.md",
+  "ChangeLogPath": "sdk/applicationinsights/azure-mgmt-applicationinsights/CHANGELOG.md",
+  "Group": null,
+  "SdkType": "mgmt",
+  "IsNewSdk": true,
+  "ArtifactName": "azure-mgmt-applicationinsights",
+  "ReleaseStatus": "2021-02-04"
+}
