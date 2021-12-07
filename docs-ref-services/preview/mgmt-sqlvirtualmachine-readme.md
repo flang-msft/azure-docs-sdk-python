@@ -1,16 +1,15 @@
 ---
 title: 
-keywords: Azure, python, SDK, API, azure-mgmt-sqlvirtualmachine, sqlserveronvirtualmachines
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 05/20/2021
+keywords: Azure, python, SDK, API, azure-mgmt-sqlvirtualmachine, sql
+author: mayurid
+ms.author: mayurid
+ms.date: 12/07/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.service: sqlserveronvirtualmachines
+ms.service: sql
 ---
-
 # Microsoft Azure SDK for Python
 
 This is the Microsoft Azure Sqlvirtualmachine Management Client Library.
