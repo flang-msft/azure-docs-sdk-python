@@ -1,16 +1,15 @@
 ---
 title: 
-keywords: Azure, python, SDK, API, azure-mgmt-azurearcdata, 
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 09/17/2021
+keywords: Azure, python, SDK, API, azure-mgmt-azurearcdata, azurearcdata
+author: mayurid
+ms.author: mayurid
+ms.date: 12/07/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.service: 
+ms.service: azurearcdata
 ---
-
 # Microsoft Azure SDK for Python
 
 This is the Microsoft Azure Azurearcdata Management Client Library.
