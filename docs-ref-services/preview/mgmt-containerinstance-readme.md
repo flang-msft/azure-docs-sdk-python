@@ -1,16 +1,15 @@
 ---
 title: 
-keywords: Azure, python, SDK, API, azure-mgmt-containerinstance, containerinstance
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 11/25/2020
+keywords: Azure, python, SDK, API, azure-mgmt-containerinstance, containerinstances
+author: samkreter
+ms.author: samkreter
+ms.date: 12/08/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.service: containerinstance
+ms.service: containerinstances
 ---
-
 ## Microsoft Azure SDK for Python
 
 This is the Microsoft Azure Container Instance Client Library.
