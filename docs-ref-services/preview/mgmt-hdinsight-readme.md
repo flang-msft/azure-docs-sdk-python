@@ -1,16 +1,15 @@
 ---
 title: 
 keywords: Azure, python, SDK, API, azure-mgmt-hdinsight, hdinsight
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 11/18/2020
+author: idear1203
+ms.author: idear1203
+ms.date: 12/08/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: hdinsight
 ---
-
 # Microsoft Azure SDK for Python
 
 This is the Microsoft Azure HDInsight Management Client Library.
