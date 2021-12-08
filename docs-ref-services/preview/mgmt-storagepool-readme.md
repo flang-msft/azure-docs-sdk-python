@@ -1,16 +1,15 @@
 ---
 title: 
-keywords: Azure, python, SDK, API, azure-mgmt-storagepool, 
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 05/26/2021
+keywords: Azure, python, SDK, API, azure-mgmt-storagepool, storagepool
+author: amishra-dev
+ms.author: amishra-dev
+ms.date: 12/08/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.service: 
+ms.service: storagepool
 ---
-
 # Microsoft Azure SDK for Python
 
 This is the Microsoft Azure Storagepool Management Client Library.
