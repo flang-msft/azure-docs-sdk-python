@@ -1,16 +1,15 @@
 ---
 title: 
 keywords: Azure, python, SDK, API, azure-mgmt-containerservice, containerservice
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 11/25/2020
+author: samkreter
+ms.author: samkreter
+ms.date: 12/08/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: containerservice
 ---
-
 # Microsoft Azure SDK for Python
 
 This is the Microsoft Azure Container Service Management Client Library.
@@ -38,4 +37,3 @@ section of the project.
 
 
 ![Impressions](https://azure-sdk-impressions.azurewebsites.net/api/impressions/azure-sdk-for-python%2Fazure-mgmt-containerservice%2FREADME.png)
-
