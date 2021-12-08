@@ -1,16 +1,15 @@
 ---
 title: 
 keywords: Azure, python, SDK, API, azure-mgmt-devtestlabs, devtestlabs
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 11/18/2020
+author: mayurid
+ms.author: mayurid
+ms.date: 12/08/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: devtestlabs
 ---
-
 ## Microsoft Azure SDK for Python
 
 This is the Microsoft Azure DevTestLabs Management Client Library.
