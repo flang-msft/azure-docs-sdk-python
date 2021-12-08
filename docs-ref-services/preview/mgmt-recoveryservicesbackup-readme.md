@@ -1,16 +1,15 @@
 ---
 title: 
-keywords: Azure, python, SDK, API, azure-mgmt-recoveryservicesbackup, siterecovery
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 05/17/2021
+keywords: Azure, python, SDK, API, azure-mgmt-recoveryservicesbackup, recoveryservices
+author: DheerendraRathor
+ms.author: DheerendraRathor
+ms.date: 12/08/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.service: siterecovery
+ms.service: recoveryservices
 ---
-
 # Microsoft Azure SDK for Python
 
 This is the Microsoft Azure Recoveryservicesbackup Management Client Library.
