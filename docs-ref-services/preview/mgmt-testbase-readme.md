@@ -1,16 +1,15 @@
 ---
 title: 
-keywords: Azure, python, SDK, API, azure-mgmt-testbase, 
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 06/18/2021
+keywords: Azure, python, SDK, API, azure-mgmt-testbase, testbase
+author: mayurid
+ms.author: mayurid
+ms.date: 12/08/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.service: 
+ms.service: testbase
 ---
-
 # Microsoft Azure SDK for Python
 
 This is the Microsoft Azure Testbase Management Client Library.
