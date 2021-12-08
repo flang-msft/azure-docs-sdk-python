@@ -1,16 +1,15 @@
 ---
 title: 
 keywords: Azure, python, SDK, API, azure-mgmt-trafficmanager, trafficmanager
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 05/19/2021
+author: mayurid
+ms.author: mayurid
+ms.date: 12/08/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: trafficmanager
 ---
-
 # Microsoft Azure SDK for Python
 
 This is the Microsoft Azure Trafficmanager Management Client Library.
