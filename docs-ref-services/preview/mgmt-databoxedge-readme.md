@@ -1,19 +1,18 @@
 ---
 title: 
 keywords: Azure, python, SDK, API, azure-mgmt-databoxedge, stackedge
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 12/08/2020
+author: mayurid
+ms.author: mayurid
+ms.date: 12/08/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: stackedge
 ---
-
 ## Microsoft Azure SDK for Python
 
-This is the Microsoft Azure MyService Management Client Library.
+This is the Microsoft Azure Databoxedge Management Client Library.
 
 Azure Resource Manager (ARM) is the next generation of management APIs
 that replace the old Azure Service Management (ASM).
@@ -46,5 +45,4 @@ the [Issues](https://github.com/Azure/azure-sdk-for-python/issues)
 section of the project.
 
 ![image](https://azure-sdk-impressions.azurewebsites.net/api/impressions/azure-sdk-for-python%2Fazure-mgmt-databoxedge%2FREADME.png)
-
 
