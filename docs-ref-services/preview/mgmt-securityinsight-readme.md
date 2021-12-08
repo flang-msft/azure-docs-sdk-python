@@ -1,16 +1,15 @@
 ---
 title: 
-keywords: Azure, python, SDK, API, azure-mgmt-securityinsight, 
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 11/11/2020
+keywords: Azure, python, SDK, API, azure-mgmt-securityinsight, sentinel
+author: mayurid
+ms.author: mayurid
+ms.date: 12/08/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.service: 
+ms.service: sentinel
 ---
-
 # Microsoft Azure SDK for Python
 
 This is the Microsoft Azure SecurityInsight Management Client Library.
