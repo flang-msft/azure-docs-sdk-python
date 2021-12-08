@@ -1,16 +1,15 @@
 ---
 title: 
-keywords: Azure, python, SDK, API, azure-mgmt-applicationinsights, applicationinsights
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 12/10/2020
+keywords: Azure, python, SDK, API, azure-mgmt-applicationinsights, monitor
+author: mayurid
+ms.author: mayurid
+ms.date: 12/08/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.service: applicationinsights
+ms.service: monitor
 ---
-
 ## Microsoft Azure SDK for Python
 
 This is the Microsoft Azure Application Insights Management Client
@@ -28,18 +27,16 @@ library.
 For a more complete set of Azure libraries, see the
 [azure sdk python release](https://aka.ms/azsdk/python/all).
 
-## Usage
+# Usage
 
 
 To learn how to use this package, see the [quickstart guide](https://aka.ms/azsdk/python/mgmt)
 
 
-
+ 
 For docs and references, see [Python SDK References](https://docs.microsoft.com/python/api/overview/azure/)
-Code samples for this package can be found at [Application Insights Management](https://docs.microsoft.com/samples/browse/?languages=python&term=Getting%20started%20-%20Managing&terms=Getting%20started%20-%20Managing) on docs.microsoft.com.
+Code samples for this package can be found at [Applicationinsights Management](https://docs.microsoft.com/samples/browse/?languages=python&term=Getting%20started%20-%20Managing&terms=Getting%20started%20-%20Managing) on docs.microsoft.com.
 Additional code samples for different Azure services are available at [Samples Repo](https://aka.ms/azsdk/python/mgmt/samples)
-
-
 ## Provide Feedback
 
 If you encounter any bugs or have suggestions, please file an issue in
@@ -47,5 +44,4 @@ the [Issues](https://github.com/Azure/azure-sdk-for-python/issues)
 section of the project.
 
 ![image](https://azure-sdk-impressions.azurewebsites.net/api/impressions/azure-sdk-for-python%2Fazure-mgmt-applicationinsights%2FREADME.png)
-
 
