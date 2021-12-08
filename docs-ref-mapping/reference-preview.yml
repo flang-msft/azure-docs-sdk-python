@@ -3,6 +3,15 @@
   landingPageType: Root
   expanded: true
   items:
+  - name: Advisor
+    uid: azure.python.sdk.landingPage.services.Advisor.pre
+    landingPageType: Service
+    items:
+    - name: Management
+      uid: azure.python.sdk.landingPage.services.Advisor.Management.pre
+      landingPageType: Service
+      children:
+      - azure-mgmt-advisor*
   - name: AgriFood
     uid: azure.python.sdk.landingPage.services.Azure.agrifood.pre
     landingPageType: Service
@@ -17,6 +26,34 @@
       href: ~/docs-ref-services/preview/mgmt-agrifood-readme.md
       children:
       - azure-mgmt-agrifood
+  - name: App Configuration
+    landingPageType: Service
+    uid: azure.python.sdk.landingPage.services.AppConfiguration.pre
+    items:
+    - name: App Configuration
+      uid: azure.python.sdk.landingPage.services.appconfiguration.client.pre
+      href: ~/docs-ref-services/preview/appconfiguration-readme.md
+      children:
+      - azure-appconfiguration
+    - name: Management
+      uid: azure.python.sdk.landingPage.services.appconfiguration.Management.pre
+      landingPageType: Service
+      children:
+      - azure-mgmt-appconfiguration
+  - name: Application Insights
+    uid: azure.python.sdk.landingPage.services.ApplicationInsights.pre
+    landingPageType: Service
+    items:
+    - name: Client
+      uid: azure.python.sdk.landingPage.services.ApplicationInsights.Client.pre
+      landingPageType: Service
+      children:
+      - azure-applicationinsights
+    - name: Management
+      uid: azure.python.sdk.landingPage.services.ApplicationInsights.Management.pre
+      landingPageType: Service
+      children:
+      - azure-mgmt-applicationinsights
   - name: Anomaly Detector
     uid: azure.python.sdk.landingPage.services.AnomalyDetector.pre
     href: ~/docs-ref-services/preview/ai-anomalydetector-readme.md
@@ -50,6 +87,15 @@
       landingPageType: Service
       children:
       - azure-mgmt-batch
+  - name: Cognitive Services
+    uid: azure.python.sdk.landingPage.services.Cognitive.Services.pre
+    href: ~/docs-ref-services/preview/cognitive-services.md
+    items:
+    - name: Face API
+      uid: azure.python.sdk.landingPage.services.Cognitive.Services.Face.pre
+      children:
+      - azure-cognitiveservices-vision-face*
+      landingPageType: Service
   - name: Communication
     uid: azure.python.sdk.landingPage.services.Communication.pre
     landingPageType: Service
@@ -151,6 +197,14 @@
       href: ~/docs-ref-services/preview/keyvault-secrets-readme.md
       children:
       - azure-keyvault-secrets*
+  - name: Log Analytics
+    uid: azure.python.sdk.landingPage.services.loganalytics.pre
+    items:
+    - name: Client
+      uid: azure.python.sdk.landingPage.services.loganalytics.Client.pre
+      landingPageType: Service
+      children:
+      - azure-loganalytics*
   - name: Monitoring
     uid: azure.python.sdk.landingPage.services.Monitor.pre
     landingPageType: Service
@@ -179,6 +233,15 @@
       children:
       - azure-mgmt-policyinsights*
       - azure-mgmt-resource.azure.mgmt.resource.policy*
+  - name: Redis
+    uid: azure.python.sdk.landingPage.services.Redis.pre
+    href: ~/docs-ref-services/preview/redis.md
+    items:
+    - name: Management
+      uid: azure.python.sdk.landingPage.services.Redis.Management.pre
+      landingPageType: Service
+      children:
+      - azure-mgmt-redis*
   - name: Resource Graph
     uid: azure.python.sdk.landingPage.services.ResourceGraph.pre
     landingPageType: Service
@@ -264,6 +327,20 @@
       href: ~/docs-ref-services/preview/storage-file-share-readme.md
       children:
       - azure-storage-file*
+    - name: Management
+      uid: azure.python.sdk.landingPage.services.storage.Management.pre
+      landingPageType: Service
+      children:
+      - azure-mgmt-storage*
+  - name: Support
+    uid: azure.python.sdk.landingPage.services.Support.pre
+    landingPageType: Service
+    items:
+    - name: Management
+      uid: azure.python.sdk.landingPage.services.Support.Management.pre
+      landingPageType: Service
+      children:
+      - azure-mgmt-support
   - name: Synapse
     uid: azure.python.sdk.landingPage.services.Synapse.pre
     landingPageType: Service
