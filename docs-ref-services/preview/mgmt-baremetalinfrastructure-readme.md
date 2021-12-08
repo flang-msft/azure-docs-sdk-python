@@ -1,16 +1,15 @@
 ---
 title: 
 keywords: Azure, python, SDK, API, azure-mgmt-baremetalinfrastructure, baremetal
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 06/28/2021
+author: mayurid
+ms.author: mayurid
+ms.date: 12/08/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: baremetal
 ---
-
 # Microsoft Azure SDK for Python
 
 This is the Microsoft Azure Baremetalinfrastructure Management Client Library.
