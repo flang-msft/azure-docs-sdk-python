@@ -1,24 +1,23 @@
 ---
 title: Azure Live Video Analytics for IoT Edge client library for Python
-keywords: Azure, python, SDK, API, azure-media-analytics-edge, 
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 01/14/2021
+keywords: Azure, python, SDK, API, azure-media-analytics-edge, media
+author: naiteeks
+ms.author: naiteeks
+ms.date: 12/08/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.service: 
+ms.service: media
 ---
-
-# Azure Live Video Analytics for IoT Edge client library for Python - Version 1.0.0b1 
+# Azure Live Video Analytics for IoT Edge client library for Python - Version 1.0.0a20211208001 
 
 
 Live Video Analytics on IoT Edge provides a platform to build intelligent video applications that span the edge and the cloud. The platform offers the capability to capture, record, and analyze live video along with publishing the results, video and video analytics, to Azure services in the cloud or the edge. It is designed to be an extensible platform, enabling you to connect different video analysis edge modules (such as Cognitive services containers, custom edge modules built by you with open-source machine learning models or custom models trained with your own data) to it and use them to analyze live video without worrying about the complexity of building and running a live video pipeline.
 
 Use the client library for Live Video Analytics on IoT Edge to:
 
-- Simplify interactions with the [Microsoft Azure IoT SDKs](https://github.com/azure/azure-iot-sdks) 
+- Simplify interactions with the [Microsoft Azure IoT SDKs](https://github.com/azure/azure-iot-sdks)
 - Programatically construct media graph topologies and instances
 
 [Package (PyPI)][package] | [Product documentation][doc_product] | [Direct methods][doc_direct_methods] | [Media graphs][doc_media_graph] | [Source code][source] | [Samples][samples]
@@ -47,13 +46,13 @@ Please visit the [Examples](#examples) for starter code
 ## Key concepts
 
 ### MediaGraph Topology vs MediaGraph Instance
-A _graph topology_ is a blueprint or template of a graph. It defines the parameters of the graph using placeholders as values for them. A _graph instance_ references a graph topology and specifies the parameters. This way you are able to have multiple graph instances referencing the same topology but with different values for parameters. For more information please visit [Media graph topologies and instances][doc_media_graph] 
+A _graph topology_ is a blueprint or template of a graph. It defines the parameters of the graph using placeholders as values for them. A _graph instance_ references a graph topology and specifies the parameters. This way you are able to have multiple graph instances referencing the same topology but with different values for parameters. For more information please visit [Media graph topologies and instances][doc_media_graph]
 
 ### CloudToDeviceMethod
 
-The `CloudToDeviceMethod` is part of the [azure-iot-hub SDk][iot-hub-sdk]. This method allows you to communicate one way notifications to a device in your IoT hub. In our case, we want to communicate various graph methods such as `MediaGraphTopologySetRequest` and `MediaGraphTopologyGetRequest`. To use `CloudToDeviceMethod` you need to pass in two parameters: `method_name` and `payload`. 
+The `CloudToDeviceMethod` is part of the [azure-iot-hub SDk][iot-hub-sdk]. This method allows you to communicate one way notifications to a device in your IoT hub. In our case, we want to communicate various graph methods such as `MediaGraphTopologySetRequest` and `MediaGraphTopologyGetRequest`. To use `CloudToDeviceMethod` you need to pass in two parameters: `method_name` and `payload`.
 
-The first parameter, `method_name`, is the name of the media graph request you are sending. Make sure to use each method's predefined `method_name` property. For example, `MediaGraphTopologySetRequest.method_name`. 
+The first parameter, `method_name`, is the name of the media graph request you are sending. Make sure to use each method's predefined `method_name` property. For example, `MediaGraphTopologySetRequest.method_name`.
 
 The second parameter, `payload`, sends the entire serialization of the media graph request. For example, `MediaGraphTopologySetRequest.serialize()`
 
@@ -61,11 +60,14 @@ The second parameter, `payload`, sends the entire serialization of the media gra
 
 ### Creating a graph topology
 To create a graph topology you need to define parameters, sources, and sinks.
-```
+```python
+from azure.media.analyticsedge import *
+
 #Parameters
 user_name_param = MediaGraphParameterDeclaration(name="rtspUserName",type="String",default="dummyusername")
 password_param = MediaGraphParameterDeclaration(name="rtspPassword",type="String",default="dummypassword")
 url_param = MediaGraphParameterDeclaration(name="rtspUrl",type="String",default="rtsp://rtspsim:554/media/camera-300s.mkv")
+graph_topology_name = "graphTopology1"
 
 #Source and Sink
 source = MediaGraphRtspSource(name="rtspSource", endpoint=MediaGraphUnsecuredEndpoint(url="${rtspUrl}",credentials=MediaGraphUsernamePasswordCredentials(username="${rtspUserName}",password="${rtspPassword}")))
@@ -78,9 +80,16 @@ graph_topology = MediaGraphTopology(name=graph_topology_name,properties=graph_pr
 
 ```
 
-### Creating a graph instance 
+### Creating a graph instance
 To create a graph instance, you need to have an existing graph topology.
-```
+```python
+from azure.media.analyticsedge import *
+
+#Parameters
+graph_instance_name = "graphInstance1"
+graph_topology_name = "graphTopology1"
+graph_url = "rtsp://sample-url-from-camera"
+
 url_param = MediaGraphParameterDefinition(name="rtspUrl", value=graph_url)
 graph_instance_properties = MediaGraphInstanceProperties(description="Sample graph description", topology_name=graph_topology_name, parameters=[url_param])
 
@@ -90,7 +99,13 @@ graph_instance = MediaGraphInstance(name=graph_instance_name, properties=graph_i
 
 ### Invoking a graph method request
 To invoke a graph method on your device you need to first define the request using the lva sdk. Then send that method request using the iot sdk's `CloudToDeviceMethod`
-```
+```python
+from azure.media.analyticsedge import *
+from azure.iot.hub import IoTHubRegistryManager
+from azure.iot.hub.models import CloudToDeviceMethod
+
+module_d = "mediaedge"
+connection_string = "test"
 set_method_request = MediaGraphTopologySetRequest(graph=graph_topology)
 direct_method = CloudToDeviceMethod(method_name=set_method_request.method_name, payload=set_method_request.serialize())
 registry_manager = IoTHubRegistryManager(connection_string)
@@ -139,17 +154,17 @@ additional questions or comments.
 [coc_faq]: https://opensource.microsoft.com/codeofconduct/faq/
 [coc_contact]: mailto:opencode@microsoft.com
 
-[package]: TODO://link-to-published-package
-[source]: https://github.com/Azure/azure-sdk-for-python/tree/azure-media-analytics-edge_1.0.0b1/sdk/media
-[samples]: https://github.com/Azure-Samples/live-video-analytics-iot-edge-python
+[package]: https://pypi.org/project/azure-media-analytics-edge/
+[source]: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/media
+[samples]: https://github.com/Azure-Samples/video-analyzer-iot-edge-python 
 
 [doc_direct_methods]: https://docs.microsoft.com/azure/media-services/live-video-analytics-edge/direct-methods
 [doc_media_graph]: https://docs.microsoft.com/azure/media-services/live-video-analytics-edge/media-graph-concept#media-graph-topologies-and-instances
-[doc_product]: https://docs.microsoft.com/azure/media-services/live-video-analytics-edge/
+[doc_product]: https://docs.microsoft.com/azure/azure-video-analyzer/video-analyzer-docs/overview
 
 [iot-device-sdk]: https://pypi.org/project/azure-iot-device/
 [iot-hub-sdk]: https://pypi.org/project/azure-iot-hub/
 [iot_device_connection_string]: https://docs.microsoft.com/azure/media-services/live-video-analytics-edge/get-started-detect-motion-emit-events-quickstart
 
-[github-page-issues]: https://github.com/Azure/azure-sdk-for-python/issues 
+[github-page-issues]: https://github.com/Azure/azure-sdk-for-python/issues
 
