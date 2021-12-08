@@ -1,16 +1,15 @@
 ---
 title: 
 keywords: Azure, python, SDK, API, azure-mgmt-resourcemover, resourcemover
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 06/03/2021
+author: mayurid
+ms.author: mayurid
+ms.date: 12/08/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: resourcemover
 ---
-
 # Microsoft Azure SDK for Python
 
 This is the Microsoft Azure Resource Mover Management Client Library.
