@@ -1,16 +1,15 @@
 ---
 title: 
 keywords: Azure, python, SDK, API, azure-mgmt-azurestack, stack
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 12/10/2020
-ms.topic: article
+author: mayurid
+ms.author: mayurid
+ms.date: 12/08/2021
+ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: stack
 ---
-
 ## Microsoft Azure SDK for Python
 
 This is the Microsoft Azure AzureStack Management Client Library.
@@ -47,5 +46,4 @@ the [Issues](https://github.com/Azure/azure-sdk-for-python/issues)
 section of the project.
 
 ![image](https://azure-sdk-impressions.azurewebsites.net/api/impressions/azure-sdk-for-python%2Fazure-mgmt-azurestack%2FREADME.png)
-
 
