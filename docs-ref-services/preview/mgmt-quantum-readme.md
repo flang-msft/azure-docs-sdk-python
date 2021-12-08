@@ -1,16 +1,15 @@
 ---
 title: 
-keywords: Azure, python, SDK, API, azure-mgmt-quantum, 
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 08/04/2021
+keywords: Azure, python, SDK, API, azure-mgmt-quantum, quantum
+author: mayurid
+ms.author: mayurid
+ms.date: 12/08/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.service: 
+ms.service: quantum
 ---
-
 # Microsoft Azure SDK for Python
 
 This is the Microsoft Azure Quantum Management Client Library.
