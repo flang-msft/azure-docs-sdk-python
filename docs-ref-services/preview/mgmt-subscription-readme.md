@@ -1,16 +1,15 @@
 ---
 title: 
-keywords: Azure, python, SDK, API, azure-mgmt-subscription, subscription
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 11/16/2020
+keywords: Azure, python, SDK, API, azure-mgmt-subscription, subscriptions
+author: mayurid
+ms.author: mayurid
+ms.date: 12/08/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.service: subscription
+ms.service: subscriptions
 ---
-
 ## Microsoft Azure SDK for Python
 
 This is the Microsoft Azure Subscription Management Client Library.
