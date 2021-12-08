@@ -1,16 +1,15 @@
 ---
 title: 
-keywords: Azure, python, SDK, API, azure-mgmt-hybridnetwork, 
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 04/23/2021
+keywords: Azure, python, SDK, API, azure-mgmt-hybridnetwork, hybridnetwork
+author: mayurid
+ms.author: mayurid
+ms.date: 12/08/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.service: 
+ms.service: hybridnetwork
 ---
-
 # Microsoft Azure SDK for Python
 
 This is the Microsoft Azure Hybridnetwork Management Client Library.
