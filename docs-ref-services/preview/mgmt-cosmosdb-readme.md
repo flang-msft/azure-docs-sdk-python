@@ -1,16 +1,15 @@
 ---
 title: 
 keywords: Azure, python, SDK, API, azure-mgmt-cosmosdb, cosmosdb
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 10/26/2021
+author: kushagraThapar
+ms.author: kushagraThapar
+ms.date: 12/08/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: cosmosdb
 ---
-
 # Microsoft Azure SDK for Python
 
 This is the Microsoft Azure Cosmos DB Management Client Library.
