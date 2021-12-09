@@ -1,0 +1,22 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.imagebuilder.models.InnerError
+name: InnerError
+fullName: azure.mgmt.imagebuilder.models.InnerError
+module: azure.mgmt.imagebuilder.models
+inheritances:
+- msrest.serialization.Model
+summary: Inner error details.
+constructor:
+  syntax: 'InnerError(*, exception_type: Optional[str] = None, error_detail: Optional[str]
+    = None, **kwargs)'
+  parameters:
+  - name: exception_type
+    description: The exception type.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: error_detail
+    description: The internal error message or exception dump.
+    isRequired: true
+    types:
+    - <xref:str>
