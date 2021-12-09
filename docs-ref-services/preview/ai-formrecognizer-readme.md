@@ -1,17 +1,16 @@
 ---
 title: Azure Form Recognizer client library for Python
 keywords: Azure, python, SDK, API, azure-ai-formrecognizer, formrecognizer
-author: maggiepint
-ms.author: magpint
-ms.date: 11/09/2021
+author: kristapratico
+ms.author: kristapratico
+ms.date: 12/09/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: formrecognizer
 ---
-
-# Azure Form Recognizer client library for Python - Version 3.2.0b2 
+# Azure Form Recognizer client library for Python - Version 3.2.0a20211208001 
 
 
 Azure Cognitive Services Form Recognizer is a cloud service that uses machine learning to analyze text and structured data from your documents. It includes the following main features:
@@ -377,7 +376,7 @@ for page in result.pages:
                 line_idx,
                 len(words),
                 line.content,
-                format_bounding_box(line.bounding_box),
+                line.bounding_box,
             )
         )
 
@@ -622,11 +621,11 @@ This project has adopted the [Microsoft Open Source Code of Conduct][code_of_con
 
 <!-- LINKS -->
 
-[python-fr-src]: https://github.com/Azure/azure-sdk-for-python/tree/azure-ai-formrecognizer_3.2.0b2/sdk/formrecognizer/azure-ai-formrecognizer/azure/ai/formrecognizer
+[python-fr-src]: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/formrecognizer/azure-ai-formrecognizer/azure/ai/formrecognizer
 [python-fr-pypi]: https://pypi.org/project/azure-ai-formrecognizer/
 [python-fr-product-docs]: https://docs.microsoft.com/azure/cognitive-services/form-recognizer/overview
 [python-fr-ref-docs]: https://aka.ms/azsdk/python/formrecognizer/docs
-[python-fr-samples]: https://github.com/Azure/azure-sdk-for-python/tree/azure-ai-formrecognizer_3.2.0b2/sdk/formrecognizer/azure-ai-formrecognizer/samples
+[python-fr-samples]: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/formrecognizer/azure-ai-formrecognizer/samples
 
 [azure_subscription]: https://azure.microsoft.com/free/
 [azure_portal]: https://ms.portal.azure.com/
@@ -652,17 +651,17 @@ This project has adopted the [Microsoft Open Source Code of Conduct][code_of_con
 [cognitive_authentication_api_key]: https://docs.microsoft.com/azure/cognitive-services/cognitive-services-apis-create-account?tabs=multiservice%2Cwindows#get-the-keys-for-your-resource
 [register_aad_app]: https://docs.microsoft.com/azure/cognitive-services/authentication#assign-a-role-to-a-service-principal
 [custom_subdomain]: https://docs.microsoft.com/azure/cognitive-services/authentication#create-a-resource-with-a-custom-subdomain
-[azure_identity]: https://github.com/Azure/azure-sdk-for-python/tree/azure-ai-formrecognizer_3.2.0b2/sdk/identity/azure-identity
-[default_azure_credential]: https://github.com/Azure/azure-sdk-for-python/tree/azure-ai-formrecognizer_3.2.0b2/sdk/identity/azure-identity#defaultazurecredential
+[azure_identity]: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/identity/azure-identity
+[default_azure_credential]: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/identity/azure-identity#defaultazurecredential
 [service_recognize_receipt]: https://aka.ms/azsdk/formrecognizer/receiptfieldschema
 [service_recognize_business_cards]: https://aka.ms/azsdk/formrecognizer/businesscardfieldschema
 [service_recognize_invoice]: https://aka.ms/azsdk/formrecognizer/invoicefieldschema
 [service_recognize_identity_documents]: https://aka.ms/azsdk/formrecognizer/iddocumentfieldschema
 [service_prebuilt_document]: https://docs.microsoft.com/azure/applied-ai-services/form-recognizer/concept-general-document#general-document-features
 [sdk_logging_docs]: https://docs.microsoft.com/azure/developer/python/azure-sdk-logging
-[sample_readme]: https://github.com/Azure/azure-sdk-for-python/tree/azure-ai-formrecognizer_3.2.0b2/sdk/formrecognizer/azure-ai-formrecognizer/samples
-[changelog]: https://github.com/Azure/azure-sdk-for-python/tree/azure-ai-formrecognizer_3.2.0b2/sdk/formrecognizer/azure-ai-formrecognizer/CHANGELOG.md
-[migration-guide]: https://github.com/Azure/azure-sdk-for-python/tree/azure-ai-formrecognizer_3.2.0b2/sdk/formrecognizer/azure-ai-formrecognizer/MIGRATION_GUIDE.md
+[sample_readme]: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/formrecognizer/azure-ai-formrecognizer/samples
+[changelog]: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/formrecognizer/azure-ai-formrecognizer/CHANGELOG.md
+[migration-guide]: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/formrecognizer/azure-ai-formrecognizer/MIGRATION_GUIDE.md
 
 [cla]: https://cla.microsoft.com
 [code_of_conduct]: https://opensource.microsoft.com/codeofconduct/
