@@ -196,6 +196,15 @@
       children:
       - azure-mgmt-policyinsights*
       - azure-mgmt-resource.azure.mgmt.resource.policy*
+  - name: Redis
+    uid: azure.python.sdk.landingPage.services.Redis.pre
+    href: ~/docs-ref-services/preview/redis.md
+    items:
+    - name: Management
+      uid: azure.python.sdk.landingPage.services.Redis.Management.pre
+      landingPageType: Service
+      children:
+      - azure-mgmt-redis*
   - name: Resource Graph
     uid: azure.python.sdk.landingPage.services.ResourceGraph.pre
     landingPageType: Service
