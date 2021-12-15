@@ -123,10 +123,10 @@ attributes:
   name: session
 - uid: azure.datalake.store.lib.DatalakeRESTInterface.ends
   name: ends
-  signature: 'ends = {''APPEND'': (''post'', set(), {''syncFlag'', ''append'', ''offset'',
-    ''leaseid'', ''filesessionid''}), ''CHECKACCESS'': (''get'', set(), {''fsaction''}),
+  signature: 'ends = {''APPEND'': (''post'', set(), {''leaseid'', ''syncFlag'', ''offset'',
+    ''append'', ''filesessionid''}), ''CHECKACCESS'': (''get'', set(), {''fsaction''}),
     ''CONCAT'': (''post'', {''sources''}, {''sources''}), ''CREATE'': (''put'', set(),
-    {''syncFlag'', ''leaseid'', ''write'', ''filesessionid'', ''overwrite''}), ''DELETE'':
+    {''leaseid'', ''write'', ''syncFlag'', ''overwrite'', ''filesessionid''}), ''DELETE'':
     (''delete'', set(), {''recursive''}), ''GETCONTENTSUMMARY'': (''get'', set(),
     set()), ''GETFILESTATUS'': (''get'', set(), set()), ''LISTSTATUS'': (''get'',
     set(), {''listAfter'', ''listSize''}), ''MKDIRS'': (''put'', set(), set()), ''MODIFYACLENTRIES'':
@@ -136,5 +136,5 @@ attributes:
     ''REMOVEACLENTRIES'': (''put'', {''aclSpec''}, {''aclSpec''}), ''REMOVEDEFAULTACL'':
     (''put'', set(), set()), ''RENAME'': (''put'', {''destination''}, {''destination''}),
     ''SETACL'': (''put'', {''aclSpec''}, {''aclSpec''}), ''SETEXPIRY'': (''put'',
-    {''expiryOption''}, {''expireTime'', ''expiryOption''}), ''SETOWNER'': (''put'',
-    set(), {''group'', ''owner''}), ''SETPERMISSION'': (''put'', set(), {''permission''})}'
+    {''expiryOption''}, {''expiryOption'', ''expireTime''}), ''SETOWNER'': (''put'',
+    set(), {''owner'', ''group''}), ''SETPERMISSION'': (''put'', set(), {''permission''})}'
