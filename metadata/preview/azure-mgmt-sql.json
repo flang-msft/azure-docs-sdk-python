@@ -1,0 +1,14 @@
+{
+  "Name": "azure-mgmt-sql",
+  "Version": "3.0.1a20211215001",
+  "DevVersion": "3.0.1a20211215001",
+  "DirectoryPath": "sdk/sql/azure-mgmt-sql",
+  "ServiceDirectory": "sql",
+  "ReadMePath": "sdk/sql/azure-mgmt-sql/README.md",
+  "ChangeLogPath": "sdk/sql/azure-mgmt-sql/CHANGELOG.md",
+  "Group": null,
+  "SdkType": "mgmt",
+  "IsNewSdk": true,
+  "ArtifactName": "azure-mgmt-sql",
+  "ReleaseStatus": "2021-07-15"
+}
