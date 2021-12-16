@@ -1,0 +1,33 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.applicationinsights.v2018_05_01_preview.models.WebTestPropertiesValidationRulesContentValidation
+name: WebTestPropertiesValidationRulesContentValidation
+fullName: azure.mgmt.applicationinsights.v2018_05_01_preview.models.WebTestPropertiesValidationRulesContentValidation
+module: azure.mgmt.applicationinsights.v2018_05_01_preview.models
+inheritances:
+- msrest.serialization.Model
+summary: The collection of content validation properties.
+constructor:
+  syntax: 'WebTestPropertiesValidationRulesContentValidation(*, content_match: Optional[str]
+    = None, ignore_case: Optional[bool] = None, pass_if_text_found: Optional[bool]
+    = None, **kwargs)'
+  parameters:
+  - name: content_match
+    description: 'Content to look for in the return of the WebTest.  Must not be null
+      or
+
+      empty.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: ignore_case
+    description: When set, this value makes the ContentMatch validation case insensitive.
+    isRequired: true
+    types:
+    - <xref:bool>
+  - name: pass_if_text_found
+    description: 'When true, validation will pass if there is a match for the
+
+      ContentMatch string.  If false, validation will fail if there is a match.'
+    isRequired: true
+    types:
+    - <xref:bool>
