@@ -1,16 +1,15 @@
 ---
 title: 
 keywords: Azure, python, SDK, API, azure-mgmt-quota, quota
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 11/04/2021
+author: mayurid
+ms.author: mayurid
+ms.date: 12/16/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: quota
 ---
-
 # Microsoft Azure SDK for Python
 
 This is the Microsoft Azure Quota Management Client Library.
