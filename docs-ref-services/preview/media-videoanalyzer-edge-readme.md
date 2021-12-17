@@ -1,17 +1,16 @@
 ---
 title: Azure Video Analyzer Edge client library for Python
 keywords: Azure, python, SDK, API, azure-media-videoanalyzer-edge, videoanalyzer
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 10/27/2021
+author: hivyas
+ms.author: hivyas
+ms.date: 12/17/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: videoanalyzer
 ---
-
-# Azure Video Analyzer Edge client library for Python - Version 1.0.0b3 
+# Azure Video Analyzer Edge client library for Python - Version 1.0.0a20211217001 
 
 
 Azure Video Analyzer is an [Azure Applied AI Service][applied-ai-service] that provides a platform for you to build intelligent video applications that can span both edge and cloud infrastructures. The platform offers the capability to capture, record, and analyze live video along with publishing the results, video and video analytics, to Azure services at the edge or in the cloud. It is designed to be an extensible platform, enabling you to connect different video inferencing edge modules such as Cognitive services modules, or custom inferencing modules that have been trained with your own data using either open-source machine learning or [Azure Machine Learning][machine-learning].
@@ -157,8 +156,8 @@ additional questions or comments.
 [coc_contact]: mailto:opencode@microsoft.com
 [doc_pipelines]: https://go.microsoft.com/fwlink/?linkid=2162396
 [package]: https://aka.ms/ava/sdk/client/python
-[source]: https://github.com/Azure/azure-sdk-for-python/tree/azure-media-videoanalyzer-edge_1.0.0b3/sdk/videoanalyzer
-[samples]: https://github.com/Azure-Samples/live-video-analytics-iot-edge-python
+[source]: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/videoanalyzer
+[samples]: https://github.com/Azure-Samples/video-analyzer-iot-edge-python
 [doc_product]: https://go.microsoft.com/fwlink/?linkid=2162396
 [doc_direct_methods]: https://go.microsoft.com/fwlink/?linkid=2162396
 [iot-device-sdk]: https://pypi.org/project/azure-iot-device/
