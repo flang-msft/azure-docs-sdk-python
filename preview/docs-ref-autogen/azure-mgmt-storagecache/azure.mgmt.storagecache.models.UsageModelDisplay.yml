@@ -1,0 +1,16 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.storagecache.models.UsageModelDisplay
+name: UsageModelDisplay
+fullName: azure.mgmt.storagecache.models.UsageModelDisplay
+module: azure.mgmt.storagecache.models
+inheritances:
+- msrest.serialization.Model
+summary: Localized information describing this usage model.
+constructor:
+  syntax: 'UsageModelDisplay(*, description: Optional[str] = None, **kwargs)'
+  parameters:
+  - name: description
+    description: String to display for this usage model.
+    isRequired: true
+    types:
+    - <xref:str>
