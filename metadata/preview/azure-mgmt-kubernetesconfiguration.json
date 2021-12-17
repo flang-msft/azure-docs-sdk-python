@@ -1,0 +1,14 @@
+{
+  "Name": "azure-mgmt-kubernetesconfiguration",
+  "Version": "1.0.0a20211216001",
+  "DevVersion": "1.0.0a20211216001",
+  "DirectoryPath": "sdk/kubernetesconfiguration/azure-mgmt-kubernetesconfiguration",
+  "ServiceDirectory": "kubernetesconfiguration",
+  "ReadMePath": "sdk/kubernetesconfiguration/azure-mgmt-kubernetesconfiguration/README.md",
+  "ChangeLogPath": "sdk/kubernetesconfiguration/azure-mgmt-kubernetesconfiguration/CHANGELOG.md",
+  "Group": null,
+  "SdkType": "mgmt",
+  "IsNewSdk": true,
+  "ArtifactName": "azure-mgmt-kubernetesconfiguration",
+  "ReleaseStatus": "2021-12-06"
+}
