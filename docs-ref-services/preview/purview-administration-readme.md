@@ -1,17 +1,16 @@
 ---
 title: Azure Purview Administration client library for Python
 keywords: Azure, python, SDK, API, azure-purview-administration, purview
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 10/15/2021
+author: mayurid
+ms.author: mayurid
+ms.date: 12/21/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: purview
 ---
-
-# Azure Purview Administration client library for Python - Version 1.0.0b1 
+# Azure Purview Administration client library for Python - Version 1.0.0a20211221001 
 
 
 Azure Purview is a fully managed cloud service.
@@ -172,7 +171,7 @@ This project has adopted the [Microsoft Open Source Code of Conduct][code_of_con
 
 <!-- LINKS -->
 
-[source_code]: https://github.com/Azure/azure-sdk-for-python/tree/azure-purview-administration_1.0.0b1/sdk/purview/
+[source_code]: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/purview/
 [account_pypi]: https://pypi.org/project/azure-purview-catalog/#history
 [account_ref_docs]: https://azure.github.io/azure-sdk-for-python/
 [account_product_documentation]: https://azure.microsoft.com/services/purview/
@@ -180,9 +179,9 @@ This project has adopted the [Microsoft Open Source Code of Conduct][code_of_con
 [purview_resource]: https://docs.microsoft.com/azure/purview/create-catalog-portal
 [pip]: https://pypi.org/project/pip/
 [authenticate_with_token]: https://docs.microsoft.com/azure/cognitive-services/authentication?tabs=powershell#authenticate-with-an-authentication-token
-[azure_identity_credentials]: https://github.com/Azure/azure-sdk-for-python/tree/azure-purview-administration_1.0.0b1/sdk/identity/azure-identity#credentials
+[azure_identity_credentials]: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/identity/azure-identity#credentials
 [azure_identity_pip]: https://pypi.org/project/azure-identity/
-[default_azure_credential]: https://github.com/Azure/azure-sdk-for-python/tree/azure-purview-administration_1.0.0b1/sdk/identity/azure-identity#defaultazurecredential
+[default_azure_credential]: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/identity/azure-identity#defaultazurecredential
 [enable_aad]: https://docs.microsoft.com/azure/purview/create-catalog-portal#add-a-security-principal-to-a-data-plane-role
 [python_logging]: https://docs.python.org/3.5/library/logging.html
 [cla]: https://cla.microsoft.com
