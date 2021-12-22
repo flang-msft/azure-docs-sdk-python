@@ -1,20 +1,19 @@
 ---
 title: 
-keywords: Azure, python, SDK, API, azure-mgmt-agfood, 
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 05/18/2021
+keywords: Azure, python, SDK, API, azure-mgmt-agfood, agfood
+author: mayurid
+ms.author: mayurid
+ms.date: 12/22/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.service: 
+ms.service: agfood
 ---
-
 # Microsoft Azure SDK for Python
 
 This is the Microsoft Azure Agfood Management Client Library.
-This package has been tested with Python 2.7, 3.5, 3.6, 3.7 and 3.8.
+This package has been tested with Python 2.7, 3.6+.
 For a more complete view of Azure libraries, see the [azure sdk python release](https://aka.ms/azsdk/python/all).
 
 
