@@ -17,6 +17,20 @@
       href: ~/docs-ref-services/preview/mgmt-agrifood-readme.md
       children:
       - azure-mgmt-agrifood
+  - name: Application Insights
+    uid: azure.python.sdk.landingPage.services.ApplicationInsights.pre
+    landingPageType: Service
+    items:
+    - name: Client
+      uid: azure.python.sdk.landingPage.services.ApplicationInsights.Client.pre
+      landingPageType: Service
+      children:
+      - azure-applicationinsights
+    - name: Management
+      uid: azure.python.sdk.landingPage.services.ApplicationInsights.Management.pre
+      landingPageType: Service
+      children:
+      - azure-mgmt-applicationinsights
   - name: Anomaly Detector
     uid: azure.python.sdk.landingPage.services.AnomalyDetector.pre
     href: ~/docs-ref-services/preview/ai-anomalydetector-readme.md
@@ -196,6 +210,15 @@
       children:
       - azure-mgmt-policyinsights*
       - azure-mgmt-resource.azure.mgmt.resource.policy*
+  - name: Redis
+    uid: azure.python.sdk.landingPage.services.Redis.pre
+    href: ~/docs-ref-services/preview/redis.md
+    items:
+    - name: Management
+      uid: azure.python.sdk.landingPage.services.Redis.Management.pre
+      landingPageType: Service
+      children:
+      - azure-mgmt-redis*
   - name: Resource Graph
     uid: azure.python.sdk.landingPage.services.ResourceGraph.pre
     landingPageType: Service
@@ -285,6 +308,16 @@
       href: ~/docs-ref-services/preview/storage-file-share-readme.md
       children:
       - azure-storage-file*
+    - name: Storage Queue
+      uid: azure.python.sdk.landingPage.services.storagequeue.detail.pre
+      href: ~/docs-ref-services/preview/storage-queue-readme.md
+      children:
+      - azure-storage-queue*
+    - name: Management
+      uid: azure.python.sdk.landingPage.services.storage.Management.pre
+      landingPageType: Service
+      children:
+      - azure-mgmt-storage*
   - name: Synapse
     uid: azure.python.sdk.landingPage.services.Synapse.pre
     landingPageType: Service
