@@ -1,6 +1,6 @@
 ---
 title: 
-keywords: Azure, python, SDK, API, azure-mgmt-datalake-store, datalake
+keywords: Azure, python, SDK, API, azure-mgmt-datalake-analytics, datalake
 author: ro-joowan
 ms.author: ro-joowan
 ms.date: 12/25/2021
@@ -12,7 +12,7 @@ ms.service: datalake
 ---
 # Microsoft Azure SDK for Python
 
-This is the Microsoft Azure Data Lake Store Management Client Library.
+This is the Microsoft Azure Data Lake Analytics Management Client Library.
 This package has been tested with Python 2.7, 3.6+.
 For a more complete view of Azure libraries, see the [azure sdk python release](https://aka.ms/azsdk/python/all).
 
@@ -24,8 +24,8 @@ To learn how to use this package, see the [quickstart guide](https://aka.ms/azsd
 
 
  
-For docs and references, see [Python SDK References](https://docs.microsoft.com/python/api/overview/azure/data-lake-store)
-Code samples for this package can be found at [Data Lake Store Management](https://docs.microsoft.com/samples/browse/?languages=python&term=Getting%20started%20-%20Managing&terms=Getting%20started%20-%20Managing) on docs.microsoft.com.
+For docs and references, see [Python SDK References](https://docs.microsoft.com/python/api/overview/azure/data-lake-analytics)
+Code samples for this package can be found at [Data Lake Analytics Management](https://docs.microsoft.com/samples/browse/?languages=python&term=Getting%20started%20-%20Managing&terms=Getting%20started%20-%20Managing) on docs.microsoft.com.
 Additional code samples for different Azure services are available at [Samples Repo](https://aka.ms/azsdk/python/mgmt/samples)
 
 
@@ -36,5 +36,5 @@ If you encounter any bugs or have suggestions, please file an issue in the
 section of the project. 
 
 
-![Impressions](https://azure-sdk-impressions.azurewebsites.net/api/impressions/azure-sdk-for-python%2Fazure-mgmt-datalake-store%2FREADME.png)
+![Impressions](https://azure-sdk-impressions.azurewebsites.net/api/impressions/azure-sdk-for-python%2Fazure-mgmt-datalake-analytics%2FREADME.png)
 
