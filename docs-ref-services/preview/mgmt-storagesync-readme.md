@@ -1,16 +1,15 @@
 ---
 title: 
 keywords: Azure, python, SDK, API, azure-mgmt-storagesync, storage
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 12/10/2020
+author: amishra-dev
+ms.author: amishra-dev
+ms.date: 12/28/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: storage
 ---
-
 ## Microsoft Azure SDK for Python
 
 This is the Microsoft Azure Storage Sync Client Library.
@@ -46,5 +45,4 @@ the [Issues](https://github.com/Azure/azure-sdk-for-python/issues)
 section of the project.
 
 ![image](https://azure-sdk-impressions.azurewebsites.net/api/impressions/azure-sdk-for-python%2Fazure-mgmt-storagesync%2FREADME.png)
-
 
