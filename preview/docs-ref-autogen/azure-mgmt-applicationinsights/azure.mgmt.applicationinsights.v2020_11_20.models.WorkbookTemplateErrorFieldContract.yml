@@ -1,0 +1,27 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.applicationinsights.v2020_11_20.models.WorkbookTemplateErrorFieldContract
+name: WorkbookTemplateErrorFieldContract
+fullName: azure.mgmt.applicationinsights.v2020_11_20.models.WorkbookTemplateErrorFieldContract
+module: azure.mgmt.applicationinsights.v2020_11_20.models
+inheritances:
+- msrest.serialization.Model
+summary: Error Field contract.
+constructor:
+  syntax: 'WorkbookTemplateErrorFieldContract(*, code: Optional[str] = None, message:
+    Optional[str] = None, target: Optional[str] = None, **kwargs)'
+  parameters:
+  - name: code
+    description: Property level error code.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: message
+    description: Human-readable representation of property-level error.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: target
+    description: Property name.
+    isRequired: true
+    types:
+    - <xref:str>
