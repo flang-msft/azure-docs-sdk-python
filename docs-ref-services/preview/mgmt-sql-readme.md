@@ -3,7 +3,7 @@ title:
 keywords: Azure, python, SDK, API, azure-mgmt-sql, sql
 author: mayurid
 ms.author: mayurid
-ms.date: 12/21/2021
+ms.date: 12/30/2021
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
