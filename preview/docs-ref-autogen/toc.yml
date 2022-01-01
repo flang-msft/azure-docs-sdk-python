@@ -16762,3 +16762,212 @@
     name: azure.mgmt.sql
   name: azure-mgmt-sql
 
+- items:
+  - name: Overview
+    uid: project-azure-mgmt-timeseriesinsights
+  - items:
+    - name: Overview
+      uid: azure.mgmt.timeseriesinsights
+    - items:
+      - name: Overview
+        uid: azure.mgmt.timeseriesinsights.aio
+      - items:
+        - name: Overview
+          uid: azure.mgmt.timeseriesinsights.aio.operations
+        - name: azure.mgmt.timeseriesinsights.aio.operations.AccessPoliciesOperations
+          uid: azure.mgmt.timeseriesinsights.aio.operations.AccessPoliciesOperations
+        - name: azure.mgmt.timeseriesinsights.aio.operations.EnvironmentsOperations
+          uid: azure.mgmt.timeseriesinsights.aio.operations.EnvironmentsOperations
+        - name: azure.mgmt.timeseriesinsights.aio.operations.EventSourcesOperations
+          uid: azure.mgmt.timeseriesinsights.aio.operations.EventSourcesOperations
+        - name: azure.mgmt.timeseriesinsights.aio.operations.Operations
+          uid: azure.mgmt.timeseriesinsights.aio.operations.Operations
+        - name: azure.mgmt.timeseriesinsights.aio.operations.ReferenceDataSetsOperations
+          uid: azure.mgmt.timeseriesinsights.aio.operations.ReferenceDataSetsOperations
+        name: azure.mgmt.timeseriesinsights.aio.operations
+      - name: azure.mgmt.timeseriesinsights.aio.TimeSeriesInsightsClient
+        uid: azure.mgmt.timeseriesinsights.aio.TimeSeriesInsightsClient
+      name: azure.mgmt.timeseriesinsights.aio
+    - items:
+      - name: Overview
+        uid: azure.mgmt.timeseriesinsights.models
+      - name: azure.mgmt.timeseriesinsights.models.AccessPolicyCreateOrUpdateParameters
+        uid: azure.mgmt.timeseriesinsights.models.AccessPolicyCreateOrUpdateParameters
+      - name: azure.mgmt.timeseriesinsights.models.AccessPolicyListResponse
+        uid: azure.mgmt.timeseriesinsights.models.AccessPolicyListResponse
+      - name: azure.mgmt.timeseriesinsights.models.AccessPolicyResource
+        uid: azure.mgmt.timeseriesinsights.models.AccessPolicyResource
+      - name: azure.mgmt.timeseriesinsights.models.AccessPolicyRole
+        uid: azure.mgmt.timeseriesinsights.models.AccessPolicyRole
+      - name: azure.mgmt.timeseriesinsights.models.AccessPolicyUpdateParameters
+        uid: azure.mgmt.timeseriesinsights.models.AccessPolicyUpdateParameters
+      - name: azure.mgmt.timeseriesinsights.models.AzureEventSourceProperties
+        uid: azure.mgmt.timeseriesinsights.models.AzureEventSourceProperties
+      - name: azure.mgmt.timeseriesinsights.models.CloudErrorBody
+        uid: azure.mgmt.timeseriesinsights.models.CloudErrorBody
+      - name: azure.mgmt.timeseriesinsights.models.CreateOrUpdateTrackedResourceProperties
+        uid: azure.mgmt.timeseriesinsights.models.CreateOrUpdateTrackedResourceProperties
+      - name: azure.mgmt.timeseriesinsights.models.DataStringComparisonBehavior
+        uid: azure.mgmt.timeseriesinsights.models.DataStringComparisonBehavior
+      - name: azure.mgmt.timeseriesinsights.models.EnvironmentCreateOrUpdateParameters
+        uid: azure.mgmt.timeseriesinsights.models.EnvironmentCreateOrUpdateParameters
+      - name: azure.mgmt.timeseriesinsights.models.EnvironmentKind
+        uid: azure.mgmt.timeseriesinsights.models.EnvironmentKind
+      - name: azure.mgmt.timeseriesinsights.models.EnvironmentListResponse
+        uid: azure.mgmt.timeseriesinsights.models.EnvironmentListResponse
+      - name: azure.mgmt.timeseriesinsights.models.EnvironmentResource
+        uid: azure.mgmt.timeseriesinsights.models.EnvironmentResource
+      - name: azure.mgmt.timeseriesinsights.models.EnvironmentResourceKind
+        uid: azure.mgmt.timeseriesinsights.models.EnvironmentResourceKind
+      - name: azure.mgmt.timeseriesinsights.models.EnvironmentResourceProperties
+        uid: azure.mgmt.timeseriesinsights.models.EnvironmentResourceProperties
+      - name: azure.mgmt.timeseriesinsights.models.EnvironmentStateDetails
+        uid: azure.mgmt.timeseriesinsights.models.EnvironmentStateDetails
+      - name: azure.mgmt.timeseriesinsights.models.EnvironmentStatus
+        uid: azure.mgmt.timeseriesinsights.models.EnvironmentStatus
+      - name: azure.mgmt.timeseriesinsights.models.EnvironmentUpdateParameters
+        uid: azure.mgmt.timeseriesinsights.models.EnvironmentUpdateParameters
+      - name: azure.mgmt.timeseriesinsights.models.EventHubEventSourceCommonProperties
+        uid: azure.mgmt.timeseriesinsights.models.EventHubEventSourceCommonProperties
+      - name: azure.mgmt.timeseriesinsights.models.EventHubEventSourceCreateOrUpdateParameters
+        uid: azure.mgmt.timeseriesinsights.models.EventHubEventSourceCreateOrUpdateParameters
+      - name: azure.mgmt.timeseriesinsights.models.EventHubEventSourceCreationProperties
+        uid: azure.mgmt.timeseriesinsights.models.EventHubEventSourceCreationProperties
+      - name: azure.mgmt.timeseriesinsights.models.EventHubEventSourceMutableProperties
+        uid: azure.mgmt.timeseriesinsights.models.EventHubEventSourceMutableProperties
+      - name: azure.mgmt.timeseriesinsights.models.EventHubEventSourceResource
+        uid: azure.mgmt.timeseriesinsights.models.EventHubEventSourceResource
+      - name: azure.mgmt.timeseriesinsights.models.EventHubEventSourceResourceProperties
+        uid: azure.mgmt.timeseriesinsights.models.EventHubEventSourceResourceProperties
+      - name: azure.mgmt.timeseriesinsights.models.EventHubEventSourceUpdateParameters
+        uid: azure.mgmt.timeseriesinsights.models.EventHubEventSourceUpdateParameters
+      - name: azure.mgmt.timeseriesinsights.models.EventSourceCommonProperties
+        uid: azure.mgmt.timeseriesinsights.models.EventSourceCommonProperties
+      - name: azure.mgmt.timeseriesinsights.models.EventSourceCreateOrUpdateParameters
+        uid: azure.mgmt.timeseriesinsights.models.EventSourceCreateOrUpdateParameters
+      - name: azure.mgmt.timeseriesinsights.models.EventSourceKind
+        uid: azure.mgmt.timeseriesinsights.models.EventSourceKind
+      - name: azure.mgmt.timeseriesinsights.models.EventSourceListResponse
+        uid: azure.mgmt.timeseriesinsights.models.EventSourceListResponse
+      - name: azure.mgmt.timeseriesinsights.models.EventSourceMutableProperties
+        uid: azure.mgmt.timeseriesinsights.models.EventSourceMutableProperties
+      - name: azure.mgmt.timeseriesinsights.models.EventSourceResource
+        uid: azure.mgmt.timeseriesinsights.models.EventSourceResource
+      - name: azure.mgmt.timeseriesinsights.models.EventSourceResourceKind
+        uid: azure.mgmt.timeseriesinsights.models.EventSourceResourceKind
+      - name: azure.mgmt.timeseriesinsights.models.EventSourceUpdateParameters
+        uid: azure.mgmt.timeseriesinsights.models.EventSourceUpdateParameters
+      - name: azure.mgmt.timeseriesinsights.models.Gen1EnvironmentCreateOrUpdateParameters
+        uid: azure.mgmt.timeseriesinsights.models.Gen1EnvironmentCreateOrUpdateParameters
+      - name: azure.mgmt.timeseriesinsights.models.Gen1EnvironmentCreationProperties
+        uid: azure.mgmt.timeseriesinsights.models.Gen1EnvironmentCreationProperties
+      - name: azure.mgmt.timeseriesinsights.models.Gen1EnvironmentResource
+        uid: azure.mgmt.timeseriesinsights.models.Gen1EnvironmentResource
+      - name: azure.mgmt.timeseriesinsights.models.Gen1EnvironmentResourceProperties
+        uid: azure.mgmt.timeseriesinsights.models.Gen1EnvironmentResourceProperties
+      - name: azure.mgmt.timeseriesinsights.models.Gen1EnvironmentUpdateParameters
+        uid: azure.mgmt.timeseriesinsights.models.Gen1EnvironmentUpdateParameters
+      - name: azure.mgmt.timeseriesinsights.models.Gen2EnvironmentCreateOrUpdateParameters
+        uid: azure.mgmt.timeseriesinsights.models.Gen2EnvironmentCreateOrUpdateParameters
+      - name: azure.mgmt.timeseriesinsights.models.Gen2EnvironmentResource
+        uid: azure.mgmt.timeseriesinsights.models.Gen2EnvironmentResource
+      - name: azure.mgmt.timeseriesinsights.models.Gen2EnvironmentResourceProperties
+        uid: azure.mgmt.timeseriesinsights.models.Gen2EnvironmentResourceProperties
+      - name: azure.mgmt.timeseriesinsights.models.Gen2EnvironmentUpdateParameters
+        uid: azure.mgmt.timeseriesinsights.models.Gen2EnvironmentUpdateParameters
+      - name: azure.mgmt.timeseriesinsights.models.Gen2StorageConfigurationInput
+        uid: azure.mgmt.timeseriesinsights.models.Gen2StorageConfigurationInput
+      - name: azure.mgmt.timeseriesinsights.models.Gen2StorageConfigurationMutableProperties
+        uid: azure.mgmt.timeseriesinsights.models.Gen2StorageConfigurationMutableProperties
+      - name: azure.mgmt.timeseriesinsights.models.Gen2StorageConfigurationOutput
+        uid: azure.mgmt.timeseriesinsights.models.Gen2StorageConfigurationOutput
+      - name: azure.mgmt.timeseriesinsights.models.IngressEnvironmentStatus
+        uid: azure.mgmt.timeseriesinsights.models.IngressEnvironmentStatus
+      - name: azure.mgmt.timeseriesinsights.models.IngressState
+        uid: azure.mgmt.timeseriesinsights.models.IngressState
+      - name: azure.mgmt.timeseriesinsights.models.IoTHubEventSourceCommonProperties
+        uid: azure.mgmt.timeseriesinsights.models.IoTHubEventSourceCommonProperties
+      - name: azure.mgmt.timeseriesinsights.models.IoTHubEventSourceCreateOrUpdateParameters
+        uid: azure.mgmt.timeseriesinsights.models.IoTHubEventSourceCreateOrUpdateParameters
+      - name: azure.mgmt.timeseriesinsights.models.IoTHubEventSourceCreationProperties
+        uid: azure.mgmt.timeseriesinsights.models.IoTHubEventSourceCreationProperties
+      - name: azure.mgmt.timeseriesinsights.models.IoTHubEventSourceMutableProperties
+        uid: azure.mgmt.timeseriesinsights.models.IoTHubEventSourceMutableProperties
+      - name: azure.mgmt.timeseriesinsights.models.IoTHubEventSourceResource
+        uid: azure.mgmt.timeseriesinsights.models.IoTHubEventSourceResource
+      - name: azure.mgmt.timeseriesinsights.models.IoTHubEventSourceResourceProperties
+        uid: azure.mgmt.timeseriesinsights.models.IoTHubEventSourceResourceProperties
+      - name: azure.mgmt.timeseriesinsights.models.IoTHubEventSourceUpdateParameters
+        uid: azure.mgmt.timeseriesinsights.models.IoTHubEventSourceUpdateParameters
+      - name: azure.mgmt.timeseriesinsights.models.LocalTimestamp
+        uid: azure.mgmt.timeseriesinsights.models.LocalTimestamp
+      - name: azure.mgmt.timeseriesinsights.models.LocalTimestampFormat
+        uid: azure.mgmt.timeseriesinsights.models.LocalTimestampFormat
+      - name: azure.mgmt.timeseriesinsights.models.LocalTimestampTimeZoneOffset
+        uid: azure.mgmt.timeseriesinsights.models.LocalTimestampTimeZoneOffset
+      - name: azure.mgmt.timeseriesinsights.models.Operation
+        uid: azure.mgmt.timeseriesinsights.models.Operation
+      - name: azure.mgmt.timeseriesinsights.models.OperationDisplay
+        uid: azure.mgmt.timeseriesinsights.models.OperationDisplay
+      - name: azure.mgmt.timeseriesinsights.models.OperationListResult
+        uid: azure.mgmt.timeseriesinsights.models.OperationListResult
+      - name: azure.mgmt.timeseriesinsights.models.PropertyType
+        uid: azure.mgmt.timeseriesinsights.models.PropertyType
+      - name: azure.mgmt.timeseriesinsights.models.ProvisioningState
+        uid: azure.mgmt.timeseriesinsights.models.ProvisioningState
+      - name: azure.mgmt.timeseriesinsights.models.ReferenceDataKeyPropertyType
+        uid: azure.mgmt.timeseriesinsights.models.ReferenceDataKeyPropertyType
+      - name: azure.mgmt.timeseriesinsights.models.ReferenceDataSetCreateOrUpdateParameters
+        uid: azure.mgmt.timeseriesinsights.models.ReferenceDataSetCreateOrUpdateParameters
+      - name: azure.mgmt.timeseriesinsights.models.ReferenceDataSetCreationProperties
+        uid: azure.mgmt.timeseriesinsights.models.ReferenceDataSetCreationProperties
+      - name: azure.mgmt.timeseriesinsights.models.ReferenceDataSetKeyProperty
+        uid: azure.mgmt.timeseriesinsights.models.ReferenceDataSetKeyProperty
+      - name: azure.mgmt.timeseriesinsights.models.ReferenceDataSetListResponse
+        uid: azure.mgmt.timeseriesinsights.models.ReferenceDataSetListResponse
+      - name: azure.mgmt.timeseriesinsights.models.ReferenceDataSetResource
+        uid: azure.mgmt.timeseriesinsights.models.ReferenceDataSetResource
+      - name: azure.mgmt.timeseriesinsights.models.ReferenceDataSetResourceProperties
+        uid: azure.mgmt.timeseriesinsights.models.ReferenceDataSetResourceProperties
+      - name: azure.mgmt.timeseriesinsights.models.ReferenceDataSetUpdateParameters
+        uid: azure.mgmt.timeseriesinsights.models.ReferenceDataSetUpdateParameters
+      - name: azure.mgmt.timeseriesinsights.models.Resource
+        uid: azure.mgmt.timeseriesinsights.models.Resource
+      - name: azure.mgmt.timeseriesinsights.models.ResourceProperties
+        uid: azure.mgmt.timeseriesinsights.models.ResourceProperties
+      - name: azure.mgmt.timeseriesinsights.models.Sku
+        uid: azure.mgmt.timeseriesinsights.models.Sku
+      - name: azure.mgmt.timeseriesinsights.models.SkuName
+        uid: azure.mgmt.timeseriesinsights.models.SkuName
+      - name: azure.mgmt.timeseriesinsights.models.StorageLimitExceededBehavior
+        uid: azure.mgmt.timeseriesinsights.models.StorageLimitExceededBehavior
+      - name: azure.mgmt.timeseriesinsights.models.TimeSeriesIdProperty
+        uid: azure.mgmt.timeseriesinsights.models.TimeSeriesIdProperty
+      - name: azure.mgmt.timeseriesinsights.models.TrackedResource
+        uid: azure.mgmt.timeseriesinsights.models.TrackedResource
+      - name: azure.mgmt.timeseriesinsights.models.WarmStorageEnvironmentStatus
+        uid: azure.mgmt.timeseriesinsights.models.WarmStorageEnvironmentStatus
+      - name: azure.mgmt.timeseriesinsights.models.WarmStoragePropertiesState
+        uid: azure.mgmt.timeseriesinsights.models.WarmStoragePropertiesState
+      - name: azure.mgmt.timeseriesinsights.models.WarmStoreConfigurationProperties
+        uid: azure.mgmt.timeseriesinsights.models.WarmStoreConfigurationProperties
+      name: azure.mgmt.timeseriesinsights.models
+    - items:
+      - name: Overview
+        uid: azure.mgmt.timeseriesinsights.operations
+      - name: azure.mgmt.timeseriesinsights.operations.AccessPoliciesOperations
+        uid: azure.mgmt.timeseriesinsights.operations.AccessPoliciesOperations
+      - name: azure.mgmt.timeseriesinsights.operations.EnvironmentsOperations
+        uid: azure.mgmt.timeseriesinsights.operations.EnvironmentsOperations
+      - name: azure.mgmt.timeseriesinsights.operations.EventSourcesOperations
+        uid: azure.mgmt.timeseriesinsights.operations.EventSourcesOperations
+      - name: azure.mgmt.timeseriesinsights.operations.Operations
+        uid: azure.mgmt.timeseriesinsights.operations.Operations
+      - name: azure.mgmt.timeseriesinsights.operations.ReferenceDataSetsOperations
+        uid: azure.mgmt.timeseriesinsights.operations.ReferenceDataSetsOperations
+      name: azure.mgmt.timeseriesinsights.operations
+    - name: azure.mgmt.timeseriesinsights.TimeSeriesInsightsClient
+      uid: azure.mgmt.timeseriesinsights.TimeSeriesInsightsClient
+    name: azure.mgmt.timeseriesinsights
+  name: azure-mgmt-timeseriesinsights
+
