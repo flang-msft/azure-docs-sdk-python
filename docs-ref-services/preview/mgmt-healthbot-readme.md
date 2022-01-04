@@ -1,20 +1,19 @@
 ---
 title: 
-keywords: Azure, python, SDK, API, azure-mgmt-healthbot, 
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 01/07/2021
+keywords: Azure, python, SDK, API, azure-mgmt-healthbot, healthbot
+author: mayurid
+ms.author: mayurid
+ms.date: 01/04/2022
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.service: 
+ms.service: healthbot
 ---
-
 # Microsoft Azure SDK for Python
 
 This is the Microsoft Azure Health Bot Management Client Library.
-This package has been tested with Python 2.7, 3.5, 3.6, 3.7 and 3.8.
+This package has been tested with Python 2.7, 3.6+.
 For a more complete view of Azure libraries, see the [azure sdk python release](https://aka.ms/azsdk/python/all).
 
 
@@ -38,5 +37,4 @@ section of the project.
 
 
 ![Impressions](https://azure-sdk-impressions.azurewebsites.net/api/impressions/azure-sdk-for-python%2Fazure-mgmt-healthbot%2FREADME.png)
-
 
