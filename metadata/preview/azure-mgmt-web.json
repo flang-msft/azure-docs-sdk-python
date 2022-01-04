@@ -1,0 +1,14 @@
+{
+  "Name": "azure-mgmt-web",
+  "Version": "5.0.0a20220103001",
+  "DevVersion": "5.0.0a20220103001",
+  "DirectoryPath": "sdk/appservice/azure-mgmt-web",
+  "ServiceDirectory": "appservice",
+  "ReadMePath": "sdk/appservice/azure-mgmt-web/README.md",
+  "ChangeLogPath": "sdk/appservice/azure-mgmt-web/CHANGELOG.md",
+  "Group": null,
+  "SdkType": "mgmt",
+  "IsNewSdk": true,
+  "ArtifactName": "azure-mgmt-web",
+  "ReleaseStatus": "2021-09-08"
+}
