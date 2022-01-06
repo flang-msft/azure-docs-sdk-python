@@ -1,16 +1,15 @@
 ---
 title: 
-keywords: Azure, python, SDK, API, azure-mgmt-communication, 
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 09/22/2020
+keywords: Azure, python, SDK, API, azure-mgmt-communication, communication
+author: acsdevx-msft
+ms.author: acsdevx-msft
+ms.date: 01/06/2022
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.service: 
+ms.service: communication
 ---
-
 # Microsoft Azure SDK for Python
 
 This is the Microsoft Azure Communication Management Client Library.
@@ -18,10 +17,19 @@ This package has been tested with Python 2.7, 3.5, 3.6, 3.7 and 3.8.
 For a more complete view of Azure libraries, see the [azure sdk python release](https://aka.ms/azsdk/python/all).
 
 
+## _Disclaimer_
+
+_Azure SDK Python packages support for Python 2.7 has ended 01 January 2022. For more information and questions, please refer to https://github.com/Azure/azure-sdk-for-python/issues/20691_
+
 # Usage
 
-For code examples, see [Communication Management](https://docs.microsoft.com/python/api/overview/azure/)
-on docs.microsoft.com.
+To learn how to use the management libraries, see the [quickstart guide](https://aka.ms/azsdk/python/mgmt).
+ 
+For docs and references, see [Python SDK References](https://docs.microsoft.com/python/api/overview/azure/).  
+For docs and references for this service, see [Azure Communication Services](https://docs.microsoft.com/azure/communication-services/) on docs.microsoft.com.
+
+Code samples for this management package can be found on GitHub at [Getting started - Managing Azure Communication Services using Azure Python SDK](https://github.com/Azure-Samples/azure-samples-python-management/tree/master/samples/communication).  
+Additional GitHub samples using Azure Communication Services are listed at [Communication Samples](https://github.com/Azure/communication#samples).
 
 
 # Provide Feedback

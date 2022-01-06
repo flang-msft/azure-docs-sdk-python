@@ -1,24 +1,23 @@
 ---
 title: Azure Communication Network Traversal Package client library for Python
 keywords: Azure, python, SDK, API, azure-communication-networktraversal, communication
-author: maggiepint
-ms.author: magpint
-ms.date: 11/18/2021
+author: acsdevx-msft
+ms.author: acsdevx-msft
+ms.date: 01/06/2022
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: communication
 ---
-
-# Azure Communication Network Traversal Package client library for Python - Version 1.0.0b2 
+# Azure Communication Network Traversal Package client library for Python - Version 1.0.0a20220106001 
 
 
 Azure Communication Network Traversal is managing TURN credentials for Azure Communication Services.
 
 It will provide TURN credentials to a user.
 
-[Source code](https://github.com/Azure/azure-sdk-for-python/blob/azure-communication-networktraversal_1.0.0b2/sdk/communication) | [API reference documentation](https://github.com/Azure/azure-sdk-for-python/blob/azure-communication-networktraversal_1.0.0b2/sdk/communication)
+[Source code](https://github.com/Azure/azure-sdk-for-python/blob/master/sdk/communication) | [API reference documentation](https://github.com/Azure/azure-sdk-for-python/blob/master/sdk/communication)
 
 # Getting started
 
@@ -151,5 +150,5 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
 <!-- LINKS -->
-[azure_core]: https://github.com/Azure/azure-sdk-for-python/blob/azure-communication-networktraversal_1.0.0b2/sdk/core/azure-core/README.md
+[azure_core]: https://github.com/Azure/azure-sdk-for-python/blob/master/sdk/core/azure-core/README.md
 
