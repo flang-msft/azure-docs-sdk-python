@@ -1,8 +1,8 @@
 ---
 title: 
-keywords: Azure, python, SDK, API, azure-cognitiveservices-vision-customvision, cognitiveservices
-author: areddish
-ms.author: areddish
+keywords: Azure, python, SDK, API, azure-cognitiveservices-vision-contentmoderator, cognitiveservices
+author: mayurid
+ms.author: mayurid
 ms.date: 01/06/2022
 ms.topic: reference
 ms.prod: azure
@@ -12,7 +12,7 @@ ms.service: cognitiveservices
 ---
 # Microsoft Azure SDK for Python
 
-This is the Microsoft Azure Custom Vision Client Library.
+This is the Microsoft Azure Cognitive Services Content Moderator Client Library.
 This package has been tested with Python 2.7, 3.6+.
 For a more complete view of Azure libraries, see the [azure sdk python release](https://aka.ms/azsdk/python/all).
 
@@ -22,7 +22,7 @@ For a more complete view of Azure libraries, see the [azure sdk python release](
 
 
 
-For code examples, see [Custom Vision](https://docs.microsoft.com/python/api/overview/azure/cognitive-services) on docs.microsoft.com.
+For code examples, see [Cognitive Services Content Moderator](https://docs.microsoft.com/python/api/overview/azure/cognitive-services) on docs.microsoft.com.
 
 
 # Provide Feedback
@@ -32,5 +32,5 @@ If you encounter any bugs or have suggestions, please file an issue in the
 section of the project. 
 
 
-![Impressions](https://azure-sdk-impressions.azurewebsites.net/api/impressions/azure-sdk-for-python%2Fazure-cognitiveservices-vision-customvision%2FREADME.png)
+![Impressions](https://azure-sdk-impressions.azurewebsites.net/api/impressions/azure-sdk-for-python%2Fazure-cognitiveservices-vision-contentmoderator%2FREADME.png)
 
