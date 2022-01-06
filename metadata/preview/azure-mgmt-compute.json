@@ -1,0 +1,14 @@
+{
+  "Name": "azure-mgmt-compute",
+  "Version": "23.1.0a20220105001",
+  "DevVersion": "23.1.0a20220105001",
+  "DirectoryPath": "sdk/compute/azure-mgmt-compute",
+  "ServiceDirectory": "compute",
+  "ReadMePath": "sdk/compute/azure-mgmt-compute/README.md",
+  "ChangeLogPath": "sdk/compute/azure-mgmt-compute/CHANGELOG.md",
+  "Group": null,
+  "SdkType": "mgmt",
+  "IsNewSdk": true,
+  "ArtifactName": "azure-mgmt-compute",
+  "ReleaseStatus": "2021-10-12"
+}
