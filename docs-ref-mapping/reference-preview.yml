@@ -17,6 +17,15 @@
       href: ~/docs-ref-services/preview/mgmt-agrifood-readme.md
       children:
       - azure-mgmt-agrifood
+  - name: Application Insights
+    uid: azure.python.sdk.landingPage.services.ApplicationInsights.pre
+    landingPageType: Service
+    items:
+    - name: Client
+      uid: azure.python.sdk.landingPage.services.ApplicationInsights.Client.pre
+      landingPageType: Service
+      children:
+      - azure-applicationinsights
   - name: Anomaly Detector
     uid: azure.python.sdk.landingPage.services.AnomalyDetector.pre
     href: ~/docs-ref-services/preview/ai-anomalydetector-readme.md
@@ -50,6 +59,11 @@
       landingPageType: Service
       children:
       - azure-mgmt-batch
+    - name: Client
+      uid: azure.python.sdk.landingPage.services.Batch.Client.pre
+      landingPageType: Service
+      children:
+      - azure-batch*
   - name: Cognitive Services
     uid: azure.python.sdk.landingPage.services.Cognitive.Services.pre
     href: ~/docs-ref-services/preview/cognitive-services.md
