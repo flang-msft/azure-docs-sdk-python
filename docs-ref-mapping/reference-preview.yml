@@ -17,6 +17,15 @@
       href: ~/docs-ref-services/preview/mgmt-agrifood-readme.md
       children:
       - azure-mgmt-agrifood
+  - name: Application Insights
+    uid: azure.python.sdk.landingPage.services.ApplicationInsights.pre
+    landingPageType: Service
+    items:
+    - name: Client
+      uid: azure.python.sdk.landingPage.services.ApplicationInsights.Client.pre
+      landingPageType: Service
+      children:
+      - azure-applicationinsights
   - name: Anomaly Detector
     uid: azure.python.sdk.landingPage.services.AnomalyDetector.pre
     href: ~/docs-ref-services/preview/ai-anomalydetector-readme.md
@@ -50,6 +59,11 @@
       landingPageType: Service
       children:
       - azure-mgmt-batch
+    - name: Client
+      uid: azure.python.sdk.landingPage.services.Batch.Client.pre
+      landingPageType: Service
+      children:
+      - azure-batch*
   - name: Cognitive Services
     uid: azure.python.sdk.landingPage.services.Cognitive.Services.pre
     href: ~/docs-ref-services/preview/cognitive-services.md
@@ -69,15 +83,6 @@
       landingPageType: Service
       children:
       - azure-communication-identity
-  - name: Consumption
-    uid: azure.python.sdk.landingPage.services.Consumption.pre
-    href: ~/docs-ref-services/preview/consumption.md
-    items:
-    - name: Management
-      uid: azure.python.sdk.landingPage.services.consumption.Management.pre
-      landingPageType: Service
-      children:
-      - azure-mgmt-consumption*
   - name: Container Registry
     uid: azure.python.sdk.landingPage.services.Container.Registry.pre
     href: ~/docs-ref-services/preview/container-registry.md
@@ -291,6 +296,11 @@
       href: ~/docs-ref-services/preview/storage-file-share-readme.md
       children:
       - azure-storage-file*
+    - name: Storage Queue
+      uid: azure.python.sdk.landingPage.services.storagequeue.detail.pre
+      href: ~/docs-ref-services/preview/storage-queue-readme.md
+      children:
+      - azure-storage-queue*
   - name: Synapse
     uid: azure.python.sdk.landingPage.services.Synapse.pre
     landingPageType: Service
