@@ -1,19 +1,18 @@
 ---
 title: Azure Mixed Reality Authentication Package client library for Python
 keywords: Azure, python, SDK, API, azure-mixedreality-authentication, mixedreality
-author: maggiepint
-ms.author: magpint
-ms.date: 11/12/2021
+author: mayurid
+ms.author: mayurid
+ms.date: 01/10/2022
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: mixedreality
 ---
-
 [![Build Status](https://dev.azure.com/azure-sdk/public/_apis/build/status/azure-sdk-for-python.client?branchName=master)](https://dev.azure.com/azure-sdk/public/_build/latest?definitionId=46?branchName=master)
 
-# Azure Mixed Reality Authentication Package client library for Python - Version 1.0.0b1 
+# Azure Mixed Reality Authentication Package client library for Python - Version 1.0.0a20220110001 
 
 
 Mixed Reality services, like Azure Spatial Anchors, Azure Remote Rendering, and others, use the Mixed Reality security
@@ -176,7 +175,7 @@ python samples\client_sample_async.py
 
 # Troubleshooting
 
-The [troubleshooting](https://github.com/Azure/azure-sdk-for-python/tree/azure-mixedreality-authentication_1.0.0b1/sdk/identity/azure-identity#troubleshooting)
+The [troubleshooting](https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/identity/azure-identity#troubleshooting)
 section for Azure Identity can be helpful when troubleshooting authentication issues.
 
 # Next steps
@@ -200,7 +199,7 @@ For more information see the [Code of Conduct FAQ](https://opensource.microsoft.
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
 If you'd like to contribute to this library, please read the
-[contributing guide](https://github.com/Azure/azure-sdk-for-python/blob/azure-mixedreality-authentication_1.0.0b1/CONTRIBUTING.md) to learn more about how to
+[contributing guide](https://github.com/Azure/azure-sdk-for-python/blob/main/CONTRIBUTING.md) to learn more about how to
 build and test the code.
 
 ![Impressions](https://azure-sdk-impressions.azurewebsites.net/api/impressions/azure-sdk-for-python%2Fsdk%2Ftemplate%2Fazure-template%2FREADME.png)
@@ -208,7 +207,7 @@ build and test the code.
 [azure_cli]: https://docs.microsoft.com/cli/azure
 [azure_sub]: https://azure.microsoft.com/free/
 [azure_portal]: https://portal.azure.com
-[azure_identity]: https://github.com/Azure/azure-sdk-for-python/tree/azure-mixedreality-authentication_1.0.0b1/sdk/identity/azure-identity
+[azure_identity]: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/identity/azure-identity
 [register_aad_app]: https://docs.microsoft.com/azure/spatial-anchors/concepts/authentication
-[defaultazurecredential]: https://github.com/Azure/azure-sdk-for-python/tree/azure-mixedreality-authentication_1.0.0b1/sdk/identity/azure-identity#defaultazurecredential
+[defaultazurecredential]: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/identity/azure-identity#defaultazurecredential
 
