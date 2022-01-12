@@ -1764,7 +1764,8 @@
         "name": "azure-search-documents",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
-        "version": "==11.2.0"
+        "version": "==11.2.1",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
         "test*",

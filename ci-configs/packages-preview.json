@@ -52,7 +52,8 @@
         "prefer_source_distribution": "true",
         "name": "azure-ai-anomalydetector",
         "install_type": "pypi",
-        "version": "==3.0.0b3"
+        "version": "==3.0.0a20220111001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
         "test*",
@@ -150,7 +151,8 @@
         "name": "azure-mgmt-workloadmonitor",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
-        "version": "==1.0.0b2"
+        "version": "==1.0.0a20220111001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
         "test*",
@@ -464,7 +466,8 @@
         "name": "azure-synapse-accesscontrol",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
-        "version": "==0.7.0"
+        "version": "==0.8.0a20220111003",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       }
     },
     {
@@ -478,7 +481,8 @@
         "name": "azure-synapse-artifacts",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
-        "version": "==0.10.0"
+        "version": "==0.12.0a20220111003",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       }
     },
     {
@@ -492,7 +496,8 @@
         "name": "azure-synapse-managedprivateendpoints",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
-        "version": "==0.4.0"
+        "version": "==0.5.0a20220111003",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       }
     },
     {
@@ -506,7 +511,8 @@
         "name": "azure-synapse-monitoring",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
-        "version": "==0.2.0"
+        "version": "==0.3.0a20220111003",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       }
     },
     {
@@ -520,7 +526,8 @@
         "name": "azure-synapse-spark",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
-        "version": "==0.7.0"
+        "version": "==0.8.0a20220111003",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       }
     },
     {
@@ -562,7 +569,8 @@
         "name": "azure-confidentialledger",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
-        "version": "==1.0.0b1"
+        "version": "==1.0.0a20220111001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       }
     },
     {
@@ -1172,6 +1180,66 @@
         "install_type": "pypi",
         "prefer_source_distribution": "true",
         "version": "==4.3.0b1"
+      },
+      "exclude_path": [
+        "test*",
+        "example*",
+        "sample*",
+        "doc*"
+      ]
+    },
+    {
+      "package_info": {
+        "name": "azure-appconfiguration",
+        "install_type": "pypi",
+        "prefer_source_distribution": "true",
+        "version": "==1.4.0a20220111002",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
+      },
+      "exclude_path": [
+        "test*",
+        "example*",
+        "sample*",
+        "doc*"
+      ]
+    },
+    {
+      "package_info": {
+        "name": "azure-applicationinsights",
+        "install_type": "pypi",
+        "prefer_source_distribution": "true",
+        "version": "==0.1.0a20220111001",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
+      },
+      "exclude_path": [
+        "test*",
+        "example*",
+        "sample*",
+        "doc*"
+      ]
+    },
+    {
+      "package_info": {
+        "name": "azure-synapse",
+        "install_type": "pypi",
+        "prefer_source_distribution": "true",
+        "version": "==0.1.1a20220111003",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
+      },
+      "exclude_path": [
+        "test*",
+        "example*",
+        "sample*",
+        "doc*"
+      ]
+    },
+    {
+      "package_info": {
+        "name": "azure-batch",
+        "install_type": "pypi",
+        "prefer_source_distribution": "true",
+        "version": "==11.0.1a20220111002",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
         "test*",
