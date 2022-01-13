@@ -1,17 +1,16 @@
 ---
 title: Azure Schema Registry Avro Serializer client library for Python
 keywords: Azure, python, SDK, API, azure-schemaregistry-avroserializer, schemaregistry
-author: maggiepint
-ms.author: magpint
-ms.date: 11/11/2021
+author: yunhaoling
+ms.author: yunhaoling
+ms.date: 01/13/2022
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: schemaregistry
 ---
-
-# Azure Schema Registry Avro Serializer client library for Python - Version 1.0.0b4 
+# Azure Schema Registry Avro Serializer client library for Python - Version 1.0.0a20220113001 
 
 
 Azure Schema Registry is a schema repository service hosted by Azure Event Hubs, providing schema storage, versioning,
@@ -22,7 +21,7 @@ Schema Registry schema identifiers and Avro-encoded data.
 
 ## _Disclaimer_
 
-_Azure SDK Python packages support for Python 2.7 is ending 01 January 2022. For more information and questions, please refer to https://github.com/Azure/azure-sdk-for-python/issues/20691_
+_Azure SDK Python packages support for Python 2.7 has ended 01 January 2022. For more information and questions, please refer to https://github.com/Azure/azure-sdk-for-python/issues/20691_
 
 ## Getting started
 
@@ -38,7 +37,7 @@ pip install azure-schemaregistry-avroserializer azure-identity
 To use this package, you must have:
 * Azure subscription - [Create a free account][azure_sub]
 * [Azure Schema Registry][schemaregistry_service]
-* Python 2.7, 3.6 or later - [Install Python][python]
+* Python 3.6 or later - [Install Python][python]
 
 ### Authenticate the client
 Interaction with the Schema Registry Avro Serializer starts with an instance of AvroSerializer class, which takes the schema group name and the [Schema Registry Client][schemaregistry_client] class. The client constructor takes the Event Hubs fully qualified namespace and and Azure Active Directory credential:
@@ -52,7 +51,7 @@ Interaction with the Schema Registry Avro Serializer starts with an instance of 
 pip install azure-identity
 ```
 
-* Additionally, to use the async API supported on Python 3.6+, you must first install an async transport, such as [aiohttp](https://pypi.org/project/aiohttp/):
+* Additionally, to use the async API, you must first install an async transport, such as [aiohttp](https://pypi.org/project/aiohttp/):
 
 ```Bash
 pip install aiohttp
@@ -316,15 +315,15 @@ contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additio
 [pip]: https://pypi.org/project/pip/
 [pypi]: https://pypi.org/project/azure-schemaregistry-avroserializer
 [python]: https://www.python.org/downloads/
-[azure_core]: https://github.com/Azure/azure-sdk-for-python/blob/azure-schemaregistry-avroserializer_1.0.0b4/sdk/core/azure-core/README.md
+[azure_core]: https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/core/azure-core/README.md
 [azure_sub]: https://azure.microsoft.com/free/
 [python_logging]: https://docs.python.org/3/library/logging.html
-[sr_avro_samples]: https://github.com/Azure/azure-sdk-for-python/tree/azure-schemaregistry-avroserializer_1.0.0b4/sdk/schemaregistry/azure-schemaregistry-avroserializer/samples
+[sr_avro_samples]: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/schemaregistry/azure-schemaregistry-avroserializer/samples
 [api_reference]: https://docs.microsoft.com/python/api/overview/azure/schemaregistry-avroserializer-readme
-[source_code]: https://github.com/Azure/azure-sdk-for-python/tree/azure-schemaregistry-avroserializer_1.0.0b4/sdk/schemaregistry/azure-schemaregistry-avroserializer
-[change_log]: https://github.com/Azure/azure-sdk-for-python/tree/azure-schemaregistry-avroserializer_1.0.0b4/sdk/schemaregistry/azure-schemaregistry-avroserializer/CHANGELOG.md
-[schemaregistry_client]: https://github.com/Azure/azure-sdk-for-python/tree/azure-schemaregistry-avroserializer_1.0.0b4/sdk/schemaregistry/azure-schemaregistry
+[source_code]: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/schemaregistry/azure-schemaregistry-avroserializer
+[change_log]: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/schemaregistry/azure-schemaregistry-avroserializer/CHANGELOG.md
+[schemaregistry_client]: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/schemaregistry/azure-schemaregistry
 [schemaregistry_service]: https://aka.ms/schemaregistry
-[eventhubs_repo]: https://github.com/Azure/azure-sdk-for-python/tree/azure-schemaregistry-avroserializer_1.0.0b4/sdk/eventhub/azure-eventhub
-[token_credential_interface]: https://github.com/Azure/azure-sdk-for-python/tree/azure-schemaregistry-avroserializer_1.0.0b4/sdk/core/azure-core/azure/core/credentials.py
+[eventhubs_repo]: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/eventhub/azure-eventhub
+[token_credential_interface]: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/core/azure-core/azure/core/credentials.py
 [pypi_azure_identity]: https://pypi.org/project/azure-identity/
