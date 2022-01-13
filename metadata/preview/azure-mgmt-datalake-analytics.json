@@ -1,0 +1,14 @@
+{
+  "Name": "azure-mgmt-datalake-analytics",
+  "Version": "0.6.0a20220113001",
+  "DevVersion": "0.6.0a20220113001",
+  "DirectoryPath": "sdk/datalake/azure-mgmt-datalake-analytics",
+  "ServiceDirectory": "datalake",
+  "ReadMePath": "sdk/datalake/azure-mgmt-datalake-analytics/README.md",
+  "ChangeLogPath": "sdk/datalake/azure-mgmt-datalake-analytics/CHANGELOG.md",
+  "Group": null,
+  "SdkType": "mgmt",
+  "IsNewSdk": false,
+  "ArtifactName": "azure-mgmt-datalake-analytics",
+  "ReleaseStatus": "2018-06-15"
+}
