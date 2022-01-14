@@ -511,7 +511,8 @@
         "folder": "azure-mgmt-datafactory",
         "install_type": "pypi",
         "name": "azure-mgmt-datafactory",
-        "version": "==2.1.0"
+        "version": "==2.2.0",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
         "test*",
