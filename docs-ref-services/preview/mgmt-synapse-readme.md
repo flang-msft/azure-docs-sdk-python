@@ -1,9 +1,9 @@
 ---
 title: 
 keywords: Azure, python, SDK, API, azure-mgmt-synapse, synapseanalytics
-author: wonner
-ms.author: wonner
-ms.date: 01/14/2022
+author: ramya-rao-a
+ms.author: ramyar
+ms.date: 01/18/2022
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
