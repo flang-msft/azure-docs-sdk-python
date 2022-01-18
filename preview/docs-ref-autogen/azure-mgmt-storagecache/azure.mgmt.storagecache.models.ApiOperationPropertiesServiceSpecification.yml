@@ -1,0 +1,17 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.storagecache.models.ApiOperationPropertiesServiceSpecification
+name: ApiOperationPropertiesServiceSpecification
+fullName: azure.mgmt.storagecache.models.ApiOperationPropertiesServiceSpecification
+module: azure.mgmt.storagecache.models
+inheritances:
+- msrest.serialization.Model
+summary: Specification of the all the metrics provided for a resource type.
+constructor:
+  syntax: 'ApiOperationPropertiesServiceSpecification(*, metric_specifications: Optional[List[azure.mgmt.storagecache.models._models_py3.MetricSpecification]]
+    = None, **kwargs)'
+  parameters:
+  - name: metric_specifications
+    description: Details about operations related to metrics.
+    isRequired: true
+    types:
+    - <xref:list>[<xref:storage_cache_management_client.models.MetricSpecification>]
