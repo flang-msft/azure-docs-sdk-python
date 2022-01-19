@@ -1,0 +1,14 @@
+{
+  "Name": "azure-mgmt-communication",
+  "Version": "1.0.1a20220119001",
+  "DevVersion": "1.0.1a20220119001",
+  "DirectoryPath": "sdk/communication/azure-mgmt-communication",
+  "ServiceDirectory": "communication",
+  "ReadMePath": "sdk/communication/azure-mgmt-communication/README.md",
+  "ChangeLogPath": "sdk/communication/azure-mgmt-communication/CHANGELOG.md",
+  "Group": null,
+  "SdkType": "mgmt",
+  "IsNewSdk": true,
+  "ArtifactName": "azure-mgmt-communication",
+  "ReleaseStatus": "Unreleased"
+}
