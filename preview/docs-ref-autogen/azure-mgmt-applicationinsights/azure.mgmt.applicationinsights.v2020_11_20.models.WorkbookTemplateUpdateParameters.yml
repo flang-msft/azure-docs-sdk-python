@@ -1,0 +1,51 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.applicationinsights.v2020_11_20.models.WorkbookTemplateUpdateParameters
+name: WorkbookTemplateUpdateParameters
+fullName: azure.mgmt.applicationinsights.v2020_11_20.models.WorkbookTemplateUpdateParameters
+module: azure.mgmt.applicationinsights.v2020_11_20.models
+inheritances:
+- msrest.serialization.Model
+summary: The parameters that can be provided when updating workbook template.
+constructor:
+  syntax: 'WorkbookTemplateUpdateParameters(*, tags: Optional[Dict[str, str]] = None,
+    priority: Optional[int] = None, author: Optional[str] = None, template_data: Optional[Any]
+    = None, galleries: Optional[List[azure.mgmt.applicationinsights.v2020_11_20.models._models_py3.WorkbookTemplateGallery]]
+    = None, localized: Optional[Dict[str, List[azure.mgmt.applicationinsights.v2020_11_20.models._models_py3.WorkbookTemplateLocalizedGallery]]]
+    = None, **kwargs)'
+  parameters:
+  - name: tags
+    description: A set of tags. Resource tags.
+    isRequired: true
+    types:
+    - <xref:dict>[<xref:str>, <xref:str>]
+  - name: priority
+    description: 'Priority of the template. Determines which template to open when
+      a workbook
+
+      gallery is opened in viewer mode.'
+    isRequired: true
+    types:
+    - <xref:int>
+  - name: author
+    description: Information about the author of the workbook template.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: template_data
+    description: Valid JSON object containing workbook template payload.
+    isRequired: true
+    types:
+    - <xref:any>
+  - name: galleries
+    description: Workbook galleries supported by the template.
+    isRequired: true
+    types:
+    - <xref:list>[<xref:azure.mgmt.applicationinsights.v2020_11_20.models.WorkbookTemplateGallery>]
+  - name: localized
+    description: 'Key value pair of localized gallery. Each key is the locale code
+      of languages
+
+      supported by the Azure portal.'
+    isRequired: true
+    types:
+    - <xref:dict>[<xref:str,list>[<xref:azure.mgmt.applicationinsights.v2020_11_20.models.WorkbookTemplateLocalizedGallery>]]
