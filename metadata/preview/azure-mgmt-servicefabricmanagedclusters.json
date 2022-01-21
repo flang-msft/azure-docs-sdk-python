@@ -1,0 +1,14 @@
+{
+  "Name": "azure-mgmt-servicefabricmanagedclusters",
+  "Version": "1.0.0a20220121001",
+  "DevVersion": "1.0.0a20220121001",
+  "DirectoryPath": "sdk/servicefabricmanagedclusters/azure-mgmt-servicefabricmanagedclusters",
+  "ServiceDirectory": "servicefabricmanagedclusters",
+  "ReadMePath": "sdk/servicefabricmanagedclusters/azure-mgmt-servicefabricmanagedclusters/README.md",
+  "ChangeLogPath": "sdk/servicefabricmanagedclusters/azure-mgmt-servicefabricmanagedclusters/CHANGELOG.md",
+  "Group": null,
+  "SdkType": "mgmt",
+  "IsNewSdk": true,
+  "ArtifactName": "azure-mgmt-servicefabricmanagedclusters",
+  "ReleaseStatus": "2021-04-27"
+}
