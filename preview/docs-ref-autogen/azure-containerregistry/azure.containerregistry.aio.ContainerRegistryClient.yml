@@ -16,10 +16,10 @@ methods:
     \ {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\"\
     : [], \"xml:space\": \"preserve\", \"force\": false, \"language\": \"python\"\
     , \"highlight_args\": {}, \"linenos\": false} -->\n\n````python\n\n   from azure.containerregistry.aio\
-    \ import ContainerRepositoryClient\n   from azure.identity.aio import DefaultAzureCredential\n\
-    \   account_url = os.environ[\"CONTAINERREGISTRY_ENDPOINT\"]\n   client = ContainerRepositoryClient(account_url,\
-    \ DefaultAzureCredential())\n   await client.delete_manifest(\"my_repository\"\
-    , \"my_tag_or_digest\")\n   ````"
+    \ import ContainerRegistryClient\n   from azure.identity.aio import DefaultAzureCredential\n\
+    \   endpoint = os.environ[\"CONTAINERREGISTRY_ENDPOINT\"]\n   client = ContainerRegistryClient(endpoint,\
+    \ DefaultAzureCredential(), audience=\"my_audience\")\n   await client.delete_manifest(\"\
+    my_repository\", \"my_tag_or_digest\")\n   ````"
   signature: 'delete_manifest(repository: str, tag_or_digest: str, **kwargs: Any)
     -> None'
   parameters:
@@ -38,7 +38,7 @@ methods:
     types:
     - <xref:None>
   exceptions:
-  - type: azure.core.exceptions.HttpResponseError
+  - type: ~azure.core.exceptions.HttpResponseError
 - uid: azure.containerregistry.aio.ContainerRegistryClient.delete_repository
   name: delete_repository
   summary: 'Delete a repository. If the repository cannot be found or a response status
@@ -57,7 +57,7 @@ methods:
     types:
     - <xref:None>
   exceptions:
-  - type: azure.core.exceptions.HttpResponseError
+  - type: ~azure.core.exceptions.HttpResponseError
 - uid: azure.containerregistry.aio.ContainerRegistryClient.delete_tag
   name: delete_tag
   summary: "Delete a tag from a repository. If the tag cannot be found or a response\
@@ -65,11 +65,11 @@ methods:
     <!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
     : [], \"backrefs\": [], \"xml:space\": \"preserve\", \"force\": false, \"language\"\
     : \"python\", \"highlight_args\": {}, \"linenos\": false} -->\n\n````python\n\n\
-    \   from azure.containerregistry.aio import ContainerRepositoryClient\n   from\
-    \ azure.identity.aio import DefaultAzureCredential\n   account_url = os.environ[\"\
-    CONTAINERREGISTRY_ENDPOINT\"]\n   client = ContainerRepositoryClient(account_url,\
-    \ \"my_repository\", DefaultAzureCredential())\n   async for artifact in client.list_tag_properties():\n\
-    \       await client.delete_tag(\"my_repository\", tag.name)\n   ````"
+    \   from azure.containerregistry.aio import ContainerRegistryClient\n   from azure.identity.aio\
+    \ import DefaultAzureCredential\n   endpoint = os.environ[\"CONTAINERREGISTRY_ENDPOINT\"\
+    ]\n   client = ContainerRegistryClient(endpoint, DefaultAzureCredential(), audience=\"\
+    my_audience\")\n   async for tag in client.list_tag_properties(\"my_repository\"\
+    ):\n       await client.delete_tag(\"my_repository\", tag.name)\n   ````"
   signature: 'delete_tag(repository: str, tag: str, **kwargs: Any) -> None'
   parameters:
   - name: repository
@@ -87,18 +87,18 @@ methods:
     types:
     - <xref:None>
   exceptions:
-  - type: azure.core.exceptions.HttpResponseError
+  - type: ~azure.core.exceptions.HttpResponseError
 - uid: azure.containerregistry.aio.ContainerRegistryClient.get_manifest_properties
   name: get_manifest_properties
   summary: "Get the properties of a registry artifact\n\nExample\n\n<!-- literal_block\
     \ {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\"\
     : [], \"xml:space\": \"preserve\", \"force\": false, \"language\": \"python\"\
     , \"highlight_args\": {}, \"linenos\": false} -->\n\n````python\n\n   from azure.containerregistry.aio\
-    \ import ContainerRepositoryClient\n   from azure.identity.aio import DefaultAzureCredential\n\
-    \   account_url = os.environ[\"CONTAINERREGISTRY_ENDPOINT\"]\n   client = ContainerRepositoryClient(account_url,\
-    \ \"my_repository\", DefaultAzureCredential())\n   async for artifact in client.list_manifest_properties():\n\
-    \       properties = await client.get_manifest_properties(\"my_repository\", artifact.digest)\n\
-    \   ````"
+    \ import ContainerRegistryClient\n   from azure.identity.aio import DefaultAzureCredential\n\
+    \   endpoint = os.environ[\"CONTAINERREGISTRY_ENDPOINT\"]\n   client = ContainerRegistryClient(endpoint,\
+    \ DefaultAzureCredential(), audience=\"my_audience\")\n   async for artifact in\
+    \ client.list_manifest_properties(\"my_repository\"):\n       properties = await\
+    \ client.get_manifest_properties(\"my_repository\", artifact.digest)\n   ````"
   signature: 'get_manifest_properties(repository: str, tag_or_digest: str, **kwargs:
     Any) -> azure.containerregistry._models.ArtifactManifestProperties'
   parameters:
@@ -113,9 +113,10 @@ methods:
     types:
     - <xref:str>
   return:
-    description: <xref:azure.containerregistry.ArtifactManifestProperties>
+    types:
+    - <xref:azure.containerregistry.ArtifactManifestProperties>
   exceptions:
-  - type: azure.core.exceptions.ResourceNotFoundError
+  - type: ~azure.core.exceptions.ResourceNotFoundError
 - uid: azure.containerregistry.aio.ContainerRegistryClient.get_repository_properties
   name: get_repository_properties
   summary: Get the properties of a repository
@@ -127,20 +128,21 @@ methods:
     types:
     - <xref:str>
   return:
-    description: <xref:azure.containerregistry.RepositoryProperties>
+    types:
+    - <xref:azure.containerregistry.RepositoryProperties>
   exceptions:
-  - type: azure.core.exceptions.ResourceNotFoundError
+  - type: ~azure.core.exceptions.ResourceNotFoundError
 - uid: azure.containerregistry.aio.ContainerRegistryClient.get_tag_properties
   name: get_tag_properties
   summary: "Get the properties for a tag\n\nExample\n\n<!-- literal_block {\"ids\"\
     : [], \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"xml:space\"\
     : \"preserve\", \"force\": false, \"language\": \"python\", \"highlight_args\"\
     : {}, \"linenos\": false} -->\n\n````python\n\n   from azure.containerregistry.aio\
-    \ import ContainerRepositoryClient\n   from azure.identity.aio import DefaultAzureCredential\n\
-    \   account_url = os.environ[\"CONTAINERREGISTRY_ENDPOINT\"]\n   client = ContainerRepositoryClient(account_url,\
-    \ \"my_repository\", DefaultAzureCredential())\n   async for tag in client.list_tag_properties():\n\
-    \       tag_properties = await client.get_tag_properties(\"my_repository\", tag.name)\n\
-    \   ````"
+    \ import ContainerRegistryClient\n   from azure.identity.aio import DefaultAzureCredential\n\
+    \   endpoint = os.environ[\"CONTAINERREGISTRY_ENDPOINT\"]\n   client = ContainerRegistryClient(endpoint,\
+    \ DefaultAzureCredential(), audience=\"my_audience\")\n   async for tag in client.list_tag_properties(\"\
+    my_repository\"):\n       tag_properties = await client.get_tag_properties(\"\
+    my_repository\", tag.name)\n   ````"
   signature: 'get_tag_properties(repository: str, tag: str, **kwargs: Any) -> azure.containerregistry._models.ArtifactTagProperties'
   parameters:
   - name: repository
@@ -154,9 +156,10 @@ methods:
     types:
     - <xref:str>
   return:
-    description: <xref:azure.containerregistry.ArtifactTagProperties>
+    types:
+    - <xref:azure.containerregistry.ArtifactTagProperties>
   exceptions:
-  - type: azure.core.exceptions.ResourceNotFoundError
+  - type: ~azure.core.exceptions.ResourceNotFoundError
 - uid: azure.containerregistry.aio.ContainerRegistryClient.list_manifest_properties
   name: list_manifest_properties
   summary: List the manifests of a repository
@@ -170,7 +173,7 @@ methods:
   - name: order_by
     description: Query parameter for ordering by time ascending or descending
     types:
-    - <xref:azure.containerregistry.ManifestOrder>
+    - <xref:azure.containerregistry.ArtifactManifestOrder>
     - <xref:str>
   - name: results_per_page
     description: Number of repositories to return per page
@@ -181,7 +184,7 @@ methods:
     types:
     - <xref:azure.core.async_paging.AsyncItemPaged>[<xref:azure.containerregistry.ArtifactManifestProperties>]
   exceptions:
-  - type: azure.core.exceptions.HttpResponseError
+  - type: ~azure.core.exceptions.HttpResponseError
 - uid: azure.containerregistry.aio.ContainerRegistryClient.list_repository_names
   name: list_repository_names
   summary: List all repositories
@@ -196,17 +199,18 @@ methods:
     types:
     - <xref:azure.core.async_paging.AsyncItemPaged>[<xref:str>]
   exceptions:
-  - type: azure.core.exceptions.HttpResponseError
+  - type: ~azure.core.exceptions.HttpResponseError
 - uid: azure.containerregistry.aio.ContainerRegistryClient.list_tag_properties
   name: list_tag_properties
   summary: "List the tags for a repository\n\nExample\n\n<!-- literal_block {\"ids\"\
     : [], \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"xml:space\"\
     : \"preserve\", \"force\": false, \"language\": \"python\", \"highlight_args\"\
     : {}, \"linenos\": false} -->\n\n````python\n\n   from azure.containerregistry.aio\
-    \ import ContainerRepositoryClient\n   from azure.identity.aio import DefaultAzureCredential\n\
-    \   account_url = os.environ[\"CONTAINERREGISTRY_ENDPOINT\"]\n   client = ContainerRepositoryClient(account_url,\
-    \ \"my_repository\", DefaultAzureCredential())\n   async for tag in client.list_tag_properties():\n\
-    \       tag_properties = await client.get_tag_properties(tag.name)\n   ````"
+    \ import ContainerRegistryClient\n   from azure.identity.aio import DefaultAzureCredential\n\
+    \   endpoint = os.environ[\"CONTAINERREGISTRY_ENDPOINT\"]\n   client = ContainerRegistryClient(endpoint,\
+    \ DefaultAzureCredential(), audience=\"my_audience\")\n   async for tag in client.list_tag_properties(\"\
+    my_repository\"):\n       tag_properties = await client.get_tag_properties(tag.name)\n\
+    \   ````"
   signature: 'list_tag_properties(repository: str, **kwargs: Any) -> azure.core.async_paging.AsyncItemPaged[azure.containerregistry._models.ArtifactTagProperties]'
   parameters:
   - name: repository
@@ -217,7 +221,7 @@ methods:
   - name: order_by
     description: Query parameter for ordering by time ascending or descending
     types:
-    - <xref:azure.containerregistry.TagOrder>
+    - <xref:azure.containerregistry.ArtifactTagOrder>
     - <xref:str>
   - name: results_per_page
     description: Number of repositories to return per page
@@ -228,20 +232,20 @@ methods:
     types:
     - <xref:azure.core.async_paging.AsyncItemPaged>[<xref:azure.containerregistry.ArtifactTagProperties>]
   exceptions:
-  - type: azure.core.exceptions.ResourceNotFoundError
+  - type: ~azure.core.exceptions.ResourceNotFoundError
 - uid: azure.containerregistry.aio.ContainerRegistryClient.update_manifest_properties
   name: update_manifest_properties
   summary: "Set the properties for a manifest\n\nExample\n\n<!-- literal_block {\"\
     ids\": [], \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\": [],\
     \ \"xml:space\": \"preserve\", \"force\": false, \"language\": \"python\", \"\
     highlight_args\": {}, \"linenos\": false} -->\n\n````python\n\n   from azure.containerregistry.aio\
-    \ import ContainerRepositoryClient\n   from azure.identity.aio import DefaultAzureCredential\n\
-    \   account_url = os.environ[\"CONTAINERREGISTRY_ENDPOINT\"]\n   client = ContainerRepositoryClient(account_url,\
-    \ \"my_repository\", DefaultAzureCredential())\n   async for artifact in client.list_manifest_properties():\n\
-    \       received_properties = await client.update_manifest_properties(\n     \
-    \      \"my_repository\",\n           artifact.digest,\n           can_delete=False,\n\
-    \           can_list=False,\n           can_read=False,\n           can_write=False,\n\
-    \       )\n   ````"
+    \ import ContainerRegistryClient\n   from azure.identity.aio import DefaultAzureCredential\n\
+    \   endpoint = os.environ[\"CONTAINERREGISTRY_ENDPOINT\"]\n   client = ContainerRegistryClient(endpoint,\
+    \ DefaultAzureCredential(), audience=\"my_audience\")\n   async for artifact in\
+    \ client.list_manifest_properties(\"my_repository\"):\n       received_properties\
+    \ = await client.update_manifest_properties(\n           \"my_repository\",\n\
+    \           artifact.digest,\n           can_delete=False,\n           can_list=False,\n\
+    \           can_read=False,\n           can_write=False,\n       )\n   ````"
   parameters:
   - name: args
     isRequired: true
@@ -263,9 +267,10 @@ methods:
     types:
     - <xref:azure.containerregistry.ArtifactManifestProperties>
   return:
-    description: <xref:azure.containerregistry.ArtifactManifestProperties>
+    types:
+    - <xref:azure.containerregistry.ArtifactManifestProperties>
   exceptions:
-  - type: azure.core.exceptions.ResourceNotFoundError
+  - type: ~azure.core.exceptions.ResourceNotFoundError
 - uid: azure.containerregistry.aio.ContainerRegistryClient.update_repository_properties
   name: update_repository_properties
   summary: Set the properties of a repository
@@ -285,19 +290,20 @@ methods:
     types:
     - <xref:azure.containerregistry.RepositoryProperties>
   return:
-    description: <xref:azure.containerregistry.RepositoryProperties>
+    types:
+    - <xref:azure.containerregistry.RepositoryProperties>
   exceptions:
-  - type: azure.core.exceptions.ResourceNotFoundError
+  - type: ~azure.core.exceptions.ResourceNotFoundError
 - uid: azure.containerregistry.aio.ContainerRegistryClient.update_tag_properties
   name: update_tag_properties
   summary: "Set the properties for a tag\n\nExample\n\n<!-- literal_block {\"ids\"\
     : [], \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"xml:space\"\
     : \"preserve\", \"force\": false, \"language\": \"python\", \"highlight_args\"\
     : {}, \"linenos\": false} -->\n\n````python\n\n   from azure.containerregistry.aio\
-    \ import ContainerRepositoryClient\n   from azure.identity.aio import DefaultAzureCredential\n\
-    \   account_url = os.environ[\"CONTAINERREGISTRY_ENDPOINT\"]\n   client = ContainerRepositoryClient(account_url,\
-    \ \"my_repository\", DefaultAzureCredential())\n   tag_identifier = \"latest\"\
-    \n   received = await client.update_tag_properties(\n       \"my_repository\"\
+    \ import ContainerRegistryClient\n   from azure.identity.aio import DefaultAzureCredential\n\
+    \   endpoint = os.environ[\"CONTAINERREGISTRY_ENDPOINT\"]\n   client = ContainerRegistryClient(endpoint,\
+    \ DefaultAzureCredential(), audience=\"my_audience\")\n   tag_identifier = \"\
+    latest\"\n   received = await client.update_tag_properties(\n       \"my_repository\"\
     ,\n       tag_identifier,\n       can_delete=False,\n       can_list=False,\n\
     \       can_read=False,\n       can_write=False\n   )\n   ````"
   parameters:
@@ -321,6 +327,7 @@ methods:
     types:
     - <xref:azure.containerregistry.ArtifactTagProperties>
   return:
-    description: <xref:azure.containerregistry.ArtifactTagProperties>
+    types:
+    - <xref:azure.containerregistry.ArtifactTagProperties>
   exceptions:
-  - type: azure.core.exceptions.ResourceNotFoundError
+  - type: ~azure.core.exceptions.ResourceNotFoundError

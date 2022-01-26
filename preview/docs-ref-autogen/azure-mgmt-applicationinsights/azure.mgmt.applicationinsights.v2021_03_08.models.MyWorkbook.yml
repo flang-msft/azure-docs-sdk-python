@@ -1,0 +1,123 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.applicationinsights.v2021_03_08.models.MyWorkbook
+name: MyWorkbook
+fullName: azure.mgmt.applicationinsights.v2021_03_08.models.MyWorkbook
+module: azure.mgmt.applicationinsights.v2021_03_08.models
+inheritances:
+- azure.mgmt.applicationinsights.v2021_03_08.models._models_py3.MyWorkbookResource
+summary: 'An Application Insights private workbook definition.
+
+
+  Variables are only populated by the server, and will be ignored when sending a request.'
+constructor:
+  syntax: 'MyWorkbook(*, identity: Optional[azure.mgmt.applicationinsights.v2021_03_08.models._models_py3.MyWorkbookManagedIdentity]
+    = None, id: Optional[str] = None, name: Optional[str] = None, type: Optional[str]
+    = None, location: Optional[str] = None, tags: Optional[Dict[str, str]] = None,
+    etag: Optional[Dict[str, str]] = None, kind: Optional[Union[str, azure.mgmt.applicationinsights.v2021_03_08.models._application_insights_management_client_enums.Kind]]
+    = None, display_name: Optional[str] = None, serialized_data: Optional[str] = None,
+    version: Optional[str] = None, category: Optional[str] = None, tags_properties_tags:
+    Optional[List[str]] = None, source_id: Optional[str] = None, storage_uri: Optional[str]
+    = None, **kwargs)'
+  parameters:
+  - name: identity
+    description: Identity used for BYOS.
+    isRequired: true
+    types:
+    - <xref:azure.mgmt.applicationinsights.v2021_03_08.models.MyWorkbookManagedIdentity>
+  - name: id
+    description: Azure resource Id.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: name
+    description: Azure resource name.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: type
+    description: Azure resource type.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: location
+    description: Resource location.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: tags
+    description: A set of tags. Resource tags.
+    isRequired: true
+    types:
+    - <xref:dict>[<xref:str>, <xref:str>]
+  - name: etag
+    description: Resource etag.
+    isRequired: true
+    types:
+    - <xref:dict>[<xref:str>, <xref:str>]
+  - name: kind
+    description: 'The kind of workbook. Choices are user and shared. Possible values
+      include:
+
+      "user", "shared".'
+    isRequired: true
+    types:
+    - <xref:str>
+    - <xref:azure.mgmt.applicationinsights.v2021_03_08.models.Kind>
+  - name: display_name
+    description: The user-defined name of the private workbook.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: serialized_data
+    description: 'Configuration of this particular private workbook. Configuration
+      data
+
+      is a string containing valid JSON.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: version
+    description: 'This instance''s version of the data model. This can change as new
+      features are
+
+      added that can be marked private workbook.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: category
+    description: Workbook category, as defined by the user at creation time.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: tags_properties_tags
+    description: 'A list of 0 or more tags that are associated with this private
+
+      workbook definition.'
+    isRequired: true
+    types:
+    - <xref:list>[<xref:str>]
+  - name: source_id
+    description: Optional resourceId for a source resource.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: storage_uri
+    description: BYOS Storage Account URI.
+    isRequired: true
+    types:
+    - <xref:str>
+variables:
+- description: Metadata pertaining to creation and last modification of the resource.
+  name: system_data
+  types:
+  - <xref:azure.mgmt.applicationinsights.v2021_03_08.models.SystemData>
+- description: 'Date and time in UTC of the last modification that was made to this
+
+    private workbook definition.'
+  name: time_modified
+  types:
+  - <xref:str>
+- description: Unique user id of the specific user that owns this private workbook.
+  name: user_id
+  types:
+  - <xref:str>

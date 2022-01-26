@@ -11,7 +11,7 @@ summary: "Performs cryptographic operations using Azure Key Vault keys.\n\nThis 
   \ is unavailable, cryptographic operations are performed\nby the Key Vault service.\n\
   \nCreate a CryptographyClient<!--[!code-python[Main](s\\test_examples_crypto.py\
   \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
-  : [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\51\\\\azure-keyvault-keys-4.5.0b5\\\
+  : [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\51\\\\azure-keyvault-keys-4.5.0a20220125001\\\
   \\tests\\\\test_examples_crypto.py\", \"xml:space\": \"preserve\", \"force\": false,\
   \ \"language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"linenos\"\
   : false} -->\n\n````python\n\n   # create a CryptographyClient using a KeyVaultKey\
@@ -57,11 +57,11 @@ methods:
     \ whose size depends on\nthe key and encryption algorithm.\n\nDecrypt bytes<!--[!code-python[Main](s\\\
     test_examples_crypto.py )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\"\
     : [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\\
-    a\\\\1\\\\s\\\\dist_temp\\\\51\\\\azure-keyvault-keys-4.5.0b5\\\\tests\\\\test_examples_crypto.py\"\
-    , \"xml:space\": \"preserve\", \"force\": false, \"language\": \"python\", \"\
-    highlight_args\": {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\
-    \n   from azure.keyvault.keys.crypto import EncryptionAlgorithm\n\n   result =\
-    \ client.decrypt(EncryptionAlgorithm.rsa_oaep, ciphertext)\n   print(result.plaintext)\n\
+    a\\\\1\\\\s\\\\dist_temp\\\\51\\\\azure-keyvault-keys-4.5.0a20220125001\\\\tests\\\
+    \\test_examples_crypto.py\", \"xml:space\": \"preserve\", \"force\": false, \"\
+    language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"linenos\"\
+    : false} -->\n\n````python\n\n   from azure.keyvault.keys.crypto import EncryptionAlgorithm\n\
+    \n   result = client.decrypt(EncryptionAlgorithm.rsa_oaep, ciphertext)\n   print(result.plaintext)\n\
     \n   ````"
   signature: 'decrypt(algorithm: EncryptionAlgorithm, ciphertext: bytes, **kwargs:
     Any) -> DecryptResult'
@@ -108,13 +108,14 @@ methods:
     \ key and encryption algorithm.\n\nEncrypt bytes<!--[!code-python[Main](s\\test_examples_crypto.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\
-    \\51\\\\azure-keyvault-keys-4.5.0b5\\\\tests\\\\test_examples_crypto.py\", \"\
-    xml:space\": \"preserve\", \"force\": false, \"language\": \"python\", \"highlight_args\"\
-    : {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\n   from azure.keyvault.keys.crypto\
-    \ import EncryptionAlgorithm\n\n   # the result holds the ciphertext and identifies\
-    \ the encryption key and algorithm used\n   result = client.encrypt(EncryptionAlgorithm.rsa_oaep,\
-    \ b\"plaintext\")\n   ciphertext = result.ciphertext\n   print(result.key_id)\n\
-    \   print(result.algorithm)\n\n   ````"
+    \\51\\\\azure-keyvault-keys-4.5.0a20220125001\\\\tests\\\\test_examples_crypto.py\"\
+    , \"xml:space\": \"preserve\", \"force\": false, \"language\": \"python\", \"\
+    highlight_args\": {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\
+    \n   from azure.keyvault.keys.crypto import EncryptionAlgorithm\n\n   # the result\
+    \ holds the ciphertext and identifies the encryption key and algorithm used\n\
+    \   result = client.encrypt(EncryptionAlgorithm.rsa_oaep, b\"plaintext\")\n  \
+    \ ciphertext = result.ciphertext\n   print(result.key_id)\n   print(result.algorithm)\n\
+    \n   ````"
   signature: 'encrypt(algorithm: EncryptionAlgorithm, plaintext: bytes, **kwargs:
     Any) -> EncryptResult'
   parameters:
@@ -167,14 +168,14 @@ methods:
     \ keys/sign permission.\n\nSign bytes<!--[!code-python[Main](s\\test_examples_crypto.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\
-    \\51\\\\azure-keyvault-keys-4.5.0b5\\\\tests\\\\test_examples_crypto.py\", \"\
-    xml:space\": \"preserve\", \"force\": false, \"language\": \"python\", \"highlight_args\"\
-    : {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\n   import hashlib\n\
-    \   from azure.keyvault.keys.crypto import SignatureAlgorithm\n\n   digest = hashlib.sha256(b\"\
-    plaintext\").digest()\n\n   # sign returns the signature and the metadata required\
-    \ to verify it\n   result = client.sign(SignatureAlgorithm.rs256, digest)\n  \
-    \ print(result.key_id)\n   print(result.algorithm)\n   signature = result.signature\n\
-    \n   ````"
+    \\51\\\\azure-keyvault-keys-4.5.0a20220125001\\\\tests\\\\test_examples_crypto.py\"\
+    , \"xml:space\": \"preserve\", \"force\": false, \"language\": \"python\", \"\
+    highlight_args\": {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\
+    \n   import hashlib\n   from azure.keyvault.keys.crypto import SignatureAlgorithm\n\
+    \n   digest = hashlib.sha256(b\"plaintext\").digest()\n\n   # sign returns the\
+    \ signature and the metadata required to verify it\n   result = client.sign(SignatureAlgorithm.rs256,\
+    \ digest)\n   print(result.key_id)\n   print(result.algorithm)\n   signature =\
+    \ result.signature\n\n   ````"
   signature: 'sign(algorithm: SignatureAlgorithm, digest: bytes, **kwargs: Any) ->
     SignResult'
   parameters:
@@ -197,10 +198,10 @@ methods:
     \ keys/unwrapKey permission.\n\nUnwrap a key<!--[!code-python[Main](s\\test_examples_crypto.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\
-    \\51\\\\azure-keyvault-keys-4.5.0b5\\\\tests\\\\test_examples_crypto.py\", \"\
-    xml:space\": \"preserve\", \"force\": false, \"language\": \"python\", \"highlight_args\"\
-    : {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\n   from azure.keyvault.keys.crypto\
-    \ import KeyWrapAlgorithm\n\n   result = client.unwrap_key(KeyWrapAlgorithm.rsa_oaep,\
+    \\51\\\\azure-keyvault-keys-4.5.0a20220125001\\\\tests\\\\test_examples_crypto.py\"\
+    , \"xml:space\": \"preserve\", \"force\": false, \"language\": \"python\", \"\
+    highlight_args\": {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\
+    \n   from azure.keyvault.keys.crypto import KeyWrapAlgorithm\n\n   result = client.unwrap_key(KeyWrapAlgorithm.rsa_oaep,\
     \ encrypted_key)\n   key = result.key\n\n   ````"
   signature: 'unwrap_key(algorithm: KeyWrapAlgorithm, encrypted_key: bytes, **kwargs:
     Any) -> UnwrapResult'
@@ -224,11 +225,12 @@ methods:
     \ permission.\n\nVerify a signature<!--[!code-python[Main](s\\test_examples_crypto.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\
-    \\51\\\\azure-keyvault-keys-4.5.0b5\\\\tests\\\\test_examples_crypto.py\", \"\
-    xml:space\": \"preserve\", \"force\": false, \"language\": \"python\", \"highlight_args\"\
-    : {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\n   from azure.keyvault.keys.crypto\
-    \ import SignatureAlgorithm\n\n   result = client.verify(SignatureAlgorithm.rs256,\
-    \ digest, signature)\n   assert result.is_valid\n\n   ````"
+    \\51\\\\azure-keyvault-keys-4.5.0a20220125001\\\\tests\\\\test_examples_crypto.py\"\
+    , \"xml:space\": \"preserve\", \"force\": false, \"language\": \"python\", \"\
+    highlight_args\": {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\
+    \n   from azure.keyvault.keys.crypto import SignatureAlgorithm\n\n   result =\
+    \ client.verify(SignatureAlgorithm.rs256, digest, signature)\n   assert result.is_valid\n\
+    \n   ````"
   signature: 'verify(algorithm: SignatureAlgorithm, digest: bytes, signature: bytes,
     **kwargs: Any) -> VerifyResult'
   parameters:
@@ -258,7 +260,7 @@ methods:
   summary: "Wrap a key with the client's key.\n\nRequires the keys/wrapKey permission.\n\
     \nWrap a key<!--[!code-python[Main](s\\test_examples_crypto.py )]-->\n\n<!-- literal_block\
     \ {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\"\
-    : [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\51\\\\azure-keyvault-keys-4.5.0b5\\\
+    : [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\51\\\\azure-keyvault-keys-4.5.0a20220125001\\\
     \\tests\\\\test_examples_crypto.py\", \"xml:space\": \"preserve\", \"force\":\
     \ false, \"language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"\
     linenos\": false} -->\n\n````python\n\n   from azure.keyvault.keys.crypto import\

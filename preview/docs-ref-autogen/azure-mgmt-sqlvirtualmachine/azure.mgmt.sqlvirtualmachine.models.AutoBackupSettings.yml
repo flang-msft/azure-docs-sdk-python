@@ -1,0 +1,88 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.sqlvirtualmachine.models.AutoBackupSettings
+name: AutoBackupSettings
+fullName: azure.mgmt.sqlvirtualmachine.models.AutoBackupSettings
+module: azure.mgmt.sqlvirtualmachine.models
+inheritances:
+- msrest.serialization.Model
+summary: Configure backups for databases in your SQL virtual machine.
+constructor:
+  syntax: 'AutoBackupSettings(*, enable: Optional[bool] = None, enable_encryption:
+    Optional[bool] = None, retention_period: Optional[int] = None, storage_account_url:
+    Optional[str] = None, storage_access_key: Optional[str] = None, password: Optional[str]
+    = None, backup_system_dbs: Optional[bool] = None, backup_schedule_type: Optional[Union[str,
+    azure.mgmt.sqlvirtualmachine.models._sql_virtual_machine_management_client_enums.BackupScheduleType]]
+    = None, full_backup_frequency: Optional[Union[str, azure.mgmt.sqlvirtualmachine.models._sql_virtual_machine_management_client_enums.FullBackupFrequencyType]]
+    = None, full_backup_start_time: Optional[int] = None, full_backup_window_hours:
+    Optional[int] = None, log_backup_frequency: Optional[int] = None, **kwargs)'
+  parameters:
+  - name: enable
+    description: Enable or disable autobackup on SQL virtual machine.
+    isRequired: true
+    types:
+    - <xref:bool>
+  - name: enable_encryption
+    description: Enable or disable encryption for backup on SQL virtual machine.
+    isRequired: true
+    types:
+    - <xref:bool>
+  - name: retention_period
+    description: 'Retention period of backup: 1-30 days.'
+    isRequired: true
+    types:
+    - <xref:int>
+  - name: storage_account_url
+    description: Storage account url where backup will be taken to.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: storage_access_key
+    description: Storage account key where backup will be taken to.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: password
+    description: Password for encryption on backup.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: backup_system_dbs
+    description: Include or exclude system databases from auto backup.
+    isRequired: true
+    types:
+    - <xref:bool>
+  - name: backup_schedule_type
+    description: 'Backup schedule type. Possible values include: "Manual",
+
+      "Automated".'
+    isRequired: true
+    types:
+    - <xref:str>
+    - <xref:azure.mgmt.sqlvirtualmachine.models.BackupScheduleType>
+  - name: full_backup_frequency
+    description: 'Frequency of full backups. In both cases, full backups begin
+
+      during the next scheduled time window. Possible values include: "Daily", "Weekly".'
+    isRequired: true
+    types:
+    - <xref:str>
+    - <xref:azure.mgmt.sqlvirtualmachine.models.FullBackupFrequencyType>
+  - name: full_backup_start_time
+    description: 'Start time of a given day during which full backups can take
+
+      place. 0-23 hours.'
+    isRequired: true
+    types:
+    - <xref:int>
+  - name: full_backup_window_hours
+    description: 'Duration of the time window of a given day during which full
+
+      backups can take place. 1-23 hours.'
+    isRequired: true
+    types:
+    - <xref:int>
+  - name: log_backup_frequency
+    description: Frequency of log backups. 5-60 minutes.
+    isRequired: true
+    types:
+    - <xref:int>

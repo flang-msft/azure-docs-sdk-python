@@ -1,0 +1,17 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.storagecache.models.CacheSecuritySettings
+name: CacheSecuritySettings
+fullName: azure.mgmt.storagecache.models.CacheSecuritySettings
+module: azure.mgmt.storagecache.models
+inheritances:
+- msrest.serialization.Model
+summary: Cache security settings.
+constructor:
+  syntax: 'CacheSecuritySettings(*, access_policies: Optional[List[azure.mgmt.storagecache.models._models_py3.NfsAccessPolicy]]
+    = None, **kwargs)'
+  parameters:
+  - name: access_policies
+    description: NFS access policies defined for this cache.
+    isRequired: true
+    types:
+    - <xref:list>[<xref:storage_cache_management_client.models.NfsAccessPolicy>]

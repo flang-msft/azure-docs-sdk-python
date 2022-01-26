@@ -50,7 +50,7 @@ variables:
   types:
   - <xref:str>
 - description: Size of the artifact
-  name: size
+  name: size_in_bytes
   types:
   - <xref:str>
 - description: Tags associated with a registry artifact
@@ -72,7 +72,7 @@ attributes:
   name: operating_system
 - uid: azure.containerregistry.ArtifactManifestProperties.repository_name
   name: repository_name
-- uid: azure.containerregistry.ArtifactManifestProperties.size
-  name: size
+- uid: azure.containerregistry.ArtifactManifestProperties.size_in_bytes
+  name: size_in_bytes
 - uid: azure.containerregistry.ArtifactManifestProperties.tags
   name: tags

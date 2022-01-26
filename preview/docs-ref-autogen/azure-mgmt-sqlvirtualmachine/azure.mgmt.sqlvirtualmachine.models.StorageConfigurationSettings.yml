@@ -1,0 +1,47 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.sqlvirtualmachine.models.StorageConfigurationSettings
+name: StorageConfigurationSettings
+fullName: azure.mgmt.sqlvirtualmachine.models.StorageConfigurationSettings
+module: azure.mgmt.sqlvirtualmachine.models
+inheritances:
+- msrest.serialization.Model
+summary: Storage Configurations for SQL Data, Log and TempDb.
+constructor:
+  syntax: 'StorageConfigurationSettings(*, sql_data_settings: Optional[azure.mgmt.sqlvirtualmachine.models._models_py3.SQLStorageSettings]
+    = None, sql_log_settings: Optional[azure.mgmt.sqlvirtualmachine.models._models_py3.SQLStorageSettings]
+    = None, sql_temp_db_settings: Optional[azure.mgmt.sqlvirtualmachine.models._models_py3.SQLStorageSettings]
+    = None, disk_configuration_type: Optional[Union[str, azure.mgmt.sqlvirtualmachine.models._sql_virtual_machine_management_client_enums.DiskConfigurationType]]
+    = None, storage_workload_type: Optional[Union[str, azure.mgmt.sqlvirtualmachine.models._sql_virtual_machine_management_client_enums.StorageWorkloadType]]
+    = None, **kwargs)'
+  parameters:
+  - name: sql_data_settings
+    description: SQL Server Data Storage Settings.
+    isRequired: true
+    types:
+    - <xref:azure.mgmt.sqlvirtualmachine.models.SQLStorageSettings>
+  - name: sql_log_settings
+    description: SQL Server Log Storage Settings.
+    isRequired: true
+    types:
+    - <xref:azure.mgmt.sqlvirtualmachine.models.SQLStorageSettings>
+  - name: sql_temp_db_settings
+    description: SQL Server TempDb Storage Settings.
+    isRequired: true
+    types:
+    - <xref:azure.mgmt.sqlvirtualmachine.models.SQLStorageSettings>
+  - name: disk_configuration_type
+    description: 'Disk configuration to apply to SQL Server. Possible values
+
+      include: "NEW", "EXTEND", "ADD".'
+    isRequired: true
+    types:
+    - <xref:str>
+    - <xref:azure.mgmt.sqlvirtualmachine.models.DiskConfigurationType>
+  - name: storage_workload_type
+    description: 'Storage workload type. Possible values include: "GENERAL",
+
+      "OLTP", "DW".'
+    isRequired: true
+    types:
+    - <xref:str>
+    - <xref:azure.mgmt.sqlvirtualmachine.models.StorageWorkloadType>

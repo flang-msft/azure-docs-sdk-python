@@ -35,23 +35,34 @@ methods:
     [https://docs.microsoft.com/azure/cognitive-services/translator/document-translation/overview](https://docs.microsoft.com/azure/cognitive-services/translator/document-translation/overview)'
   parameters:
   - name: source_url
-    description: 'The source SAS URL to the Azure Blob container containing the documents
+    description: 'The source URL to the Azure Blob container containing the documents
+      to be translated.
 
-      to be translated. See the service documentation for the supported SAS permissions
+      This can be a SAS URL (see the service documentation for the supported SAS permissions
       for accessing
 
-      source storage containers/blobs: [https://aka.ms/azsdk/documenttranslation/sas-permissions](https://aka.ms/azsdk/documenttranslation/sas-permissions)'
+      source storage containers/blobs: [https://aka.ms/azsdk/documenttranslation/sas-permissions](https://aka.ms/azsdk/documenttranslation/sas-permissions))
+      or a managed
+
+      identity can be created and used to access documents in your storage account
+
+      (see [https://aka.ms/azsdk/documenttranslation/managed-identity](https://aka.ms/azsdk/documenttranslation/managed-identity)).'
     isRequired: true
     types:
     - <xref:str>
   - name: target_url
-    description: 'The target SAS URL to the Azure Blob container where the translated
+    description: 'The target URL to the Azure Blob container where the translated
       documents
 
-      should be written. See the service documentation for the supported SAS permissions
-      for accessing
+      should be written. This can be a SAS URL (see the service documentation for
+      the supported SAS permissions
 
-      target storage containers/blobs: [https://aka.ms/azsdk/documenttranslation/sas-permissions](https://aka.ms/azsdk/documenttranslation/sas-permissions)'
+      for accessing target storage containers/blobs: [https://aka.ms/azsdk/documenttranslation/sas-permissions](https://aka.ms/azsdk/documenttranslation/sas-permissions))
+
+      or a managed identity can be created and used to access documents in your storage
+      account
+
+      (see [https://aka.ms/azsdk/documenttranslation/managed-identity](https://aka.ms/azsdk/documenttranslation/managed-identity)).'
     isRequired: true
     types:
     - <xref:str>
@@ -128,7 +139,7 @@ methods:
   - "Translate the documents in your storage container.<!--[!code-python[Main](les\\\
     async_samples\\sample_begin_translation_async.py )]-->\n\n<!-- literal_block {\"\
     ids\": [], \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\": [],\
-    \ \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\31\\\\azure-ai-translation-document-1.0.0b5\\\
+    \ \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\31\\\\azure-ai-translation-document-1.0.0a20220125001\\\
     \\samples\\\\async_samples\\\\sample_begin_translation_async.py\", \"xml:space\"\
     : \"preserve\", \"force\": false, \"language\": \"python\", \"highlight_args\"\
     : {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\n   import os\n\
@@ -318,7 +329,7 @@ methods:
   - "List all the document statuses as they are being translated.<!--[!code-python[Main](les\\\
     async_samples\\sample_check_document_statuses_async.py )]-->\n\n<!-- literal_block\
     \ {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\"\
-    : [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\31\\\\azure-ai-translation-document-1.0.0b5\\\
+    : [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\31\\\\azure-ai-translation-document-1.0.0a20220125001\\\
     \\samples\\\\async_samples\\\\sample_check_document_statuses_async.py\", \"xml:space\"\
     : \"preserve\", \"force\": false, \"language\": \"python\", \"highlight_args\"\
     : {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\n   import os\n\
@@ -409,7 +420,7 @@ methods:
   - "List all submitted translations under the resource.<!--[!code-python[Main](les\\\
     async_samples\\sample_list_translations_async.py )]-->\n\n<!-- literal_block {\"\
     ids\": [], \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\": [],\
-    \ \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\31\\\\azure-ai-translation-document-1.0.0b5\\\
+    \ \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\31\\\\azure-ai-translation-document-1.0.0a20220125001\\\
     \\samples\\\\async_samples\\\\sample_list_translations_async.py\", \"xml:space\"\
     : \"preserve\", \"force\": false, \"language\": \"python\", \"highlight_args\"\
     : {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\n   from azure.core.credentials\
