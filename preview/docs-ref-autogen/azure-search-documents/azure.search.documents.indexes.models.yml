@@ -456,6 +456,7 @@ functions:
     types:
     - <xref:bool>
 classes:
+- azure.search.documents.indexes.models.AmlSkill
 - azure.search.documents.indexes.models.AnalyzeResult
 - azure.search.documents.indexes.models.AnalyzeTextOptions
 - azure.search.documents.indexes.models.AnalyzedTokenInfo
