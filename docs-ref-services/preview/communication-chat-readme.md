@@ -1,23 +1,22 @@
 ---
 title: Azure Communication Chat Package client library for Python
 keywords: Azure, python, SDK, API, azure-communication-chat, communication
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 08/16/2021
+author: acsdevx-msft
+ms.author: acsdevx-msft
+ms.date: 01/27/2022
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: communication
 ---
-
-# Azure Communication Chat Package client library for Python - Version 1.1.0b1 
+# Azure Communication Chat Package client library for Python - Version 1.1.1a20220127001 
 
 
 This package contains a Python SDK for Azure Communication Services for Chat.
 Read more about Azure Communication Services [here](https://docs.microsoft.com/azure/communication-services/overview)
 
-[Source code](https://github.com/Azure/azure-sdk-for-python/tree/azure-communication-chat_1.1.0b1/sdk/communication/azure-communication-chat) | [Package (Pypi)](https://pypi.org/project/azure-communication-chat/) | [API reference documentation](https://azuresdkdocs.blob.core.windows.net/$web/python/azure-communication-chat/1.0.0b5/index.html) | [Product documentation](https://docs.microsoft.com/azure/communication-services/)
+[Source code](https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/communication/azure-communication-chat) | [Package (Pypi)](https://pypi.org/project/azure-communication-chat/) | [API reference documentation](https://azuresdkdocs.blob.core.windows.net/$web/python/azure-communication-chat/1.0.0b5/index.html) | [Product documentation](https://docs.microsoft.com/azure/communication-services/)
 
 # Getting started
 
@@ -574,7 +573,7 @@ Running into issues? This section should contain details as to what to do there.
 
 # Next steps
 
-More sample code should go [here](https://github.com/Azure/azure-sdk-for-python/tree/azure-communication-chat_1.1.0b1/sdk/communication/azure-communication-chat/samples), along with links out to the appropriate example tests.
+More sample code should go [here](https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/communication/azure-communication-chat/samples), along with links out to the appropriate example tests.
 
 # Contributing
 
