@@ -70,17 +70,17 @@ examples:
 - "Creating the DocumentModelAdministrationClient with an endpoint and API key.<!--[!code-python[Main](les\\\
   v3.2-beta\\sample_authentication.py )]-->\n\n<!-- literal_block {\"ids\": [], \"\
   classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\": \"\
-  D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\64\\\\azure-ai-formrecognizer-3.2.0b2\\\\samples\\\
-  \\v3.2-beta\\\\sample_authentication.py\", \"xml:space\": \"preserve\", \"force\"\
-  : false, \"language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"\
-  linenos\": false} -->\n\n````python\n\n   from azure.core.credentials import AzureKeyCredential\n\
-  \   from azure.ai.formrecognizer import DocumentModelAdministrationClient\n\n  \
-  \ endpoint = os.environ[\"AZURE_FORM_RECOGNIZER_ENDPOINT\"]\n   key = os.environ[\"\
+  D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\64\\\\azure-ai-formrecognizer-3.2.0a20220126002\\\
+  \\samples\\\\v3.2-beta\\\\sample_authentication.py\", \"xml:space\": \"preserve\"\
+  , \"force\": false, \"language\": \"python\", \"highlight_args\": {\"linenostart\"\
+  : 1}, \"linenos\": false} -->\n\n````python\n\n   from azure.core.credentials import\
+  \ AzureKeyCredential\n   from azure.ai.formrecognizer import DocumentModelAdministrationClient\n\
+  \n   endpoint = os.environ[\"AZURE_FORM_RECOGNIZER_ENDPOINT\"]\n   key = os.environ[\"\
   AZURE_FORM_RECOGNIZER_KEY\"]\n\n   document_model_admin_client = DocumentModelAdministrationClient(endpoint,\
   \ AzureKeyCredential(key))\n\n   ````\n\nCreating the DocumentModelAdministrationClient\
   \ with a token credential.<!--[!code-python[Main](les\\v3.2-beta\\sample_authentication.py\
   \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
-  : [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\64\\\\azure-ai-formrecognizer-3.2.0b2\\\
+  : [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\64\\\\azure-ai-formrecognizer-3.2.0a20220126002\\\
   \\samples\\\\v3.2-beta\\\\sample_authentication.py\", \"xml:space\": \"preserve\"\
   , \"force\": false, \"language\": \"python\", \"highlight_args\": {\"linenostart\"\
   : 1}, \"linenos\": false} -->\n\n````python\n\n   \"\"\"DefaultAzureCredential will\
@@ -155,24 +155,24 @@ methods:
   - "Building a model from training files.<!--[!code-python[Main](les\\v3.2-beta\\\
     sample_build_model.py )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [],\
     \ \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\\
-    1\\\\s\\\\dist_temp\\\\64\\\\azure-ai-formrecognizer-3.2.0b2\\\\samples\\\\v3.2-beta\\\
-    \\sample_build_model.py\", \"xml:space\": \"preserve\", \"force\": false, \"language\"\
-    : \"python\", \"highlight_args\": {\"linenostart\": 1}, \"linenos\": false} -->\n\
-    \n````python\n\n   from azure.ai.formrecognizer import DocumentModelAdministrationClient\n\
-    \   from azure.core.credentials import AzureKeyCredential\n\n   endpoint = os.environ[\"\
-    AZURE_FORM_RECOGNIZER_ENDPOINT\"]\n   key = os.environ[\"AZURE_FORM_RECOGNIZER_KEY\"\
-    ]\n   container_sas_url = os.environ[\"CONTAINER_SAS_URL\"]\n\n   document_model_admin_client\
-    \ = DocumentModelAdministrationClient(endpoint, AzureKeyCredential(key))\n   poller\
-    \ = document_model_admin_client.begin_build_model(\n       container_sas_url,\
-    \ description=\"my model description\"\n   )\n   model = poller.result()\n\n \
-    \  print(\"Model ID: {}\".format(model.model_id))\n   print(\"Description: {}\"\
-    .format(model.description))\n   print(\"Model created on: {}\\n\".format(model.created_on))\n\
-    \   print(\"Doc types the model can recognize:\")\n   for name, doc_type in model.doc_types.items():\n\
-    \       print(\"\\nDoc Type: '{}' which has the following fields:\".format(name))\n\
-    \       for field_name, field in doc_type.field_schema.items():\n           print(\"\
-    Field: '{}' has type '{}' and confidence score {}\".format(\n               field_name,\
-    \ field[\"type\"], doc_type.field_confidence[field_name]\n           ))\n\n  \
-    \ ````\n"
+    1\\\\s\\\\dist_temp\\\\64\\\\azure-ai-formrecognizer-3.2.0a20220126002\\\\samples\\\
+    \\v3.2-beta\\\\sample_build_model.py\", \"xml:space\": \"preserve\", \"force\"\
+    : false, \"language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"\
+    linenos\": false} -->\n\n````python\n\n   from azure.ai.formrecognizer import\
+    \ DocumentModelAdministrationClient\n   from azure.core.credentials import AzureKeyCredential\n\
+    \n   endpoint = os.environ[\"AZURE_FORM_RECOGNIZER_ENDPOINT\"]\n   key = os.environ[\"\
+    AZURE_FORM_RECOGNIZER_KEY\"]\n   container_sas_url = os.environ[\"CONTAINER_SAS_URL\"\
+    ]\n\n   document_model_admin_client = DocumentModelAdministrationClient(endpoint,\
+    \ AzureKeyCredential(key))\n   poller = document_model_admin_client.begin_build_model(\n\
+    \       container_sas_url, description=\"my model description\"\n   )\n   model\
+    \ = poller.result()\n\n   print(\"Model ID: {}\".format(model.model_id))\n   print(\"\
+    Description: {}\".format(model.description))\n   print(\"Model created on: {}\\\
+    n\".format(model.created_on))\n   print(\"Doc types the model can recognize:\"\
+    )\n   for name, doc_type in model.doc_types.items():\n       print(\"\\nDoc Type:\
+    \ '{}' which has the following fields:\".format(name))\n       for field_name,\
+    \ field in doc_type.field_schema.items():\n           print(\"Field: '{}' has\
+    \ type '{}' and confidence score {}\".format(\n               field_name, field[\"\
+    type\"], doc_type.field_confidence[field_name]\n           ))\n\n   ````\n"
 - uid: azure.ai.formrecognizer.DocumentModelAdministrationClient.begin_copy_model
   name: begin_copy_model
   summary: 'Copy a model stored in this resource (the source) to the user specified
@@ -220,12 +220,12 @@ methods:
   - "Copy a model from the source resource to the target resource<!--[!code-python[Main](les\\\
     v3.2-beta\\sample_copy_model.py )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\"\
     : [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\\
-    a\\\\1\\\\s\\\\dist_temp\\\\64\\\\azure-ai-formrecognizer-3.2.0b2\\\\samples\\\
-    \\v3.2-beta\\\\sample_copy_model.py\", \"xml:space\": \"preserve\", \"force\"\
-    : false, \"language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"\
-    linenos\": false} -->\n\n````python\n\n   from azure.core.credentials import AzureKeyCredential\n\
-    \   from azure.ai.formrecognizer import DocumentModelAdministrationClient\n\n\
-    \   source_endpoint = os.environ[\"AZURE_FORM_RECOGNIZER_SOURCE_ENDPOINT\"]\n\
+    a\\\\1\\\\s\\\\dist_temp\\\\64\\\\azure-ai-formrecognizer-3.2.0a20220126002\\\\\
+    samples\\\\v3.2-beta\\\\sample_copy_model.py\", \"xml:space\": \"preserve\", \"\
+    force\": false, \"language\": \"python\", \"highlight_args\": {\"linenostart\"\
+    : 1}, \"linenos\": false} -->\n\n````python\n\n   from azure.core.credentials\
+    \ import AzureKeyCredential\n   from azure.ai.formrecognizer import DocumentModelAdministrationClient\n\
+    \n   source_endpoint = os.environ[\"AZURE_FORM_RECOGNIZER_SOURCE_ENDPOINT\"]\n\
     \   source_key = os.environ[\"AZURE_FORM_RECOGNIZER_SOURCE_KEY\"]\n   target_endpoint\
     \ = os.environ[\"AZURE_FORM_RECOGNIZER_TARGET_ENDPOINT\"]\n   target_key = os.environ[\"\
     AZURE_FORM_RECOGNIZER_TARGET_KEY\"]\n   source_model_id = os.getenv(\"AZURE_SOURCE_MODEL_ID\"\
@@ -291,10 +291,10 @@ methods:
   - "Creating a composed model with existing models.<!--[!code-python[Main](les\\\
     v3.2-beta\\sample_create_composed_model.py )]-->\n\n<!-- literal_block {\"ids\"\
     : [], \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\"\
-    : \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\64\\\\azure-ai-formrecognizer-3.2.0b2\\\\\
-    samples\\\\v3.2-beta\\\\sample_create_composed_model.py\", \"xml:space\": \"preserve\"\
-    , \"force\": false, \"language\": \"python\", \"highlight_args\": {\"linenostart\"\
-    : 1}, \"linenos\": false} -->\n\n````python\n\n   from azure.core.credentials\
+    : \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\64\\\\azure-ai-formrecognizer-3.2.0a20220126002\\\
+    \\samples\\\\v3.2-beta\\\\sample_create_composed_model.py\", \"xml:space\": \"\
+    preserve\", \"force\": false, \"language\": \"python\", \"highlight_args\": {\"\
+    linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\n   from azure.core.credentials\
     \ import AzureKeyCredential\n   from azure.ai.formrecognizer import DocumentModelAdministrationClient\n\
     \n   endpoint = os.environ[\"AZURE_FORM_RECOGNIZER_ENDPOINT\"]\n   key = os.environ[\"\
     AZURE_FORM_RECOGNIZER_KEY\"]\n   po_supplies = os.environ['PURCHASE_ORDER_OFFICE_SUPPLIES_SAS_URL']\n\
@@ -349,11 +349,11 @@ methods:
   - "Delete a model.<!--[!code-python[Main](les\\v3.2-beta\\sample_manage_models.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\
-    \\64\\\\azure-ai-formrecognizer-3.2.0b2\\\\samples\\\\v3.2-beta\\\\sample_manage_models.py\"\
-    , \"xml:space\": \"preserve\", \"force\": false, \"language\": \"python\", \"\
-    highlight_args\": {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\
-    \n   document_model_admin_client.delete_model(model_id=my_model.model_id)\n\n\
-    \   try:\n       document_model_admin_client.get_model(model_id=my_model.model_id)\n\
+    \\64\\\\azure-ai-formrecognizer-3.2.0a20220126002\\\\samples\\\\v3.2-beta\\\\\
+    sample_manage_models.py\", \"xml:space\": \"preserve\", \"force\": false, \"language\"\
+    : \"python\", \"highlight_args\": {\"linenostart\": 1}, \"linenos\": false} -->\n\
+    \n````python\n\n   document_model_admin_client.delete_model(model_id=my_model.model_id)\n\
+    \n   try:\n       document_model_admin_client.get_model(model_id=my_model.model_id)\n\
     \   except ResourceNotFoundError:\n       print(\"Successfully deleted model with\
     \ ID {}\".format(my_model.model_id))\n\n   ````\n"
 - uid: azure.ai.formrecognizer.DocumentModelAdministrationClient.get_account_info
@@ -371,8 +371,8 @@ methods:
   - "Get model counts and limits under the Form Recognizer resource.<!--[!code-python[Main](les\\\
     v3.2-beta\\sample_manage_models.py )]-->\n\n<!-- literal_block {\"ids\": [], \"\
     classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\":\
-    \ \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\64\\\\azure-ai-formrecognizer-3.2.0b2\\\\\
-    samples\\\\v3.2-beta\\\\sample_manage_models.py\", \"xml:space\": \"preserve\"\
+    \ \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\64\\\\azure-ai-formrecognizer-3.2.0a20220126002\\\
+    \\samples\\\\v3.2-beta\\\\sample_manage_models.py\", \"xml:space\": \"preserve\"\
     , \"force\": false, \"language\": \"python\", \"highlight_args\": {\"linenostart\"\
     : 1}, \"linenos\": false} -->\n\n````python\n\n   document_model_admin_client\
     \ = DocumentModelAdministrationClient(endpoint=endpoint, credential=AzureKeyCredential(key))\n\
@@ -437,10 +437,10 @@ methods:
   - "Get a model by its ID.<!--[!code-python[Main](les\\v3.2-beta\\sample_manage_models.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\
-    \\64\\\\azure-ai-formrecognizer-3.2.0b2\\\\samples\\\\v3.2-beta\\\\sample_manage_models.py\"\
-    , \"xml:space\": \"preserve\", \"force\": false, \"language\": \"python\", \"\
-    highlight_args\": {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\
-    \n   my_model = document_model_admin_client.get_model(model_id=model.model_id)\n\
+    \\64\\\\azure-ai-formrecognizer-3.2.0a20220126002\\\\samples\\\\v3.2-beta\\\\\
+    sample_manage_models.py\", \"xml:space\": \"preserve\", \"force\": false, \"language\"\
+    : \"python\", \"highlight_args\": {\"linenostart\": 1}, \"linenos\": false} -->\n\
+    \n````python\n\n   my_model = document_model_admin_client.get_model(model_id=model.model_id)\n\
     \   print(\"\\nModel ID: {}\".format(my_model.model_id))\n   print(\"Description:\
     \ {}\".format(my_model.description))\n   print(\"Model created on: {}\".format(my_model.created_on))\n\
     \n   ````\n"
@@ -475,11 +475,11 @@ methods:
   - "Get a document model operation by its ID.<!--[!code-python[Main](les\\v3.2-beta\\\
     sample_get_operations.py )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\"\
     : [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\\
-    a\\\\1\\\\s\\\\dist_temp\\\\64\\\\azure-ai-formrecognizer-3.2.0b2\\\\samples\\\
-    \\v3.2-beta\\\\sample_get_operations.py\", \"xml:space\": \"preserve\", \"force\"\
-    : false, \"language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"\
-    linenos\": false} -->\n\n````python\n\n   # Get an operation by ID\n   if operations:\n\
-    \       print(\"\\nGetting operation info by ID: {}\".format(operations[0].operation_id))\n\
+    a\\\\1\\\\s\\\\dist_temp\\\\64\\\\azure-ai-formrecognizer-3.2.0a20220126002\\\\\
+    samples\\\\v3.2-beta\\\\sample_get_operations.py\", \"xml:space\": \"preserve\"\
+    , \"force\": false, \"language\": \"python\", \"highlight_args\": {\"linenostart\"\
+    : 1}, \"linenos\": false} -->\n\n````python\n\n   # Get an operation by ID\n \
+    \  if operations:\n       print(\"\\nGetting operation info by ID: {}\".format(operations[0].operation_id))\n\
     \       operation_info = document_model_admin_client.get_operation(operations[0].operation_id)\n\
     \       if operation_info.status == \"succeeded\":\n           print(\"My {} operation\
     \ is completed.\".format(operation_info.kind))\n           result = operation_info.result\n\
@@ -506,8 +506,8 @@ methods:
   - "List all models that were built successfully under the Form Recognizer resource.<!--[!code-python[Main](les\\\
     v3.2-beta\\sample_manage_models.py )]-->\n\n<!-- literal_block {\"ids\": [], \"\
     classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\":\
-    \ \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\64\\\\azure-ai-formrecognizer-3.2.0b2\\\\\
-    samples\\\\v3.2-beta\\\\sample_manage_models.py\", \"xml:space\": \"preserve\"\
+    \ \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\64\\\\azure-ai-formrecognizer-3.2.0a20220126002\\\
+    \\samples\\\\v3.2-beta\\\\sample_manage_models.py\", \"xml:space\": \"preserve\"\
     , \"force\": false, \"language\": \"python\", \"highlight_args\": {\"linenostart\"\
     : 1}, \"linenos\": false} -->\n\n````python\n\n   models = document_model_admin_client.list_models()\n\
     \n   print(\"We have the following 'ready' models with IDs and descriptions:\"\
@@ -538,8 +538,8 @@ methods:
   - "List all document model operations in the past 24 hours.<!--[!code-python[Main](les\\\
     v3.2-beta\\sample_get_operations.py )]-->\n\n<!-- literal_block {\"ids\": [],\
     \ \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\"\
-    : \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\64\\\\azure-ai-formrecognizer-3.2.0b2\\\\\
-    samples\\\\v3.2-beta\\\\sample_get_operations.py\", \"xml:space\": \"preserve\"\
+    : \"D:\\\\a\\\\1\\\\s\\\\dist_temp\\\\64\\\\azure-ai-formrecognizer-3.2.0a20220126002\\\
+    \\samples\\\\v3.2-beta\\\\sample_get_operations.py\", \"xml:space\": \"preserve\"\
     , \"force\": false, \"language\": \"python\", \"highlight_args\": {\"linenostart\"\
     : 1}, \"linenos\": false} -->\n\n````python\n\n   from azure.core.credentials\
     \ import AzureKeyCredential\n   from azure.ai.formrecognizer import DocumentModelAdministrationClient\n\
