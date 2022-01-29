@@ -1719,7 +1719,7 @@ methods:
     = None, **kwargs: Any) -> Any'
   parameters:
   - name: guids
-    description: An array of GUIDs of entities to create.
+    description: An array of GUIDs of entities to list.
     types:
     - <xref:list>[<xref:str>]
   - name: min_ext_info

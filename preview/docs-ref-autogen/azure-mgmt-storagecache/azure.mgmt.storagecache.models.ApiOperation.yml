@@ -1,0 +1,41 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.storagecache.models.ApiOperation
+name: ApiOperation
+fullName: azure.mgmt.storagecache.models.ApiOperation
+module: azure.mgmt.storagecache.models
+inheritances:
+- msrest.serialization.Model
+summary: 'REST API operation description: see [https://github.com/Azure/azure-rest-api-specs/blob/master/documentation/openapi-authoring-automated-guidelines.md#r3023-operationsapiimplementation](https://github.com/Azure/azure-rest-api-specs/blob/master/documentation/openapi-authoring-automated-guidelines.md#r3023-operationsapiimplementation).'
+constructor:
+  syntax: 'ApiOperation(*, display: Optional[azure.mgmt.storagecache.models._models_py3.ApiOperationDisplay]
+    = None, origin: Optional[str] = None, is_data_action: Optional[bool] = None, name:
+    Optional[str] = None, service_specification: Optional[azure.mgmt.storagecache.models._models_py3.ApiOperationPropertiesServiceSpecification]
+    = None, **kwargs)'
+  parameters:
+  - name: display
+    description: The object that represents the operation.
+    isRequired: true
+    types:
+    - <xref:storage_cache_management_client.models.ApiOperationDisplay>
+  - name: origin
+    description: Origin of the operation.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: is_data_action
+    description: The flag that indicates whether the operation applies to data plane.
+    isRequired: true
+    types:
+    - <xref:bool>
+  - name: name
+    description: 'Operation name: {provider}/{resource}/{operation}.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: service_specification
+    description: 'Specification of the all the metrics provided for a resource
+
+      type.'
+    isRequired: true
+    types:
+    - <xref:storage_cache_management_client.models.ApiOperationPropertiesServiceSpecification>

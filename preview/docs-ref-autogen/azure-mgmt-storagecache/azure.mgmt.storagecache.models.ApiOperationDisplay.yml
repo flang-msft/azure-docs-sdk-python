@@ -1,0 +1,32 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.storagecache.models.ApiOperationDisplay
+name: ApiOperationDisplay
+fullName: azure.mgmt.storagecache.models.ApiOperationDisplay
+module: azure.mgmt.storagecache.models
+inheritances:
+- msrest.serialization.Model
+summary: The object that represents the operation.
+constructor:
+  syntax: 'ApiOperationDisplay(*, operation: Optional[str] = None, provider: Optional[str]
+    = None, resource: Optional[str] = None, description: Optional[str] = None, **kwargs)'
+  parameters:
+  - name: operation
+    description: 'Operation type: Read, write, delete, etc.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: provider
+    description: 'Service provider: Microsoft.StorageCache.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: resource
+    description: 'Resource on which the operation is performed: Cache, etc.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: description
+    description: The description of the operation.
+    isRequired: true
+    types:
+    - <xref:str>

@@ -1,0 +1,57 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.storagecache.models.MetricSpecification
+name: MetricSpecification
+fullName: azure.mgmt.storagecache.models.MetricSpecification
+module: azure.mgmt.storagecache.models
+inheritances:
+- msrest.serialization.Model
+summary: Details about operation related to metrics.
+constructor:
+  syntax: 'MetricSpecification(*, name: Optional[str] = None, display_name: Optional[str]
+    = None, display_description: Optional[str] = None, unit: Optional[str] = None,
+    aggregation_type: Optional[str] = None, supported_aggregation_types: Optional[List[Union[str,
+    azure.mgmt.storagecache.models._storage_cache_management_client_enums.MetricAggregationType]]]
+    = None, metric_class: Optional[str] = None, dimensions: Optional[List[azure.mgmt.storagecache.models._models_py3.MetricDimension]]
+    = None, **kwargs)'
+  parameters:
+  - name: name
+    description: The name of the metric.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: display_name
+    description: Localized display name of the metric.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: display_description
+    description: The description of the metric.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: unit
+    description: The unit that the metric is measured in.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: aggregation_type
+    description: The type of metric aggregation.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: supported_aggregation_types
+    description: Support metric aggregation type.
+    isRequired: true
+    types:
+    - <xref:list>[<xref:str>
+    - <xref:storage_cache_management_client.models.MetricAggregationType>]
+  - name: metric_class
+    description: Type of metrics.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: dimensions
+    description: Dimensions of the metric.
+    isRequired: true
+    types:
+    - <xref:list>[<xref:storage_cache_management_client.models.MetricDimension>]

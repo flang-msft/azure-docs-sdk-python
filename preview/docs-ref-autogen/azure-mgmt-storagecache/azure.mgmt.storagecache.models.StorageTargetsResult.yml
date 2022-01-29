@@ -1,0 +1,22 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.storagecache.models.StorageTargetsResult
+name: StorageTargetsResult
+fullName: azure.mgmt.storagecache.models.StorageTargetsResult
+module: azure.mgmt.storagecache.models
+inheritances:
+- msrest.serialization.Model
+summary: A list of Storage Targets.
+constructor:
+  syntax: 'StorageTargetsResult(*, next_link: Optional[str] = None, value: Optional[List[azure.mgmt.storagecache.models._models_py3.StorageTarget]]
+    = None, **kwargs)'
+  parameters:
+  - name: next_link
+    description: The URI to fetch the next page of Storage Targets.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: value
+    description: The list of Storage Targets defined for the Cache.
+    isRequired: true
+    types:
+    - <xref:list>[<xref:storage_cache_management_client.models.StorageTarget>]

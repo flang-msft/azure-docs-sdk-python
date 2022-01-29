@@ -1,0 +1,16 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.storagecache.models.CacheSku
+name: CacheSku
+fullName: azure.mgmt.storagecache.models.CacheSku
+module: azure.mgmt.storagecache.models
+inheritances:
+- msrest.serialization.Model
+summary: SKU for the Cache.
+constructor:
+  syntax: 'CacheSku(*, name: Optional[str] = None, **kwargs)'
+  parameters:
+  - name: name
+    description: SKU name for this Cache.
+    isRequired: true
+    types:
+    - <xref:str>
