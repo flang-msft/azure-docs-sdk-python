@@ -225,7 +225,9 @@
         "branch": "master",
         "folder": "azure-common",
         "install_type": "pypi",
-        "name": "azure-common"
+        "name": "azure-common",
+        "version": "==1.1.28",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
         "test*",
@@ -1521,7 +1523,8 @@
         "name": "azure-core",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
-        "version": "==1.21.1"
+        "version": "==1.22.0",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
         "test*",
