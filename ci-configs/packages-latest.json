@@ -2580,7 +2580,8 @@
         "name": "azure-messaging-webpubsubservice",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
-        "version": "==1.0.0"
+        "version": "==1.0.1",
+        "extra_index_url": "https://pkgs.dev.azure.com/azure-sdk/public/_packaging/azure-sdk-for-python/pypi/simple/"
       },
       "exclude_path": [
         "test*",
