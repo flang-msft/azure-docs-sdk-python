@@ -1,9 +1,9 @@
 ---
 title: 
 keywords: Azure, python, SDK, API, azure-cognitiveservices-language-textanalytics, cognitiveservices
-author: mayurid
-ms.author: mayurid
-ms.date: 02/15/2022
+author: ramya-rao-a
+ms.author: ramyar
+ms.date: 02/22/2022
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
