@@ -1,9 +1,9 @@
 ---
 title: 
 keywords: Azure, python, SDK, API, azure-applicationinsights, applicationinsights
-author: omziv
-ms.author: omziv
-ms.date: 02/11/2022
+author: ramya-rao-a
+ms.author: ramyar
+ms.date: 02/22/2022
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
