@@ -2,8 +2,8 @@
 title: 
 keywords: Azure, python, SDK, API, azure-mgmt-cosmosdb, cosmosdb
 author: kushagraThapar
-ms.author: kuthapar
-ms.date: 02/21/2022
+ms.author: kushagraThapar
+ms.date: 02/23/2022
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
