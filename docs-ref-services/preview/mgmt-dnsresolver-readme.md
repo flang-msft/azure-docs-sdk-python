@@ -3,7 +3,7 @@ title:
 keywords: Azure, python, SDK, API, azure-mgmt-dnsresolver, dnsresolver
 author: mayurid
 ms.author: mayurid
-ms.date: 02/21/2022
+ms.date: 03/03/2022
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
